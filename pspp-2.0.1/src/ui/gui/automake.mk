@@ -232,6 +232,8 @@ src/ui/gui/pspp.rc: src/ui/gui/pspp.rc.in
 noinst_LTLIBRARIES += src/ui/gui/libwidgets-essential.la
 
 src_ui_gui_libwidgets_essential_la_SOURCES = \
+	src/ui/gui/psppire-dialog-action-custom-tables.c \
+	src/ui/gui/psppire-dialog-action-custom-tables.h \
 	src/ui/gui/psppire-acr.c \
 	src/ui/gui/psppire-acr.h \
 	src/ui/gui/psppire-buttonbox.c \

@@ -372,6 +372,10 @@
 	  <attribute name="label" translatable="yes">ROC Cur_ve...</attribute>
 	  <attribute name="action">win.PsppireDialogActionRoc</attribute>
 	</item>
+        <item>
+          <attribute name="label" translatable="yes">Custom _Tables...</attribute>
+          <attribute name="action">win.PsppireDialogActionCustomTables</attribute>
+        </item>
       </section>
     </submenu>
     <submenu>

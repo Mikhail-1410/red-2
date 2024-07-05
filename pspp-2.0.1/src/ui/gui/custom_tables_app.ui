@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkDialog" id="custom-ttables-dialog">
+    <property name="title">Custom Tables</property>
+    <child>
+      <object class="GtkButton" id="create-report-button">
+        <property name="label">Создать отчет</property>
+      </object>
+    </child>
+  </object>
+</interface>
