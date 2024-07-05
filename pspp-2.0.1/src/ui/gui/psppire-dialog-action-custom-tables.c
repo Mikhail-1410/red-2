@@ -1,4 +1,4 @@
-#include <config.h>
+//#include <config.h>
 #include "psppire-dialog-action-custom-tables.h"
 #include "dialog-common.h"
 #include <ui/syntax-gen.h>
