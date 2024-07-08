@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 1.2.0\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2019-04-16 21:27+0200\n"
 "Last-Translator: Matej Urban <matej.urban@gmail.com>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -5481,8 +5481,8 @@ msgid ""
 "`(a**b)**c', not `a**(b**c)'.  To disable this warning, insert parentheses."
 msgstr ""
 "operater potenciranja (» ** «) je skladenjsko vezan na levo vrednost, čeprav "
-"je lahko tudi desna povezava uporabna. Zapis » a**b**c« pomeni torej "
-"» (a**b)**c« in ne » a**(b**c) «. Temu opozorilu se je mogoče izogniti z "
+"je lahko tudi desna povezava uporabna. Zapis » a**b**c« pomeni torej » "
+"(a**b)**c« in ne » a**(b**c) «. Temu opozorilu se je mogoče izogniti z "
 "uporabo oklepajev."
 
 #: src/language/commands/ctables.c:1162
@@ -9027,16 +9027,16 @@ msgstr "ukaz INTO je zahtevan pri uporabi vhodih vrednosti %s in izhodnih %s."
 #| msgid "Type mismatch.  Cannot store %s data in %s variable %s."
 msgid "Type mismatch: cannot store string data in numeric variable %s."
 msgstr ""
-"neskladje vrste. Ni mogoče shraniti podatkov vrste » %s « v vrsto » %s « "
-"spremenljivke %s."
+"neskladje vrste. Ni mogoče shraniti podatkov vrste » %s « v vrsto » %s "
+"« spremenljivke %s."
 
 #: src/language/commands/recode.c:550
 #, fuzzy, c-format
 #| msgid "Type mismatch.  Cannot store %s data in %s variable %s."
 msgid "Type mismatch: cannot store numeric data in string variable %s."
 msgstr ""
-"neskladje vrste. Ni mogoče shraniti podatkov vrste » %s « v vrsto » %s « "
-"spremenljivke %s."
+"neskladje vrste. Ni mogoče shraniti podatkov vrste » %s « v vrsto » %s "
+"« spremenljivke %s."
 
 #: src/language/commands/recode.c:589
 msgid "At least one target variable is too narrow for the output values."
@@ -14539,31 +14539,37 @@ msgstr "K _neodvisnih vzorcev ..."
 msgid "ROC Cur_ve..."
 msgstr "Kri_vulja ROC ..."
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "Po meri"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "_Grafi"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "_Raztreseni diagram"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "_Histogram"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "_Palčni diagram"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_Orodja"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "_Seznam spremenljivk ..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "Opombe k _podatkovni datoteki ..."
 
@@ -14805,10 +14811,7 @@ msgid ""
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
@@ -14816,12 +14819,6 @@ msgstr ""
 #| msgid "Variable View"
 msgid "GNU PSPP Variable View"
 msgstr "Pregled spremenljivk"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "Statistika"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14839,6 +14836,11 @@ msgstr "Odprtokodni program za analizo statističnih podatkov po vzoru SPSS."
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "Statistika"
 
 #~ msgid "Sorry. The help system hasn't yet been implemented."
 #~ msgstr "Sistem pomoči v tej različici programa še ni podprt."

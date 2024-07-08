@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp-0.6.2-pre4\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2009-09-07 02:30-0300\n"
 "Last-Translator: Michel Almada de Castro Boaventura <michel@cecaps.ufmg.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
@@ -14676,33 +14676,39 @@ msgstr "Teste de Amostras Independentes"
 msgid "ROC Cur_ve..."
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "Personalizado"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_Utilidades"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 #, fuzzy
 #| msgid "_Variables"
 msgid "_Variables..."
 msgstr "_Variáveis"
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 #, fuzzy
 #| msgid "Data File _Comments"
 msgid "Data File _Comments..."
@@ -14968,10 +14974,7 @@ msgid ""
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
@@ -14979,12 +14982,6 @@ msgstr ""
 #| msgid "Variable View"
 msgid "GNU PSPP Variable View"
 msgstr "Visualização de variáveis"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "Estatísticas"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -15004,6 +15001,11 @@ msgstr ""
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "Estatísticas"
 
 #~ msgid "Buttons"
 #~ msgstr "Botões"

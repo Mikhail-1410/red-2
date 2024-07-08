@@ -12864,31 +12864,35 @@ msgstr ""
 msgid "ROC Cur_ve..."
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+msgid "Custom _Tables..."
+msgstr ""
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr ""
 
@@ -13120,20 +13124,12 @@ msgid ""
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
 msgid "GNU PSPP Variable View"
 msgstr ""
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-msgid "statistics"
-msgstr "Statistický program"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -13143,3 +13139,7 @@ msgstr ""
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr ""
+
+#, fuzzy
+#~ msgid "statistics"
+#~ msgstr "Statistický program"

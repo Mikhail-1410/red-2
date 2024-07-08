@@ -3,7 +3,7 @@
   <!ENTITY tex "TeX">
   <!ENTITY latex "LaTeX">
 ]>
-<book id="pspp.xml" lang="en">
+<book id="pspp.xml" lang="">
 <title>PSPP Users&#8217; Guide</title>
 <subtitle>GNU PSPP Statistical Analysis Software
 Release 2.0.1</subtitle>
@@ -1606,8 +1606,8 @@ PSPP to take some action&#8212;read in data, write out data, perform
 a statistical procedure, etc.  Each type of token is
 described below.
 </para>
-<variablelist><indexterm role="cp"><primary>identifiers</primary></indexterm>
-<varlistentry><term><emphasis role="bold">Identifiers</emphasis>
+<variablelist><varlistentry><term><indexterm role="cp"><primary>identifiers</primary></indexterm>
+<emphasis role="bold">Identifiers</emphasis>
 </term><listitem><para>Identifiers are names that typically specify variables, commands, or
 subcommands.  The first character in an identifier must be a letter,
 &#8216;<literal>#</literal>&#8217;, or &#8216;<literal>@</literal>&#8217;.  The remaining characters in the identifier
@@ -1963,14 +1963,14 @@ procedures.
 PSPP capitalizes variable names on output the same way they were
 capitalized at their point of definition in the input.
 </para>
-<indexterm role="cp"><primary>variables, type</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>variables, type</primary></indexterm>
 <indexterm role="cp"><primary>type of variables</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Type</emphasis>
+<emphasis role="bold">Type</emphasis>
 </term><listitem><para>Numeric or string.
 </para>
-<indexterm role="cp"><primary>variables, width</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>variables, width</primary></indexterm>
 <indexterm role="cp"><primary>width of variables</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Width</emphasis>
+<emphasis role="bold">Width</emphasis>
 </term><listitem><para>(string variables only) String variables with a width of 8 characters or
 fewer are called <firstterm>short string variables</firstterm>.  Short string variables
 may be used in a few contexts where <firstterm>long string variables</firstterm> (those
@@ -1984,9 +1984,9 @@ with widths greater than 8) are not allowed.
 </term><listitem><para>Either reinitialized to 0 or spaces for each case, or left at its
 existing value.  See <link linkend="LEAVE">LEAVE</link>.
 </para>
-<indexterm role="cp"><primary>missing values</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>missing values</primary></indexterm>
 <indexterm role="cp"><primary>values, missing</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Missing values</emphasis>
+<emphasis role="bold">Missing values</emphasis>
 </term><listitem><para>Optionally, up to three values, or a range of values, or a specific
 value plus a range, can be specified as <firstterm>user-missing values</firstterm>.
 There is also a <firstterm>system-missing value</firstterm> that is assigned to an
@@ -1995,31 +1995,31 @@ Observations with missing values are automatically excluded from
 analyses.  User-missing values are actual data values, while the
 system-missing value is not a value at all.  See <link linkend="Missing-Observations">Missing Observations</link>.
 </para>
-<indexterm role="cp"><primary>variable labels</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>variable labels</primary></indexterm>
 <indexterm role="cp"><primary>labels, variable</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Variable label</emphasis>
+<emphasis role="bold">Variable label</emphasis>
 </term><listitem><para>A string that describes the variable.  See <link linkend="VARIABLE-LABELS">VARIABLE LABELS</link>.
 </para>
-<indexterm role="cp"><primary>value labels</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>value labels</primary></indexterm>
 <indexterm role="cp"><primary>labels, value</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Value label</emphasis>
+<emphasis role="bold">Value label</emphasis>
 </term><listitem><para>Optionally, these associate each possible value of the variable with a
 string.  See <link linkend="VALUE-LABELS">VALUE LABELS</link>.
 </para>
-<indexterm role="cp"><primary>print format</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Print format</emphasis>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>print format</primary></indexterm>
+<emphasis role="bold">Print format</emphasis>
 </term><listitem><para>Display width, format, and (for numeric variables) number of decimal
 places.  This attribute does not affect how data are stored, just how
 they are displayed.  Example: a width of 8, with 2 decimal places.
 See <link linkend="Input-and-Output-Formats">Input and Output Formats</link>.
 </para>
-<indexterm role="cp"><primary>write format</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Write format</emphasis>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>write format</primary></indexterm>
+<emphasis role="bold">Write format</emphasis>
 </term><listitem><para>Similar to print format, but used by the <literal>WRITE</literal> command
 (see <link linkend="WRITE">WRITE</link>).
 </para>
-<indexterm role="cp"><primary>measurement level</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Measurement level</emphasis>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>measurement level</primary></indexterm>
+<emphasis role="bold">Measurement level</emphasis>
 </term><listitem><anchor id="Measurement-Level"/><para>One of the following:
 </para>
 <variablelist><varlistentry><term>Nominal
@@ -2073,13 +2073,13 @@ distribution:
 <para>Finally, if none of the above is true, PSPP assigns the variable a
 nominal measurement level.
 </para>
-<indexterm role="cp"><primary>custom attributes</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Custom attributes</emphasis>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>custom attributes</primary></indexterm>
+<emphasis role="bold">Custom attributes</emphasis>
 </term><listitem><para>User-defined associations between names and values.  See <link linkend="VARIABLE-ATTRIBUTE">VARIABLE
 ATTRIBUTE</link>.
 </para>
-<indexterm role="cp"><primary>variable role</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">Role</emphasis>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>variable role</primary></indexterm>
+<emphasis role="bold">Role</emphasis>
 </term><listitem><para>The intended role of a variable for use in dialog boxes in graphical
 user interfaces.  See <link linkend="VARIABLE-ROLE">VARIABLE ROLE</link>.
 </para></listitem></varlistentry></variablelist>
@@ -2094,41 +2094,41 @@ variables because system variables are not always stored.  They can be used only
 in expressions.  These system variables, whose values and output formats
 cannot be modified, are described below.
 </para>
-<variablelist><indexterm role="cp"><primary><literal>$CASENUM</literal></primary></indexterm>
-<varlistentry><term><literal>$CASENUM</literal>
+<variablelist><varlistentry><term><indexterm role="cp"><primary><literal>$CASENUM</literal></primary></indexterm>
+<literal>$CASENUM</literal>
 </term><listitem><para>Case number of the case at the moment.  This changes as cases are
 shuffled around.
 </para>
-<indexterm role="cp"><primary><literal>$DATE</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$DATE</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$DATE</literal></primary></indexterm>
+<literal>$DATE</literal>
 </term><listitem><para>Date the PSPP process was started, in format A9, following the
 pattern <literal>DD-MMM-YY</literal>.
 </para>
-<indexterm role="cp"><primary><literal>$DATE11</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$DATE11</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$DATE11</literal></primary></indexterm>
+<literal>$DATE11</literal>
 </term><listitem><para>Date the PSPP process was started, in format A11, following the
 pattern <literal>DD-MMM-YYYY</literal>.
 </para>
-<indexterm role="cp"><primary><literal>$JDATE</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$JDATE</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$JDATE</literal></primary></indexterm>
+<literal>$JDATE</literal>
 </term><listitem><para>Number of days between 15 Oct 1582 and the time the PSPP process
 was started.
 </para>
-<indexterm role="cp"><primary><literal>$LENGTH</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$LENGTH</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$LENGTH</literal></primary></indexterm>
+<literal>$LENGTH</literal>
 </term><listitem><para>Page length, in lines, in format F11.
 </para>
-<indexterm role="cp"><primary><literal>$SYSMIS</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$SYSMIS</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$SYSMIS</literal></primary></indexterm>
+<literal>$SYSMIS</literal>
 </term><listitem><para>System missing value, in format F1.
 </para>
-<indexterm role="cp"><primary><literal>$TIME</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$TIME</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$TIME</literal></primary></indexterm>
+<literal>$TIME</literal>
 </term><listitem><para>Number of seconds between midnight 14 Oct 1582 and the time the active dataset
 was read, in format F20.
 </para>
-<indexterm role="cp"><primary><literal>$WIDTH</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>$WIDTH</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>$WIDTH</literal></primary></indexterm>
+<literal>$WIDTH</literal>
 </term><listitem><para>Page width, in characters, in format F3.
 </para></listitem></varlistentry></variablelist>
 </sect2>
@@ -2809,40 +2809,40 @@ variable in the analysis.
 reads, some it writes, some it creates.  Here is a table listing the
 most important of these files:
 </para>
-<variablelist><indexterm role="cp"><primary>file, command</primary></indexterm>
+<variablelist><varlistentry><term><indexterm role="cp"><primary>file, command</primary></indexterm>
 <indexterm role="cp"><primary>file, syntax file</primary></indexterm>
 <indexterm role="cp"><primary>command file</primary></indexterm>
 <indexterm role="cp"><primary>syntax file</primary></indexterm>
-<varlistentry><term><emphasis role="bold">command file</emphasis>
+<emphasis role="bold">command file</emphasis>
 </term><term><emphasis role="bold">syntax file</emphasis>
 </term><listitem><para>These names (synonyms) refer to the file that contains instructions
 that tell PSPP what to do.  The syntax file&#8217;s name is specified on
 the PSPP command line.  Syntax files can also be read with
 <literal>INCLUDE</literal> (see <link linkend="INCLUDE">INCLUDE</link>).
 </para>
-<indexterm role="cp"><primary>file, data</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>file, data</primary></indexterm>
 <indexterm role="cp"><primary>data file</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">data file</emphasis>
+<emphasis role="bold">data file</emphasis>
 </term><listitem><para>Data files contain raw data in text or binary format.  Data can also
 be embedded in a syntax file with <literal>BEGIN DATA</literal> and <literal>END DATA</literal>.
 </para>
-<indexterm role="cp"><primary>file, output</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>file, output</primary></indexterm>
 <indexterm role="cp"><primary>output file</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">listing file</emphasis>
+<emphasis role="bold">listing file</emphasis>
 </term><listitem><para>One or more output files are created by PSPP each time it is
 run.  The output files receive the tables and charts produced by
 statistical procedures.  The output files may be in any number of formats,
 depending on how PSPP is configured.
 </para>
-<indexterm role="cp"><primary>system file</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>system file</primary></indexterm>
 <indexterm role="cp"><primary>file, system</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">system file</emphasis>
+<emphasis role="bold">system file</emphasis>
 </term><listitem><para>System files are binary files that store a dictionary and a set of
 cases.  <literal>GET</literal> and <literal>SAVE</literal> read and write system files.
 </para>
-<indexterm role="cp"><primary>portable file</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>portable file</primary></indexterm>
 <indexterm role="cp"><primary>file, portable</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><emphasis role="bold">portable file</emphasis>
+<emphasis role="bold">portable file</emphasis>
 </term><listitem><para>Portable files are files in a text-based format that store a dictionary
 and a set of cases.  <literal>IMPORT</literal> and <literal>EXPORT</literal> read and write
 portable files.
@@ -2910,29 +2910,29 @@ following table describes BNF:
 often called <firstterm>terminals</firstterm>.  There are some special terminals, which
 are written in lowercase for clarity:
 </para>
-<variablelist><indexterm role="cp"><primary><literal>number</literal></primary></indexterm>
-<varlistentry><term><literal>number</literal>
+<variablelist><varlistentry><term><indexterm role="cp"><primary><literal>number</literal></primary></indexterm>
+<literal>number</literal>
 </term><listitem><para>A real number.
 </para>
-<indexterm role="cp"><primary><literal>integer</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>integer</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>integer</literal></primary></indexterm>
+<literal>integer</literal>
 </term><listitem><para>An integer number.
 </para>
-<indexterm role="cp"><primary><literal>string</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>string</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>string</literal></primary></indexterm>
+<literal>string</literal>
 </term><listitem><para>A string.
 </para>
-<indexterm role="cp"><primary><literal>var-name</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>var-name</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>var-name</literal></primary></indexterm>
+<literal>var-name</literal>
 </term><listitem><para>A single variable name.
 </para>
-<indexterm role="cp"><primary>operators</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>operators</primary></indexterm>
 <indexterm role="cp"><primary>punctuators</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>=</literal>, <literal>/</literal>, <literal>+</literal>, <literal>-</literal>, etc.
+<literal>=</literal>, <literal>/</literal>, <literal>+</literal>, <literal>-</literal>, etc.
 </term><listitem><para>Operators and punctuators.
 </para>
-<indexterm role="cp"><primary><literal>.</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>.</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>.</literal></primary></indexterm>
+<literal>.</literal>
 </term><listitem><para>The end of the command.  This is not necessarily an actual dot in the
 syntax file (see <link linkend="Commands">Commands</link>).
 </para></listitem></varlistentry></variablelist>
@@ -2943,12 +2943,12 @@ syntax file (see <link linkend="Commands">Commands</link>).
 <firstterm>nonterminals</firstterm>.  Some nonterminals are very common, so they are
 defined here in English for clarity:
 </para>
-<variablelist><indexterm role="cp"><primary><literal>var-list</literal></primary></indexterm>
-<varlistentry><term><literal>var-list</literal>
+<variablelist><varlistentry><term><indexterm role="cp"><primary><literal>var-list</literal></primary></indexterm>
+<literal>var-list</literal>
 </term><listitem><para>A list of one or more variable names or the keyword <literal>ALL</literal>.
 </para>
-<indexterm role="cp"><primary><literal>expression</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>expression</literal>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>expression</literal></primary></indexterm>
+<literal>expression</literal>
 </term><listitem><para>An expression.  See <link linkend="Expressions">Expressions</link>, for details.
 </para></listitem></varlistentry></variablelist>
 </listitem><listitem><indexterm role="cp"><primary>&#8220;is defined as&#8221;</primary></indexterm>
@@ -3064,40 +3064,40 @@ situation they act as punctuators, not as operators.
 <para>The arithmetic operators take numeric operands and produce numeric
 results.
 </para>
-<variablelist><indexterm role="cp"><primary>&#8216;<literal>+</literal>&#8217;</primary></indexterm>
+<variablelist><varlistentry><term><indexterm role="cp"><primary>&#8216;<literal>+</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>addition</primary></indexterm>
-<varlistentry><term><literal><replaceable>a</replaceable> + <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> + <replaceable>b</replaceable></literal>
 </term><listitem><para>Yields the sum of <replaceable>a</replaceable> and <replaceable>b</replaceable>.
 </para>
-<indexterm role="cp"><primary>&#8216;<literal>-</literal>&#8217;</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>&#8216;<literal>-</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>subtraction</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> - <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> - <replaceable>b</replaceable></literal>
 </term><listitem><para>Subtracts <replaceable>b</replaceable> from <replaceable>a</replaceable> and yields the difference.
 </para>
-<indexterm role="cp"><primary>&#8216;<literal>*</literal>&#8217;</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>&#8216;<literal>*</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>multiplication</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> * <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> * <replaceable>b</replaceable></literal>
 </term><listitem><para>Yields the product of <replaceable>a</replaceable> and <replaceable>b</replaceable>.  If either <replaceable>a</replaceable> or
 <replaceable>b</replaceable> is 0, then the result is 0, even if the other operand is
 missing.
 </para>
-<indexterm role="cp"><primary>&#8216;<literal>/</literal>&#8217;</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>&#8216;<literal>/</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>division</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> / <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> / <replaceable>b</replaceable></literal>
 </term><listitem><para>Divides <replaceable>a</replaceable> by <replaceable>b</replaceable> and yields the quotient.  If <replaceable>a</replaceable> is 0,
 then the result is 0, even if <replaceable>b</replaceable> is missing.  If <replaceable>b</replaceable> is zero,
 the result is system-missing.
 </para>
-<indexterm role="cp"><primary>&#8216;<literal>**</literal>&#8217;</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>&#8216;<literal>**</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>exponentiation</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> ** <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> ** <replaceable>b</replaceable></literal>
 </term><listitem><para>Yields the result of raising <replaceable>a</replaceable> to the power <replaceable>b</replaceable>.  If
 <replaceable>a</replaceable> is negative and <replaceable>b</replaceable> is not an integer, the result is
 system-missing.  The result of <literal>0**0</literal> is system-missing as well.
 </para>
-<indexterm role="cp"><primary>&#8216;<literal>-</literal>&#8217;</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>&#8216;<literal>-</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>negation</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>- <replaceable>a</replaceable></literal>
+<literal>- <replaceable>a</replaceable></literal>
 </term><listitem><para>Reverses the sign of <replaceable>a</replaceable>.
 </para></listitem></varlistentry></variablelist>
 </sect1>
@@ -3116,31 +3116,31 @@ results, meaning &#8220;true or false.&#8221;  Logical operators are
 not true Boolean operators because they may also result in a
 system-missing value.  See <link linkend="Boolean-Values">Boolean Values</link>, for more information.
 </para>
-<variablelist><indexterm role="cp"><primary><literal>AND</literal></primary></indexterm>
+<variablelist><varlistentry><term><indexterm role="cp"><primary><literal>AND</literal></primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>&amp;</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>intersection, logical</primary></indexterm>
 <indexterm role="cp"><primary>logical intersection</primary></indexterm>
-<varlistentry><term><literal><replaceable>a</replaceable> AND <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> AND <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> &amp; <replaceable>b</replaceable></literal>
 </term><listitem><para>True if both <replaceable>a</replaceable> and <replaceable>b</replaceable> are true, false otherwise.  If one
 operand is false, the result is false even if the other is missing.  If
 both operands are missing, the result is missing.
 </para>
-<indexterm role="cp"><primary><literal>OR</literal></primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>OR</literal></primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>|</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>union, logical</primary></indexterm>
 <indexterm role="cp"><primary>logical union</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> OR <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> OR <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> | <replaceable>b</replaceable></literal>
 </term><listitem><para>True if at least one of <replaceable>a</replaceable> and <replaceable>b</replaceable> is true.  If one operand is
 true, the result is true even if the other operand is missing.  If both
 operands are missing, the result is missing.
 </para>
-<indexterm role="cp"><primary><literal>NOT</literal></primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary><literal>NOT</literal></primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>~</literal>&#8217;</primary></indexterm>
 <indexterm role="cp"><primary>inversion, logical</primary></indexterm>
 <indexterm role="cp"><primary>logical inversion</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal>NOT <replaceable>a</replaceable></literal>
+<literal>NOT <replaceable>a</replaceable></literal>
 </term><term><literal>~ <replaceable>a</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is false.  If the operand is missing, then the result
 is missing.
@@ -3160,48 +3160,48 @@ to match the length of the longer string.
 inequality, depend on the character set in use.  String comparisons
 are case-sensitive.
 </para>
-<variablelist><indexterm role="cp"><primary>equality, testing</primary></indexterm>
+<variablelist><varlistentry><term><indexterm role="cp"><primary>equality, testing</primary></indexterm>
 <indexterm role="cp"><primary>testing for equality</primary></indexterm>
 <indexterm role="cp"><primary><literal>EQ</literal></primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>=</literal>&#8217;</primary></indexterm>
-<varlistentry><term><literal><replaceable>a</replaceable> EQ <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> EQ <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> = <replaceable>b</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is equal to <replaceable>b</replaceable>.
 </para>
-<indexterm role="cp"><primary>less than or equal to</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>less than or equal to</primary></indexterm>
 <indexterm role="cp"><primary><literal>LE</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>&lt;=</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> LE <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> LE <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> &lt;= <replaceable>b</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is less than or equal to <replaceable>b</replaceable>.
 </para>
-<indexterm role="cp"><primary>less than</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>less than</primary></indexterm>
 <indexterm role="cp"><primary><literal>LT</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>&lt;</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> LT <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> LT <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> &lt; <replaceable>b</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is less than <replaceable>b</replaceable>.
 </para>
-<indexterm role="cp"><primary>greater than or equal to</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>greater than or equal to</primary></indexterm>
 <indexterm role="cp"><primary><literal>GE</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>&gt;=</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> GE <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> GE <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> &gt;= <replaceable>b</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is greater than or equal to <replaceable>b</replaceable>.
 </para>
-<indexterm role="cp"><primary>greater than</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>greater than</primary></indexterm>
 <indexterm role="cp"><primary><literal>GT</literal></primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>&gt;</literal>&#8217;</primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> GT <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> GT <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> &gt; <replaceable>b</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is greater than <replaceable>b</replaceable>.
 </para>
-<indexterm role="cp"><primary>inequality, testing</primary></indexterm>
+</listitem></varlistentry><varlistentry><term><indexterm role="cp"><primary>inequality, testing</primary></indexterm>
 <indexterm role="cp"><primary>testing for inequality</primary></indexterm>
 <indexterm role="cp"><primary><literal>NE</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>~=</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>&lt;&gt;</literal></primary></indexterm>
-</listitem></varlistentry><varlistentry><term><literal><replaceable>a</replaceable> NE <replaceable>b</replaceable></literal>
+<literal><replaceable>a</replaceable> NE <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> ~= <replaceable>b</replaceable></literal>
 </term><term><literal><replaceable>a</replaceable> &lt;&gt; <replaceable>b</replaceable></literal>
 </term><listitem><para>True if <replaceable>a</replaceable> is not equal to <replaceable>b</replaceable>.
@@ -7627,15 +7627,14 @@ to calculate the mean, the median and the standard deviation of each
 occupation.
 </para>
 <anchor id="aggregate_003aex"/>
-<screen>GET FILE=&quot;personnel.sav&quot;.
+<sidebar><screen>GET FILE=&quot;personnel.sav&quot;.
 AGGREGATE OUTFILE=* MODE=REPLACE
         /BREAK=occupation
         /occ_mean_salary=MEAN(salary)
         /occ_median_salary=MEDIAN(salary)
         /occ_std_dev_salary=SD(salary).
 LIST.
-</screen>
-
+</screen></sidebar>
 <para>Since we chose the &#8216;<literal>MODE=REPLACE</literal>&#8217; option, in <link linkend="aggregate_003ares">aggregate:res</link> cases
 for the individual persons are no longer present.  They have each been replaced
 by a single case per aggregated value.
@@ -7665,7 +7664,6 @@ by a single case per aggregated value.
 |Tailor            |       34586.79|         34586.79|           3728.98|
 +------------------+---------------+-----------------+------------------+
 </screen>
-
 <para>Note that some values for the standard deviation are blank.
 This is because there is only one case with the respective
 occupation.
@@ -7754,7 +7752,7 @@ Finally, we remove the old variable and rename the new variable to
 the name of the old variable.
 </para>
 <anchor id="autorecode_003aex"/>
-<screen>get file='personnel.sav'.
+<sidebar><screen>get file='personnel.sav'.
 
 * Correct a typing error in the original file.
 do if occupation = &quot;Scrientist&quot;.
@@ -7774,12 +7772,10 @@ rename variables (occ = occupation).
 * Inspect the new variable.
 display dictionary /variables=occupation.
 
-</screen>
-
+</screen></sidebar>
 
 <anchor id="autorecode_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>Notice in <link linkend="autorecode_003ares">autorecode:res</link>, how  the new variable has been automatically
 allocated value labels which correspond to the strings of the old variable.
 This means that in future analyses the descriptive strings are reported instead
@@ -7817,7 +7813,6 @@ of the numeric values.
 |           13  |Tailor            |
 +---------------+------------------+
 </screen>
-
 
 </sect2>
 </sect1>
@@ -7872,15 +7867,14 @@ by the square of the person&#8217;s height in metres.
 is a misnomer, but that is what it is called.</para></footnote>
 </para>
 <anchor id="bmi_003aex"/>
-<screen>get file='physiology.sav'.
+<sidebar><screen>get file='physiology.sav'.
 
 * height is in mm so we must divide by 1000 to get metres.
 compute bmi = weight / (height/1000)**2.
 variable label bmi &quot;Body Mass Index&quot;.
 
 descriptives /weight height bmi.
-</screen>
-
+</screen></sidebar>
 <para><link linkend="bmi_003aex">bmi:ex</link> shows how you can use <literal>COMPUTE</literal> to generate a new variable called
 <emphasis role="bold">bmi</emphasis> and have every case&#8217;s value calculated from the existing values of
 <emphasis role="bold">weight</emphasis> and <emphasis role="bold">height</emphasis>.
@@ -7889,8 +7883,7 @@ so that a more descriptive label appears in subsequent analyses, and this can be
 in the ouput from the <literal>DESCRIPTIVES</literal> command in <link linkend="bmi_003ares">bmi:res</link>.
 </para>
 <anchor id="bmi_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>The expression which follows the &#8216;<literal>=</literal>&#8217; sign can be as complicated as necessary.
 See <link linkend="Expressions">Expressions</link> for a precise description of the language accepted.
 Normally it is easiest to enter the code directly, however there is a dialog box
@@ -7914,7 +7907,6 @@ functions which can be selected and pasted into the expression.
 |Missing N (listwise) | 0|       |       |       |       |
 +---------------------+--+-------+-------+-------+-------+
 </screen>
-
 
 
 </sect2>
@@ -7980,12 +7972,11 @@ populates it with the number of values in <emphasis role="bold">v1</emphasis>&#8
 are 2 or lower.
 </para>
 <anchor id="count_003aex"/>
-<screen>get file=&quot;hotel.sav&quot;.
+<sidebar><screen>get file=&quot;hotel.sav&quot;.
 
 count low_counts = v1 v2 v3 (low thru 2).
 
-list /variables v1 v2 v3 low_counts.</screen>
-
+list /variables v1 v2 v3 low_counts.</screen></sidebar>
 <para>In <link linkend="count_003aex">count:ex</link> the <literal>COUNT</literal> transformation creates a new variable, <emphasis role="bold">low_counts</emphasis> and
 its values are shown using the <literal>LIST</literal> command.
 </para>
@@ -7996,16 +7987,14 @@ Then, one must click on the button marked &#8220;Define Values...&#8221; to reve
 the dialog box for selecting the values to count.
 </para>
 <anchor id="count_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>In this dialog box, you must select the values you wish to count
 &#8212; in this case all values up to and including 2 &#8212; as shown in <link linkend="count_002ddefine_003ascr">count-define:scr</link>
 and click &#8220;Add&#8221;.  As many ranges or may be added as you desire.
 When all desired ranges have been added click &#8220;Continue&#8221;.
 </para>
 <anchor id="count_002ddefine_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>In <link linkend="count_003ares">count:res</link> we can see the values of <emphasis role="bold">low_counts</emphasis> after the <literal>COUNT</literal>
 transformation has completed.  The first value is 1, because there is only one
 variable amoung <emphasis role="bold">v1</emphasis>, <emphasis role="bold">v2</emphasis> and <emphasis role="bold">3</emphasis> which has a value of 2 or less.
@@ -8039,7 +8028,6 @@ The second value is 2, because both <emphasis role="bold">v1</emphasis> and <emp
 | 1| 5| 5|      1.00|
 +--+--+--+----------+
 </screen>
-
 
 </sect2>
 </sect1>
@@ -8104,7 +8092,7 @@ Fortunately, we can use <literal>FLIP</literal> to exchange the variables
 and cases in the active dataset.
 </para>
 <anchor id="flip_003aex"/>
-<screen>data list notable list /heading (a16) v1 v2 v3 v4 v5 v6
+<sidebar><screen>data list notable list /heading (a16) v1 v2 v3 v4 v5 v6
 begin data.
 date-of-birth 1970 1989 2001 1966 1976 1982
 sex 1 0 0 1 0 1
@@ -8119,8 +8107,7 @@ flip /variables = all /newnames = heading.
 
 echo 'After FLIP:'.
 display variables.
-list.</screen>
-
+list.</screen></sidebar>
 <para>As you can see in <link linkend="flip_003ares">flip:res</link> before the <literal>FLIP</literal> command has run there
 are seven variables (six containing data and one for the heading) and three cases.
 Afterwards there are four variables (one per case, plus the <emphasis role="bold">CASE_LBL</emphasis> variable)
@@ -8180,7 +8167,6 @@ After FLIP:
 |v6      |      1982.00|1.00| 9.00|
 +--------+-------------+----+-----+
 </screen>
-
 
 </sect2>
 </sect1>
@@ -8431,11 +8417,10 @@ by two variables, <emphasis>viz</emphasis> <emphasis role="bold">sex</emphasis> 
 ascending order.
 </para>
 <anchor id="sort_002dcases_003aex"/>
-<screen>get file='physiology.sav'.
+<sidebar><screen>get file='physiology.sav'.
 sort cases by sex (D) temperature(A).
 list.
-</screen>
-
+</screen></sidebar>
 <para>In <link linkend="sort_002dcases_003ares">sort-cases:res</link> you can see that all the cases with a <emphasis role="bold">sex</emphasis> of
 &#8216;<literal>1</literal>&#8217; (female) appear before those with a sex of &#8216;<literal>0</literal>&#8217; (male).
 This is because they have been sorted in descending order.
@@ -8493,7 +8478,6 @@ this time in ascending order.
 |  0|  1884|  88.6|      39.97|
 +---+------+------+-----------+
 </screen>
-
 <para>Note that <literal>SORT CASES</literal>, like all other transformations, affects only the active file.
 It does not have any effect upon the <filename>physiology.sav</filename> file itself. For that, you
 would have to rewrite the file using the <literal>SAVE</literal> command (see <link linkend="SAVE">SAVE</link>).
@@ -8506,8 +8490,7 @@ A popup menu will appear like that shown in <link linkend="sort_002dsimple_003as
 either &#8220;Sort Ascending&#8221; or &#8220;Sort Descending&#8221; from this menu.
 </para>
 <anchor id="sort_002dsimple_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>However, sometimes you will want to sort on two or more variables, and that is
 not possible using this method.  In this case, you must either use some code or
 the &#8220;Sort Cases&#8221; dialog from the Data menu.  <link linkend="sort_003ascr">sort:scr</link> shows the dialog
@@ -8517,8 +8500,7 @@ the data will be first sorted on <emphasis role="bold">sex</emphasis>, and then 
 is the same will then be sorted by <emphasis role="bold">height</emphasis>.
 </para>
 <anchor id="sort_003ascr"/>
-
-<!-- PSPP - a program for statistical analysis. -->
+<sidebar></sidebar><!-- PSPP - a program for statistical analysis. -->
 <!-- Copyright (C) 2017, 2020 Free Software Foundation, Inc. -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.3 -->
@@ -8678,7 +8660,7 @@ dates of birth.  The syntax in <link linkend="select_002dif_003aex">select-if:ex
 be used to limit analysis only to those persons born after December 31, 1999.
 </para>
 <anchor id="select_002dif_003aex"/>
-<screen>get file = 'personnel.sav'.
+<sidebar><screen>get file = 'personnel.sav'.
 
 echo 'Salaries of all personnel'.
 descriptives salary.
@@ -8686,8 +8668,7 @@ descriptives salary.
 echo 'Salaries of personnel born after December 31 1999'.
 select if dob &gt; date.dmy (31,12,1999).
 descriptives salary.
-</screen>
-
+</screen></sidebar>
 <para>From <link linkend="select_002dif_003ares">select-if:res</link> one can see that there are 56 persons listed in the dataset,
 and 17 of them were born after December 31, 1999.
 </para>
@@ -8718,7 +8699,6 @@ Salaries of personnel born after December 31 1999
 |Missing N (listwise)    | 0|        |       |       |       |
 +------------------------+--+--------+-------+-------+-------+
 </screen>
-
 <para>Note that the <filename>personnel.sav</filename> file from which the data were read is unaffected.
 The transformation affects only the active file.
 </para>
@@ -8774,7 +8754,7 @@ using the <literal>MEANS</literal> or <literal>EXAMINE</literal> commands.</para
 the <literal>SPLIT FILE</literal> command.
 </para>
 <anchor id="split_003aex"/>
-<screen>get file='horticulture.sav'.
+<sidebar><screen>get file='horticulture.sav'.
 
 * Ensure cases are sorted before splitting.
 sort cases by treatment.
@@ -8783,8 +8763,7 @@ split file by treatment.
 
 * Run descriptives on the yield variable
 descriptives /variable = yield.
-</screen>
-
+</screen></sidebar>
 <para>In <link linkend="split_003ares">split:res</link> you can see that the table of descriptive statistics
 appears 3 times &#8212; once for each value of <emphasis role="bold">treatment</emphasis>.
 In this example &#8216;<literal>N</literal>&#8217;, the number of observations are identical in
@@ -8845,7 +8824,6 @@ split.
 |Missing N (listwise)| 0|     |       |       |       |
 +--------------------+--+-----+-------+-------+-------+
 </screen>
-
 <para>Unless <literal>TEMPORARY</literal> was used, after a split has been defined for
 a dataset it remains active until explicitly disabled.
 In the graphical user interface, the active split variable (if any) is
@@ -8855,8 +8833,7 @@ is active, the split stastus is stored in the file and will be
 automatically loaded when that file is loaded.
 </para>
 <anchor id="split_002dstatus_002dbar_003ascr"/>
-
-
+<sidebar></sidebar>
 
 </sect2>
 </sect1>
@@ -8888,7 +8865,7 @@ effect only for the next procedure, which in this case is the first
 <literal>DESCRIPTIVES</literal> command.
 </para>
 <anchor id="temporary_003aex"/>
-<screen>data list notable /x 1-2.
+<sidebar><screen>data list notable /x 1-2.
 begin data.
  2
  4
@@ -8905,8 +8882,7 @@ compute x=x+3.
 
 descriptives x.
 descriptives x.
-</screen>
-
+</screen></sidebar>
 <para>The data read by the first <literal>DESCRIPTIVES</literal> procedure are 4, 5, 8,
 10.5, 13, 15.  The data read by the second <literal>DESCRIPTIVES</literal> procedure are 1, 2,
 5, 7.5, 10, 12.   This is because the second <literal>COMPUTE</literal> transformation
@@ -8936,7 +8912,6 @@ figures in <link linkend="temporary_003ares">temporary:res</link>.
 |Missing N (listwise)|0|    |       |       |       |
 +--------------------+-+----+-------+-------+-------+
 </screen>
-
 
 </sect2>
 </sect1>
@@ -8983,7 +8958,7 @@ It would be reasonable to use a string variable for a description of the
 item, and a numeric variable for the number in stock, like in <link linkend="weight_003aex">weight:ex</link>.
 </para>
 <anchor id="weight_003aex"/>
-<screen>data list notable list /item (a16) quantity (f8.0).
+<sidebar><screen>data list notable list /item (a16) quantity (f8.0).
 begin   data
 nuts    345
 screws  10034
@@ -8998,8 +8973,7 @@ weight by quantity.
 
 echo 'Weighted frequency table'.
 frequencies /variables = item /format=dfreq.
-</screen>
-
+</screen></sidebar>
 <para>One analysis which most surely would be of interest is
 the relative amounts or each item in stock.
 However without setting a weight variable, <literal>FREQUENCIES</literal>
@@ -9039,8 +9013,7 @@ Weighted frequency table
 +-------------+---------+-------+-------------+------------------+
 |Total        |    43267| 100.0%|             |                  |
 +-------------+---------+-------+-------------+------------------+
-</screen>
-<!-- PSPP - a program for statistical analysis. -->
+</screen><!-- PSPP - a program for statistical analysis. -->
 <!-- Copyright (C) 2017, 2020 Free Software Foundation, Inc. -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.3 -->
@@ -10094,7 +10067,7 @@ which are the two normalized (Z-score) variables generated by the
 first <literal>DESCRIPTIVES</literal> command.
 </para>
 <anchor id="descriptives_003aex"/>
-<screen>get file='physiology.sav'.
+<sidebar><screen>get file='physiology.sav'.
 
 descriptives
         /variables = height temperature
@@ -10102,11 +10075,9 @@ descriptives
 
 descriptives
         /variables = zheight ztemperature.
-</screen>
-
+</screen></sidebar>
 <anchor id="descriptives_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>In <link linkend="descriptives_003ares">descriptives:res</link>, we can see that there are 40 valid data for each of the variables
 and no missing values.   The mean average of the height and temperature is 16677.12
 and 37.02 respectively.  The descriptive statistics for temperature seem reasonable.
@@ -10154,7 +10125,6 @@ should have these properties since they are normalized versions of the original 
 |Missing N (listwise)                     | 0|         |      |       |       |
 +-----------------------------------------+--+---------+------+-------+-------+
 </screen>
-
 </sect2>
 </sect1>
 <sect1 label="15.2" id="FREQUENCIES">
@@ -10276,19 +10246,17 @@ This is useful to get a general idea of the way in which these nominal
 variables are distributed.
 </para>
 <anchor id="frequencies_003aex"/>
-<screen>get file='personnel.sav'.
+<sidebar><screen>get file='personnel.sav'.
 
 frequencies /variables = sex occupation
             /statistics = none.
-</screen>
-
+</screen></sidebar>
 <para>If you are using the graphic user interface, the dialog box is set up such that
 by default, several statistics are calculated.   Some are not particularly useful
 for categorical variables, so you may want to disable those.
 </para>
 <anchor id="frequencies_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>From <link linkend="frequencies_003ares">frequencies:res</link> it is evident that there are 33 males, 21 females and
 2 persons for whom their sex has not been entered.
 </para>
@@ -10337,7 +10305,6 @@ be corrected, or marked as missing before using the data.
 |Total                   |       56| 100.0%|             |                  |
 +------------------------+---------+-------+-------------+------------------+
 </screen>
-
 </sect2>
 </sect1>
 <sect1 label="15.3" id="EXAMINE">
@@ -10842,7 +10809,7 @@ person&#8217;s occupation. She uses a chi-squared test of independence to invest
 the hypothesis.
 </para>
 <anchor id="crosstabs_003aex"/>
-<screen>get file=&quot;personnel.sav&quot;.
+<sidebar><screen>get file=&quot;personnel.sav&quot;.
 
 crosstabs
 	/tables= occupation by sex
@@ -10850,8 +10817,7 @@ crosstabs
 	/statistics=chisq.
 
 
-</screen>
-
+</screen></sidebar>
 <para>The syntax in <link linkend="crosstabs_003aex">crosstabs:ex</link> conducts a chi-squared test of independence.
 The line <literal>/tables = occupation by sex</literal> indicates that <emphasis role="bold">occupation</emphasis>
 and <emphasis role="bold">sex</emphasis> are the variables to be tabulated.  To do this using the graphic user interface
@@ -10859,8 +10825,7 @@ you must place these variable names respectively in the &#8216;<literal>Row</lit
 &#8216;<literal>Column</literal>&#8217; fields as shown in <link linkend="crosstabs_003ascr">crosstabs:scr</link>.
 </para>
 <anchor id="crosstabs_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>Similarly, the &#8216;<literal>Cells</literal>&#8217; button shows a dialog box to select the <literal>count</literal>
 and <literal>expected</literal> options.  All other cell options can be deselected for this
 test.
@@ -10958,7 +10923,6 @@ person&#8217;s occupation.
 |N of Valid Cases  |   54|  |                          |
 +------------------+-----+--+--------------------------+
 </screen>
-
 </sect2>
 </sect1>
 <sect1 label="15.7" id="CTABLES">
@@ -11464,22 +11428,22 @@ specify the following special formats:
 </para>
 <informaltable><tgroup cols="4"><colspec colwidth="11*"></colspec><colspec colwidth="36*"></colspec><colspec colwidth="8*"></colspec><colspec colwidth="9*"></colspec><tbody><row><entry><para><literal>NEGPAREN<emphasis>w</emphasis>.<emphasis>d</emphasis></literal>
 </para></entry><entry><para>Encloses negative numbers in parentheses.
-</para></entry><entry><para><literal>    <!-- /@w -->42.96</literal>
-</para></entry><entry><para><literal>  <!-- /@w -->(42.96)</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->42.96</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->(42.96)</literal>
 </para>
 </entry></row><row><entry><para><literal>NEQUAL<emphasis>w</emphasis>.<emphasis>d</emphasis></literal>
 </para></entry><entry><para>Adds a <literal>N=</literal> prefix.
-</para></entry><entry><para><literal>  <!-- /@w -->N=42.96</literal>
-</para></entry><entry><para><literal> <!-- /@w -->N=-42.96</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->N=42.96</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->N=-42.96</literal>
 </para>
 </entry></row><row><entry><para><literal><literal>PAREN<emphasis>w</emphasis>.<emphasis>d</emphasis></literal></literal>
 </para></entry><entry><para>Encloses all numbers in parentheses.
-</para></entry><entry><para><literal>  <!-- /@w -->(42.96)</literal>
-</para></entry><entry><para><literal> <!-- /@w -->(-42.96)</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->(42.96)</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->(-42.96)</literal>
 </para>
 </entry></row><row><entry><para><literal>PCTPAREN<emphasis>w</emphasis>.<emphasis>d</emphasis></literal>
 </para></entry><entry><para>Encloses all numbers in parentheses with a &#8216;<literal>%</literal>&#8217; suffix.
-</para></entry><entry><para><literal> <!-- /@w -->(42.96%)</literal>
+</para></entry><entry><para><literal>&amp;#160;<!-- /@w -->(42.96%)</literal>
 </para></entry><entry><para><literal>(-42.96%)</literal>
 </para></entry></row></tbody></tgroup></informaltable>
 <para>Parentheses provide a shorthand to apply summary specifications to
@@ -12638,13 +12602,13 @@ excluded categories, so all values are effectively included.
 </para>
 <informaltable><tgroup cols="4"><colspec colwidth="41*"></colspec><colspec colwidth="6*"></colspec><colspec colwidth="5*"></colspec><colspec colwidth="6*"></colspec><thead><row><entry></entry><entry><para><literal>VALIDN</literal> </para></entry><entry><para>other </para></entry><entry><para><literal>TOTALN</literal>
 </para></entry></row></thead><tbody><row><entry><para><emphasis role="bold">Categorical variables:</emphasis>
-</para></entry></row><row><entry><para> <!-- /@w --> <!-- /@w --> <!-- /@w --> <!-- /@w -->Valid values in included categories   </para></entry><entry><para>yes </para></entry><entry><para>yes </para></entry><entry><para>yes
-</para></entry></row><row><entry><para> <!-- /@w --> <!-- /@w --> <!-- /@w --> <!-- /@w -->Missing values in included categories </para></entry><entry><para>&#8212; </para></entry><entry><para>yes </para></entry><entry><para>yes
-</para></entry></row><row><entry><para> <!-- /@w --> <!-- /@w --> <!-- /@w --> <!-- /@w -->Missing values in excluded categories </para></entry><entry><para>&#8212; </para></entry><entry><para>&#8212; </para></entry><entry><para>yes
-</para></entry></row><row><entry><para> <!-- /@w --> <!-- /@w --> <!-- /@w --> <!-- /@w -->Valid values in excluded categories   </para></entry><entry><para>&#8212; </para></entry><entry><para>&#8212; </para></entry><entry><para>&#8212;
+</para></entry></row><row><entry><para>&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->Valid values in included categories   </para></entry><entry><para>yes </para></entry><entry><para>yes </para></entry><entry><para>yes
+</para></entry></row><row><entry><para>&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->Missing values in included categories </para></entry><entry><para>&#8212; </para></entry><entry><para>yes </para></entry><entry><para>yes
+</para></entry></row><row><entry><para>&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->Missing values in excluded categories </para></entry><entry><para>&#8212; </para></entry><entry><para>&#8212; </para></entry><entry><para>yes
+</para></entry></row><row><entry><para>&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->Valid values in excluded categories   </para></entry><entry><para>&#8212; </para></entry><entry><para>&#8212; </para></entry><entry><para>&#8212;
 </para></entry></row><row><entry><para><emphasis role="bold">Scale variables:</emphasis>
-</para></entry></row><row><entry><para> <!-- /@w --> <!-- /@w --> <!-- /@w --> <!-- /@w -->Valid values                          </para></entry><entry><para>yes </para></entry><entry><para>yes </para></entry><entry><para>yes
-</para></entry></row><row><entry><para> <!-- /@w --> <!-- /@w --> <!-- /@w --> <!-- /@w -->User- or system-missing values        </para></entry><entry><para>&#8212; </para></entry><entry><para>yes </para></entry><entry><para>yes
+</para></entry></row><row><entry><para>&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->Valid values                          </para></entry><entry><para>yes </para></entry><entry><para>yes </para></entry><entry><para>yes
+</para></entry></row><row><entry><para>&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->&amp;#160;<!-- /@w -->User- or system-missing values        </para></entry><entry><para>&#8212; </para></entry><entry><para>yes </para></entry><entry><para>yes
 </para></entry></row></tbody></tgroup></informaltable>
 </sect3>
 <sect3 label="15.7.9.3" id="CTABLES-Scale-Missing-Values">
@@ -13391,12 +13355,11 @@ at the list of data, it would be hard to how the scores vary for each category.
 easier to understand.
 </para>
 <anchor id="means_003aex"/>
-<screen>get file='repairs.sav'.
+<sidebar><screen>get file='repairs.sav'.
 
 means tables = mtbf
       by factory by environment.
-</screen>
-
+</screen></sidebar>
 <para>The results are shown in <link linkend="means_003ares">means:res</link>.   The figures shown indicate the mean,
 standard deviation and number of samples in each category.
 These figures however do not indicate whether the results are statistically
@@ -13436,7 +13399,6 @@ significant.  For that, you would need to use the procedures <literal>ONEWAY</li
 |                       Total                | 8.78|30|          6.03|
 +--------------------------------------------+-----+--+--------------+
 </screen>
-
 <para>Note that there is no limit to the number of variables for which you can calculate
 statistics, nor to the number of categorical variables per layer, nor the number
 of layers.
@@ -13568,18 +13530,16 @@ the test is that the population comprises an equal number of males and females.
 The analysis is performed as shown in <link linkend="chisquare_003aex">chisquare:ex</link>.
 </para>
 <anchor id="chisquare_003aex"/>
-<screen>get file='physiology.sav'.
+<sidebar><screen>get file='physiology.sav'.
 
 npar test
      /chisquare=sex.
-</screen>
-
+</screen></sidebar>
 <para>There is only one test variable, <emphasis>viz:</emphasis> <emphasis role="bold">sex</emphasis>.  The other variables in the dataset
 are ignored.
 </para>
 <anchor id="chisquare_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>In <link linkend="chisquare_003ares">chisquare:res</link> the summary box shows that in the sample, there are more males
 than females.  However the significance of chi-square result is greater than 0.05
 &#8212; the most commonly accepted p-value &#8212; and therefore
@@ -13608,7 +13568,6 @@ in the population.
 |Sex of subject|       .40| 1|       .527|
 +--------------+----------+--+-----------+
 </screen>
-
 
 </sect3>
 </sect2>
@@ -13952,17 +13911,15 @@ which is clearly incorrect.  So this is excluded from the analysis
 using the <literal>SELECT</literal> command.
 </para>
 <anchor id="one_002dsample_002dt_003aex"/>
-<screen>get file='physiology.sav'.
+<sidebar><screen>get file='physiology.sav'.
 
 select if (weight &gt; 0).
 
 t-test testval = 76.8
 	/variables = weight.
-</screen>
-
+</screen></sidebar>
 <anchor id="one_002dsample_002dt_003ascr"/>
-
-
+<sidebar></sidebar>
 
 <para><link linkend="one_002dsample_002dt_003ares">one-sample-t:res</link> shows that the mean of our sample differs from the test value
 by -1.40kg.  However the significance is very high (0.610).  So one cannot
@@ -13995,7 +13952,6 @@ from 76.8kg.
 |kilograms     |    |  |            |            |              |             |
 +--------------+----+--+------------+------------+--------------+-------------+
 </screen>
-
 </sect3>
 </sect2>
 <sect2 label="15.13.2" id="Independent-Samples-Mode">
@@ -14039,21 +13995,19 @@ using the <literal>SELECT</literal> command.
 </para>
 
 <anchor id="indepdendent_002dsamples_002dt_003aex"/>
-<screen>get file='physiology.sav'.
+<sidebar><screen>get file='physiology.sav'.
 
 select if (height &gt;= 200).
 
 t-test /variables = height
        /groups = sex(0,1).
-</screen>
-
+</screen></sidebar>
 
 <para>The null hypothesis is that both males and females are on average
 of equal height.
 </para>
 <anchor id="independent_002dsamples_002dt_003ascr"/>
-
-
+<sidebar></sidebar>
 
 <para>In this case, the grouping variable is <emphasis role="bold">sex</emphasis>, so this is entered
 as the variable for the <literal>GROUP</literal> subcommand.  The group values are  0 (male) and
@@ -14068,8 +14022,7 @@ labels for the group variable, then you can enter them by label
 or by value.
 </para>
 <anchor id="define_002dgroups_002dt_003ascr"/>
-
-
+<sidebar></sidebar>
 <para>From <link linkend="independent_002dsamples_002dt_003ares">independent-samples-t:res</link>, one can clearly see that the <emphasis>sample</emphasis> mean height
 is greater for males than for females.  However in order to see if this
 is a significant result, one must consult the T-Test table.
@@ -14144,7 +14097,6 @@ the population the mean height of males and of females are unequal.
 |            assumed  |      |      |
 +---------------------+------+------+
 </screen>
-
 </sect3>
 </sect2>
 <sect2 label="15.13.3" id="Paired-Samples-Mode">
@@ -14569,7 +14521,7 @@ One could use the <literal>RECODE</literal> command (see <link linkend="RECODE">
 to use <literal>COMPUTE</literal> (see <link linkend="COMPUTE">COMPUTE</link>) and this is what is done in <link linkend="reliability_003aex">reliability:ex</link>.
 </para>
 <anchor id="reliability_003aex"/>
-<screen>get file=&quot;hotel.sav&quot;.
+<sidebar><screen>get file=&quot;hotel.sav&quot;.
 
 * Recode V3 and V5 inverting the sense of the values.
 compute v3 = 6 - v3.
@@ -14578,14 +14530,12 @@ compute v5 = 6 - v5.
 reliability
 	/variables= all
 	/model=alpha.
-</screen>
-
+</screen></sidebar>
 <para>In this case, all variables in the data set are used.  So we can use the special
 keyword &#8216;<literal>ALL</literal>&#8217; (see <link linkend="BNF">BNF</link>).
 </para>
 <anchor id="reliability_003asrc"/>
-
-
+<sidebar></sidebar>
 <para><link linkend="reliability_003ares">reliability:res</link> shows that Cronbach&#8217;s Alpha is 0.11  which is a value normally considered too
 low to indicate consistency within the data.  This is possibly due to the small number of
 survey questions.  The survey should be redesigned before serious use of the results are
@@ -14614,7 +14564,6 @@ Case Processing Summary
 |             .11|         5|
 +----------------+----------+
 </screen>
-
 
 </sect2>
 </sect1>
@@ -15660,9 +15609,9 @@ Instead, multiply by the result of <literal>INV</literal> or <literal>GINV</lite
 <para>Some examples:
 </para>
 <informaltable><tgroup cols="3"><colspec colwidth="40*"></colspec><colspec colwidth="5*"></colspec><colspec colwidth="40*"></colspec><tbody><row><entry><para><literal>{1, 2, 3} * {4; 5; 6}</literal> </para></entry><entry><para>&#8658; </para></entry><entry><para><literal>32</literal>
-</para></entry></row><row><entry><para><literal>{4; 5; 6} * {1, 2, 3}</literal> </para></entry><entry><para>&#8658; </para></entry><entry><para><literal>{4, <!-- /@w --> 8, 12; 
- <!-- /@w -->5, 10, 15; 
- <!-- /@w -->6, 12, 18}</literal>
+</para></entry></row><row><entry><para><literal>{4; 5; 6} * {1, 2, 3}</literal> </para></entry><entry><para>&#8658; </para></entry><entry><para><literal>{4,&amp;#160;<!-- /@w --> 8, 12; 
+&amp;#160;<!-- /@w -->5, 10, 15; 
+&amp;#160;<!-- /@w -->6, 12, 18}</literal>
 </para></entry></row></tbody></tgroup></informaltable>
 </sect3>
 <sect3 label="16.4.1.7" id="Matrix-Exponentiation-Operator">
@@ -16062,7 +16011,7 @@ through the number of elements in the matrix exactly once.
 of their sequential ranks.
 </para>
 <para><literal>RNKORDER({1, 0, 3; 3, 1, 2; 3, 0, 5})</literal> 
- <!-- /@w -->&#8658; <literal>{3.5, 1.5, 7; 7, 3.5, 5; 7, 1.5, 9}</literal>
+&amp;#160;<!-- /@w -->&#8658; <literal>{3.5, 1.5, 7; 7, 3.5, 5; 7, 1.5, 9}</literal>
 </para></blockquote>
 <para>One may use <literal>GRADE</literal> to sort a vector:
 </para>
@@ -16719,8 +16668,8 @@ optional.  See <link linkend="Matrix-READ-and-WRITE-Commands">Matrix READ and WR
 </para>
 <para>The <literal>SIZE</literal> subcommand is required for reading into an entire
 variable.  Its restricted expression argument should evaluate to a
-2-element vector <literal>{<replaceable>n</replaceable>, <!-- /@w --><replaceable>m</replaceable>}</literal> or
-<literal>{<replaceable>n</replaceable>; <!-- /@w --><replaceable>m</replaceable>}</literal>, which indicates a
+2-element vector <literal>{<replaceable>n</replaceable>,&amp;#160;<!-- /@w --><replaceable>m</replaceable>}</literal> or
+<literal>{<replaceable>n</replaceable>;&amp;#160;<!-- /@w --><replaceable>m</replaceable>}</literal>, which indicates a
 <inlineequation><mathphrase><replaceable>n</replaceable>×<replaceable>m</replaceable></mathphrase></inlineequation> matrix destination.  A scalar <replaceable>n</replaceable> is
 also allowed and indicates a <inlineequation><mathphrase><replaceable>n</replaceable>×1</mathphrase></inlineequation> column vector
 destination.  When the destination is a submatrix, <literal>SIZE</literal> is
@@ -19041,22 +18990,22 @@ Help &#8594; System Info produces the same output.
 </para></listitem></itemizedlist>
 <para>Here is one example of a bug report that includes all of the elements above:
 </para>
-<screen>I'm running PSPP on a system where <literal>SHOW SYSTEM.</literal>  outputs the
+<sidebar><screen>I'm running PSPP on a system where <literal>SHOW SYSTEM.</literal>  outputs the
 following:
 
 <!-- Use @image for Info and for plaintext output. -->
 <!-- Use HTML for HTML output. -->
 <!-- Use the Texi-fied version of the plaintext output for other output formats. -->
 <!-- Some of these could do better, but we have not yet implemented it. -->
-</screen><screen>                   System Information
-+----------------+------------------------------------+
-|Version         |GNU pspp 2.0.1                      |
-|Host System     |x86_64-pc-linux-gnu                 |
-|Build System    |x86_64-pc-linux-gnu                 |
-|Locale Directory|//share/locale                      |
-|Journal File    |/home/blp/.local/state/pspp/pspp.jnl|
-|Compiler Version|13.2.1 20231205 (Red Hat 13.2.1-6)  |
-+----------------+------------------------------------+
+</screen><screen>                        System Information
++----------------+-----------------------------------------------+
+|Version         |GNU pspp 2.0.1                                 |
+|Host System     |aarch64-apple-darwin23.5.0                     |
+|Build System    |aarch64-apple-darwin23.5.0                     |
+|Locale Directory|/usr/local/share/locale                        |
+|Journal File    |/Users/mihailzaharov/.local/state/pspp/pspp.jnl|
+|Compiler Version|Apple LLVM 15.0.0 (clang-1500.3.9.4)           |
++----------------+-----------------------------------------------+
 </screen><screen>
 The bug I'm seeing is that executing the following syntax:
 
@@ -19077,16 +19026,16 @@ but I think the output should be:
  1
  2
  3
-</screen>
+</screen></sidebar>
 <para>The following bug report, on the other hand, does not provide enough
 information for PSPP developers to understand the problem.  This means
 that the developers cannot identify or fix the problem without
 additional rounds of questions, which is more work for both the
 reporter and the developer:
 </para>
-<screen>I downloaded the latest version of PSPP and entered a sequence of numbers,
+<sidebar><screen>I downloaded the latest version of PSPP and entered a sequence of numbers,
 but when I analyse them it gives the wrong output.
-</screen>
+</screen></sidebar>
 <para>PSPP developers value all users&#8217; feedback, but cannot promise
 an immediate response.  The bug reporting is not a consultancy or
 support service, although you can make private arrangements for such

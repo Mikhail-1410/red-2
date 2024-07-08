@@ -1,4 +1,4 @@
-This is pspp.info, produced by makeinfo version 7.0.3 from pspp.texi.
+This is pspp.info, produced by makeinfo version 7.1 from pspp.texi.
 
 This manual is for GNU PSPP version 2.0.1, software for statistical
 analysis.
@@ -44,7 +44,7 @@ analysis.
 
 * Invoking PSPP::               Starting the PSPP text-based interface.
 * Invoking PSPPIRE::            Starting the PSPP graphical user interface.
-* Using PSPP::                  How to use PSPP — A brief tutorial.
+* Using PSPP::                  How to use PSPP -- A brief tutorial.
 * Language::                    Basics of the PSPP command language.
 * Expressions::                 Numeric and string expression syntax.
 
@@ -62,7 +62,7 @@ analysis.
 * Invoking pspp-convert::       Utility for converting among file formats.
 * Invoking pspp-output::        Utility for working with viewer (SPV) files.
 * Invoking pspp-dump-sav::      Utility for examining raw .sav files.
-* Not Implemented::             What’s not here yet
+* Not Implemented::             What's not here yet
 * Bugs::                        Known problems; submitting bug reports.
 
 * Function Index::              Index of PSPP functions for expressions.
@@ -83,7 +83,7 @@ results to a listing file, to the standard output or to a window of the
 graphical display.
 
    The language accepted by PSPP is similar to those accepted by SPSS
-statistical products.  The details of PSPP’s language are given later in
+statistical products.  The details of PSPP's language are given later in
 this manual.
 
    PSPP produces tables and charts as output, which it can produce in
@@ -130,7 +130,7 @@ introduced by others will not reflect on our reputation.
 patents.  We wish to avoid the danger that redistributors of a free
 program will individually obtain patent licenses, in effect making the
 program proprietary.  To prevent this, we have made it clear that any
-patent must be licensed for everyone’s free use or not licensed at all.
+patent must be licensed for everyone's free use or not licensed at all.
 
    The precise conditions of the license for PSPP are found in the GNU
 General Public License.  You should have received a copy of the GNU
@@ -146,10 +146,10 @@ File: pspp.info,  Node: Invoking PSPP,  Next: Invoking PSPPIRE,  Prev: License, 
 *****************
 
 PSPP has two separate user interfaces.  This chapter describes ‘pspp’,
-PSPP’s command-line driven text-based user interface.  The following
+PSPP's command-line driven text-based user interface.  The following
 chapter briefly describes PSPPIRE, the graphical user interface to PSPP.
 
-   The sections below describe the ‘pspp’ program’s command-line
+   The sections below describe the ‘pspp’ program's command-line
 interface.
 
 * Menu:
@@ -240,7 +240,7 @@ SYNTAX-FILE
      Sets whether PSPP considers the output device configured by the
      preceding ‘-o’ to be a terminal or a listing device.  This affects
      what output will be sent to the device, as configured by the SET
-     command’s output routing subcommands (*note SET::).  By default,
+     command's output routing subcommands (*note SET::).  By default,
      output written to standard output is considered a terminal device
      and other output is considered a listing device.
 
@@ -252,8 +252,8 @@ SYNTAX-FILE
      Reads a table style from FILE and applies it to all PSPP table
      output.  The file should be a TableLook ‘.stt’ or ‘.tlo’ file.
      PSPP searches for FILE in the current directory, then in
-     ‘.pspp/looks’ in the user’s home directory, then in a ‘looks’
-     subdirectory inside PSPP’s data directory (usually
+     ‘.pspp/looks’ in the user's home directory, then in a ‘looks’
+     subdirectory inside PSPP's data directory (usually
      ‘/usr/local/share/pspp’).  If PSPP cannot find FILE under the given
      name, it also tries adding a ‘.stt’ extension.
 
@@ -283,8 +283,8 @@ SYNTAX-FILE
 ‘--no-include’
      Clears all directories from the include path, including directories
      inserted in the include path by default.  The default include path
-     is ‘.’ (the current directory), followed by ‘.pspp’ in the user’s
-     home directory, followed by PSPP’s system configuration directory
+     is ‘.’ (the current directory), followed by ‘.pspp’ in the user's
+     home directory, followed by PSPP's system configuration directory
      (usually ‘/etc/pspp’ or ‘/usr/local/etc/pspp’).
 
 ‘-b’
@@ -292,7 +292,7 @@ SYNTAX-FILE
 ‘-i’
 ‘--interactive’
      These options forces syntax files to be interpreted in batch mode
-     or interactive mode, respectively, rather than the default “auto”
+     or interactive mode, respectively, rather than the default "auto"
      mode.  *Note Syntax Variants::, for a description of the
      differences.
 
@@ -331,7 +331,7 @@ SYNTAX-FILE
 
 ‘-V’
 ‘--version’
-     Prints a brief message listing PSPP’s version, warranties you don’t
+     Prints a brief message listing PSPP's version, warranties you don't
      have, copying conditions and copyright, and e-mail address for bug
      reports, then exits.
 
@@ -407,7 +407,7 @@ the second page to a file named with a ‘-2’ suffix, the third with a
 
 ‘-O prop-font=FONT-NAME’
      Sets the default font used for ordinary text.  Most systems support
-     CSS-like font names such as “Sans Serif”, but a wide range of
+     CSS-like font names such as "Sans Serif", but a wide range of
      system-specific fonts are likely to be supported as well.
 
      Default: proportional font ‘Sans Serif’.
@@ -482,7 +482,7 @@ table below to customize the output format.
      output uses use the characters ‘-’, ‘|’, and ‘+’ for single-width
      lines and ‘=’ and ‘#’ for double-width lines.  If set to ‘unicode’
      then, output uses Unicode box drawing characters.  The default is
-     ‘unicode’ if the locale’s character encoding is "UTF-8" or ‘ascii’
+     ‘unicode’ if the locale's character encoding is "UTF-8" or ‘ascii’
      otherwise.
 
 ‘-O emphasis={none|bold|underline}’
@@ -559,7 +559,7 @@ to customize the output format.
 ‘-O css=BOOLEAN’
      Use cascading style sheets.  Cascading style sheets give an
      improved appearance and can be used to produce pages which fit a
-     certain web site’s style.  The default value is true.
+     certain web site's style.  The default value is true.
 
 
 File: pspp.info,  Node: OpenDocument Output Options,  Next: Comma-Separated Value Output Options,  Prev: HTML Output Options,  Up: Invoking PSPP
@@ -630,7 +630,7 @@ Captions
 
 Footnotes
      Within a table, footnote markers are output as bracketed letters
-     following the cell’s contents, e.g. ‘[a]’, ‘[b]’, ...  The
+     following the cell's contents, e.g. ‘[a]’, ‘[b]’, ...  The
      footnotes themselves are output following the body of the table, as
      a separate two-column table introduced with a line that says
      ‘Footnotes:’.  Each row in the table represent one footnote: the
@@ -694,7 +694,7 @@ Syntax to open a new syntax window and use the Run menu when a syntax
 fragment is ready to be executed.  Whichever method you choose, the
 syntax is identical.
 
-   When using the interactive method, PSPP tells you that it’s waiting
+   When using the interactive method, PSPP tells you that it's waiting
 for your data with a string like PSPP> or data>.  In the examples of
 this chapter, whenever you see text like this, it indicates the prompt
 displayed by PSPP, _not_ something that you should type.
@@ -728,10 +728,10 @@ Before analysis can commence, the data must be loaded into PSPP and
 arranged such that both PSPP and humans can understand what the data
 represents.  There are two aspects of data:
 
-   • The variables — these are the parameters of a quantity which has
+   • The variables -- these are the parameters of a quantity which has
      been measured or estimated in some way.  For example height, weight
      and geographic location are all variables.
-   • The observations (also called ‘cases’) of the variables — each
+   • The observations (also called 'cases') of the variables -- each
      observation represents an instance when the variables were measured
      or observed.
 
@@ -790,7 +790,7 @@ reads data into them by manual input:
 
    • The text ‘forename’ is the name of the first variable, and ‘(A12)’
      says that the variable forename is a string variable and that its
-     maximum length is 12 bytes.  The second variable’s name is
+     maximum length is 12 bytes.  The second variable's name is
      specified by the text ‘height’.  Since no format is given, this
      variable has the default format.  Normally the default format
      expects numeric data, which should be entered in the locale of the
@@ -804,8 +804,8 @@ reads data into them by manual input:
      ‘DOT8.3’ after the word ‘height’.  For more information on data
      formats, *note Input and Output Formats::.
 
-   • Normally, PSPP displays the prompt PSPP> whenever it’s expecting a
-     command.  However, when it’s expecting data, the prompt changes to
+   • Normally, PSPP displays the prompt PSPP> whenever it's expecting a
+     command.  However, when it's expecting data, the prompt changes to
      data> so that you know to enter data and not a command.
 
    • At the end of every command there is a terminating ‘.’ which tells
@@ -864,7 +864,7 @@ this file instead of by manual entry, with a command like:
      PSPP> data list file='mydata.dat' list /forename (A12) height.
 Notice however, that it is still necessary to specify the names of the
 variables and their formats, since this information is not contained in
-the file.  It is also possible to specify the file’s character encoding
+the file.  It is also possible to specify the file's character encoding
 and other parameters.  For full details refer to *note DATA LIST::.
 
 
@@ -877,7 +877,7 @@ When working with other PSPP users, or users of other software which
 uses the PSPP data format, you may be given the data in a pre-prepared
 PSPP file.  Such files contain not only the data, but the variable
 definitions, along with their formats, labels and other meta-data.
-Conventionally, these files (sometimes called “system” files) have the
+Conventionally, these files (sometimes called "system" files) have the
 suffix ‘.sav’, but that is not mandatory.  The following syntax loads a
 file called ‘my-file.sav’.
      PSPP> get file='my-file.sav'.
@@ -905,7 +905,7 @@ File: pspp.info,  Node: Reading data from other sources,  Next: Exiting PSPP,  P
 5.1.6 Reading data from other sources
 -------------------------------------
 
-Sometimes it’s useful to be able to read data from comma separated text,
+Sometimes it's useful to be able to read data from comma separated text,
 from spreadsheets, databases or other sources.  In these instances you
 should use the ‘GET DATA’ command (*note GET DATA::).
 
@@ -926,7 +926,7 @@ File: pspp.info,  Node: Data Screening and Transformation,  Next: Hypothesis Tes
 
 Once data has been entered, it is often desirable, or even necessary, to
 transform it in some way before performing analysis upon it.  At the
-very least, it’s good practice to check for errors.
+very least, it's good practice to check for errors.
 
 * Menu:
 
@@ -974,7 +974,7 @@ For this example, PSPP produces the following output:
 
    The most interesting column in the output is the minimum value.  The
 weight variable has a minimum value of less than zero, which is clearly
-erroneous.  Similarly, the height variable’s minimum value seems to be
+erroneous.  Similarly, the height variable's minimum value seems to be
 very low.  In fact, it is more than 5 standard deviations from the mean,
 and is a seemingly bizarre height for an adult person.
 
@@ -1027,9 +1027,9 @@ File: pspp.info,  Node: Dealing with suspicious data,  Next: Inverting negativel
 If possible, suspect data should be checked and re-measured.  However,
 this may not always be feasible, in which case the researcher may decide
 to disregard these values.  PSPP has a feature whereby data can assume
-the special value ‘SYSMIS’, and will be disregarded in future analysis.
+the special value 'SYSMIS', and will be disregarded in future analysis.
 *Note Missing Observations::.  You can set the two suspect values to the
-‘SYSMIS’ value using the ‘RECODE’ command.
+'SYSMIS' value using the ‘RECODE’ command.
      PSPP> recode height (179 = SYSMIS).
      PSPP> recode weight (LOWEST THRU 0 = SYSMIS).
 The first command says that for any observation which has a height value
@@ -1122,8 +1122,8 @@ It yields the following output:
 
 
    The output shows that all of the variables v1 through v5 are measured
-on a 5 point Likert scale, with 1 meaning “Strongly disagree” and 5
-meaning “Strongly agree”.  However, some of the questions are positively
+on a 5 point Likert scale, with 1 meaning "Strongly disagree" and 5
+meaning "Strongly agree".  However, some of the questions are positively
 worded (v1, v2, v4) and others are negatively worded (v3, v5).  To
 perform meaningful analysis, we need to recode the variables so that
 they all measure in the same direction.  We could use the ‘RECODE’
@@ -1180,7 +1180,7 @@ Case Processing Summary
 +----------------+----------+" ]
 
 
-   As a rule of thumb, many statisticians consider a value of Cronbach’s
+   As a rule of thumb, many statisticians consider a value of Cronbach's
 Alpha of 0.7 or higher to indicate reliable data.
 
    Here, the value is 0.81, which suggests a high degree of reliability
@@ -1195,7 +1195,7 @@ File: pspp.info,  Node: Testing for normality,  Prev: Testing data consistency, 
 
 Many statistical tests rely upon certain properties of the data.  One
 common property, upon which many linear tests depend, is that of
-normality — the data must have been drawn from a normal distribution.
+normality -- the data must have been drawn from a normal distribution.
 It is necessary then to ensure normality before deciding upon the test
 procedure to use.  One way to do this uses the ‘EXAMINE’ command.
 
@@ -1323,9 +1323,9 @@ that A is greater than B he will state the null hypothesis as A = B.(1)
    The “p-value” is a recurring concept in hypothesis testing.  It is
 the highest acceptable probability that the evidence implying a null
 hypothesis is false, could have been obtained when the null hypothesis
-is in fact true.  Note that this is not the same as “the probability of
-making an error” nor is it the same as “the probability of rejecting a
-hypothesis when it is true”.
+is in fact true.  Note that this is not the same as "the probability of
+making an error" nor is it the same as "the probability of rejecting a
+hypothesis when it is true".
 
 * Menu:
 
@@ -1369,7 +1369,7 @@ Levene test produces this outcome when the variances are equal.  Had the
 significance been less than 0.05, then it would have been unsafe to
 assume that the variances were equal.  However, because the value is
 higher than 0.05 the homogeneity of variances assumption is safe and the
-“Equal Variances” row (the more powerful test) can be used.  Examining
+"Equal Variances" row (the more powerful test) can be used.  Examining
 this row, the two tailed significance for the height t-test is less than
 0.05, so it is safe to reject the null hypothesis and conclude that the
 mean heights of males and females are unequal.
@@ -1467,7 +1467,7 @@ that the body temperature of male and female persons are different.
 
 
    The ‘T-TEST’ command tests for differences of means.  Here, the
-height variable’s two tailed significance is less than 0.05, so the null
+height variable's two tailed significance is less than 0.05, so the null
 hypothesis can be rejected.  Thus, the evidence suggests there is a
 difference between the heights of male and female persons.  However the
 significance of the test for the temperature variable is greater than
@@ -1575,7 +1575,7 @@ File: pspp.info,  Node: Tokens,  Next: Commands,  Up: Language
 
 PSPP divides most syntax file lines into series of short chunks called
 “tokens”.  Tokens are then grouped to form commands, each of which tells
-PSPP to take some action—read in data, write out data, perform a
+PSPP to take some action--read in data, write out data, perform a
 statistical procedure, etc.  Each type of token is described below.
 
 *Identifiers*
@@ -1645,7 +1645,7 @@ statistical procedure, etc.  Each type of token is described below.
 
      Strings may also be expressed as hexadecimal character values by
      prefixing the initial quote character by ‘x’ or ‘X’.  Regardless of
-     the syntax file or active dataset’s encoding, the hexadecimal
+     the syntax file or active dataset's encoding, the hexadecimal
      digits in the string are interpreted as Unicode characters in UTF-8
      encoding.
 
@@ -1656,7 +1656,7 @@ statistical procedure, etc.  Each type of token is described below.
      Invalid Unicode code points (above U+10FFFF or in between U+D800
      and U+DFFF) are not allowed.
 
-     When strings are concatenated with ‘+’, each segment’s prefix is
+     When strings are concatenated with ‘+’, each segment's prefix is
      considered individually.  For example, ‘'The G clef symbol is:' +
      u"1d11e" + "."’ inserts a G clef symbol in the middle of an
      otherwise plain text string.
@@ -1749,7 +1749,7 @@ Commands in PSPP are divided roughly into six categories:
 
 *File definition commands*
      Give instructions for reading data from text files or from special
-     binary “system files”.  Most of these commands replace any previous
+     binary "system files".  Most of these commands replace any previous
      data or variables with new data or variables.  At least one file
      definition command must appear before the first command in any of
      the categories below.  *Note Data Input and Output::.
@@ -1841,7 +1841,7 @@ File: pspp.info,  Node: Missing Observations,  Next: Datasets,  Prev: Order of C
 
 PSPP includes special support for unknown numeric data values.  Missing
 observations are assigned a special value, called the “system-missing
-value”.  This “value” actually indicates the absence of a value; it
+value”.  This "value" actually indicates the absence of a value; it
 means that the actual value is unknown.  Procedures automatically
 exclude from analyses those observations or cases that have missing
 values.  Details of missing value exclusion depend on the procedure and
@@ -1903,7 +1903,7 @@ Each variable has a number of attributes, including:
      different name.  *Note Tokens::.
 
      Some system variable names begin with ‘$’, but user-defined
-     variables’ names may not begin with ‘$’.
+     variables' names may not begin with ‘$’.
 
      The final character in a variable name should not be ‘.’, because
      such an identifier will be misinterpreted when it is the final
@@ -1995,7 +1995,7 @@ Each variable has a number of attributes, including:
      assign a default measurement level.  PSPP can assign some defaults
      without reading the data:
 
-        • Nominal, if it’s a string variable.
+        • Nominal, if it's a string variable.
 
         • Nominal, if the variable has a WKDAY or MONTH print format.
 
@@ -2246,7 +2246,7 @@ additional restrictions apply:
      format.
 
    • The system-missing value is output as a period in a field of
-     spaces, placed in the decimal point’s position, or in the rightmost
+     spaces, placed in the decimal point's position, or in the rightmost
      column if no decimal places are requested.  A period is used even
      if the decimal point character is a comma.
 
@@ -2282,7 +2282,7 @@ additional restrictions apply:
 
    • A negative number includes a minus sign only in the presence of a
      nonzero digit: -0.01 is output as ‘-.01’ in F4.2 format but as
-     ‘  .0’ in F4.1 format.  Thus, a “negative zero” never includes a
+     ‘  .0’ in F4.1 format.  Thus, a "negative zero" never includes a
      minus sign.
 
    • In negative numbers output in DOLLAR format, the dollar sign
@@ -2301,12 +2301,12 @@ additional restrictions apply:
      accurate to 15 digits of precision.  Unavoidable loss of precision
      in intermediate calculations may also reduce precision of output.
 
-   • Special values such as infinities and “not a number” values are
+   • Special values such as infinities and "not a number" values are
      usually converted to the system-missing value before printing.  In
      a few circumstances, these values are output directly.  In fields
      of width 3 or greater, special values are output as however many
      characters fit from ‘+Infinity’ or ‘-Infinity’ for infinities, from
-     ‘NaN’ for “not a number,” or from ‘Unknown’ for other values (if
+     ‘NaN’ for "not a number," or from ‘Unknown’ for other values (if
      any are supported by the system).  In fields under 3 columns wide,
      special values are output as asterisks.
 
@@ -2325,7 +2325,7 @@ long.
 
    STRING must contain exactly three commas or exactly three periods
 (but not both), except that a single quote character may be used to
-“escape” a following comma, period, or single quote.  If three commas
+"escape" a following comma, period, or single quote.  If three commas
 are used, commas are used for grouping in output, and a period is used
 as the decimal point.  Uses of periods reverses these roles.
 
@@ -2417,7 +2417,7 @@ are output like the system-missing value.
 Z Format
 ........
 
-The Z format is a “zoned decimal” format used on IBM mainframes.  Z
+The Z format is a "zoned decimal" format used on IBM mainframes.  Z
 format encodes the sign as part of the final digit, which must be one of
 the following:
      0123456789
@@ -2437,7 +2437,7 @@ if the decimal point character is a comma (*note SET DECIMAL::).
 
    Nonzero, negative values output in Z format are marked as negative
 even when no nonzero digits are output.  For example, -0.2 is output in
-Z1.0 format as ‘J’.  The “negative zero” value supported by most
+Z1.0 format as ‘J’.  The "negative zero" value supported by most
 machines is output as positive.
 
 
@@ -2487,9 +2487,9 @@ requested).
 IB and PIB Formats
 ..................
 
-These are integer binary formats.  IB reads and writes 2’s complement
+These are integer binary formats.  IB reads and writes 2's complement
 binary integers, and PIB reads and writes unsigned binary integers.  The
-byte ordering is by default the host machine’s, but SET RIB may be used
+byte ordering is by default the host machine's, but SET RIB may be used
 to select a specific byte ordering for reading (*note SET RIB::) and SET
 WIB, similarly, for writing (*note SET WIB::).
 
@@ -2505,7 +2505,7 @@ RB Format
 .........
 
 This is a binary format for real numbers.  By default it reads and
-writes the host machine’s floating-point format, but SET RRB may be used
+writes the host machine's floating-point format, but SET RRB may be used
 to select an alternate floating-point format for reading (*note SET
 RRB::) and SET WRB, similarly, for writing (*note SET WRB::).
 
@@ -2530,7 +2530,7 @@ in uppercase.
    Other than the hexadecimal representation, these formats are
 equivalent to PIB and RB formats, respectively.  However, bytes in
 PIBHEX format are always ordered with the most-significant byte first
-(big-endian order), regardless of the host machine’s native byte order
+(big-endian order), regardless of the host machine's native byte order
 or PSPP settings.
 
    Field widths must be even and between 2 and 16.  RBHEX format allows
@@ -2544,7 +2544,7 @@ File: pspp.info,  Node: Time and Date Formats,  Next: Date Component Formats,  P
 .............................
 
 In PSPP, a “time” is an interval.  The time formats translate between
-human-friendly descriptions of time intervals and PSPP’s internal
+human-friendly descriptions of time intervals and PSPP's internal
 representation of time intervals, which is simply the number of seconds
 in the interval.  PSPP has three time formats:
 
@@ -2557,7 +2557,7 @@ DTIME         ‘DD HH:MM:SS.ss’            ‘00 04:31:17.01’
    A “date” is a moment in the past or the future.  Internally, PSPP
 represents a date as the number of seconds since the “epoch”, midnight,
 Oct.  14, 1582.  The date formats translate between human-readable dates
-and PSPP’s numeric representation of dates and times.  PSPP has several
+and PSPP's numeric representation of dates and times.  PSPP has several
 date formats:
 
 Date Format   Template                    Example
@@ -2660,7 +2660,7 @@ YMDHMS     12                  16                   seconds
 MTIME      4                   5
 TIME       5                   5                    seconds
 DTIME      8                   8                    seconds
-In the table, “Option” describes what increased output width enables:
+In the table, "Option" describes what increased output width enables:
 
 4-digit year
      A field 2 columns wider than the minimum includes a 4-digit year.
@@ -2670,7 +2670,7 @@ seconds
      A field 3 columns wider than the minimum includes seconds as well
      as minutes.  A field 5 columns wider than minimum, or more, can
      also include a decimal point and fractional seconds (but no more
-     than allowed by the format’s decimal places).
+     than allowed by the format's decimal places).
 
    For the time and date formats, the default output format is the same
 as the input format, except that PSPP increases the field width, if
@@ -2737,13 +2737,13 @@ File: pspp.info,  Node: Scratch Variables,  Prev: Input and Output Formats,  Up:
 6.7.5 Scratch Variables
 -----------------------
 
-Most of the time, variables don’t retain their values between cases.
-Instead, either they’re being read from a data file or the active
+Most of the time, variables don't retain their values between cases.
+Instead, either they're being read from a data file or the active
 dataset, in which case they assume the value read, or, if created with
-‘COMPUTE’ or another transformation, they’re initialized to the
+‘COMPUTE’ or another transformation, they're initialized to the
 system-missing value or to blanks, depending on type.
 
-   However, sometimes it’s useful to have a variable that keeps its
+   However, sometimes it's useful to have a variable that keeps its
 value between cases.  You can do this with ‘LEAVE’ (*note LEAVE::), or
 you can use a “scratch variable”.  Scratch variables are variables whose
 names begin with an octothorpe (‘#’).
@@ -2752,7 +2752,7 @@ names begin with an octothorpe (‘#’).
 ‘LEAVE’: they retain their values between cases, and for the first case
 they are initialized to 0 or blanks.  They have the additional property
 that they are deleted before the execution of any procedure.  For this
-reason, scratch variables can’t be used for analysis.  To use a scratch
+reason, scratch variables can't be used for analysis.  To use a scratch
 variable in an analysis, use ‘COMPUTE’ (*note COMPUTE::) to copy its
 value into an ordinary variable, then use that ordinary variable in the
 analysis.
@@ -2770,7 +2770,7 @@ important of these files:
 *command file*
 *syntax file*
      These names (synonyms) refer to the file that contains instructions
-     that tell PSPP what to do.  The syntax file’s name is specified on
+     that tell PSPP what to do.  The syntax file's name is specified on
      the PSPP command line.  Syntax files can also be read with
      ‘INCLUDE’ (*note INCLUDE::).
 
@@ -2812,7 +2812,7 @@ mydata.sav.gz'’), and for many other purposes.
 
    PSPP also supports declaring named file handles with the ‘FILE
 HANDLE’ command.  This command associates an identifier of your choice
-(the file handle’s name) with a file.  Later, the file handle name can
+(the file handle's name) with a file.  Later, the file handle name can
 be substituted for the name of the file.  When PSPP syntax accesses a
 file multiple times, declaring a named file handle simplifies updating
 the syntax later to use a different file.  Use of ‘FILE HANDLE’ is also
@@ -2822,13 +2822,13 @@ more information.
    In some circumstances, PSPP must distinguish whether a file handle
 refers to a system file or a portable file.  When this is necessary to
 read a file, e.g. as an input file for ‘GET’ or ‘MATCH FILES’, PSPP uses
-the file’s contents to decide.  In the context of writing a file, e.g.
+the file's contents to decide.  In the context of writing a file, e.g.
 as an output file for ‘SAVE’ or ‘AGGREGATE’, PSPP decides based on the
-file’s name: if it ends in ‘.por’ (with any capitalization), then PSPP
+file's name: if it ends in ‘.por’ (with any capitalization), then PSPP
 writes a portable file; otherwise, PSPP writes a system file.
 
-   INLINE is reserved as a file handle name.  It refers to the “data
-file” embedded into the syntax file between ‘BEGIN DATA’ and ‘END DATA’.
+   INLINE is reserved as a file handle name.  It refers to the "data
+file" embedded into the syntax file between ‘BEGIN DATA’ and ‘END DATA’.
 *Note BEGIN DATA::, for more information.
 
    The file to which a file handle refers may be reassigned on a later
@@ -2879,14 +2879,14 @@ following table describes BNF:
      ‘expression’
           An expression.  *Note Expressions::, for details.
 
-   • ‘::=’ means “is defined as”.  The left side of ‘::=’ gives the name
+   • ‘::=’ means "is defined as".  The left side of ‘::=’ gives the name
      of the nonterminal being defined.  The right side of ‘::=’ gives
      the definition of that nonterminal.  If the right side is empty,
      then one possible expansion of that nonterminal is nothing.  A BNF
      definition is called a “production”.
 
    • So, the key difference between a terminal and a nonterminal is that
-     a terminal cannot be broken into smaller parts—in fact, every
+     a terminal cannot be broken into smaller parts--in fact, every
      terminal is a single token (*note Tokens::).  On the other hand,
      nonterminals are composed of a (possibly empty) sequence of
      terminals and nonterminals.  Thus, terminals indicate the deepest
@@ -3016,7 +3016,7 @@ File: pspp.info,  Node: Logical Operators,  Next: Relational Operators,  Prev: A
 =====================
 
 The logical operators take logical operands and produce logical results,
-meaning “true or false.” Logical operators are not true Boolean
+meaning "true or false."  Logical operators are not true Boolean
 operators because they may also result in a system-missing value.  *Note
 Boolean Values::, for more information.
 
@@ -3291,10 +3291,10 @@ File: pspp.info,  Node: Statistical Functions,  Next: String Functions,  Prev: S
 Statistical functions compute descriptive statistics on a list of
 values.  Some statistics can be computed on numeric or string values;
 other can only be computed on numeric values.  Their results have the
-same type as their arguments.  The current case’s weighting factor
+same type as their arguments.  The current case's weighting factor
 (*note WEIGHT::) has no effect on statistical functions.
 
-   These functions’ argument lists may include entire ranges of
+   These functions' argument lists may include entire ranges of
 variables using the ‘VAR1 TO VAR2’ syntax.
 
    Unlike most functions, statistical functions can return non-missing
@@ -3372,7 +3372,7 @@ String functions take various arguments and return various results.
  -- Function: LOWER (STRING)
      Returns a string identical to STRING except that all uppercase
      letters are changed to lowercase letters.  The definitions of
-     “uppercase” and “lowercase” are system-dependent.
+     "uppercase" and "lowercase" are system-dependent.
 
  -- Function: LPAD (STRING, LENGTH[, PADDING])
  -- Function: RPAD (STRING, LENGTH[, PADDING])
@@ -3400,7 +3400,7 @@ String functions take various arguments and return various results.
      format specifier FORMAT.  If the format width W is less than the
      length of STRING, then only the first W bytes in STRING are used,
      e.g. ‘NUMBER("123", F3.0)’ and ‘NUMBER("1234", F3.0)’ both have
-     value 123.  If W is greater than STRING’s length, then it is
+     value 123.  If W is greater than STRING's length, then it is
      treated as if it were right-padded with spaces.  If STRING is not
      in the correct format for FORMAT, system-missing is returned.
 
@@ -3560,7 +3560,7 @@ YEAR
      treated according to the epoch set on SET EPOCH, by default
      beginning 69 years before the current date (*note SET EPOCH::).
 
-   If these functions’ arguments are out-of-range, they are correctly
+   If these functions' arguments are out-of-range, they are correctly
 normalized before conversion to date format.  Non-integers are rounded
 toward zero.
 
@@ -4085,7 +4085,7 @@ File: pspp.info,  Node: Data Input and Output,  Next: System and Portable File I
 
 Data are the focus of the PSPP language.  Each datum belongs to a “case”
 (also called an “observation”).  Each case represents an individual or
-“experimental unit”.  For example, in the results of a survey, the names
+"experimental unit".  For example, in the results of a survey, the names
 of the respondents, their sex, age, etc. and their responses are all
 data and the data pertaining to single respondent is a case.  This
 chapter examines the PSPP commands for defining variables and reading
@@ -4159,8 +4159,8 @@ File: pspp.info,  Node: DATAFILE ATTRIBUTE,  Next: DATASET,  Prev: CLOSE FILE HA
 ======================
 
      DATAFILE ATTRIBUTE
-              ATTRIBUTE=NAME(’VALUE’) [NAME(’VALUE’)]...
-              ATTRIBUTE=NAME[INDEX](’VALUE’) [NAME[INDEX](’VALUE’)]...
+              ATTRIBUTE=NAME('VALUE') [NAME('VALUE')]...
+              ATTRIBUTE=NAME[INDEX]('VALUE') [NAME[INDEX]('VALUE')]...
               DELETE=NAME [NAME]...
               DELETE=NAME[INDEX] [NAME[INDEX]]...
 
@@ -4172,7 +4172,7 @@ system files and may be used by other software that reads them.
    Use the ‘ATTRIBUTE’ subcommand to add or modify a custom data file
 attribute.  Specify the name of the attribute as an identifier (*note
 Tokens::), followed by the desired value, in parentheses, as a quoted
-string.  Attribute names that begin with ‘$’ are reserved for PSPP’s
+string.  Attribute names that begin with ‘$’ are reserved for PSPP's
 internal use, and attribute names that begin with ‘@’ or ‘$@’ are not
 displayed by most PSPP commands that display other attributes.  Other
 attribute names are not treated specially.
@@ -4234,7 +4234,7 @@ replaced.  If the name is the name of the active dataset, then the
 active dataset becomes unnamed.
 
    The DATASET DECLARE command creates a new dataset that is initially
-“empty,” that is, it has no dictionary or data.  If a dataset with the
+"empty," that is, it has no dictionary or data.  If a dataset with the
 given name already exists, this has no effect.  The new dataset can be
 used with commands that support output to a dataset, e.g.  AGGREGATE
 (*note AGGREGATE::).
@@ -4249,7 +4249,7 @@ except for the active dataset, which becomes unnamed.
 
    Many DATASET commands accept an optional ‘WINDOW’ subcommand.  In the
 PSPPIRE GUI, the value given for this subcommand influences how the
-dataset’s window is displayed.  Outside the GUI, the ‘WINDOW’ subcommand
+dataset's window is displayed.  Outside the GUI, the ‘WINDOW’ subcommand
 has no effect.  The valid values are:
 
 ASIS
@@ -4257,16 +4257,16 @@ ASIS
      DATASET NAME and DATASET ACTIVATE.
 
 FRONT
-     Raise the dataset’s window to the top.  Make it the default dataset
+     Raise the dataset's window to the top.  Make it the default dataset
      for running syntax.
 
 MINIMIZED
-     Display the window “minimized” to an icon.  Prefer other datasets
+     Display the window "minimized" to an icon.  Prefer other datasets
      for running syntax.  This is the default for DATASET COPY and
      DATASET DECLARE.
 
 HIDDEN
-     Hide the dataset’s window.  Prefer other datasets for running
+     Hide the dataset's window.  Prefer other datasets for running
      syntax.
 
 
@@ -4304,7 +4304,7 @@ File: pspp.info,  Node: DATA LIST FIXED,  Next: DATA LIST FREE,  Up: DATA LIST
 
      DATA LIST [FIXED]
              {TABLE,NOTABLE}
-             [FILE=’FILE_NAME’ [ENCODING=’ENCODING’]]
+             [FILE='FILE_NAME' [ENCODING='ENCODING']]
              [RECORDS=RECORD_COUNT]
              [END=END_VAR]
              [SKIP=RECORD_COUNT]
@@ -4491,9 +4491,9 @@ File: pspp.info,  Node: DATA LIST FREE,  Next: DATA LIST LIST,  Prev: DATA LIST 
 --------------------
 
      DATA LIST FREE
-             [({TAB,’C’}, ...)]
+             [({TAB,'C'}, ...)]
              [{NOTABLE,TABLE}]
-             [FILE=’FILE_NAME’ [ENCODING=’ENCODING’]]
+             [FILE='FILE_NAME' [ENCODING='ENCODING']]
              [SKIP=N_RECORDS]
              /VAR_SPEC...
 
@@ -4504,7 +4504,7 @@ File: pspp.info,  Node: DATA LIST FREE,  Next: DATA LIST LIST,  Prev: DATA LIST 
    In free format, the input data is, by default, structured as a series
 of fields separated by spaces, tabs, or line breaks.  If the current
 ‘DECIMAL’ separator is ‘DOT’ (*note SET::), then commas are also treated
-as field separators.  Each field’s content may be unquoted, or it may be
+as field separators.  Each field's content may be unquoted, or it may be
 quoted with a pairs of apostrophes (‘'’) or double quotes (‘"’).
 Unquoted white space separates fields but is not part of any field.  Any
 mix of spaces, tabs, and line breaks is equivalent to a single space for
@@ -4545,9 +4545,9 @@ File: pspp.info,  Node: DATA LIST LIST,  Prev: DATA LIST FREE,  Up: DATA LIST
 --------------------
 
      DATA LIST LIST
-             [({TAB,’C’}, ...)]
+             [({TAB,'C'}, ...)]
              [{NOTABLE,TABLE}]
-             [FILE=’FILE_NAME’ [ENCODING=’ENCODING’]]
+             [FILE='FILE_NAME' [ENCODING='ENCODING']]
              [SKIP=RECORD_COUNT]
              /VAR_SPEC...
 
@@ -4591,40 +4591,40 @@ File: pspp.info,  Node: FILE HANDLE,  Next: INPUT PROGRAM,  Prev: END FILE,  Up:
 
      For text files:
              FILE HANDLE HANDLE_NAME
-                     /NAME=’FILE_NAME
+                     /NAME='FILE_NAME
                      [/MODE=CHARACTER]
                      [/ENDS={CR,CRLF}]
                      /TABWIDTH=TAB_WIDTH
-                     [ENCODING=’ENCODING’]
+                     [ENCODING='ENCODING']
 
      For binary files in native encoding with fixed-length records:
              FILE HANDLE HANDLE_NAME
-                     /NAME=’FILE_NAME’
+                     /NAME='FILE_NAME'
                      /MODE=IMAGE
                      [/LRECL=REC_LEN]
-                     [ENCODING=’ENCODING’]
+                     [ENCODING='ENCODING']
 
      For binary files in native encoding with variable-length records:
              FILE HANDLE HANDLE_NAME
-                     /NAME=’FILE_NAME’
+                     /NAME='FILE_NAME'
                      /MODE=BINARY
                      [/LRECL=REC_LEN]
-                     [ENCODING=’ENCODING’]
+                     [ENCODING='ENCODING']
 
      For binary files encoded in EBCDIC:
              FILE HANDLE HANDLE_NAME
-                     /NAME=’FILE_NAME’
+                     /NAME='FILE_NAME'
                      /MODE=360
                      /RECFORM={FIXED,VARIABLE,SPANNED}
                      [/LRECL=REC_LEN]
-                     [ENCODING=’ENCODING’]
+                     [ENCODING='ENCODING']
 
    Use ‘FILE HANDLE’ to associate a file handle name with a file and its
 attributes, so that later commands can refer to the file by its handle
 name.  Names of text files can be specified directly on commands that
 access files, so that ‘FILE HANDLE’ is only needed when a file is not an
 ordinary file containing lines of text.  However, ‘FILE HANDLE’ may be
-used even for text files, and it may be easier to specify a file’s name
+used even for text files, and it may be easier to specify a file's name
 once and later refer to it by an abstract handle.
 
    Specify the file handle name as the identifier immediately following
@@ -4655,7 +4655,7 @@ command (*note CLOSE FILE HANDLE::).
    • In IMAGE mode, the data file is treated as a series of fixed-length
      binary records.  LRECL should be used to specify the record length
      in bytes, with a default of 1024.  On input, it is an error if an
-     IMAGE file’s length is not an integer multiple of the record
+     IMAGE file's length is not an integer multiple of the record
      length.  On output, each record is padded with spaces or truncated,
      if necessary, to make it exactly the correct length.
 
@@ -4672,12 +4672,12 @@ command (*note CLOSE FILE HANDLE::).
      the 1960s on IBM mainframe operating systems and still supported
      today by the modern successors of those operating systems.  For
      more information, see ‘OS/400 Tape and Diskette Device
-     Programming’, available on IBM’s website.
+     Programming’, available on IBM's website.
 
      Alphanumeric data in mode 360 files are encoded in EBCDIC. PSPP
-     translates EBCDIC to or from the host’s native format as necessary
+     translates EBCDIC to or from the host's native format as necessary
      on input or output, using an ASCII/EBCDIC translation that is
-     one-to-one, so that a “round trip” from ASCII to EBCDIC back to
+     one-to-one, so that a "round trip" from ASCII to EBCDIC back to
      ASCII, or vice versa, always yields exactly the original data.
 
      The ‘RECFORM’ subcommand is required in mode 360.  The precise file
@@ -4731,7 +4731,7 @@ command (*note CLOSE FILE HANDLE::).
           designate the first segment, the last segment, or an
           intermediate segment, respectively, within a multi-segment
           record.  The record buffer is also flushed at end of file
-          regardless of the final record’s SCC.
+          regardless of the final record's SCC.
 
           The maximum length of a logical record in VARIABLE mode is
           limited only by memory available to PSPP.  Segments are
@@ -4741,9 +4741,9 @@ command (*note CLOSE FILE HANDLE::).
           (variable-length, deblocked, spanned) format.
 
      In mode 360, fields of type A that extend beyond the end of a
-     record read from disk are padded with spaces in the host’s native
+     record read from disk are padded with spaces in the host's native
      character set, which are then translated from EBCDIC to the native
-     character set.  Thus, when the host’s native character set is based
+     character set.  Thus, when the host's native character set is based
      on ASCII, these fields are effectively padded with character
      ‘X'80'’.  This wart is implemented for compatibility.
 
@@ -4963,14 +4963,14 @@ File: pspp.info,  Node: PRINT,  Next: PRINT EJECT,  Prev: NEW FILE,  Up: Data In
 ==========
 
      PRINT
-             [OUTFILE=’FILE_NAME’]
+             [OUTFILE='FILE_NAME']
              [RECORDS=N_LINES]
              [{NOTABLE,TABLE}]
-             [ENCODING=’ENCODING’]
+             [ENCODING='ENCODING']
              [/[LINE_NO] ARG...]
 
      ARG takes one of the following forms:
-             ’STRING’ [START]
+             'STRING' [START]
              VAR_LIST START-END [TYPE_SPEC]
              VAR_LIST (FORTRAN_SPEC)
              VAR_LIST *
@@ -4985,7 +4985,7 @@ specified, ‘PRINT’ outputs a single blank line.
 
    The ‘OUTFILE’ subcommand specifies the file to receive the output.
 The file may be a file name as a string or a file handle (*note File
-Handles::).  If ‘OUTFILE’ is not present then output is sent to PSPP’s
+Handles::).  If ‘OUTFILE’ is not present then output is sent to PSPP's
 output listing file.  When ‘OUTFILE’ is present, the output is written
 to FILE_NAME in a plain text format, with a space inserted at beginning
 of each output line, even lines that otherwise would be blank.
@@ -5032,13 +5032,13 @@ File: pspp.info,  Node: PRINT EJECT,  Next: PRINT SPACE,  Prev: PRINT,  Up: Data
 ================
 
      PRINT EJECT
-             OUTFILE=’FILE_NAME’
+             OUTFILE='FILE_NAME'
              RECORDS=N_LINES
              {NOTABLE,TABLE}
              /[LINE_NO] ARG...
 
      ARG takes one of the following forms:
-             ’STRING’ [START-END]
+             'STRING' [START-END]
              VAR_LIST START-END [TYPE_SPEC]
              VAR_LIST (FORTRAN_SPEC)
              VAR_LIST *
@@ -5066,7 +5066,7 @@ File: pspp.info,  Node: PRINT SPACE,  Next: REREAD,  Prev: PRINT EJECT,  Up: Dat
 8.14 PRINT SPACE
 ================
 
-     PRINT SPACE [OUTFILE=’file_name’] [ENCODING=’ENCODING’] [n_lines].
+     PRINT SPACE [OUTFILE='file_name'] [ENCODING='ENCODING'] [n_lines].
 
    ‘PRINT SPACE’ prints one or more blank lines to an output file.
 
@@ -5089,7 +5089,7 @@ File: pspp.info,  Node: REREAD,  Next: WRITE,  Prev: PRINT SPACE,  Up: Data Inpu
 8.15 REREAD
 ===========
 
-     REREAD [FILE=handle] [COLUMN=column] [ENCODING=’ENCODING’].
+     REREAD [FILE=handle] [COLUMN=column] [ENCODING='ENCODING'].
 
    The ‘REREAD’ transformation allows the previous input line in a data
 file already processed by ‘DATA LIST’ or another input command to be
@@ -5121,13 +5121,13 @@ File: pspp.info,  Node: WRITE,  Prev: REREAD,  Up: Data Input and Output
 ==========
 
      WRITE
-             OUTFILE=’FILE_NAME’
+             OUTFILE='FILE_NAME'
              RECORDS=N_LINES
              {NOTABLE,TABLE}
              /[LINE_NO] ARG...
 
      ARG takes one of the following forms:
-             ’STRING’ [START-END]
+             'STRING' [START-END]
              VAR_LIST START-END [TYPE_SPEC]
              VAR_LIST (FORTRAN_SPEC)
              VAR_LIST *
@@ -5182,33 +5182,33 @@ File: pspp.info,  Node: APPLY DICTIONARY,  Next: EXPORT,  Up: System and Portabl
 9.1 APPLY DICTIONARY
 ====================
 
-     APPLY DICTIONARY FROM={’FILE_NAME’,FILE_HANDLE}.
+     APPLY DICTIONARY FROM={'FILE_NAME',FILE_HANDLE}.
 
    ‘APPLY DICTIONARY’ applies the variable labels, value labels, and
 missing values taken from a file to corresponding variables in the
 active dataset.  In some cases it also updates the weighting variable.
 
    The ‘FROM’ clause is mandatory.  Use it to specify a system file or
-portable file’s name in single quotes, a data set name (*note
+portable file's name in single quotes, a data set name (*note
 Datasets::), or a file handle name (*note File Handles::).  The
 dictionary in the file is be read, but it does not replace the active
-dataset’s dictionary.  The file’s data is not read.
+dataset's dictionary.  The file's data is not read.
 
    Only variables with names that exist in both the active dataset and
 the system file are considered.  Variables with the same name but
 different types (numeric, string) cause an error message.  Otherwise,
-the system file variables’ attributes replace those in their matching
+the system file variables' attributes replace those in their matching
 active dataset variables:
 
    • If a system file variable has a variable label, then it replaces
      the variable label of the active dataset variable.  If the system
      file variable does not have a variable label, then the active
-     dataset variable’s variable label, if any, is retained.
+     dataset variable's variable label, if any, is retained.
 
    • If the system file variable has custom attributes (*note VARIABLE
      ATTRIBUTE::), then those attributes replace the active dataset
-     variable’s custom attributes.  If the system file variable does not
-     have custom attributes, then the active dataset variable’s custom
+     variable's custom attributes.  If the system file variable does not
+     have custom attributes, then the active dataset variable's custom
      attributes, if any, is retained.
 
    • If the active dataset variable is numeric or short string, then
@@ -5222,7 +5222,7 @@ file dictionary as a whole are updated:
 
    • If the system file has custom attributes (*note DATAFILE
      ATTRIBUTE::), then those attributes replace the active dataset
-     variable’s custom attributes.
+     variable's custom attributes.
 
    • If the active dataset has a weighting variable (*note WEIGHT::),
      and the system file does not, or if the weighting variable in the
@@ -5241,7 +5241,7 @@ File: pspp.info,  Node: EXPORT,  Next: GET,  Prev: APPLY DICTIONARY,  Up: System
 ==========
 
      EXPORT
-             /OUTFILE=’FILE_NAME’
+             /OUTFILE='FILE_NAME'
              /UNSELECTED={RETAIN,DELETE}
              /DIGITS=N
              /DROP=VAR_LIST
@@ -5250,7 +5250,7 @@ File: pspp.info,  Node: EXPORT,  Next: GET,  Prev: APPLY DICTIONARY,  Up: System
              /TYPE={COMM,TAPE}
              /MAP
 
-   The ‘EXPORT’ procedure writes the active dataset’s dictionary and
+   The ‘EXPORT’ procedure writes the active dataset's dictionary and
 data to a specified portable file.
 
    By default, cases excluded with FILTER are written to the file.
@@ -5259,7 +5259,7 @@ subcommand.  Specifying RETAIN makes the default explicit.
 
    Portable files express real numbers in base 30.  Integers are always
 expressed to the maximum precision needed to make them exact.
-Non-integers are, by default, expressed to the machine’s maximum natural
+Non-integers are, by default, expressed to the machine's maximum natural
 precision (approximately 15 decimal digits on many machines).  If many
 numbers require this many digits, the portable file may significantly
 increase in size.  As an alternative, the ‘DIGITS’ subcommand may be
@@ -5287,11 +5287,11 @@ File: pspp.info,  Node: GET,  Next: GET DATA,  Prev: EXPORT,  Up: System and Por
 =======
 
      GET
-             /FILE={’FILE_NAME’,FILE_HANDLE}
+             /FILE={'FILE_NAME',FILE_HANDLE}
              /DROP=VAR_LIST
              /KEEP=VAR_LIST
              /RENAME=(SRC_NAMES=TARGET_NAMES)...
-             /ENCODING=’ENCODING’
+             /ENCODING='ENCODING'
 
    ‘GET’ clears the current dictionary and active dataset and replaces
 them with the dictionary and data from a specified file.
@@ -5310,7 +5310,7 @@ under.  Use the ‘RENAME’ subcommand to change these names.  Specify,
 within parentheses, a list of variable names followed by an equals sign
 (‘=’) and the names that they should be renamed to.  Multiple
 parenthesized groups of variable names can be included on a single
-‘RENAME’ subcommand.  Variables’ names may be swapped using a ‘RENAME’
+‘RENAME’ subcommand.  Variables' names may be swapped using a ‘RENAME’
 subcommand of the form ‘/RENAME=(A B=B A)’.
 
    Alternate syntax for the ‘RENAME’ subcommand allows the parentheses
@@ -5384,9 +5384,9 @@ File: pspp.info,  Node: GET DATA /TYPE=GNM/ODS,  Next: GET DATA /TYPE=PSQL,  Up:
 -----------------------
 
      GET DATA /TYPE={GNM, ODS}
-             /FILE={’FILE_NAME’}
-             /SHEET={NAME ’SHEET_NAME’, INDEX N}
-             /CELLRANGE={RANGE ’RANGE’, FULL}
+             /FILE={'FILE_NAME'}
+             /SHEET={NAME 'SHEET_NAME', INDEX N}
+             /CELLRANGE={RANGE 'RANGE', FULL}
              /READNAMES={ON, OFF}
              /ASSUMEDSTRWIDTH=N.
 
@@ -5394,7 +5394,7 @@ File: pspp.info,  Node: GET DATA /TYPE=GNM/ODS,  Next: GET DATA /TYPE=PSQL,  Up:
 OpenDocument format
 (<http://libreplanet.org/wiki/Group:OpenDocument/Software>) can be read
 using the ‘GET DATA’ command.  Use the ‘TYPE’ subcommand to indicate the
-file’s format.  /TYPE=GNM indicates Gnumeric files, /TYPE=ODS indicates
+file's format.  /TYPE=GNM indicates Gnumeric files, /TYPE=ODS indicates
 OpenDocument.  The ‘FILE’ subcommand is mandatory.  Use it to specify
 the name file to be read.  All other subcommands are optional.
 
@@ -5416,7 +5416,7 @@ reads the first sheet in the file.
 sheet to read.  If the subcommand is given as ‘/CELLRANGE=FULL’, then
 the entire sheet is read.  To read only part of a sheet, use the form
 ‘/CELLRANGE=range 'TOP_LEFT_CELL:BOTTOM_RIGHT_CELL'’.  For example, the
-subcommand ‘/CELLRANGE=range 'C3:P19'’ reads columns C–P, and rows 3–19
+subcommand ‘/CELLRANGE=range 'C3:P19'’ reads columns C-P, and rows 3-19
 inclusive.  If no ‘CELLRANGE’ subcommand is given, then the entire sheet
 is read.
 
@@ -5491,8 +5491,8 @@ File: pspp.info,  Node: GET DATA /TYPE=TXT,  Prev: GET DATA /TYPE=PSQL,  Up: GET
 ------------------------
 
      GET DATA /TYPE=TXT
-             /FILE={’FILE_NAME’,FILE_HANDLE}
-             [ENCODING=’ENCODING’]
+             /FILE={'FILE_NAME',FILE_HANDLE}
+             [ENCODING='ENCODING']
              [/ARRANGEMENT={DELIMITED,FIXED}]
              [/FIRSTCASE={FIRST_CASE}]
              [/IMPORTCASES=...]
@@ -5509,7 +5509,7 @@ Handles::).
 file to be read.  *Note INSERT::, for information on supported
 encodings.
 
-   The ‘ARRANGEMENT’ subcommand determines the file’s basic format.
+   The ‘ARRANGEMENT’ subcommand determines the file's basic format.
 DELIMITED, the default setting, specifies that fields in the input data
 are separated by spaces, tabs, or other user-specified delimiters.
 FIXED specifies that fields in the input data appear at particular fixed
@@ -5539,7 +5539,7 @@ File: pspp.info,  Node: GET DATA /TYPE=TXT /ARRANGEMENT=DELIMITED,  Next: GET DA
 ..............................
 
      GET DATA /TYPE=TXT
-             /FILE={’FILE_NAME’,FILE_HANDLE}
+             /FILE={'FILE_NAME',FILE_HANDLE}
              [/ARRANGEMENT={DELIMITED,FIXED}]
              [/FIRSTCASE={FIRST_CASE}]
              [/IMPORTCASE={ALL,FIRST MAX_CASES,PERCENT PERCENT}]
@@ -5668,7 +5668,7 @@ File: pspp.info,  Node: GET DATA /TYPE=TXT /ARRANGEMENT=FIXED,  Prev: GET DATA /
 ...................................
 
      GET DATA /TYPE=TXT
-             /FILE={’file_name’,FILE_HANDLE}
+             /FILE={'file_name',FILE_HANDLE}
              [/ARRANGEMENT={DELIMITED,FIXED}]
              [/FIRSTCASE={FIRST_CASE}]
              [/IMPORTCASE={ALL,FIRST MAX_CASES,PERCENT PERCENT}]
@@ -5730,7 +5730,7 @@ File: pspp.info,  Node: IMPORT,  Next: SAVE,  Prev: GET DATA,  Up: System and Po
 ==========
 
      IMPORT
-             /FILE=’FILE_NAME’
+             /FILE='FILE_NAME'
              /TYPE={COMM,TAPE}
              /DROP=VAR_LIST
              /KEEP=VAR_LIST
@@ -5761,7 +5761,7 @@ File: pspp.info,  Node: SAVE,  Next: SAVE DATA COLLECTION,  Prev: IMPORT,  Up: S
 ========
 
      SAVE
-             /OUTFILE={’FILE_NAME’,FILE_HANDLE}
+             /OUTFILE={'FILE_NAME',FILE_HANDLE}
              /UNSELECTED={RETAIN,DELETE}
              /{UNCOMPRESSED,COMPRESSED,ZCOMPRESSED}
              /PERMISSIONS={WRITEABLE,READONLY}
@@ -5784,7 +5784,7 @@ file.  These can be excluded by specifying ‘DELETE’ on the ‘UNSELECTED’
 subcommand.  Specifying ‘RETAIN’ makes the default explicit.
 
    The ‘UNCOMPRESSED’, ‘COMPRESSED’, and ‘ZCOMPRESSED’ subcommand
-determine the system file’s compression level:
+determine the system file's compression level:
 
 ‘UNCOMPRESSED’
      Data is not compressed.  Each numeric value uses 8 bytes of disk
@@ -5799,7 +5799,7 @@ determine the system file’s compression level:
      8-byte string segment uses 9 bytes of disk space.
 
 ‘ZCOMPRESSED’
-     Data is compressed with the “deflate” compression algorithm
+     Data is compressed with the "deflate" compression algorithm
      specified in RFC 1951 (the same algorithm used by ‘gzip’).  Files
      written with this compression level cannot be read by PSPP 0.8.1 or
      earlier or by SPSS 20 or earlier.
@@ -5822,7 +5822,7 @@ they have in the active dataset.  Use the ‘RENAME’ subcommand to change
 these names.  Specify, within parentheses, a list of variable names
 followed by an equals sign (‘=’) and the names that they should be
 renamed to.  Multiple parenthesized groups of variable names can be
-included on a single ‘RENAME’ subcommand.  Variables’ names may be
+included on a single ‘RENAME’ subcommand.  Variables' names may be
 swapped using a ‘RENAME’ subcommand of the form ‘/RENAME=(A B=B A)’.
 
    Alternate syntax for the ‘RENAME’ subcommand allows the parentheses
@@ -5851,8 +5851,8 @@ File: pspp.info,  Node: SAVE DATA COLLECTION,  Next: SAVE TRANSLATE,  Prev: SAVE
 ========================
 
      SAVE DATA COLLECTION
-             /OUTFILE={’FILE_NAME’,FILE_HANDLE}
-             /METADATA={’FILE_NAME’,FILE_HANDLE}
+             /OUTFILE={'FILE_NAME',FILE_HANDLE}
+             /METADATA={'FILE_NAME',FILE_HANDLE}
              /{UNCOMPRESSED,COMPRESSED,ZCOMPRESSED}
              /PERMISSIONS={WRITEABLE,READONLY}
              /DROP=VAR_LIST
@@ -5890,7 +5890,7 @@ File: pspp.info,  Node: SAVE TRANSLATE,  Next: SYSFILE INFO,  Prev: SAVE DATA CO
 ==================
 
      SAVE TRANSLATE
-             /OUTFILE={’FILE_NAME’,FILE_HANDLE}
+             /OUTFILE={'FILE_NAME',FILE_HANDLE}
              /TYPE={CSV,TAB}
              [/REPLACE]
              [/MISSING={IGNORE,RECODE}]
@@ -5951,7 +5951,7 @@ File: pspp.info,  Node: SAVE TRANSLATE /TYPE=CSV and TYPE=TAB,  Up: SAVE TRANSLA
 -------------------------------------------------
 
      SAVE TRANSLATE
-             /OUTFILE={’FILE_NAME’,FILE_HANDLE}
+             /OUTFILE={'FILE_NAME',FILE_HANDLE}
              /TYPE=CSV
              [/REPLACE]
              [/MISSING={IGNORE,RECODE}]
@@ -5963,8 +5963,8 @@ File: pspp.info,  Node: SAVE TRANSLATE /TYPE=CSV and TYPE=TAB,  Up: SAVE TRANSLA
 
              [/FIELDNAMES]
              [/CELLS={VALUES,LABELS}]
-             [/TEXTOPTIONS DELIMITER=’DELIMITER’]
-             [/TEXTOPTIONS QUALIFIER=’QUALIFIER’]
+             [/TEXTOPTIONS DELIMITER='DELIMITER']
+             [/TEXTOPTIONS QUALIFIER='QUALIFIER']
              [/TEXTOPTIONS DECIMAL={DOT,COMMA}]
              [/TEXTOPTIONS FORMAT={PLAIN,VARIABLE}]
 
@@ -5978,7 +5978,7 @@ line at the top of the output file lists variable names.
 written to the output file:
 
 CELLS=VALUES FORMAT=PLAIN (the default settings)
-     Writes variables to the output in “plain” formats that ignore the
+     Writes variables to the output in "plain" formats that ignore the
      details of variable formats.  Numeric values are written as plain
      decimal numbers with enough digits to indicate their exact values
      in machine representation.  Numeric values include ‘e’ followed by
@@ -6023,7 +6023,7 @@ File: pspp.info,  Node: SYSFILE INFO,  Next: XEXPORT,  Prev: SAVE TRANSLATE,  Up
 9.9 SYSFILE INFO
 ================
 
-     SYSFILE INFO FILE=’FILE_NAME’ [ENCODING=’ENCODING’].
+     SYSFILE INFO FILE='FILE_NAME' [ENCODING='ENCODING'].
 
    ‘SYSFILE INFO’ reads the dictionary in an SPSS system file, SPSS/PC+
 system file, or SPSS portable file, and displays the information in its
@@ -6050,7 +6050,7 @@ File: pspp.info,  Node: XEXPORT,  Next: XSAVE,  Prev: SYSFILE INFO,  Up: System 
 ============
 
      XEXPORT
-             /OUTFILE=’FILE_NAME’
+             /OUTFILE='FILE_NAME'
              /DIGITS=N
              /DROP=VAR_LIST
              /KEEP=VAR_LIST
@@ -6079,7 +6079,7 @@ File: pspp.info,  Node: XSAVE,  Prev: XEXPORT,  Up: System and Portable File IO
 ==========
 
      XSAVE
-             /OUTFILE=’FILE_NAME’
+             /OUTFILE='FILE_NAME'
              /{UNCOMPRESSED,COMPRESSED,ZCOMPRESSED}
              /PERMISSIONS={WRITEABLE,READONLY}
              /DROP=VAR_LIST
@@ -6089,7 +6089,7 @@ File: pspp.info,  Node: XSAVE,  Prev: XEXPORT,  Up: System and Portable File IO
              /NAMES
              /MAP
 
-   The ‘XSAVE’ transformation writes the active dataset’s dictionary and
+   The ‘XSAVE’ transformation writes the active dataset's dictionary and
 data to a system file.  It is similar to the ‘SAVE’ procedure, with two
 differences:
 
@@ -6141,7 +6141,7 @@ File: pspp.info,  Node: Combining Files Common Syntax,  Next: ADD FILES,  Up: Co
 ==================
 
      Per input file:
-             /FILE={*,’FILE_NAME’}
+             /FILE={*,'FILE_NAME'}
              [/RENAME=(SRC_NAMES=TARGET_NAMES)...]
              [/IN=VAR_NAME]
              [/SORT]
@@ -6159,7 +6159,7 @@ File: pspp.info,  Node: Combining Files Common Syntax,  Next: ADD FILES,  Up: Co
 sections describe details specific to each command.
 
    Each of these commands reads two or more input files and combines
-them.  The command’s output becomes the new active dataset.  None of the
+them.  The command's output becomes the new active dataset.  None of the
 commands actually change the input files.  Therefore, if you want the
 changes to become permanent, you must explicitly save them using an
 appropriate procedure or transformation (*note System and Portable File
@@ -6167,7 +6167,7 @@ IO::).
 
    The syntax of each command begins with a specification of the files
 to be read as input.  For each input file, specify FILE with a system
-file or portable file’s name as a string, a dataset (*note Datasets::)
+file or portable file's name as a string, a dataset (*note Datasets::)
 or file handle name, (*note File Handles::), or an asterisk (‘*’) to use
 the active dataset as input.  Use of portable files on ‘FILE’ is a PSPP
 extension.
@@ -6178,7 +6178,7 @@ effect.
 
    Each ‘FILE’ subcommand may be followed by any number of ‘RENAME’
 subcommands that specify a parenthesized group or groups of variable
-names as they appear in the input file, followed by those variables’ new
+names as they appear in the input file, followed by those variables' new
 names, separated by an equals sign (‘=’), e.g.
 ‘/RENAME=(OLD1=NEW1)(OLD2=NEW2)’.  To rename a single variable, the
 parentheses may be omitted: ‘/RENAME=OLD=NEW’.  Within a parenthesized
@@ -6194,7 +6194,7 @@ given input file contributed to that output case, and 0 otherwise.  The
 
    If ‘BY’ is used (see below), the ‘SORT’ keyword must be specified
 after a ‘FILE’ if that input file is not already sorted on the ‘BY’
-variables.  When ‘SORT’ is specified, PSPP sorts the input file’s data
+variables.  When ‘SORT’ is specified, PSPP sorts the input file's data
 on the ‘BY’ variables before it applies it to the command.  When ‘SORT’
 is used, ‘BY’ is required.  ‘SORT’ is a PSPP extension.
 
@@ -6202,7 +6202,7 @@ is used, ‘BY’ is required.  ‘SORT’ is a PSPP extension.
 dictionary of the new active dataset, like so:
 
    • The variables in the new active dataset are the union of all the
-     input files’ variables, matched based on their name.  When a single
+     input files' variables, matched based on their name.  When a single
      input file contains a variable with a given name, the output file
      will contain exactly that variable.  When more than one input file
      contains a variable with a given name, those variables must be all
@@ -6222,7 +6222,7 @@ dictionary of the new active dataset, like so:
      that of the first specified ‘FILE’ that has a file label.
 
    • The documents in the new active dataset (*note DOCUMENT::) are the
-     concatenation of all the input files’ documents, in the order in
+     concatenation of all the input files' documents, in the order in
      which the ‘FILE’ subcommands are specified.
 
    • If all of the input files are weighted on the same variable, then
@@ -6256,7 +6256,7 @@ drop ‘BY’ variables.
    The ‘FIRST’ and ‘LAST’ subcommands are optional.  They may only be
 specified on ‘MATCH FILES’ and ‘ADD FILES’, and only when ‘BY’ is used.
 ‘FIRST’ and ‘LIST’ each adds a numeric variable to the new active
-dataset, with the name given as the subcommand’s argument and F1.0 print
+dataset, with the name given as the subcommand's argument and F1.0 print
 and write formats.  The value of the ‘FIRST’ variable is 1 in the first
 output case with a given set of values for the ‘BY’ variables, and 0 in
 other cases.  Similarly, the ‘LAST’ variable is 1 in the last case with
@@ -6268,7 +6268,7 @@ system-missing value for numeric variables or spaces for string
 variables.
 
    These commands may combine any number of files, limited only by the
-machine’s memory.
+machine's memory.
 
 
 File: pspp.info,  Node: ADD FILES,  Next: MATCH FILES,  Prev: Combining Files Common Syntax,  Up: Combining Data Files
@@ -6279,7 +6279,7 @@ File: pspp.info,  Node: ADD FILES,  Next: MATCH FILES,  Prev: Combining Files Co
      ADD FILES
 
      Per input file:
-             /FILE={*,’FILE_NAME’}
+             /FILE={*,'FILE_NAME'}
              [/RENAME=(SRC_NAMES=TARGET_NAMES)...]
              [/IN=VAR_NAME]
              [/SORT]
@@ -6319,7 +6319,7 @@ File: pspp.info,  Node: MATCH FILES,  Next: UPDATE,  Prev: ADD FILES,  Up: Combi
      MATCH FILES
 
      Per input file:
-             /{FILE,TABLE}={*,’FILE_NAME’}
+             /{FILE,TABLE}={*,'FILE_NAME'}
              [/RENAME=(SRC_NAMES=TARGET_NAMES)...]
              [/IN=VAR_NAME]
              [/SORT]
@@ -6384,7 +6384,7 @@ File: pspp.info,  Node: UPDATE,  Prev: MATCH FILES,  Up: Combining Data Files
      UPDATE
 
      Per input file:
-             /FILE={*,’FILE_NAME’}
+             /FILE={*,'FILE_NAME'}
              [/RENAME=(SRC_NAMES=TARGET_NAMES)...]
              [/IN=VAR_NAME]
              [/SORT]
@@ -6413,7 +6413,7 @@ is required, to attempt to match each case in a transaction file with a
 case in the master file:
 
    • When a match is found, then the values of the variables present in
-     the transaction file replace those variables’ values in the new
+     the transaction file replace those variables' values in the new
      active file.  If there are matching cases in more than more
      transaction file, PSPP applies the replacements from the first
      transaction file, then from the second transaction file, and so on.
@@ -6421,7 +6421,7 @@ case in the master file:
      ‘BY’ values, then those are applied in order to the master file.
 
      When a variable in a transaction file has a missing value or when a
-     string variable’s value is all blanks, that value is never used to
+     string variable's value is all blanks, that value is never used to
      update the master file.
 
    • If a case in the master file has no matching case in any
@@ -6466,7 +6466,7 @@ variables.
 * VARIABLE ROLE::               Set the role that a variable fills in analysis.
 * VECTOR::                      Declare an array of variables.
 * MRSETS::                      Add, modify, and list multiple response sets.
-* LEAVE::                       Don’t clear variables between cases.
+* LEAVE::                       Don't clear variables between cases.
 
 
 File: pspp.info,  Node: DISPLAY,  Next: NUMERIC,  Up: Manipulating Variables
@@ -6497,10 +6497,10 @@ occur in the active dataset dictionary.  The ‘SORTED’ keyword causes
 output to be sorted alphabetically by variable name.
 
 NAMES
-     The variables’ names are displayed.
+     The variables' names are displayed.
 
 INDEX
-     The variables’ names are displayed along with a value describing
+     The variables' names are displayed along with a value describing
      their position within the active dataset dictionary.
 
 LABELS
@@ -6545,7 +6545,7 @@ their output formats.
      NUMERIC VAR_LIST [(FMT_SPEC)] [/VAR_LIST [(FMT_SPEC)]]...
 
    Specify the names of the new numeric variables as VAR_LIST.  If you
-wish to set the variables’ output formats, follow their names by an
+wish to set the variables' output formats, follow their names by an
 output format specification in parentheses (*note Input and Output
 Formats::); otherwise, the default is F8.2.
 
@@ -6616,7 +6616,7 @@ File: pspp.info,  Node: SORT VARIABLES,  Next: DELETE VARIABLES,  Prev: RENAME V
 11.5 SORT VARIABLES
 ===================
 
-‘SORT VARIABLES’ reorders the variables in the active dataset’s
+‘SORT VARIABLES’ reorders the variables in the active dataset's
 dictionary according to a chosen sort key.
 
      SORT VARIABLES [BY]
@@ -6674,7 +6674,7 @@ ATTRIBUTE NAME
      attribute.  Variables without attribute are sorted first.  *Note
      VARIABLE ATTRIBUTE::.
 
-   Only one sort criterion can be specified.  The sort is “stable,” so
+   Only one sort criterion can be specified.  The sort is "stable," so
 to sort on multiple criteria one may perform multiple sorts.  For
 example, the following will sort primarily based on alignment, with
 variables that have the same alignment ordered based on display width:
@@ -6708,13 +6708,13 @@ File: pspp.info,  Node: VARIABLE LABELS,  Next: PRINT FORMATS,  Prev: DELETE VAR
 11.7 VARIABLE LABELS
 ====================
 
-In addition to a variable’s name, each variable can have a “label”.
+In addition to a variable's name, each variable can have a “label”.
 Whereas a variable name is a concise, easy-to-type mnemonic for the
 variable, a label may be longer and more descriptive.
 
      VARIABLE LABELS
-             VARIABLE ’LABEL’
-             [VARIABLE ’LABEL’]...
+             VARIABLE 'LABEL'
+             [VARIABLE 'LABEL']...
 
    ‘VARIABLE LABELS’ associates explanatory names with variables.  This
 name, called a “variable label”, is displayed by statistical procedures.
@@ -6791,7 +6791,7 @@ capitalized value and its lowercase variant would have to be labeled
 separately if both are present in the data.
 
      VALUE LABELS
-             /VAR_LIST VALUE ’LABEL’ [VALUE ’LABEL’]...
+             /VAR_LIST VALUE 'LABEL' [VALUE 'LABEL']...
 
    ‘VALUE LABELS’ allows values of variables to be associated with
 labels.
@@ -6820,7 +6820,7 @@ File: pspp.info,  Node: ADD VALUE LABELS,  Next: MISSING VALUES,  Prev: VALUE LA
 variables before adding the ones specified.
 
      ADD VALUE LABELS
-             /VAR_LIST VALUE ’LABEL’ [VALUE ’LABEL’]...
+             /VAR_LIST VALUE 'LABEL' [VALUE 'LABEL']...
 
 
 File: pspp.info,  Node: MISSING VALUES,  Next: VARIABLE ATTRIBUTE,  Prev: ADD VALUE LABELS,  Up: Manipulating Variables
@@ -6878,8 +6878,8 @@ system files and may be used by other software that reads them.
 
      VARIABLE ATTRIBUTE
               VARIABLES=VAR_LIST
-              ATTRIBUTE=NAME(’VALUE’) [NAME(’VALUE’)]...
-              ATTRIBUTE=NAME[INDEX](’VALUE’) [NAME[INDEX](’VALUE’)]...
+              ATTRIBUTE=NAME('VALUE') [NAME('VALUE')]...
+              ATTRIBUTE=NAME[INDEX]('VALUE') [NAME[INDEX]('VALUE')]...
               DELETE=NAME [NAME]...
               DELETE=NAME[INDEX] [NAME[INDEX]]...
 
@@ -6892,7 +6892,7 @@ attributes.  Specify the name of the attribute as an identifier (*note
 Tokens::), followed by the desired value, in parentheses, as a quoted
 string.  The specified attributes are then added or modified in the
 variables specified on ‘VARIABLES’.  Attribute names that begin with ‘$’
-are reserved for PSPP’s internal use, and attribute names that begin
+are reserved for PSPP's internal use, and attribute names that begin
 with ‘@’ or ‘$@’ are not displayed by most PSPP commands that display
 other attributes.  Other attribute names are not treated specially.
 
@@ -6989,13 +6989,13 @@ the following roles for the variables that follow it:
      A variable used for input and output.
 
 ‘NONE’
-     No role assigned.  (This is a variable’s default role.)
+     No role assigned.  (This is a variable's default role.)
 
 ‘PARTITION’
      Used to break the data into groups for testing.
 
 ‘SPLIT’
-     No meaning except for certain third party software.  (This role’s
+     No meaning except for certain third party software.  (This role's
      meaning is unrelated to ‘SPLIT FILE’.)
 
    The PSPPIRE GUI does not yet use variable roles as intended.
@@ -7061,9 +7061,9 @@ multiple responses to a survey question.
      MRSETS
          /MDGROUP NAME=NAME VARIABLES=VAR_LIST VALUE=VALUE
           [CATEGORYLABELS={VARLABELS,COUNTEDVALUES}]
-          [{LABEL=’LABEL’,LABELSOURCE=VARLABEL}]
+          [{LABEL='LABEL',LABELSOURCE=VARLABEL}]
 
-         /MCGROUP NAME=NAME VARIABLES=VAR_LIST [LABEL=’LABEL’]
+         /MCGROUP NAME=NAME VARIABLES=VAR_LIST [LABEL='LABEL']
 
          /DELETE NAME={[NAMES],ALL}
 
@@ -7096,7 +7096,7 @@ and ‘VALUE’ specifications are required.  The others are optional:
           if two variables have the same variable label, since these
           categories cannot be distinguished in output.
 
-        − ‘COUNTEDVALUES’ instead uses each variable’s value label for
+        − ‘COUNTEDVALUES’ instead uses each variable's value label for
           the counted value.  PSPP warns if two variables have the same
           value label for the counted value or if one of the variables
           lacks a value label, since such categories cannot be
@@ -7106,7 +7106,7 @@ and ‘VALUE’ specifications are required.  The others are optional:
      If neither ‘LABEL’ nor ‘LABELSOURCE=VARLABEL’ is specified, the set
      is unlabeled.
 
-   • ‘LABELSOURCE=VARLABEL’ draws the multiple response set’s label from
+   • ‘LABELSOURCE=VARLABEL’ draws the multiple response set's label from
      the first variable label among the variables in the set; if none of
      the variables has a label, the name of the first variable is used.
      ‘LABELSOURCE=VARLABEL’ must be used with

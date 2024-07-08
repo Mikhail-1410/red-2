@@ -1,0 +1,23 @@
+                                 Custom Tables
++----------------------------------------------------------------+------------+
+|                                                                |S3a. GENDER:|
+|                                                                +-----+------+
+|                                                                | Male|Female|
+|                                                                +-----+------+
+|                                                                |Count| Count|
++----------------------------------------------------------------+-----+------+
+| 1. How often do you usually drive a car or Every day           | 2305|  2362|
+|other motor vehicle?                        Several days a week |  440|   834|
+|                                            Frequent Drivers    | 2745|  3196|
+|                                            Once a week or less |  125|   236|
+|                                            Only certain times a|   58|    72|
+|                                            year                |     |      |
+|                                            Infrequent Drivers  |  183|   308|
+|                                            All Drivers         | 2928|  3504|
+|                                            Never               |  192|   348|
+|                                            % Not Drivers       | 6.2%|  9.0%|
+|                                            Don't know          |    3|     5|
+|                                            Refused             |    9|    10|
+|                                            Not Drivers or      |  204|   363|
+|                                            Missing             |     |      |
++----------------------------------------------------------------+-----+------+

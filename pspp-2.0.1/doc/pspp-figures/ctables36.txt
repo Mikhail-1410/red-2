@@ -1,0 +1,27 @@
+                                 Custom Tables
++-----------------------------------------------------------------------+-----+
+|                                                                       |Count|
++-----------------------------------------------------------------------+-----+
+|37. Please think about the most recent occasion that   Other (list)    |<10  |
+|you drove within two hours of drinking alcoholic       Your home       |  182|
+|beverages. Where did you drink on that occasion?       Friend's home   |  264|
+|                                                       Bar/Tavern/Club |  279|
+|                                                       Restaurant      |  495|
+|                                                       Work            |   21|
+|                                                       Bowling alley   |<10  |
+|                                                       Hotel/Motel     |<10  |
+|                                                       Country Club/   |   17|
+|                                                       Golf course     |     |
+|                                                       Drank in the    |<10  |
+|                                                       car/On the road |     |
+|                                                       Sporting event  |   15|
+|                                                       Movie theater   |<10  |
+|                                                       Shopping/Store/ |<10  |
+|                                                       Grocery store   |     |
+|                                                       Wedding         |   15|
+|                                                       Party at someone|   81|
+|                                                       else's home     |     |
+|                                                       Park/picnic     |   14|
+|                                                       Party at your   |<10  |
+|                                                       house           |     |
++-----------------------------------------------------------------------+-----+

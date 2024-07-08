@@ -1,0 +1,52 @@
+lib/tukey/ptukey.lo: lib/tukey/ptukey.c config.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  gl/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h \
+  src/libpspp/compiler.h lib/tukey/tukey.h \
+  /opt/homebrew/Cellar/gsl/2.8/include/gsl/gsl_sf_gamma.h \
+  /opt/homebrew/Cellar/gsl/2.8/include/gsl/gsl_sf_result.h \
+  /opt/homebrew/Cellar/gsl/2.8/include/gsl/gsl_cdf.h gl/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h
+
+config.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h:
+
+gl/assert.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h:
+
+src/libpspp/compiler.h:
+
+lib/tukey/tukey.h:
+
+/opt/homebrew/Cellar/gsl/2.8/include/gsl/gsl_sf_gamma.h:
+
+/opt/homebrew/Cellar/gsl/2.8/include/gsl/gsl_sf_result.h:
+
+/opt/homebrew/Cellar/gsl/2.8/include/gsl/gsl_cdf.h:
+
+gl/math.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:

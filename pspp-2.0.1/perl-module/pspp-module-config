@@ -1,0 +1,4 @@
+%Locations = (
+  SourceDir => '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1',
+  BuildDir => '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1'
+);

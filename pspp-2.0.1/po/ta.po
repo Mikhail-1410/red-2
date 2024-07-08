@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 2.0.0-pre1\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2023-06-23 22:03+0100\n"
 "Last-Translator: Anbarasan Sivakumar <ivanovicha350@gmail.com>\n"
 "Language-Team: Tamil <tamil@systemreboot.net>\n"
@@ -13756,31 +13756,37 @@ msgstr "K க்கு சார்பில்லாத பதக்கூற�
 msgid "ROC Cur_ve..."
 msgstr "_பெறுநர் இயக்க பண்பு வளைவு..."
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom Tables"
+msgid "Custom _Tables..."
+msgstr "தனிப்பயனாக்கப்பட்ட அட்டவணைகள்"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "_கோடுருக்கள்"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "_சிதறல் படம்"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "_அலைவெண் செவ்வகப்படம்"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "_பட்டை விளக்கப்படம்"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_பயன்கூறுகள்"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "_மாறிகள்..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "தரவு கோப்பு _கருத்துக்கள்..."
 
@@ -14040,19 +14046,12 @@ msgstr ""
 "விரைவான வசதியான பகுப்பாய்வு தேவைப்படும் மாணவர்களை இலக்காகக் கொண்டுள்ளது."
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
 msgid "GNU PSPP Variable View"
 msgstr "ஞு PSPP மாறி பார்வை"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-msgid "statistics"
-msgstr "புள்ளியியல்"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14070,6 +14069,9 @@ msgstr "SPSS க்கான கட்டற்ற மாற்றுகளை �
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr "புள்ளியியல்;பகுப்பாய்வு;spss;"
+
+#~ msgid "statistics"
+#~ msgstr "புள்ளியியல்"
 
 #, c-format
 #~ msgid "Cannot stat %s: %s"

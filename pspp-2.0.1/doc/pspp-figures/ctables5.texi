@@ -1,0 +1,31 @@
+                                 Custom Tables
++-----------------------------------------------------------------------+-----+
+|                                                                       |Count|
++-----------------------------------------------------------------------+-----+
+|26. During the last 12 months, has there been a    Yes                 |  513|
+|time when you felt you should cut down on your    ---------------------+-----+
+|drinking?                                          No                  | 3710|
++-----------------------------------------------------------------------+-----+
+|27. During the last 12 months, has there been a    Yes S3a.      Male  |  135|
+|time when people criticized your drinking?             GENDER:   Female|   49|
+|                                                  ---------------------+-----+
+|                                                   No  S3a.      Male  | 1916|
+|                                                       GENDER:   Female| 2126|
++-----------------------------------------------------------------------+-----+
+
+                                 Custom Tables
++-----------------------------------------------------------------------+-----+
+|                                                                       |Count|
++-----------------------------------------------------------------------+-----+
+|26. During the last 12 months, has there been a    Yes S3a.      Male  |  333|
+|time when you felt you should cut down on your         GENDER:   Female|  180|
+|drinking?                                         ---------------------+-----+
+|                                                   No  S3a.      Male  | 1719|
+|                                                       GENDER:   Female| 1991|
++-----------------------------------------------------------------------+-----+
+|27. During the last 12 months, has there been a    Yes S3a.      Male  |  135|
+|time when people criticized your drinking?             GENDER:   Female|   49|
+|                                                  ---------------------+-----+
+|                                                   No  S3a.      Male  | 1916|
+|                                                       GENDER:   Female| 2126|
++-----------------------------------------------------------------------+-----+

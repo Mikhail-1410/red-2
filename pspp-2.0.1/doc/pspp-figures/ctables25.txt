@@ -1,0 +1,42 @@
+                                 Custom Tables
++---------------------------------------------------------------------+-------+
+|                                                                     | Column|
+|                                                                     |   %   |
++---------------------------------------------------------------------+-------+
+|105b. How likely is it that drivers who have had too     Almost      |  10.2%|
+|much to drink to drive safely will A. Get stopped by the certain     |       |
+|police?                                                  Very likely |  21.8%|
+|                                                         Somewhat    |  40.2%|
+|                                                         likely      |       |
+|                                                         Somewhat    |  19.0%|
+|                                                         unlikely    |       |
+|                                                         Very        |   8.9%|
+|                                                         unlikely    |       |
++---------------------------------------------------------------------+-------+
+|105b. How likely is it that drivers who have had too     Almost      |  15.9%|
+|much to drink to drive safely will B. Have an accident?  certain     |       |
+|                                                         Very likely |  40.8%|
+|                                                         Somewhat    |  35.0%|
+|                                                         likely      |       |
+|                                                         Somewhat    |   6.2%|
+|                                                         unlikely    |       |
+|                                                         Very        |   2.0%|
+|                                                         unlikely    |       |
++---------------------------------------------------------------------+-------+
+
+                                 Custom Tables
++-----------------------------+--------+-------+---------+----------+---------+
+|                             | Almost |  Very | Somewhat| Somewhat |   Very  |
+|                             | certain| likely|  likely | unlikely | unlikely|
+|                             +--------+-------+---------+----------+---------+
+|                             |  Row % | Row % |  Row %  |   Row %  |  Row %  |
++-----------------------------+--------+-------+---------+----------+---------+
+|105b. How likely is it that  |   10.2%|  21.8%|    40.2%|     19.0%|     8.9%|
+|drivers who have had too much|        |       |         |          |         |
+|to drink to drive safely will|        |       |         |          |         |
+|A. Get stopped by the police?|        |       |         |          |         |
+|105b. How likely is it that  |   15.9%|  40.8%|    35.0%|      6.2%|     2.0%|
+|drivers who have had too much|        |       |         |          |         |
+|to drink to drive safely will|        |       |         |          |         |
+|B. Have an accident?         |        |       |         |          |         |
++-----------------------------+--------+-------+---------+----------+---------+

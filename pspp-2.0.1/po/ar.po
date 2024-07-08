@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp-2.0.0-pre3\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2023-11-08 17:56+0300\n"
 "Last-Translator: Ali Alhaidary <ali.alhaidary@the5stars.org>\n"
 "Language-Team: Arabic <(nothing)>\n"
@@ -13444,31 +13444,37 @@ msgstr "ك _العينات المستقلة ..."
 msgid "ROC Cur_ve..."
 msgstr "_منحنى ROC ..."
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom Tables"
+msgid "Custom _Tables..."
+msgstr "جداول مخصصة"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "_مخططات"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "_مخطط انتشار"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "_مخطط مدرج تكراري"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "_مخطط شريطي"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_خدمات"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "_المتغيرات..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "_ملف تعليقات البيانات..."
 
@@ -13721,19 +13727,12 @@ msgstr ""
 "تحليل سريع ومناسب لبيانات العينة."
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
 msgid "GNU PSPP Variable View"
 msgstr "عرض متغيرات GNU PSPP"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-msgid "statistics"
-msgstr "الإحصائيات"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -13751,6 +13750,9 @@ msgstr "تحليل البيانات الإحصائية باستخدام بديل
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr "الإحصاء; التحليل; spss;"
+
+#~ msgid "statistics"
+#~ msgstr "الإحصائيات"
 
 #~ msgid "Cannot stat %s: %s"
 #~ msgstr "لا يمكن إحصاء %s: %s"

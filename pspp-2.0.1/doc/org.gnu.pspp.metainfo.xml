@@ -323,14 +323,6 @@
   <url type="donation">https://my.fsf.org/donate</url>
   <keywords>
     <keyword>statistics</keyword>
-    <keyword xml:lang="uk">статистика</keyword>
-    <keyword xml:lang="ta">புள்ளியியல்</keyword>
-    <keyword xml:lang="nl">statistische maten</keyword>
-    <keyword xml:lang="lt">statistika</keyword>
-    <keyword xml:lang="hu">statisztika</keyword>
-    <keyword xml:lang="de">Statistiken</keyword>
-    <keyword xml:lang="ca">Estadístics</keyword>
-    <keyword xml:lang="ar">الإحصائيات</keyword>
   </keywords>
   <content_rating type="oars-1.0"/>
   <update_contact>pspp-dev@gnu.org</update_contact>

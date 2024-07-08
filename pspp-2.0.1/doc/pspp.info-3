@@ -1,4 +1,4 @@
-This is pspp.info, produced by makeinfo version 7.0.3 from pspp.texi.
+This is pspp.info, produced by makeinfo version 7.1 from pspp.texi.
 
 This manual is for GNU PSPP version 2.0.1, software for statistical
 analysis.
@@ -107,7 +107,7 @@ displayed.  The following keywords are accepted:
    The ‘ORIGIN’ and ‘NOORIGIN’ subcommands are mutually exclusive.
 ‘ORIGIN’ indicates that the regression should be performed through the
 origin.  You should use this option if, and only if you have reason to
-believe that the regression does indeed pass through the origin — that
+believe that the regression does indeed pass through the origin -- that
 is to say, the value b_0 above, is zero.  The default is ‘NOORIGIN’.
 
    The ‘SAVE’ subcommand causes PSPP to save the residuals or predicted
@@ -169,7 +169,7 @@ variables named in the ‘VARIABLES’ subcommand are used.  Optionally, the
 NAME parameter may be specified to set a string name for the scale.
 
    The ‘MODEL’ subcommand determines the type of analysis.  If ‘ALPHA’
-is specified, then Cronbach’s Alpha is calculated for the scale.  If the
+is specified, then Cronbach's Alpha is calculated for the scale.  If the
 model is ‘SPLIT’, then the variables are divided into 2 subsets.  An
 optional parameter N may be given, to specify how many variables to be
 in the first subset.  If N is omitted, then it defaults to one half of
@@ -188,8 +188,8 @@ displays per-item analysis tested against the totals.
 15.18.1 Example - Reliability
 -----------------------------
 
-Before analysing the results of a survey – particularly for a multiple
-choice survey – it is desireable to know whether the respondents have
+Before analysing the results of a survey - particularly for a multiple
+choice survey - it is desireable to know whether the respondents have
 considered their answers or simply provided random answers.
 
    In the following example the survey results from the file ‘hotel.sav’
@@ -213,7 +213,6 @@ reliability:ex.
      	/variables= all
      	/model=alpha.
 
-
 Example 15.8: Investigating the reliability of survey responses
 
    In this case, all variables in the data set are used.  So we can use
@@ -221,10 +220,9 @@ the special keyword ‘ALL’ (*note BNF::).
 
  [image src="screenshots/reliability-ad.png" ]
 
-
 Screenshot 15.8: Reliability dialog box with all variables selected
 
-   *note Result 15.6: reliability:res. shows that Cronbach’s Alpha is
+   *note Result 15.6: reliability:res. shows that Cronbach's Alpha is
 0.11 which is a value normally considered too low to indicate
 consistency within the data.  This is possibly due to the small number
 of survey questions.  The survey should be redesigned before serious use
@@ -247,7 +245,6 @@ Case Processing Summary
 +----------------+----------+
 |             .11|         5|
 +----------------+----------+" ]
-
 
 
 Result 15.6: The results of the reliability command on ‘hotel.sav’
@@ -328,7 +325,7 @@ Some PSPP procedures work with matrices by producing numeric matrices
 that report results of data analysis, or by consuming matrices as a
 basis for further analysis.  This chapter documents the format of data
 files that store these matrices and commands for working with them, as
-well as PSPP’s general-purpose facility for matrix operations.
+well as PSPP's general-purpose facility for matrix operations.
 
 * Menu:
 
@@ -352,7 +349,7 @@ write matrices also use this format.
 format.  *Note MATRIX DATA::, for a command to read a text file as a
 matrix file.
 
-   A matrix file’s dictionary must have the following variables in the
+   A matrix file's dictionary must have the following variables in the
 specified order:
 
   1. Zero or more numeric split variables.  These are included by
@@ -455,7 +452,7 @@ File: pspp.info,  Node: MATRIX DATA,  Next: MCONVERT,  Prev: Matrix Files,  Up: 
 
      MATRIX DATA
              VARIABLES=VARIABLES
-             [FILE={’FILE_NAME’ | INLINE}
+             [FILE={'FILE_NAME' | INLINE}
              [/FORMAT=[{LIST | FREE}]
                       [{UPPER | LOWER | FULL}]
                       [{DIAGONAL | NODIAGONAL}]]
@@ -485,7 +482,7 @@ single or double quotes.
    ‘MATRIX DATA’ can read the types of matrix and vector data supported
 in matrix files (*note Matrix File Row Types::).
 
-   The ‘FILE’ subcommand specifies the source of the command’s input.
+   The ‘FILE’ subcommand specifies the source of the command's input.
 To read input from a text file, specify its name in quotes.  To supply
 input inline, omit ‘FILE’ or specify ‘INLINE’.  Inline data must
 directly follow ‘MATRIX DATA’, inside ‘BEGIN DATA’ (*note BEGIN DATA::).
@@ -551,7 +548,7 @@ File: pspp.info,  Node: MATRIX DATA with ROWTYPE_,  Next: MATRIX DATA without RO
 16.2.1 With ‘ROWTYPE_’
 ----------------------
 
-If ‘VARIABLES’ includes ‘ROWTYPE_’, each case’s ‘ROWTYPE_’ indicates the
+If ‘VARIABLES’ includes ‘ROWTYPE_’, each case's ‘ROWTYPE_’ indicates the
 type of data contained in the row.  *Note Matrix File Row Types::, for a
 list of supported row types.
 
@@ -598,7 +595,7 @@ Example 2: ‘FORMAT=UPPER NODIAGONAL’
 
 This syntax produces the same matrix file as example 1, but it uses
 ‘FORMAT=UPPER NODIAGONAL’ to specify the upper triangle and omit the
-diagonal.  Because the matrix’s ‘ROWTYPE_’ is ‘CORR’, PSPP automatically
+diagonal.  Because the matrix's ‘ROWTYPE_’ is ‘CORR’, PSPP automatically
 fills in the diagonal with 1.
 
      MATRIX DATA
@@ -803,7 +800,7 @@ would use ‘CELLS=5’; and so on.
 from pooled data by enclosing within-cell row types in parentheses.
 When different within-cell row types for a single factor appear in
 subsequent lines, enclose the row types in a single set of parentheses;
-when different factors’ values for a given within-cell row type appear
+when different factors' values for a given within-cell row type appear
 in subsequent lines, enclose each row type in individual parentheses.
 
    Without ‘ROWTYPE_’, input lines for pooled data do not include factor
@@ -875,8 +872,8 @@ File: pspp.info,  Node: MCONVERT,  Next: MATRIX,  Prev: MATRIX DATA,  Up: Matric
 
      MCONVERT
          [[MATRIX=]
-          [IN({‘*’|’FILE’})]
-          [OUT({‘*’|’FILE’})]]
+          [IN({‘*’|'FILE'})]
+          [OUT({‘*’|'FILE'})]]
          [/{REPLACE,APPEND}].
 
    The ‘MCONVERT’ command converts matrix data from a correlation matrix
@@ -1361,7 +1358,7 @@ File: pspp.info,  Node: Matrix Functions,  Next: Matrix COMPUTE Command,  Prev: 
 
 The matrix language support numerous functions in multiple categories.
 The following subsections document each of the currently supported
-functions.  The first letter of each parameter’s name indicate the
+functions.  The first letter of each parameter's name indicate the
 required argument type:
 
 S
@@ -1507,7 +1504,7 @@ File: pspp.info,  Node: Matrix Construction Functions,  Next: Matrix Minimum and
 
  -- Matrix Function: BLOCK (M1, ..., MN)
      Returns a block diagonal matrix with as many rows as the sum of its
-     arguments’ row counts and as many columns as the sum of their
+     arguments' row counts and as many columns as the sum of their
      columns.  Each argument matrix is placed along the main diagonal of
      the result, and all other elements are zero.
 
@@ -1664,7 +1661,7 @@ File: pspp.info,  Node: Matrix Minimum and Maximum and Sum Functions,  Next: Mat
      SSCP({1, 2, 3; 4, 5, 6}) ⇒ {17, 22, 27; 22, 29, 36; 27, 36, 45}
 
  -- Matrix Function: TRACE (M)
-     Returns the sum of the elements along M’s main diagonal, equivalent
+     Returns the sum of the elements along M's main diagonal, equivalent
      to ‘MSUM(DIAG(M))’.
 
      TRACE(MDIAG(1:5)) ⇒ 15
@@ -1686,8 +1683,8 @@ File: pspp.info,  Node: Matrix Property Functions,  Next: Matrix Rank Ordering F
      NCOL(1:5) ⇒ 5
 
  -- Matrix Function: DIAG (M)
-     Returns a column vector containing a copy of M’s main diagonal.
-     The vector’s length is the lesser of ‘NCOL(M)’ and ‘NROW(M)’.
+     Returns a column vector containing a copy of M's main diagonal.
+     The vector's length is the lesser of ‘NCOL(M)’ and ‘NROW(M)’.
 
      DIAG({1, 0; -2, -3; 3, 3}) ⇒ {1; -3}
 
@@ -2070,7 +2067,7 @@ matrices.  When it is omitted, PSPP chooses how to format entries
 automatically using M, the magnitude of the largest-magnitude element in
 the matrix to be displayed:
 
-  1. If M < 10^{11} and the matrix’s elements are all integers, PSPP
+  1. If M < 10^{11} and the matrix's elements are all integers, PSPP
      chooses the narrowest ‘F’ format that fits M plus a sign.  For
      example, if the matrix is {1:10}, then m = 10, which fits in 3
      columns with room for a sign, the format is ‘F3.0’.
@@ -2197,7 +2194,7 @@ File: pspp.info,  Node: Matrix LOOP and BREAK Commands,  Next: Matrix READ and W
      BREAK.
 
    The ‘LOOP’ command executes a nested group of matrix commands, called
-the loop’s “body”, repeatedly.  It has three optional clauses that
+the loop's “body”, repeatedly.  It has three optional clauses that
 control how many times the loop body executes.  Regardless of these
 clauses, the global ‘MXLOOPS’ setting, which defaults to 40, also limits
 the number of iterations of a loop.  To iterate more times, raise the
@@ -2375,7 +2372,7 @@ submatrix.
 
    By default, or with ‘MODE=RECTANGULAR’, the command reads an entry
 for every row and column.  With ‘MODE=SYMMETRIC’, the command reads only
-the entries on and below the matrix’s main diagonal, and copies the
+the entries on and below the matrix's main diagonal, and copies the
 entries above the main diagonal from the corresponding symmetric entries
 below it.  Only square matrices may use ‘MODE=SYMMETRIC’.
 
@@ -2411,7 +2408,7 @@ given that ‘input.txt’ contains the following:
      456
 
    The ‘READ’ command will read as many lines of input as needed for a
-particular row, so it’s also acceptable to break any of the lines above
+particular row, so it's also acceptable to break any of the lines above
 into multiple lines.  For example, the first line ‘1, 2, 4’ could be
 written with a line break following either or both commas.
 
@@ -2475,7 +2472,7 @@ READ and WRITE Commands::, for details.
 
    By default, or with ‘MODE=RECTANGULAR’, the command writes an entry
 for every row and column.  With ‘MODE=TRIANGULAR’, the command writes
-only the entries on and below the matrix’s main diagonal.  Entries above
+only the entries on and below the matrix's main diagonal.  Entries above
 the diagonal are not written.  Only square matrices may be written with
 ‘MODE=TRIANGULAR’.
 
@@ -2619,7 +2616,7 @@ names.
 
    By default, ‘SAVE’ assumes that the matrix to be written is all
 numeric.  To write string columns, specify a comma-separated list of the
-string columns’ variable names on ‘STRINGS’.
+string columns' variable names on ‘STRINGS’.
 
 
 File: pspp.info,  Node: Matrix MGET Command,  Next: Matrix MSAVE Command,  Prev: Matrix SAVE Command,  Up: MATRIX
@@ -2633,7 +2630,7 @@ File: pspp.info,  Node: Matrix MGET Command,  Next: Matrix MSAVE Command,  Prev:
    The ‘MGET’ command reads the data from a matrix file (*note Matrix
 Files::) into matrix variables.
 
-   All of ‘MGET’’s subcommands are optional.  Specify the name or handle
+   All of ‘MGET’'s subcommands are optional.  Specify the name or handle
 of the matrix file to be read on the ‘FILE’ subcommand; if it is
 omitted, then the command reads the active file.
 
@@ -2785,7 +2782,7 @@ File: pspp.info,  Node: Utilities,  Next: Invoking pspp-convert,  Prev: Matrices
 17 Utilities
 ************
 
-Commands that don’t fit any other category are placed here.
+Commands that don't fit any other category are placed here.
 
    Most of these commands are not affected by commands like ‘IF’ and
 ‘LOOP’: they take effect only once, unconditionally, at the time that
@@ -2804,7 +2801,7 @@ they are encountered in the input.
 * ECHO::                        Write a string to the output stream.
 * ERASE::                       Erase a file.
 * EXECUTE::                     Execute pending transformations.
-* FILE LABEL::                  Set the active dataset’s label.
+* FILE LABEL::                  Set the active dataset's label.
 * FINISH::                      Terminate the PSPP session.
 * HOST::                        Temporarily return to the operating system.
 * INCLUDE::                     Include a file within the current one.
@@ -2824,7 +2821,7 @@ File: pspp.info,  Node: ADD DOCUMENT,  Next: CACHE,  Up: Utilities
 =================
 
      ADD DOCUMENT
-         ’line one’ ’line two’ ... ’last line’ .
+         'line one' 'line two' ... 'last line' .
 
    ‘ADD DOCUMENT’ adds one or more lines of descriptive commentary to
 the active dataset.  Documents added in this way are saved to system
@@ -2850,7 +2847,7 @@ File: pspp.info,  Node: CD,  Next: COMMENT,  Prev: CACHE,  Up: Utilities
 17.3 CD
 =======
 
-     CD ’new directory’ .
+     CD 'new directory' .
 
    ‘CD’ changes the current directory.  The new directory becomes that
 specified by the command.
@@ -2894,11 +2891,11 @@ They can be viewed using ‘SYSFILE INFO’ or ‘DISPLAY DOCUMENTS’.  They
 can be removed from the active dataset with ‘DROP DOCUMENTS’.
 
    Specify the DOCUMENTARY TEXT following the ‘DOCUMENT’ keyword.  It is
-interpreted literally—any quotes or other punctuation marks are included
-in the file.  You can extend the documentary text over as many lines as
-necessary, including blank lines to separate paragraphs.  Lines are
-truncated at 80 bytes.  Don’t forget to terminate the command with a dot
-at the end of a line.  *Note ADD DOCUMENT::.
+interpreted literally--any quotes or other punctuation marks are
+included in the file.  You can extend the documentary text over as many
+lines as necessary, including blank lines to separate paragraphs.  Lines
+are truncated at 80 bytes.  Don't forget to terminate the command with a
+dot at the end of a line.  *Note ADD DOCUMENT::.
 
 
 File: pspp.info,  Node: DISPLAY DOCUMENTS,  Next: DISPLAY FILE LABEL,  Prev: DOCUMENT,  Up: Utilities
@@ -2945,7 +2942,7 @@ File: pspp.info,  Node: ECHO,  Next: ERASE,  Prev: DROP DOCUMENTS,  Up: Utilitie
 17.9 ECHO
 =========
 
-     ECHO ’arbitrary text’ .
+     ECHO 'arbitrary text' .
 
    Use ‘ECHO’ to write arbitrary text to the output stream.  The text
 should be enclosed in quotation marks following the normal rules for
@@ -3009,7 +3006,7 @@ File: pspp.info,  Node: HOST,  Next: INCLUDE,  Prev: FINISH,  Up: Utilities
 In the syntax below, the square brackets must be included in the command
 syntax and do not indicate that that their contents are optional.
 
-     HOST COMMAND=[’COMMAND’...]
+     HOST COMMAND=['COMMAND'...]
           TIMELIMIT=SECS.
 
    ‘HOST’ executes one or more commands, each provided as a string in
@@ -3019,17 +3016,17 @@ and waits for it to finish before running the next one.  If a command
 fails (with a nonzero exit status, or because it is killed by a signal),
 then PSPP does not run any remaining commands.
 
-   PSPP provides ‘/dev/null’ as the shell’s standard input.  If a
+   PSPP provides ‘/dev/null’ as the shell's standard input.  If a
 process needs to read from stdin, redirect from a file or device, or use
 a pipe.
 
-   PSPP displays the shell’s standard output and standard error as PSPP
+   PSPP displays the shell's standard output and standard error as PSPP
 output.  Redirect to a file or ‘/dev/null’ or another device if this is
 not desired.
 
    The following example runs ‘rsync’ to copy a file from a remote
-server to the local file ‘data.txt’, writing ‘rsync’’s own output to
-‘rsync-log.txt’.  PSPP displays the command’s error output, if any.  If
+server to the local file ‘data.txt’, writing ‘rsync’'s own output to
+‘rsync-log.txt’.  PSPP displays the command's error output, if any.  If
 ‘rsync’ needs to prompt the user (e.g. to obtain a password), the
 command fails.  Only if the ‘rsync’ succeeds, PSPP then runs the
 ‘sha512sum’ command.
@@ -3052,7 +3049,7 @@ File: pspp.info,  Node: INCLUDE,  Next: INSERT,  Prev: HOST,  Up: Utilities
 17.15 INCLUDE
 =============
 
-             INCLUDE [FILE=]’FILE_NAME’ [ENCODING=’ENCODING’].
+             INCLUDE [FILE=]'FILE_NAME' [ENCODING='ENCODING'].
 
    ‘INCLUDE’ causes the PSPP command processor to read an additional
 command file as if it were included bodily in the current command file.
@@ -3073,11 +3070,11 @@ File: pspp.info,  Node: INSERT,  Next: OUTPUT,  Prev: INCLUDE,  Up: Utilities
 17.16 INSERT
 ============
 
-          INSERT [FILE=]’FILE_NAME’
+          INSERT [FILE=]'FILE_NAME'
              [CD={NO,YES}]
              [ERROR={CONTINUE,STOP}]
              [SYNTAX={BATCH,INTERACTIVE}]
-             [ENCODING={LOCALE, ’CHARSET_NAME’}].
+             [ENCODING={LOCALE, 'CHARSET_NAME'}].
 
    ‘INSERT’ is similar to ‘INCLUDE’ (*note INCLUDE::) but somewhat more
 flexible.  It causes the command processor to read a file as if it were
@@ -3176,7 +3173,7 @@ SIGNIFICANCE
 
 COUNT
      Counts or sums of weights.  For a weighted data set, the default is
-     the weight variable’s print format.  For an unweighted data set,
+     the weight variable's print format.  For an unweighted data set,
      the default is F40.0.
 
    For most other numeric values that appear in tables, ‘SET FORMAT’ may
@@ -3193,12 +3190,12 @@ File: pspp.info,  Node: PERMISSIONS,  Next: PRESERVE and RESTORE,  Prev: OUTPUT,
 =================
 
      PERMISSIONS
-             FILE=’FILE_NAME’
+             FILE='FILE_NAME'
              /PERMISSIONS = {READONLY,WRITEABLE}.
 
    ‘PERMISSIONS’ changes the permissions of a file.  There is one
 mandatory subcommand which specifies the permissions to which the file
-should be changed.  If you set a file’s permission to ‘READONLY’, then
+should be changed.  If you set a file's permission to ‘READONLY’, then
 the file will become unwritable either by you or anyone else on the
 system.  If you set the permission to ‘WRITEABLE’, then the file becomes
 writeable by you; the permissions afforded to others are unchanged.
@@ -3229,7 +3226,7 @@ File: pspp.info,  Node: SET,  Next: SHOW,  Prev: PRESERVE and RESTORE,  Up: Util
      SET
 
      (data input)
-             /BLANKS={SYSMIS,’.’,number}
+             /BLANKS={SYSMIS,'.',number}
              /DECIMAL={DOT,COMMA}
              /FORMAT=FMT_SPEC
              /EPOCH={AUTOMATIC,YEAR}
@@ -3242,7 +3239,7 @@ File: pspp.info,  Node: SET,  Next: SHOW,  Prev: PRESERVE and RESTORE,  Up: Util
              /WORKSPACE=WORKSPACE_SIZE
 
      (syntax execution)
-             /LOCALE=’LOCALE’
+             /LOCALE='LOCALE'
              /MXLOOPS=MAX_LOOPS
              /SEED={RANDOM,SEED_VALUE}
              /UNDEFINED={WARN,NOWARN}
@@ -3250,7 +3247,7 @@ File: pspp.info,  Node: SET,  Next: SHOW,  Prev: PRESERVE and RESTORE,  Up: Util
              /SCALEMIN=COUNT
 
      (data output)
-             /CC{A,B,C,D,E}={’NPRE,PRE,SUF,NSUF’,’NPRE.PRE.SUF.NSUF’}
+             /CC{A,B,C,D,E}={'NPRE,PRE,SUF,NSUF','NPRE.PRE.SUF.NSUF'}
              /DECIMAL={DOT,COMMA}
              /FORMAT=FMT_SPEC
              /LEADZERO={ON,OFF}
@@ -3275,14 +3272,14 @@ File: pspp.info,  Node: SET,  Next: SHOW,  Prev: PRESERVE and RESTORE,  Up: Util
              /TLOOK={NONE,FILE}
 
      (logging)
-             /JOURNAL={ON,OFF} [’FILE_NAME’]
+             /JOURNAL={ON,OFF} ['FILE_NAME']
 
      (system files)
              /SCOMPRESSION={ON,OFF}
 
      (miscellaneous)
              /SAFER=ON
-             /LOCALE=’STRING’
+             /LOCALE='STRING'
 
      (macros)
              /MEXPAND={ON,OFF}
@@ -3292,15 +3289,15 @@ File: pspp.info,  Node: SET,  Next: SHOW,  Prev: PRESERVE and RESTORE,  Up: Util
 
      (settings not yet implemented, but accepted and ignored)
              /BASETEXTDIRECTION={AUTOMATIC,RIGHTTOLEFT,LEFTTORIGHT}
-             /BLOCK=’C’
-             /BOX={’XXX’,’XXXXXXXXXXX’}
+             /BLOCK='C'
+             /BOX={'XXX','XXXXXXXXXXX'}
              /CACHE={ON,OFF}
              /CELLSBREAK=NUMBER
              /COMPRESSION={ON,OFF}
              /CMPTRANS={ON,OFF}
              /HEADER={NO,YES,BLANK}
 
-   ‘SET’ allows the user to adjust several parameters relating to PSPP’s
+   ‘SET’ allows the user to adjust several parameters relating to PSPP's
 execution.  Since there are many subcommands to this command, its
 subcommands are examined in groups.
 
@@ -3312,8 +3309,8 @@ files.  The data input subcommands are
 
 BLANKS
      This is the value assigned to an item data item that is empty or
-     contains only white space.  An argument of SYSMIS or ’.’ causes the
-     system-missing value to be assigned to null items.  This is the
+     contains only white space.  An argument of SYSMIS or '.'  causes
+     the system-missing value to be assigned to null items.  This is the
      default.  Any real value may be assigned.
 
 DECIMAL
@@ -3580,7 +3577,7 @@ RESULTS
    These subcommands have no effect on output in the PSPP GUI
 environment.
 
-   Output driver option subcommands affect output drivers’ settings.
+   Output driver option subcommands affect output drivers' settings.
 These subcommands are
 
 HEADERS
@@ -3622,7 +3619,7 @@ the “journal” file.
    PSPP enables journaling by default when it runs interactively in a
 terminal or in the PSPPIRE GUI. In the GUI, use Edit → Options... to
 view or override the default location or to disable journaling.  From
-syntax, use ‘SHOW JOURNAL’ to see the journal’s location and whether it
+syntax, use ‘SHOW JOURNAL’ to see the journal's location and whether it
 is enabled.
 
 JOURNAL
@@ -3674,7 +3671,7 @@ LOCALE
           SET LOCALE='japanese'.
 
      Contrary to intuition, this command does not affect any aspect of
-     the system’s locale.
+     the system's locale.
 
    The following subcommands affect the interpretation of macros.
 
@@ -3747,7 +3744,7 @@ File: pspp.info,  Node: SHOW,  Next: SUBTITLE,  Prev: SET,  Up: Utilities
              [WEIGHT]
              [WIDTH]
 
-   ‘SHOW’ can be used to display the current state of PSPP’s execution
+   ‘SHOW’ can be used to display the current state of PSPP's execution
 parameters.  Parameters that can be changed using ‘SET’ (*note SET::),
 can be examined using ‘SHOW’ using the subcommand with the same name.
 ‘SHOW’ supports the following additional subcommands:
@@ -3774,7 +3771,7 @@ can be examined using ‘SHOW’ using the subcommand with the same name.
 ‘WARRANTY’
      Show details of the lack of warranty for PSPP.
 ‘COPYING’ / ‘LICENSE’
-     Display the terms of PSPP’s copyright licence (*note License::).
+     Display the terms of PSPP's copyright licence (*note License::).
 
    Specifying ‘SHOW’ without any subcommands is equivalent to ‘SHOW
 ALL’.
@@ -3785,7 +3782,7 @@ File: pspp.info,  Node: SUBTITLE,  Next: TITLE,  Prev: SHOW,  Up: Utilities
 17.22 SUBTITLE
 ==============
 
-     SUBTITLE ’SUBTITLE_STRING’.
+     SUBTITLE 'SUBTITLE_STRING'.
        or
      SUBTITLE SUBTITLE_STRING.
 
@@ -3803,7 +3800,7 @@ File: pspp.info,  Node: TITLE,  Prev: SUBTITLE,  Up: Utilities
 17.23 TITLE
 ===========
 
-     TITLE ’TITLE_STRING’.
+     TITLE 'TITLE_STRING'.
        or
      TITLE TITLE_STRING.
 
@@ -3843,7 +3840,7 @@ extension:
 ‘csv’
 ‘txt’
      Comma-separated value.  Each value is formatted according to its
-     variable’s print format.  The first line in the file contains
+     variable's print format.  The first line in the file contains
      variable names.
 
 ‘sav’
@@ -3933,12 +3930,12 @@ format for unrecognized extensions.
      line of output.  With this option, ‘pspp-convert’ omits this line.
 
 ‘--labels’
-     By default, ‘pspp-convert’ writes variables’ values to CSV output
+     By default, ‘pspp-convert’ writes variables' values to CSV output
      files.  With this option, ‘pspp-convert’ writes value labels.
 
 ‘--print-formats’
      By default, ‘pspp-convert’ writes numeric variables as plain
-     numbers.  This option makes ‘pspp-convert’ honor variables’ print
+     numbers.  This option makes ‘pspp-convert’ honor variables' print
      formats.
 
 ‘--decimal=DECIMAL’
@@ -3975,7 +3972,7 @@ encrypted files:
 ‘-a ALPHABET’
 ‘--password-alphabet=ALPHABET’
      Specifies the alphabet of symbols over which to search for an
-     encrypted file’s password.  ALPHABET may include individual
+     encrypted file's password.  ALPHABET may include individual
      characters and ranges delimited by ‘-’.  For example, ‘-a a-z’
      searches lowercase letters, ‘-a A-Z0-9’ searches uppercase letters
      and digits, and ‘-a ' -~'’ searches all printable ASCII characters.
@@ -4083,7 +4080,7 @@ available to select a subset of objects to include in the output.  The
 following additional options are accepted:
 
 ‘-O format=FORMAT’
-     Overrides the format inferred from the output file’s extension.
+     Overrides the format inferred from the output file's extension.
      Use ‘--help’ to list the available formats.  *Note Invoking PSPP::,
      for details of the available output formats.
 
@@ -4175,7 +4172,7 @@ only objects that satisfy all of them are selected:
      the same, unique command identifier.  Command identifiers are
      always in English regardless of the language used for output.  They
      often differ from the command name in PSPP syntax.  Use the
-     ‘pspp-output’ program’s ‘dir’ command to print command identifiers
+     ‘pspp-output’ program's ‘dir’ command to print command identifiers
      in particular output.
 
      The ‘--subtypes’ option matches particular tables within a command,
@@ -4651,7 +4648,7 @@ following:
      bugs.
 
    • A description of what you think is wrong: What happened that you
-     didn’t expect, and what did you expect to happen?  Include any
+     didn't expect, and what did you expect to happen?  Include any
      error messages that PSPP output.
 
    Here is one example of a bug report that includes all of the elements
@@ -4661,15 +4658,15 @@ above:
      following:
 
 
-      [image src="pspp-figures/show-system.png" text="                   System Information
-+----------------+------------------------------------+
-|Version         |GNU pspp 2.0.1                      |
-|Host System     |x86_64-pc-linux-gnu                 |
-|Build System    |x86_64-pc-linux-gnu                 |
-|Locale Directory|//share/locale                      |
-|Journal File    |/home/blp/.local/state/pspp/pspp.jnl|
-|Compiler Version|13.2.1 20231205 (Red Hat 13.2.1-6)  |
-+----------------+------------------------------------+" ]
+      [image src="pspp-figures/show-system.png" text="                        System Information
++----------------+-----------------------------------------------+
+|Version         |GNU pspp 2.0.1                                 |
+|Host System     |aarch64-apple-darwin23.5.0                     |
+|Build System    |aarch64-apple-darwin23.5.0                     |
+|Locale Directory|/usr/local/share/locale                        |
+|Journal File    |/Users/mihailzaharov/.local/state/pspp/pspp.jnl|
+|Compiler Version|Apple LLVM 15.0.0 (clang-1500.3.9.4)           |
++----------------+-----------------------------------------------+" ]
 
 
      The bug I'm seeing is that executing the following syntax:
@@ -4701,7 +4698,7 @@ and the developer:
      I downloaded the latest version of PSPP and entered a sequence of numbers,
      but when I analyse them it gives the wrong output.
 
-   PSPP developers value all users’ feedback, but cannot promise an
+   PSPP developers value all users' feedback, but cannot promise an
 immediate response.  The bug reporting is not a consultancy or support
 service, although you can make private arrangements for such services.
 Since PSPP is free software, consultants have access to the information
@@ -5341,18 +5338,16 @@ File: pspp.info,  Node: Concept Index,  Next: GNU Free Documentation License,  P
  [index ]
 * Menu:
 
-* ":                                     Tokens.              (line  64)
-* “is defined as”:                       BNF.                 (line  44)
-* $CASENUM:                              System Variables.    (line  11)
-* $DATE:                                 System Variables.    (line  15)
-* $DATE11:                               System Variables.    (line  19)
-* $JDATE:                                System Variables.    (line  23)
-* $LENGTH:                               System Variables.    (line  27)
-* $SYSMIS:                               System Variables.    (line  30)
-* $TIME:                                 System Variables.    (line  33)
-* $WIDTH:                                System Variables.    (line  37)
-* &:                                     Logical Operators.   (line  11)
+* _:                                     Attributes.          (line  20)
+* -:                                     Arithmetic Operators.
+                                                              (line  12)
+* - <1>:                                 Arithmetic Operators.
+                                                              (line  29)
+* .:                                     Attributes.          (line  15)
+* . <1>:                                 BNF.                 (line  29)
 * ':                                     Tokens.              (line  64)
+* ":                                     Tokens.              (line  64)
+* "is defined as":                       BNF.                 (line  44)
 * (:                                     Functions.           (line   6)
 * ( ):                                   Grouping Operators.  (line   6)
 * ):                                     Functions.           (line   6)
@@ -5360,16 +5355,11 @@ File: pspp.info,  Node: Concept Index,  Next: GNU Free Documentation License,  P
                                                               (line  15)
 * **:                                    Arithmetic Operators.
                                                               (line  24)
-* +:                                     Arithmetic Operators.
-                                                              (line   9)
-* -:                                     Arithmetic Operators.
-                                                              (line  12)
-* - <1>:                                 Arithmetic Operators.
-                                                              (line  29)
-* .:                                     Attributes.          (line  15)
-* . <1>:                                 BNF.                 (line  29)
 * /:                                     Arithmetic Operators.
                                                               (line  19)
+* &:                                     Logical Operators.   (line  11)
+* +:                                     Arithmetic Operators.
+                                                              (line   9)
 * <:                                     Relational Operators.
                                                               (line  25)
 * <=:                                    Relational Operators.
@@ -5382,11 +5372,18 @@ File: pspp.info,  Node: Concept Index,  Next: GNU Free Documentation License,  P
                                                               (line  33)
 * >=:                                    Relational Operators.
                                                               (line  29)
-* _:                                     Attributes.          (line  20)
 * |:                                     Logical Operators.   (line  17)
 * ~:                                     Logical Operators.   (line  23)
 * ~=:                                    Relational Operators.
                                                               (line  37)
+* $CASENUM:                              System Variables.    (line  11)
+* $DATE:                                 System Variables.    (line  15)
+* $DATE11:                               System Variables.    (line  19)
+* $JDATE:                                System Variables.    (line  23)
+* $LENGTH:                               System Variables.    (line  27)
+* $SYSMIS:                               System Variables.    (line  30)
+* $TIME:                                 System Variables.    (line  33)
+* $WIDTH:                                System Variables.    (line  37)
 * absolute value:                        Miscellaneous Mathematics.
                                                               (line   9)
 * addition:                              Arithmetic Operators.
@@ -5460,7 +5457,7 @@ File: pspp.info,  Node: Concept Index,  Next: GNU Free Documentation License,  P
 * correlation:                           CORRELATIONS.        (line  20)
 * cosine:                                Trigonometry.        (line  24)
 * covariance:                            CORRELATIONS.        (line  52)
-* Cronbach’s Alpha:                      RELIABILITY.         (line  13)
+* Cronbach's Alpha:                      RELIABILITY.         (line  13)
 * cross-case function:                   Miscellaneous Functions.
                                                               (line   6)
 * currency formats:                      Custom Currency Formats.
@@ -5632,7 +5629,7 @@ File: pspp.info,  Node: Concept Index,  Next: GNU Free Documentation License,  P
 * Julian date:                           Miscellaneous Functions.
                                                               (line  28)
 * K-means clustering:                    QUICK CLUSTER.       (line   6)
-* Kendall’s W test:                      KENDALL.             (line   6)
+* Kendall's W test:                      KENDALL.             (line   6)
 * keywords:                              BNF.                 (line  10)
 * Kolmogorov-Smirnov test:               KOLMOGOROV-SMIRNOV.  (line   6)
 * Kruskal-Wallis test:                   KRUSKAL-WALLIS.      (line   6)
@@ -5776,15 +5773,15 @@ File: pspp.info,  Node: Concept Index,  Next: GNU Free Documentation License,  P
 * productions:                           BNF.                 (line  33)
 * productions <1>:                       BNF.                 (line  44)
 * PSPP language:                         Introduction.        (line   6)
-* PSPP, command structure:               Commands.            (line   6)
-* PSPP, invoking:                        Invoking PSPP.       (line   6)
-* PSPP, language:                        Language.            (line   6)
 * pspp-convert:                          Invoking pspp-convert.
                                                               (line   6)
 * pspp-dump-sav:                         Invoking pspp-dump-sav.
                                                               (line   6)
 * pspp-output:                           Invoking pspp-output.
                                                               (line   6)
+* PSPP, command structure:               Commands.            (line   6)
+* PSPP, invoking:                        Invoking PSPP.       (line   6)
+* PSPP, language:                        Language.            (line   6)
 * PSPPIRE:                               Invoking PSPPIRE.    (line   9)
 * punctuators:                           Tokens.              (line  95)
 * punctuators <1>:                       BNF.                 (line  26)
@@ -5988,7 +5985,7 @@ Appendix A GNU Free Documentation License
      author and publisher a way to get credit for their work, while not
      being considered responsible for modifications made by others.
 
-     This License is a kind of “copyleft”, which means that derivative
+     This License is a kind of "copyleft", which means that derivative
      works of the document must themselves be free in the same sense.
      It complements the GNU General Public License, which is a copyleft
      license designed for free software.
@@ -6009,18 +6006,18 @@ Appendix A GNU Free Documentation License
      be distributed under the terms of this License.  Such a notice
      grants a world-wide, royalty-free license, unlimited in duration,
      to use that work under the conditions stated herein.  The
-     “Document”, below, refers to any such manual or work.  Any member
-     of the public is a licensee, and is addressed as “you”.  You accept
+     "Document", below, refers to any such manual or work.  Any member
+     of the public is a licensee, and is addressed as "you".  You accept
      the license if you copy, modify or distribute the work in a way
      requiring permission under copyright law.
 
-     A “Modified Version” of the Document means any work containing the
+     A "Modified Version" of the Document means any work containing the
      Document or a portion of it, either copied verbatim, or with
      modifications and/or translated into another language.
 
-     A “Secondary Section” is a named appendix or a front-matter section
+     A "Secondary Section" is a named appendix or a front-matter section
      of the Document that deals exclusively with the relationship of the
-     publishers or authors of the Document to the Document’s overall
+     publishers or authors of the Document to the Document's overall
      subject (or to related matters) and contains nothing that could
      fall directly within that overall subject.  (Thus, if the Document
      is in part a textbook of mathematics, a Secondary Section may not
@@ -6029,7 +6026,7 @@ Appendix A GNU Free Documentation License
      of legal, commercial, philosophical, ethical or political position
      regarding them.
 
-     The “Invariant Sections” are certain Secondary Sections whose
+     The "Invariant Sections" are certain Secondary Sections whose
      titles are designated, as being those of Invariant Sections, in the
      notice that says that the Document is released under this License.
      If a section does not fit the above definition of Secondary then it
@@ -6037,13 +6034,13 @@ Appendix A GNU Free Documentation License
      contain zero Invariant Sections.  If the Document does not identify
      any Invariant Sections then there are none.
 
-     The “Cover Texts” are certain short passages of text that are
+     The "Cover Texts" are certain short passages of text that are
      listed, as Front-Cover Texts or Back-Cover Texts, in the notice
      that says that the Document is released under this License.  A
      Front-Cover Text may be at most 5 words, and a Back-Cover Text may
      be at most 25 words.
 
-     A “Transparent” copy of the Document means a machine-readable copy,
+     A "Transparent" copy of the Document means a machine-readable copy,
      represented in a format whose specification is available to the
      general public, that is suitable for revising the document
      straightforwardly with generic text editors or (for images composed
@@ -6055,7 +6052,7 @@ Appendix A GNU Free Documentation License
      been arranged to thwart or discourage subsequent modification by
      readers is not Transparent.  An image format is not Transparent if
      used for any substantial amount of text.  A copy that is not
-     “Transparent” is called “Opaque”.
+     "Transparent" is called "Opaque".
 
      Examples of suitable formats for Transparent copies include plain
      ASCII without markup, Texinfo input format, LaTeX input format,
@@ -6068,23 +6065,23 @@ Appendix A GNU Free Documentation License
      the machine-generated HTML, PostScript or PDF produced by some word
      processors for output purposes only.
 
-     The “Title Page” means, for a printed book, the title page itself,
+     The "Title Page" means, for a printed book, the title page itself,
      plus such following pages as are needed to hold, legibly, the
      material this License requires to appear in the title page.  For
-     works in formats which do not have any title page as such, “Title
-     Page” means the text near the most prominent appearance of the
-     work’s title, preceding the beginning of the body of the text.
+     works in formats which do not have any title page as such, "Title
+     Page" means the text near the most prominent appearance of the
+     work's title, preceding the beginning of the body of the text.
 
-     The “publisher” means any person or entity that distributes copies
+     The "publisher" means any person or entity that distributes copies
      of the Document to the public.
 
-     A section “Entitled XYZ” means a named subunit of the Document
+     A section "Entitled XYZ" means a named subunit of the Document
      whose title either is precisely XYZ or contains XYZ in parentheses
      following text that translates XYZ in another language.  (Here XYZ
      stands for a specific section name mentioned below, such as
-     “Acknowledgements”, “Dedications”, “Endorsements”, or “History”.)
-     To “Preserve the Title” of such a section when you modify the
-     Document means that it remains a section “Entitled XYZ” according
+     "Acknowledgements", "Dedications", "Endorsements", or "History".)
+     To "Preserve the Title" of such a section when you modify the
+     Document means that it remains a section "Entitled XYZ" according
      to this definition.
 
      The Document may include Warranty Disclaimers next to the notice
@@ -6114,7 +6111,7 @@ Appendix A GNU Free Documentation License
 
      If you publish printed copies (or copies in media that commonly
      have printed covers) of the Document, numbering more than 100, and
-     the Document’s license notice requires Cover Texts, you must
+     the Document's license notice requires Cover Texts, you must
      enclose the copies in covers that carry, clearly and legibly, all
      these Cover Texts: Front-Cover Texts on the front cover, and
      Back-Cover Texts on the back cover.  Both covers must also clearly
@@ -6186,15 +6183,15 @@ Appendix A GNU Free Documentation License
           the Addendum below.
 
        G. Preserve in that license notice the full lists of Invariant
-          Sections and required Cover Texts given in the Document’s
+          Sections and required Cover Texts given in the Document's
           license notice.
 
        H. Include an unaltered copy of this License.
 
-       I. Preserve the section Entitled “History”, Preserve its Title,
+       I. Preserve the section Entitled "History", Preserve its Title,
           and add to it an item stating at least the title, year, new
           authors, and publisher of the Modified Version as given on the
-          Title Page.  If there is no section Entitled “History” in the
+          Title Page.  If there is no section Entitled "History" in the
           Document, create one stating the title, year, authors, and
           publisher of the Document as given on its Title Page, then add
           an item describing the Modified Version as stated in the
@@ -6204,12 +6201,12 @@ Appendix A GNU Free Documentation License
           for public access to a Transparent copy of the Document, and
           likewise the network locations given in the Document for
           previous versions it was based on.  These may be placed in the
-          “History” section.  You may omit a network location for a work
+          "History" section.  You may omit a network location for a work
           that was published at least four years before the Document
           itself, or if the original publisher of the version it refers
           to gives permission.
 
-       K. For any section Entitled “Acknowledgements” or “Dedications”,
+       K. For any section Entitled "Acknowledgements" or "Dedications",
           Preserve the Title of the section, and preserve in the section
           all the substance and tone of each of the contributor
           acknowledgements and/or dedications given therein.
@@ -6218,11 +6215,11 @@ Appendix A GNU Free Documentation License
           in their text and in their titles.  Section numbers or the
           equivalent are not considered part of the section titles.
 
-       M. Delete any section Entitled “Endorsements”.  Such a section
+       M. Delete any section Entitled "Endorsements".  Such a section
           may not be included in the Modified Version.
 
        N. Do not retitle any existing section to be Entitled
-          “Endorsements” or to conflict in title with any Invariant
+          "Endorsements" or to conflict in title with any Invariant
           Section.
 
        O. Preserve any Warranty Disclaimers.
@@ -6231,15 +6228,15 @@ Appendix A GNU Free Documentation License
      appendices that qualify as Secondary Sections and contain no
      material copied from the Document, you may at your option designate
      some or all of these sections as invariant.  To do this, add their
-     titles to the list of Invariant Sections in the Modified Version’s
+     titles to the list of Invariant Sections in the Modified Version's
      license notice.  These titles must be distinct from any other
      section titles.
 
-     You may add a section Entitled “Endorsements”, provided it contains
+     You may add a section Entitled "Endorsements", provided it contains
      nothing but endorsements of your Modified Version by various
-     parties—for example, statements of peer review or that the text has
-     been approved by an organization as the authoritative definition of
-     a standard.
+     parties--for example, statements of peer review or that the text
+     has been approved by an organization as the authoritative
+     definition of a standard.
 
      You may add a passage of up to five words as a Front-Cover Text,
      and a passage of up to 25 words as a Back-Cover Text, to the end of
@@ -6277,10 +6274,10 @@ Appendix A GNU Free Documentation License
      combined work.
 
      In the combination, you must combine any sections Entitled
-     “History” in the various original documents, forming one section
-     Entitled “History”; likewise combine any sections Entitled
-     “Acknowledgements”, and any sections Entitled “Dedications”.  You
-     must delete all sections Entitled “Endorsements.”
+     "History" in the various original documents, forming one section
+     Entitled "History"; likewise combine any sections Entitled
+     "Acknowledgements", and any sections Entitled "Dedications".  You
+     must delete all sections Entitled "Endorsements."
 
   6. COLLECTIONS OF DOCUMENTS
 
@@ -6301,16 +6298,16 @@ Appendix A GNU Free Documentation License
 
      A compilation of the Document or its derivatives with other
      separate and independent documents or works, in or on a volume of a
-     storage or distribution medium, is called an “aggregate” if the
+     storage or distribution medium, is called an "aggregate" if the
      copyright resulting from the compilation is not used to limit the
-     legal rights of the compilation’s users beyond what the individual
+     legal rights of the compilation's users beyond what the individual
      works permit.  When the Document is included in an aggregate, this
      License does not apply to the other works in the aggregate which
      are not themselves derivative works of the Document.
 
      If the Cover Text requirement of section 3 is applicable to these
      copies of the Document, then if the Document is less than one half
-     of the entire aggregate, the Document’s Cover Texts may be placed
+     of the entire aggregate, the Document's Cover Texts may be placed
      on covers that bracket the Document within the aggregate, or the
      electronic equivalent of covers if the Document is in electronic
      form.  Otherwise they must appear on printed covers that bracket
@@ -6332,8 +6329,8 @@ Appendix A GNU Free Documentation License
      this License or a notice or disclaimer, the original version will
      prevail.
 
-     If a section in the Document is Entitled “Acknowledgements”,
-     “Dedications”, or “History”, the requirement (section 4) to
+     If a section in the Document is Entitled "Acknowledgements",
+     "Dedications", or "History", the requirement (section 4) to
      Preserve its Title (section 1) will typically require changing the
      actual title.
 
@@ -6374,7 +6371,7 @@ Appendix A GNU Free Documentation License
 
      Each version of the License is given a distinguishing version
      number.  If the Document specifies that a particular numbered
-     version of this License “or any later version” applies to it, you
+     version of this License "or any later version" applies to it, you
      have the option of following the terms and conditions either of
      that specified version or of any later version that has been
      published (not as a draft) by the Free Software Foundation.  If the
@@ -6382,29 +6379,29 @@ Appendix A GNU Free Documentation License
      choose any version ever published (not as a draft) by the Free
      Software Foundation.  If the Document specifies that a proxy can
      decide which future versions of this License can be used, that
-     proxy’s public statement of acceptance of a version permanently
+     proxy's public statement of acceptance of a version permanently
      authorizes you to choose that version for the Document.
 
   11. RELICENSING
 
-     “Massive Multiauthor Collaboration Site” (or “MMC Site”) means any
+     "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
      World Wide Web server that publishes copyrightable works and also
      provides prominent facilities for anybody to edit those works.  A
      public wiki that anybody can edit is an example of such a server.
-     A “Massive Multiauthor Collaboration” (or “MMC”) contained in the
+     A "Massive Multiauthor Collaboration" (or "MMC") contained in the
      site means any set of copyrightable works thus published on the MMC
      site.
 
-     “CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0
+     "CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0
      license published by Creative Commons Corporation, a not-for-profit
      corporation with a principal place of business in San Francisco,
      California, as well as future copyleft versions of that license
      published by that same organization.
 
-     “Incorporate” means to publish or republish a Document, in whole or
+     "Incorporate" means to publish or republish a Document, in whole or
      in part, as part of another Document.
 
-     An MMC is “eligible for relicensing” if it is licensed under this
+     An MMC is "eligible for relicensing" if it is licensed under this
      License, and if all works that were first published under this
      License somewhere other than this MMC, and subsequently
      incorporated in whole or in part into the MMC, (1) had no cover
@@ -6431,7 +6428,7 @@ notices just after the title page:
        Free Documentation License''.
 
    If you have Invariant Sections, Front-Cover Texts and Back-Cover
-Texts, replace the “with...Texts.” line with this:
+Texts, replace the "with...Texts."  line with this:
 
          with the Invariant Sections being LIST THEIR TITLES, with
          the Front-Cover Texts being LIST, and with the Back-Cover Texts

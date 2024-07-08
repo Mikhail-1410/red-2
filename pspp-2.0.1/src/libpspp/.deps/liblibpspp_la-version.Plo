@@ -1,0 +1,4 @@
+src/libpspp/liblibpspp_la-version.lo: src/libpspp/version.c \
+  src/libpspp/version.h
+
+src/libpspp/version.h:

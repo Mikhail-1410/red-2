@@ -1,0 +1,60 @@
+                                   Variables
++----+--------+-------------+------------+-----+-----+---------+------+-------+
+|    |        |             | Measurement|     |     |         | Print| Write |
+|Name|Position|    Label    |    Level   | Role|Width|Alignment|Format| Format|
++----+--------+-------------+------------+-----+-----+---------+------+-------+
+|v1  |       1|I am         |Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
+|    |        |satisfied    |            |     |     |         |      |       |
+|    |        |with the     |            |     |     |         |      |       |
+|    |        |level of     |            |     |     |         |      |       |
+|    |        |service      |            |     |     |         |      |       |
+|v2  |       2|The value for|Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
+|    |        |money was    |            |     |     |         |      |       |
+|    |        |good         |            |     |     |         |      |       |
+|v3  |       3|The staff    |Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
+|    |        |were slow in |            |     |     |         |      |       |
+|    |        |responding   |            |     |     |         |      |       |
+|v4  |       4|My concerns  |Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
+|    |        |were dealt   |            |     |     |         |      |       |
+|    |        |with in an   |            |     |     |         |      |       |
+|    |        |efficient    |            |     |     |         |      |       |
+|    |        |manner       |            |     |     |         |      |       |
+|v5  |       5|There was too|Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
+|    |        |much noise in|            |     |     |         |      |       |
+|    |        |the rooms    |            |     |     |         |      |       |
++----+--------+-------------+------------+-----+-----+---------+------+-------+
+
+                              Value Labels
++----------------------------------------------------+-----------------+
+|Variable Value                                      |      Label      |
++----------------------------------------------------+-----------------+
+|I am satisfied with the level of service           1|Strongly Disagree|
+|                                                   2|Disagree         |
+|                                                   3|No Opinion       |
+|                                                   4|Agree            |
+|                                                   5|Strongly Agree   |
++----------------------------------------------------+-----------------+
+|The value for money was good                       1|Strongly Disagree|
+|                                                   2|Disagree         |
+|                                                   3|No Opinion       |
+|                                                   4|Agree            |
+|                                                   5|Strongly Agree   |
++----------------------------------------------------+-----------------+
+|The staff were slow in responding                  1|Strongly Disagree|
+|                                                   2|Disagree         |
+|                                                   3|No Opinion       |
+|                                                   4|Agree            |
+|                                                   5|Strongly Agree   |
++----------------------------------------------------+-----------------+
+|My concerns were dealt with in an efficient manner 1|Strongly Disagree|
+|                                                   2|Disagree         |
+|                                                   3|No Opinion       |
+|                                                   4|Agree            |
+|                                                   5|Strongly Agree   |
++----------------------------------------------------+-----------------+
+|There was too much noise in the rooms              1|Strongly Disagree|
+|                                                   2|Disagree         |
+|                                                   3|No Opinion       |
+|                                                   4|Agree            |
+|                                                   5|Strongly Agree   |
++----------------------------------------------------+-----------------+

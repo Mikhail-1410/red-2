@@ -1,0 +1,25 @@
+                                 Custom Tables
++-----------------------------------------------------------------------+-----+
+|                                                                       |Count|
++-----------------------------------------------------------------------+-----+
+| 1. How often do you usually drive a car or other  Every day           | 4667|
+|motor vehicle?                                     Several days a week | 1274|
+|                                                   Once a week or less |  361|
+|                                                   Only certain times a|  130|
+|                                                   year                |     |
+|                                                   Never               |  540|
++-----------------------------------------------------------------------+-----+
+
+                                 Custom Tables
++-----------------------------------------------------------------------+-----+
+|                                                                       |Count|
++-----------------------------------------------------------------------+-----+
+| 1. How often do you usually drive a car or other  Every day           | 4667|
+|motor vehicle?                                     Several days a week | 1274|
+|                                                   Once a week or less |  361|
+|                                                   Only certain times a|  130|
+|                                                   year                |     |
+|                                                   Never               |  540|
+|                                                   Don't know          |    8|
+|                                                   Refused             |   19|
++-----------------------------------------------------------------------+-----+

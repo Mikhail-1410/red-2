@@ -1,0 +1,30 @@
+              Mapping of Variables to Z-scores
++--------------------------------------------+------------+
+|                   Source                   |   Target   |
++--------------------------------------------+------------+
+|Height in millimeters                       |Zheight     |
+|Internal body temperature in degrees Celcius|Ztemperature|
++--------------------------------------------+------------+
+
+                             Descriptive Statistics
++------------------------------------------+--+-------+-------+-------+-------+
+|                                          | N|  Mean |Std Dev|Minimum|Maximum|
++------------------------------------------+--+-------+-------+-------+-------+
+|Height in millimeters                     |40|1677.12| 262.87|    179|   1903|
+|Internal body temperature in degrees      |40|  37.02|   1.82|  32.59|  39.97|
+|Celcius                                   |  |       |       |       |       |
+|Valid N (listwise)                        |40|       |       |       |       |
+|Missing N (listwise)                      | 0|       |       |       |       |
++------------------------------------------+--+-------+-------+-------+-------+
+
+                             Descriptive Statistics
++-----------------------------------------+--+---------+------+-------+-------+
+|                                         |  |         |  Std |       |       |
+|                                         | N|   Mean  |  Dev |Minimum|Maximum|
++-----------------------------------------+--+---------+------+-------+-------+
+|Z-score of Height in millimeters         |40|1.93E-015|  1.00|  -5.70|    .86|
+|Z-score of Internal body temperature in  |40|1.37E-015|  1.00|  -2.44|   1.62|
+|degrees Celcius                          |  |         |      |       |       |
+|Valid N (listwise)                       |40|         |      |       |       |
+|Missing N (listwise)                     | 0|         |      |       |       |
++-----------------------------------------+--+---------+------+-------+-------+

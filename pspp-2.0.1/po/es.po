@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp-1.6.0\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2022-06-01 18:03+0200\n"
 "Last-Translator: Francesc Josep Miguel Quesada <Miguel.Quesada@uab.cat>\n"
 "Language-Team: Spanish <es@tp.org.es>\n"
@@ -14264,31 +14264,37 @@ msgstr "K Muestras _Independientes..."
 msgid "ROC Cur_ve..."
 msgstr "Curva ROC"
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "De usuario"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "_Gráficos"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "Gráfico de Puntos"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "_Histograma"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "Gráfico de _Barras"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_Utilidades"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "_Variables..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "_Comentarios del Archivo de Datos..."
 
@@ -14552,21 +14558,12 @@ msgstr ""
 "estudiantes que requieran de análisis convenientes de datos de muestreo."
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
 msgid "GNU PSPP Variable View"
 msgstr "GNU PSPP Vista de Variables"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "Estadísticas"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14584,6 +14581,11 @@ msgstr "Analiza datos estadísticos con una alternativa libre a SPSS"
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr "statistics;analysis;spss;"
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "Estadísticas"
 
 #, c-format
 #~ msgid ""

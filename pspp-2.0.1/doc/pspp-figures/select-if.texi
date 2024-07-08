@@ -1,0 +1,21 @@
+Salaries of all personnel
+
+                    Descriptive Statistics
++------------------------+--+--------+-------+-------+-------+
+|                        | N|  Mean  |Std Dev|Minimum|Maximum|
++------------------------+--+--------+-------+-------+-------+
+|Annual salary before tax|56|40028.97|8721.17|$23,451|$57,044|
+|Valid N (listwise)      |56|        |       |       |       |
+|Missing N (listwise)    | 0|        |       |       |       |
++------------------------+--+--------+-------+-------+-------+
+
+Salaries of personnel born after December 31 1999
+
+                    Descriptive Statistics
++------------------------+--+--------+-------+-------+-------+
+|                        | N|  Mean  |Std Dev|Minimum|Maximum|
++------------------------+--+--------+-------+-------+-------+
+|Annual salary before tax|17|31828.59|4454.80|$23,451|$39,504|
+|Valid N (listwise)      |17|        |       |       |       |
+|Missing N (listwise)    | 0|        |       |       |       |
++------------------------+--+--------+-------+-------+-------+

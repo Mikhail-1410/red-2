@@ -1,4 +1,4 @@
-This is pspp.info, produced by makeinfo version 7.0.3 from pspp.texi.
+This is pspp.info, produced by makeinfo version 7.1 from pspp.texi.
 
 This manual is for GNU PSPP version 2.0.1, software for statistical
 analysis.
@@ -60,7 +60,7 @@ Partial output from this example:
 
    It is best to use ‘LEAVE’ command immediately before invoking a
 procedure command, because the left status of variables is reset by
-certain transformations—for instance, ‘COMPUTE’ and ‘IF’.  Left status
+certain transformations--for instance, ‘COMPUTE’ and ‘IF’.  Left status
 is also reset by all procedure invocations.
 
 
@@ -91,12 +91,12 @@ File: pspp.info,  Node: AGGREGATE,  Next: AUTORECODE,  Up: Data Manipulation
 ==============
 
      AGGREGATE
-             [OUTFILE={*,’FILE_NAME’,FILE_HANDLE} [MODE={REPLACE,ADDVARIABLES}]]
+             [OUTFILE={*,'FILE_NAME',FILE_HANDLE} [MODE={REPLACE,ADDVARIABLES}]]
              [/MISSING=COLUMNWISE]
              [/PRESORTED]
              [/DOCUMENT]
              [/BREAK=VAR_LIST]
-             /DEST_VAR[’LABEL’]...=AGR_FUNC(SRC_VARS[, ARGS]...)...
+             /DEST_VAR['LABEL']...=AGR_FUNC(SRC_VARS[, ARGS]...)...
 
    ‘AGGREGATE’ summarizes groups of cases into single cases.  It divides
 cases into groups that have the same values for one or more variables
@@ -169,7 +169,7 @@ additional arguments after the source variable names.
 label, value labels, or missing values.  Their default print and write
 formats depend on the aggregation function used, with details given in
 the table below.  A variable label for an aggregation variable may be
-specified just after the variable’s name in the aggregation variable
+specified just after the variable's name in the aggregation variable
 list.
 
    Each set must have exactly as many source variables as aggregation
@@ -289,7 +289,6 @@ standard deviation of each occupation.
              /occ_std_dev_salary=SD(salary).
      LIST.
 
-
 Example 12.1: Calculating aggregated statistics from the ‘personnel.sav’
 file.
 
@@ -316,7 +315,6 @@ They have each been replaced by a single case per aggregated value.
 |Scrientist        |       42530.65|         42530.65|                 .|
 |Tailor            |       34586.79|         34586.79|           3728.98|
 +------------------+---------------+-----------------+------------------+" ]
-
 
 
 Results 12.1: Aggregated mean, median and standard deviation per
@@ -366,7 +364,7 @@ variable in target variables.
 
    If a source value has a value label, then that value label is
 retained for the new value in the target variable.  Otherwise, the
-source value itself becomes each new value’s label.
+source value itself becomes each new value's label.
 
    Variable labels are copied from the source to target variables.
 
@@ -384,7 +382,7 @@ then they are allocated a value like any other.  ‘/BLANK’ is not
 relevant to numeric values.  ‘/BLANK=VALID’ is the default.
 
    ‘AUTORECODE’ is a procedure.  It causes the data to be read.  It
-ignores ‘TEMPORARY’ (*note TEMPORARY::), so that “temporary”
+ignores ‘TEMPORARY’ (*note TEMPORARY::), so that "temporary"
 transformations become permanent.
 
 12.2.1 Autorecode Example
@@ -394,7 +392,7 @@ In the file ‘personnel.sav’, the variable occupation is a string
 variable.  Except for data of a purely commentary nature, string
 variables are generally a bad idea.  One reason is that data entry
 errors are easily overlooked.  This has happened in ‘personnel.sav’; one
-entry which should read “Scientist” has been mistyped as “Scrientist”.
+entry which should read "Scientist" has been mistyped as "Scrientist".
 In *note Example 12.2: autorecode:ex. first, this error is corrected by
 the ‘DO IF’ clause, (1) then we use ‘AUTORECODE’ to create a new numeric
 variable which takes recoded values of occupation.  Finally, we remove
@@ -422,12 +420,10 @@ variable.
      display dictionary /variables=occupation.
      
 
-
 Example 12.2: Changing a string variable to a numeric variable using
 ‘AUTORECODE’ after correcting a data entry error
 
  [image src="screenshots/autorecode-ad.png" ]
-
 
 Screenshot 12.1: Autorecode dialog box set to recode occupation to occ
 
@@ -464,7 +460,6 @@ descriptive strings are reported instead of the numeric values.
 +---------------+------------------+" ]
 
 
-
 Result 12.1: The properties of the occupation variable following
 ‘AUTORECODE’
 
@@ -472,8 +467,8 @@ Result 12.1: The properties of the occupation variable following
 
    (1) One must use care when correcting such data input errors rather
 than msimply marking them as missing.  For example, if an occupation has
-been entered “Barister”, did the person mean “Barrister” or did she mean
-“Barista”?
+been entered "Barister", did the person mean "Barrister" or did she mean
+"Barista"?
 
 
 File: pspp.info,  Node: COMPUTE,  Next: COUNT,  Prev: AUTORECODE,  Up: Data Manipulation
@@ -488,7 +483,7 @@ File: pspp.info,  Node: COMPUTE,  Next: COUNT,  Prev: AUTORECODE,  Up: Data Mani
    ‘COMPUTE’ assigns the value of an expression to a target variable.
 For each case, the expression is evaluated and its value assigned to the
 target variable.  Numeric and string variables may be assigned.  When a
-string expression’s width differs from the target variable’s width, the
+string expression's width differs from the target variable's width, the
 string result of the expression is truncated or padded with spaces on
 the right as necessary.  The expression and variable types must match.
 
@@ -504,7 +499,7 @@ evaluate to a numeric value that, after rounding down to the nearest
 integer, is a valid index for the named vector.
 
    Using ‘COMPUTE’ to assign to a variable specified on ‘LEAVE’ (*note
-LEAVE::) resets the variable’s left state.  Therefore, ‘LEAVE’ should be
+LEAVE::) resets the variable's left state.  Therefore, ‘LEAVE’ should be
 specified following ‘COMPUTE’, not before.
 
    ‘COMPUTE’ is a transformation.  It does not cause the active dataset
@@ -521,7 +516,7 @@ For some purposes, neither height nor weight alone is of interest.
 Epidemiologists are often more interested in the “body mass index” which
 can sometimes be used as a predictor for clinical conditions.  The body
 mass index is defined as the weight of the person in kilograms divided
-by the square of the person’s height in metres.  (1)
+by the square of the person's height in metres.  (1)
 
      get file='physiology.sav'.
      
@@ -531,11 +526,10 @@ by the square of the person’s height in metres.  (1)
      
      descriptives /weight height bmi.
 
-
 Example 12.3: Computing the body mass index from weight and height
 
    *note Example 12.3: bmi:ex. shows how you can use ‘COMPUTE’ to
-generate a new variable called bmi and have every case’s value
+generate a new variable called bmi and have every case's value
 calculated from the existing values of weight and height.  It also shows
 how you can add a label to this new variable (*note VARIABLE LABELS::),
 so that a more descriptive label appears in subsequent analyses, and
@@ -543,7 +537,6 @@ this can be seen in the ouput from the ‘DESCRIPTIVES’ command in *note
 Results 12.2: bmi:res.
 
  [image src="screenshots/compute-ad.png" ]
-
 
 Screenshot 12.2: Using the dialog box to generate a new variable and
 compute its values
@@ -568,13 +561,12 @@ expression.
 +---------------------+--+-------+-------+-------+-------+" ]
 
 
-
 Results 12.2: An analysis which includes bmi in its results
 
    ---------- Footnotes ----------
 
    (1) Since BMI is a quantity with a ratio scale and has units, the
-term “index” is a misnomer, but that is what it is called.
+term "index" is a misnomer, but that is what it is called.
 
 
 File: pspp.info,  Node: COUNT,  Next: FLIP,  Prev: COMPUTE,  Up: Data Manipulation
@@ -623,7 +615,7 @@ In the command ‘COUNT A=A B(1) /B=A B(2).’, the following actions occur:
    − B is assigned this value.
 
    Despite this ordering, all ‘COUNT’ criterion variables must exist
-before the procedure is executed—they may not be created as target
+before the procedure is executed--they may not be created as target
 variables earlier in the command!  Break such a command into two
 separate commands.
 
@@ -634,14 +626,13 @@ In the survey results in dataset ‘hotel.sav’ a manager wishes to know
 how many respondents answered with low valued answers to questions v1,
 v2 and v3.  This can be found using the code in *note Example 12.4:
 count:ex.  Specifically, this code creates a new variable, and populates
-it with the number of values in v1–v2 which are 2 or lower.
+it with the number of values in v1-v2 which are 2 or lower.
 
      get file="hotel.sav".
      
      count low_counts = v1 v2 v3 (low thru 2).
      
      list /variables v1 v2 v3 low_counts.
-
 
 Example 12.4: Counting low values to responses v1, v2 and v3
 
@@ -652,25 +643,23 @@ command.
    If using the graphic user interface, a two step process must be used
 to set up the ‘COUNT’ transformation.  The first dialog box (*note
 Screenshot 12.3: count:scr.) provides for the variables to be chosen.
-Then, one must click on the button marked “Define Values...” to reveal
+Then, one must click on the button marked "Define Values..."  to reveal
 the dialog box for selecting the values to count.
 
  [image src="screenshots/count-ad.png" ]
 
-
 Screenshot 12.3: The variables v1, v2 and v3 selected, ready to define
 values to count
 
-   In this dialog box, you must select the values you wish to count — in
-this case all values up to and including 2 — as shown in *note
-Screenshot 12.4: count-define:scr. and click “Add”.  As many ranges or
+   In this dialog box, you must select the values you wish to count --
+in this case all values up to and including 2 -- as shown in *note
+Screenshot 12.4: count-define:scr. and click "Add".  As many ranges or
 may be added as you desire.  When all desired ranges have been added
-click “Continue”.
+click "Continue".
 
  [image src="screenshots/count-define-ad.png" ]
 
-
-Screenshot 12.4: Count “Define Values” dialog with ‘lowest thru 2’
+Screenshot 12.4: Count "Define Values" dialog with ‘lowest thru 2’
 selected
 
    In *note Result 12.2: count:res. we can see the values of low_counts
@@ -701,7 +690,6 @@ less.
 | 1| 1| 5|      2.00|
 | 1| 5| 5|      1.00|
 +--+--+--+----------+" ]
-
 
 
 Result 12.2: The values of v1, v2, v3 and low_counts after the ‘COUNT’
@@ -749,7 +737,7 @@ the CASE_LBL variable can be passed to the ‘NEWNAMES’ subcommand to
 recreate the original variable names.
 
    ‘FLIP’ honors ‘N OF CASES’ (*note N OF CASES::).  It ignores
-‘TEMPORARY’ (*note TEMPORARY::), so that “temporary” transformations
+‘TEMPORARY’ (*note TEMPORARY::), so that "temporary" transformations
 become permanent.
 
 12.5.1 Flip Examples
@@ -782,14 +770,13 @@ cases in the active dataset.
      display variables.
      list.
 
-
 Example 12.5: Using ‘FLIP’ to exchange variables and cases in a dataset
 
    As you can see in *note Results 12.3: flip:res. before the ‘FLIP’
 command has run there are seven variables (six containing data and one
 for the heading) and three cases.  Afterwards there are four variables
 (one per case, plus the CASE_LBL variable) and six cases.  You can
-delete the CASE_LBL variable (*note DELETE VARIABLES::) if you don’t
+delete the CASE_LBL variable (*note DELETE VARIABLES::) if you don't
 need it.
 
  [image src="pspp-figures/flip.png" text="Before FLIP:
@@ -841,7 +828,6 @@ After FLIP:
 +--------+-------------+----+-----+" ]
 
 
-
 Results 12.3: The results of using ‘FLIP’ to exchange variables and
 cases in a dataset
 
@@ -864,8 +850,8 @@ tested following the ‘IF’ keyword.  This expression is evaluated for
 each case.  If the value is true, then the value of the expression is
 computed and assigned to the specified variable.  If the value is false
 or missing, nothing is done.  Numeric and string variables may be
-assigned.  When a string expression’s width differs from the target
-variable’s width, the string result of the expression is truncated or
+assigned.  When a string expression's width differs from the target
+variable's width, the string result of the expression is truncated or
 padded with spaces on the right as necessary.  The expression and
 variable types must match.
 
@@ -876,7 +862,7 @@ evaluate to a numeric value that, after rounding down to the nearest
 integer, is a valid index for the named vector.
 
    Using ‘IF’ to assign to a variable specified on ‘LEAVE’ (*note
-LEAVE::) resets the variable’s left state.  Therefore, ‘LEAVE’ should be
+LEAVE::) resets the variable's left state.  Therefore, ‘LEAVE’ should be
 specified following ‘IF’, not before.
 
    When ‘IF’ is specified following ‘TEMPORARY’ (*note TEMPORARY::), the
@@ -960,8 +946,8 @@ ignored.
    The clause ‘INTO DEST_VARS’ is optional.  The behaviour of the
 command is slightly different depending on whether it appears or not.
 
-   If ‘INTO DEST_VARS’ does not appear, then values are recoded “in
-place”.  This means that the recoded values are written back to the
+   If ‘INTO DEST_VARS’ does not appear, then values are recoded "in
+place".  This means that the recoded values are written back to the
 source variables from whence the original values came.  In this case,
 the DEST_VALUE for every mapping must imply a value which has the same
 type as the SRC_VALUE.  For example, if the source value is a string
@@ -990,7 +976,7 @@ DEST_VARS.  The source variables are unchanged.  If any mapping implies
 a string as its destination value, then the respective destination
 variable must already exist, or have been declared using ‘STRING’ or
 another transformation.  Numeric variables however are automatically
-created if they don’t already exist.  The following example deals with
+created if they don't already exist.  The following example deals with
 two source variables, A and B which contain string values.  Hence there
 are two destination variables V1 and V2.  Any cases where A or B contain
 the values ‘apple’, ‘pear’ or ‘pomegranate’ result in V1 or V2 being
@@ -1077,7 +1063,6 @@ and temperature in ascending order.
      sort cases by sex (D) temperature(A).
      list.
 
-
 Example 12.6: Sorting cases by two variables.
 
    In *note Results 12.4: sort-cases:res. you can see that all the cases
@@ -1133,7 +1118,6 @@ ascending order.
 +---+------+------+-----------+" ]
 
 
-
 Results 12.4: The ‘physiology.sav’ file after sorting.
 
    Note that ‘SORT CASES’, like all other transformations, affects only
@@ -1146,16 +1130,15 @@ a sort directly from the data view.  To do this, switch to the data
 view.  Select the column corresponding to the variable by which you want
 to sort and click button 1 and then click button 3.  A popup menu will
 appear like that shown in *note Screenshot 12.5: sort-simple:scr.
-Select either “Sort Ascending” or “Sort Descending” from this menu.
+Select either "Sort Ascending" or "Sort Descending" from this menu.
 
  [image src="screenshots/sort-simple-ad.png" ]
-
 
 Screenshot 12.5: Sorting the data on a single variable height
 
    However, sometimes you will want to sort on two or more variables,
 and that is not possible using this method.  In this case, you must
-either use some code or the “Sort Cases” dialog from the Data menu.
+either use some code or the "Sort Cases" dialog from the Data menu.
 *note Screenshot 12.6: sort:scr. shows the dialog box set up to perform
 a sort on both sex and height.  Note that the order in which you enter
 the variables is important.  In this case, the data will be first sorted
@@ -1163,7 +1146,6 @@ on sex, and then all cases for which sex is the same will then be sorted
 by height.
 
  [image src="screenshots/sort-ad.png" ]
-
 
 Screenshot 12.6: Sorting the data on two variables sex and height
 
@@ -1183,7 +1165,7 @@ select data records from the active dataset for analysis.
 * SAMPLE::                      Select a specified proportion of cases.
 * SELECT IF::                   Permanently delete selected cases.
 * SPLIT FILE::                  Do multiple analyses with one command.
-* TEMPORARY::                   Make transformations’ effects temporary.
+* TEMPORARY::                   Make transformations' effects temporary.
 * WEIGHT::                      Weight cases by a variable.
 
 
@@ -1238,7 +1220,7 @@ case limit is applied to the cases obtained after sampling or case
 selection, regardless of how ‘N OF CASES’ is placed relative to ‘SAMPLE’
 or ‘SELECT IF’ in the command file.  Thus, the commands ‘N OF CASES 100’
 and ‘SAMPLE .5’ both randomly sample approximately half of the active
-dataset’s cases, then select the first 100 of those sampled, regardless
+dataset's cases, then select the first 100 of those sampled, regardless
 of their order in the command file.
 
    ‘N OF CASES’ with the ‘ESTIMATED’ keyword gives an estimated number
@@ -1333,7 +1315,6 @@ to those persons born after December 31, 1999.
      select if dob > date.dmy (31,12,1999).
      descriptives salary.
 
-
 Example 13.1: Using ‘SELECT IF’ to select persons born on or after a
 certain date.
 
@@ -1362,7 +1343,6 @@ Salaries of personnel born after December 31 1999
 |Valid N (listwise)      |17|        |       |       |       |
 |Missing N (listwise)    | 0|        |       |       |       |
 +------------------------+--+--------+-------+-------+-------+" ]
-
 
 
 Result 13.1: Salary descriptives before and after the ‘SELECT IF’
@@ -1414,7 +1394,7 @@ treatments.  If we wanted to investigate linear statistics of the yeild,
 one way to do this is using the ‘DESCRIPTIVES’ (*note DESCRIPTIVES::).
 However, it is reasonable to expect the mean to be different depending
 on the treatment.  So we might want to perform three separate procedures
-— one for each treatment.  (1)  *note Example 13.2: split:ex. shows how
+-- one for each treatment.  (1)  *note Example 13.2: split:ex. shows how
 this can be done automatically using the ‘SPLIT FILE’ command.
 
      get file='horticulture.sav'.
@@ -1427,11 +1407,10 @@ this can be done automatically using the ‘SPLIT FILE’ command.
      * Run descriptives on the yield variable
      descriptives /variable = yield.
 
-
 Example 13.2: Running ‘DESCRIPTIVES’ on each value of treatment
 
    In *note Example 13.3: split:res. you can see that the table of
-descriptive statistics appears 3 times — once for each value of
+descriptive statistics appears 3 times -- once for each value of
 treatment.  In this example ‘N’, the number of observations are
 identical in all splits.  This is because that experiment was
 deliberately designed that way.  However in general one can expect a
@@ -1486,7 +1465,6 @@ different ‘N’ for each split.
 +--------------------+--+-----+-------+-------+-------+" ]
 
 
-
 Example 13.3: The results of running ‘DESCRIPTIVES’ with an active split
 
    Unless ‘TEMPORARY’ was used, after a split has been defined for a
@@ -1498,7 +1476,6 @@ split stastus is stored in the file and will be automatically loaded
 when that file is loaded.
 
  [image src="screenshots/split-status-bar-ad.png" ]
-
 
 Screenshot 13.1: The status bar indicating that the data set is split
 using the treatment variable
@@ -1554,7 +1531,6 @@ is the first ‘DESCRIPTIVES’ command.
      descriptives x.
      descriptives x.
 
-
 Example 13.4: Running a ‘COMPUTE’ transformation after ‘TEMPORARY’
 
    The data read by the first ‘DESCRIPTIVES’ procedure are 4, 5, 8,
@@ -1580,7 +1556,6 @@ You can check these figures in *note Result 13.2: temporary:res.
 |Valid N (listwise)  |6|    |       |       |       |
 |Missing N (listwise)|0|    |       |       |       |
 +--------------------+-+----+-------+-------+-------+" ]
-
 
 
 Result 13.2: The results of running two consecutive ‘DESCRIPTIVES’
@@ -1645,7 +1620,6 @@ Example 13.5: weight:ex.
      echo 'Weighted frequency table'.
      frequencies /variables = item /format=dfreq.
 
-
 Example 13.5: Setting the weight on the variable quantity
 
    One analysis which most surely would be of interest is the relative
@@ -1682,7 +1656,6 @@ Weighted frequency table
 +-------------+---------+-------+-------------+------------------+
 |Total        |    43267| 100.0%|             |                  |
 +-------------+---------+-------+-------------+------------------+" ]
-
 
 
 Example 13.6: Weighted and unweighted frequency tables of items
@@ -1793,13 +1766,13 @@ File: pspp.info,  Node: Macro Introduction,  Next: Macro Bodies,  Prev: Macro Ov
 -------------------
 
 The DEFINE command creates a “macro”, which is a name for a fragment of
-PSPP syntax called the macro’s “body”.  Following the DEFINE command,
+PSPP syntax called the macro's “body”.  Following the DEFINE command,
 syntax may “call” the macro by name any number of times.  Each call
-substitutes, or “expands”, the macro’s body in place of the call, as if
+substitutes, or “expands”, the macro's body in place of the call, as if
 the body had been written in its place.
 
    The following syntax defines a macro named ‘!vars’ that expands to
-the variable names ‘v1 v2 v3’.  The macro’s name begins with ‘!’, which
+the variable names ‘v1 v2 v3’.  The macro's name begins with ‘!’, which
 is optional for macro names.  The ‘()’ following the macro name are
 required:
 
@@ -1823,7 +1796,7 @@ following:
 sophisticated contents:
 
    • Macro “arguments” that are substituted into the body whenever they
-     are named.  The values of a macro’s arguments are specified each
+     are named.  The values of a macro's arguments are specified each
      time it is called.  *Note Macro Arguments::.
 
    • Macro “functions”, expanded when the macro is called.  *Note Macro
@@ -1916,7 +1889,7 @@ parentheses in the DEFINE command.  Arguments come in two varieties
 based on how their values are specified when the macro is called:
 
    • A “positional” argument has a required value that follows the
-     macro’s name.  Use the ‘!POSITIONAL’ keyword to declare a
+     macro's name.  Use the ‘!POSITIONAL’ keyword to declare a
      positional argument.
 
      When a macro is called, the positional argument values appear in
@@ -1925,7 +1898,7 @@ based on how their values are specified when the macro is called:
 
      References to a positional argument in a macro body are numbered:
      ‘!1’ is the first positional argument, ‘!2’ the second, and so on.
-     In addition, ‘!*’ expands to all of the positional arguments’
+     In addition, ‘!*’ expands to all of the positional arguments'
      values, separated by spaces.
 
      The following example uses a positional argument:
@@ -1942,7 +1915,7 @@ based on how their values are specified when the macro is called:
      specified with the syntax ‘name=value’.  The names allow keyword
      argument values to take any order in the call.
 
-     In declaration and calls, a keyword argument’s name may not begin
+     In declaration and calls, a keyword argument's name may not begin
      with ‘!’, but references to it in the macro body do start with a
      leading ‘!’.
 
@@ -2032,8 +2005,8 @@ omitted, a default value is used: either the value specified in
 
           !analyze_kw vars=v1 v2 v3.
 
-   By default, when an argument’s value contains a macro call, the call
-is expanded each time the argument appears in the macro’s body.  The
+   By default, when an argument's value contains a macro call, the call
+is expanded each time the argument appears in the macro's body.  The
 ‘!NOEXPAND’ keyword in an argument declaration suppresses this
 expansion.  *Note Controlling Macro Expansion::.
 
@@ -2053,7 +2026,7 @@ expanded.  If a macro body contains ‘!OFFEXPAND’ or ‘!ONEXPAND’
 directives, then ‘!OFFEXPAND’ disables expansion of macro calls until
 the following ‘!ONEXPAND’.
 
-   A macro argument’s value may contain a macro call.  These macro calls
+   A macro argument's value may contain a macro call.  These macro calls
 are expanded, unless the argument was declared with the ‘!NOEXPAND’
 keyword.
 
@@ -2099,7 +2072,7 @@ yield an error if the expansion ‘It's’ becomes part of a PSPP command,
 because it contains unbalanced single quotes, but
 ‘!LENGTH(!UNQUOTE("It's"))’ expands to 4.
 
-   The following macro functions are available.  Each function’s
+   The following macro functions are available.  Each function's
 documentation includes examples in the form ‘CALL ↦ EXPANSION’.
 
  -- Macro Function: !BLANKS (count)
@@ -2119,7 +2092,7 @@ documentation includes examples in the form ‘CALL ↦ EXPANSION’.
  -- Macro Function: !CONCAT (arg...)
      Expands to the concatenation of all of the arguments.  Before
      concatenation, each quoted string argument is unquoted, as if
-     ‘!UNQUOTE’ were applied.  This allows for “token pasting”,
+     ‘!UNQUOTE’ were applied.  This allows for "token pasting",
      combining two (or more) tokens into a single one:
 
           !CONCAT(x, y)                ↦ xy
@@ -2221,7 +2194,7 @@ documentation includes examples in the form ‘CALL ↦ EXPANSION’.
      was already a quoted string, ‘!QUOTE’ expands to it unchanged.
 
      Given a quoted string argument, the ‘!UNQUOTED’ function expands to
-     the string’s contents, with the quotes removed and any doubled
+     the string's contents, with the quotes removed and any doubled
      quote marks reduced to singletons.  If the argument was not a
      quoted string, ‘!UNQUOTE’ expands to the argument unchanged.
 
@@ -2353,7 +2326,7 @@ inclusive.
 
    The default value for STEP is 1.  If STEP is positive and FIRST >
 LAST, or if STEP is negative and FIRST < LAST, then the macro processor
-doesn’t expand the body at all.  STEP may not be zero.
+doesn't expand the body at all.  STEP may not be zero.
 
 Loops Over Tokens
 .................
@@ -2393,7 +2366,7 @@ This section describes these settings.
 
    Any SET command that changes these settings within a macro body only
 takes effect following the macro.  This is because PSPP expands a
-macro’s entire body at once, so that the SET command inside the body
+macro's entire body at once, so that the SET command inside the body
 only executes afterwards.
 
    The MEXPAND setting (*note SET MEXPAND::) controls whether macros
@@ -2436,7 +2409,7 @@ call.  To get the same effect, use ‘!LET’ to define a macro variable,
 then pass the macro variable to the macro.
 
    When macro A calls macro B, the order of their ‘DEFINE’ commands
-doesn’t matter, as long as macro B has been defined when A is called.
+doesn't matter, as long as macro B has been defined when A is called.
 
 14.2.12.2 Command Terminators
 .............................
@@ -2516,7 +2489,7 @@ File: pspp.info,  Node: DO REPEAT,  Next: LOOP,  Prev: DO IF,  Up: Conditionals 
      expansion takes one of the following forms:
              var_list
              num_or_range...
-             ’string’...
+             'string'...
              ALL
 
      num_or_range takes one of the following forms:
@@ -2769,12 +2742,10 @@ the two normalized (Z-score) variables generated by the first
      descriptives
              /variables = zheight ztemperature.
 
-
 Example 15.1: Running two ‘DESCRIPTIVES’ commands, one with the ‘SAVE’
 subcommand
 
  [image src="screenshots/descriptives-ad.png" ]
-
 
 Screenshot 15.1: The Descriptives dialog box with two variables and
 Z-Scores option selected
@@ -2822,7 +2793,6 @@ they are normalized versions of the original scores.
 |Valid N (listwise)                       |40|         |      |       |       |
 |Missing N (listwise)                     | 0|         |      |       |       |
 +-----------------------------------------+--+---------+------+-------+-------+" ]
-
 
 
 Result 15.1: Descriptives statistics including two normalized variables
@@ -2887,7 +2857,7 @@ statistics, but are listed in frequency tables.
 
    The available ‘STATISTICS’ are the same as available in
 ‘DESCRIPTIVES’ (*note DESCRIPTIVES::), with the addition of ‘MEDIAN’,
-the data’s median value, and MODE, the mode.  (If there are multiple
+the data's median value, and MODE, the mode.  (If there are multiple
 modes, the smallest value is reported.)  By default, the mean, standard
 deviation of the mean, minimum, and maximum are reported for each
 variable.
@@ -2909,7 +2879,7 @@ not created for string variables.
 
    The ‘PIECHART’ subcommand adds a pie chart for each variable to the
 data.  Each slice represents one value, with the size of the slice
-proportional to the value’s frequency.  By default, all non-missing
+proportional to the value's frequency.  By default, all non-missing
 values are given slices.  The ‘MINIMUM’ and ‘MAXIMUM’ keywords can be
 used to limit the displayed slices to a given range of values.  The
 keyword ‘NOMISSING’ causes missing values to be omitted from the
@@ -2941,7 +2911,6 @@ distributed.
      frequencies /variables = sex occupation
                  /statistics = none.
 
-
 Example 15.2: Running frequencies on the sex and occupation variables
 
    If you are using the graphic user interface, the dialog box is set up
@@ -2950,7 +2919,6 @@ particularly useful for categorical variables, so you may want to
 disable those.
 
  [image src="screenshots/frequencies-ad.png" ]
-
 
 Screenshot 15.2: The frequencies dialog box with the sex and occupation
 variables selected
@@ -2962,7 +2930,7 @@ entered.
    One can also see how many of each occupation there are in the data.
 When dealing with string variables used as nominal values, running a
 frequency analysis is useful to detect data input entries.  Notice that
-one occupation value has been mistyped as “Scrientist”.  This entry
+one occupation value has been mistyped as "Scrientist".  This entry
 should be corrected, or marked as missing before using the data.
 
  [image src="pspp-figures/frequencies.png" text="                                sex
@@ -2998,7 +2966,6 @@ should be corrected, or marked as missing before using the data.
 +------------------------+---------+-------+-------------+------------------+
 |Total                   |       56| 100.0%|             |                  |
 +------------------------+---------+-------+-------------+------------------+" ]
-
 
 
 Result 15.2: The relative frequencies of sex and occupation
@@ -3155,7 +3122,7 @@ produce a very large quantity of output.
 
    ---------- Footnotes ----------
 
-   (1) ‘HISTOGRAM’ uses Sturges’ rule to determine the number of bins,
+   (1) ‘HISTOGRAM’ uses Sturges' rule to determine the number of bins,
 as approximately 1 + \log2(n), where n is the number of samples.  Note
 that ‘FREQUENCIES’ uses a different algorithm to find the bin size.
 
@@ -3439,7 +3406,7 @@ nearest integer and TRUNCATE rounds toward zero.
 
 CHISQ
 
-     Pearson chi-square, likelihood ratio, Fisher’s exact test,
+     Pearson chi-square, likelihood ratio, Fisher's exact test,
      continuity correction, linear-by-linear association.
 PHI
      Phi.
@@ -3458,13 +3425,13 @@ RISK
 GAMMA
      Gamma.
 D
-     Somers’ D.
+     Somers' D.
 KAPPA
-     Cohen’s Kappa.
+     Cohen's Kappa.
 ETA
      Eta.
 CORR
-     Spearman correlation, Pearson’s r.
+     Spearman correlation, Pearson's r.
 ALL
      All of the above.
 NONE
@@ -3487,7 +3454,7 @@ following limitations:
 
    • Significance of some directional measures is not calculated.
    • Asymptotic standard error is not calculated for Goodman and
-     Kruskal’s tau or symmetric Somers’ d.
+     Kruskal's tau or symmetric Somers' d.
    • Approximate T is not calculated for symmetric uncertainty
      coefficient.
 
@@ -3496,11 +3463,11 @@ following limitations:
 15.6.1 Crosstabs Example
 ------------------------
 
-A researcher wishes to know if, in an industry, a person’s sex is
-related to the person’s occupation.  To investigate this, she has
+A researcher wishes to know if, in an industry, a person's sex is
+related to the person's occupation.  To investigate this, she has
 determined that the ‘personnel.sav’ is a representative, randomly
-selected sample of persons.  The researcher’s null hypothesis is that a
-person’s sex has no relation to a person’s occupation.  She uses a
+selected sample of persons.  The researcher's null hypothesis is that a
+person's sex has no relation to a person's occupation.  She uses a
 chi-squared test of independence to investigate the hypothesis.
 
      get file="personnel.sav".
@@ -3512,7 +3479,6 @@ chi-squared test of independence to investigate the hypothesis.
      
      
 
-
 Example 15.3: Running crosstabs on the sex and occupation variables
 
    The syntax in *note Example 15.3: crosstabs:ex. conducts a
@@ -3523,7 +3489,6 @@ these variable names respectively in the ‘Row’ and ‘Column’ fields as
 shown in *note Screenshot 15.3: crosstabs:scr.
 
  [image src="screenshots/crosstabs-ad.png" ]
-
 
 Screenshot 15.3: The Crosstabs dialog box with the sex and occupation
 variables selected
@@ -3545,8 +3510,8 @@ would be observed if the null hypothesis were true.
 
    The significance of the Pearson Chi-Square value is very much larger
 than the normally accepted value of 0.05 and so one cannot reject the
-null hypothesis.  Thus the researcher must conclude that a person’s sex
-has no relation to the person’s occupation.
+null hypothesis.  Thus the researcher must conclude that a person's sex
+has no relation to the person's occupation.
 
  [image src="pspp-figures/crosstabs.png" text="                      Summary
 +----------------+-------------------------------+
@@ -3621,7 +3586,6 @@ has no relation to the person’s occupation.
 +------------------+-----+--+--------------------------+" ]
 
 
-
 Results 15.1: The results of a test of independence between sex and
 occupation
 
@@ -3689,11 +3653,11 @@ previous ‘TABLE’.  All of these subcommands are optional:
          [CAPTION=string...]
          [CORNER=string...]
 
-   The ‘CTABLES’ (aka “custom tables”) command produces
+   The ‘CTABLES’ (aka "custom tables") command produces
 multi-dimensional tables from categorical and scale data.  It offers
 many options for data summarization and formatting.
 
-   This section’s examples use data from the 2008 (USA) National Survey
+   This section's examples use data from the 2008 (USA) National Survey
 of Drinking and Driving Attitudes and Behaviors, a public domain data
 set from the (USA) National Highway Traffic Administration and available
 at <https://data.transportation.gov>.  PSPP includes this data set, with
@@ -3786,7 +3750,7 @@ CROSSTABS::):
 +-----------------------+-----+------+" ]
 
 
-The ‘>’ “nesting” operator nests multiple variables on a single axis,
+The ‘>’ "nesting" operator nests multiple variables on a single axis,
 e.g.:
 
      CTABLES /TABLE likelihoodOfBeingStoppedByPolice BY ageGroup > gender.
@@ -3824,7 +3788,7 @@ e.g.:
 +---------------------------------+---------------------+---------------------+" ]
 
 
-The ‘+’ “stacking” operator allows a single output table to include
+The ‘+’ "stacking" operator allows a single output table to include
 multiple data analyses.  With ‘+’, ‘CTABLES’ divides the output table
 into multiple “sections”, each of which includes an analysis of the full
 data set.  For example, the following command separately tabulates age
@@ -3973,17 +3937,17 @@ File: pspp.info,  Node: CTABLES Overriding Measurement Level,  Prev: CTABLES Sca
 15.7.1.3 Overriding Measurement Level
 .....................................
 
-By default, ‘CTABLES’ uses a variable’s measurement level to decide
+By default, ‘CTABLES’ uses a variable's measurement level to decide
 whether to treat it as categorical or scalar.  Variables assigned the
 nominal or ordinal measurement level are treated as categorical, and
 scalar variables are treated as scalar.
 
    When PSPP reads data from a file in an external format, such as a
-text file, variables’ measurement levels are often unknown.  If
+text file, variables' measurement levels are often unknown.  If
 ‘CTABLES’ runs when a variable has an unknown measurement level, it
 makes an initial pass through the data to guess measurement levels using
 the rules described in an earlier section (*note Measurement Level::).
-Use the ‘VARIABLE LEVEL’ command to set or change a variable’s
+Use the ‘VARIABLE LEVEL’ command to set or change a variable's
 measurement level (*note VARIABLE LEVEL::).
 
    To treat a variable as categorical or scalar only for one use on
@@ -4132,11 +4096,11 @@ the summary function name.  For example:
    In addition to the standard formats, ‘CTABLES’ allows the user to
 specify the following special formats:
 
-‘NEGPARENw.d’   Encloses negative numbers in               42.96    (42.96)
+‘NEGPARENw.d’   Encloses negative numbers in            42.96      (42.96)
                 parentheses.                                      
-‘NEQUALw.d’     Adds a ‘N=’ prefix.                      N=42.96   N=-42.96
+‘NEQUALw.d’     Adds a ‘N=’ prefix.                     N=42.96    N=-42.96
                                                                   
-‘PARENw.d’      Encloses all numbers in parentheses.     (42.96)   (-42.96)
+‘PARENw.d’      Encloses all numbers in parentheses.    (42.96)    (-42.96)
                                                                   
 ‘PCTPARENw.d’   Encloses all numbers in parentheses     (42.96%)  (-42.96%)
                 with a ‘%’ suffix.
@@ -4178,7 +4142,7 @@ produce the same output shown below:
 
 
    The following sections list the available summary functions.  After
-each function’s name is given its default label and format.  If no
+each function's name is given its default label and format.  If no
 format is listed, then the default format is the print format for the
 variable being summarized.
 
@@ -4199,7 +4163,7 @@ This section lists the summary functions that consider only an
 individual cell in ‘CTABLES’.  Only one such summary function, ‘COUNT’,
 may be applied to both categorical and scale variables:
 
-‘COUNT’ (“Count”, F40.0)
+‘COUNT’ ("Count", F40.0)
      The sum of weights in a cell.
 
      If ‘CATEGORIES’ for one or more of the variables in a table include
@@ -4214,41 +4178,41 @@ interpreting the summary value in the latter case, because it is not
 necessarily meaningful; however, the mean of a Likert scale, etc. may
 have a straightforward interpreation.
 
-‘MAXIMUM’ (“Maximum”)
+‘MAXIMUM’ ("Maximum")
      The largest value.
 
-‘MEAN’ (“Mean”)
+‘MEAN’ ("Mean")
      The mean.
 
-‘MEDIAN’ (“Median”)
+‘MEDIAN’ ("Median")
      The median value.
 
-‘MINIMUM’ (“Minimum”)
+‘MINIMUM’ ("Minimum")
      The smallest value.
 
-‘MISSING’ (“Missing”)
+‘MISSING’ ("Missing")
      Sum of weights of user- and system-missing values.
 
-‘MODE’ (“Mode”)
+‘MODE’ ("Mode")
      The highest-frequency value.  Ties are broken by taking the
      smallest mode.
 
-‘PTILE’ n (“Percentile n”)
+‘PTILE’ n ("Percentile n")
      The Nth percentile, where 0 ≤ N ≤ 100.
 
-‘RANGE’ (“Range”)
+‘RANGE’ ("Range")
      The maximum minus the minimum.
 
-‘SEMEAN’ (“Std Error of Mean”)
+‘SEMEAN’ ("Std Error of Mean")
      The standard error of the mean.
 
-‘STDDEV’ (“Std Deviation”)
+‘STDDEV’ ("Std Deviation")
      The standard deviation.
 
-‘SUM’ (“Sum”)
+‘SUM’ ("Sum")
      The sum.
 
-‘TOTALN’ (“Total N”, F40.0)
+‘TOTALN’ ("Total N", F40.0)
      The sum of weights in a cell.
 
      For scale data, ‘COUNT’ and ‘TOTALN’ are the same.
@@ -4263,7 +4227,7 @@ have a straightforward interpreation.
      *Note CTABLES Missing Values for Summary Variables::, for details
      of how ‘CTABLES’ summarizes missing values.
 
-‘VALIDN’ (“Valid N”, F40.0)
+‘VALIDN’ ("Valid N", F40.0)
      The sum of valid count weights in included categories.
 
      For categorical variables, ‘VALIDN’ does not count missing values
@@ -4272,7 +4236,7 @@ have a straightforward interpreation.
      excluded categories.  *Note CTABLES Missing Values for Summary
      Variables::, for details.
 
-‘VARIANCE’ (“Variance”)
+‘VARIANCE’ ("Variance")
      The variance.
 
 
@@ -4350,19 +4314,19 @@ subtable or a layer within a section:
    The following summary functions for groups of cells are available for
 each AREA described above, for both categorical and scale variables:
 
-‘areaPCT’ or ‘areaPCT.COUNT’ (“Area %”, PCT40.1)
+‘areaPCT’ or ‘areaPCT.COUNT’ ("Area %", PCT40.1)
      A percentage of total counts within AREA.
 
-‘areaPCT.VALIDN’ (“Area Valid N %”, PCT40.1)
+‘areaPCT.VALIDN’ ("Area Valid N %", PCT40.1)
      A percentage of total counts for valid values within AREA.
 
-‘areaPCT.TOTALN’ (“Area Total N %”, PCT40.1)
+‘areaPCT.TOTALN’ ("Area Total N %", PCT40.1)
      A percentage of total counts for all values within AREA.
 
    Scale variables and totals and subtotals for categorical variables
 may use the following additional group cell summary function:
 
-‘areaPCT.SUM’ (“Area Sum %”, PCT40.1)
+‘areaPCT.SUM’ ("Area Sum %", PCT40.1)
      Percentage of the sum of the values within AREA.
 
    ---------- Footnotes ----------
@@ -4381,11 +4345,11 @@ CTABLES Effective Weight::), then the following summary functions use
 its value instead of the dictionary weight variable.  Otherwise, they
 are equivalent to the summary function without the ‘E’-prefix:
 
-   • ‘ECOUNT’ (“Adjusted Count”, F40.0)
+   • ‘ECOUNT’ ("Adjusted Count", F40.0)
 
-   • ‘ETOTALN’ (“Adjusted Total N”, F40.0)
+   • ‘ETOTALN’ ("Adjusted Total N", F40.0)
 
-   • ‘EVALIDN’ (“Adjusted Valid N”, F40.0)
+   • ‘EVALIDN’ ("Adjusted Valid N", F40.0)
 
 
 File: pspp.info,  Node: CTABLES Unweighted Summary Functions,  Prev: CTABLES Summary Functions for Adjusted Weights,  Up: CTABLES Data Summarization
@@ -4396,37 +4360,37 @@ File: pspp.info,  Node: CTABLES Unweighted Summary Functions,  Prev: CTABLES Sum
 The following summary functions with a ‘U’-prefix are equivalent to the
 same ones without the prefix, except that they use unweighted counts:
 
-   • ‘UCOUNT’ (“Unweighted Count”, F40.0)
+   • ‘UCOUNT’ ("Unweighted Count", F40.0)
 
-   • ‘UareaPCT’ or ‘UareaPCT.COUNT’ (“Unweighted Area %”, PCT40.1)
+   • ‘UareaPCT’ or ‘UareaPCT.COUNT’ ("Unweighted Area %", PCT40.1)
 
-   • ‘UareaPCT.VALIDN’ (“Unweighted Area Valid N %”, PCT40.1)
+   • ‘UareaPCT.VALIDN’ ("Unweighted Area Valid N %", PCT40.1)
 
-   • ‘UareaPCT.TOTALN’ (“Unweighted Area Total N %”, PCT40.1)
+   • ‘UareaPCT.TOTALN’ ("Unweighted Area Total N %", PCT40.1)
 
-   • ‘UMEAN’ (“Unweighted Mean”)
+   • ‘UMEAN’ ("Unweighted Mean")
 
-   • ‘UMEDIAN’ (“Unweighted Median”)
+   • ‘UMEDIAN’ ("Unweighted Median")
 
-   • ‘UMISSING’ (“Unweighted Missing”)
+   • ‘UMISSING’ ("Unweighted Missing")
 
-   • ‘UMODE’ (“Unweighted Mode”)
+   • ‘UMODE’ ("Unweighted Mode")
 
-   • ‘UareaPCT.SUM’ (“Unweighted Area Sum %”, PCT40.1)
+   • ‘UareaPCT.SUM’ ("Unweighted Area Sum %", PCT40.1)
 
-   • ‘UPTILE’ n (“Unweighted Percentile n”)
+   • ‘UPTILE’ n ("Unweighted Percentile n")
 
-   • ‘USEMEAN’ (“Unweighted Std Error of Mean”)
+   • ‘USEMEAN’ ("Unweighted Std Error of Mean")
 
-   • ‘USTDDEV’ (“Unweighted Std Deviation”)
+   • ‘USTDDEV’ ("Unweighted Std Deviation")
 
-   • ‘USUM’ (“Unweighted Sum”)
+   • ‘USUM’ ("Unweighted Sum")
 
-   • ‘UTOTALN’ (“Unweighted Total N”, F40.0)
+   • ‘UTOTALN’ ("Unweighted Total N", F40.0)
 
-   • ‘UVALIDN’ (“Unweighted Valid N”, F40.0)
+   • ‘UVALIDN’ ("Unweighted Valid N", F40.0)
 
-   • ‘UVARIANCE’ (“Unweighted Variance”, F40.0)
+   • ‘UVARIANCE’ ("Unweighted Variance", F40.0)
 
 
 File: pspp.info,  Node: CTABLES Statistics Positions and Labels,  Next: CTABLES Category Label Positions,  Prev: CTABLES Data Summarization,  Up: CTABLES
@@ -4508,7 +4472,7 @@ File: pspp.info,  Node: CTABLES Category Label Positions,  Next: CTABLES Per-Var
    The ‘CLABELS’ subcommand controls the position of category labels for
 the ‘TABLE’ subcommand that it follows.  By default, or if AUTO is
 specified, category labels for a given variable nest inside the
-variable’s label on the same axis.  For example, the command below
+variable's label on the same axis.  For example, the command below
 results in age categories nesting within the age group variable on the
 rows axis and gender categories within the gender variable on the
 columns axis:
@@ -4602,7 +4566,7 @@ categorical, on the given axis.  For example:
    ROWLABELS=LAYER or COLLABELS=LAYER move the innermost row or column
 variable category labels, respectively, to the layer axis.
 
-   Only one axis’s labels may be moved, whether to the opposite axis or
+   Only one axis's labels may be moved, whether to the opposite axis or
 to the layer axis.
 
 Effect on Summary Statistics
@@ -4913,7 +4877,7 @@ File: pspp.info,  Node: CTABLES Totals and Subtotals,  Next: CTABLES Categories 
 
 ‘CATEGORIES’ also controls display of totals and subtotals.  By default,
 or with ‘TOTAL=NO’, totals are not displayed.  Use ‘TOTAL=YES’ to
-display a total.  By default, the total is labeled “Total”; use
+display a total.  By default, the total is labeled "Total"; use
 ‘LABEL="label"’ to override it.
 
    Subtotals are also not displayed by default.  To add one or more
@@ -4921,7 +4885,7 @@ subtotals, use an explicit category list and insert ‘SUBTOTAL’ or
 ‘HSUBTOTAL’ in the position or positions where the subtotal should
 appear.  The subtotal becomes an extra row or column or layer.
 ‘HSUBTOTAL’ additionally hides the categories that make up the subtotal.
-Either way, the default label is “Subtotal”, use ‘SUBTOTAL="label"’ or
+Either way, the default label is "Subtotal", use ‘SUBTOTAL="label"’ or
 ‘HSUBTOTAL="label"’ to specify a custom label.
 
    The following example syntax and output show how to use ‘TOTAL=YES’
@@ -4957,7 +4921,7 @@ precede them.  With ‘POSITION=BEFORE’, totals come before the first
 category and subtotals apply to categories that follow them.
 
    Only categorical variables may have totals and subtotals.  Scalar
-variables may be “totaled” indirectly by enabling totals and subtotals
+variables may be "totaled" indirectly by enabling totals and subtotals
 on a categorical variable within which the scalar variable is
 summarized.  For example, the following syntax produces a mean, count,
 and valid count across all data by adding a total on the categorical
@@ -5012,7 +4976,7 @@ File: pspp.info,  Node: CTABLES Categories Without Values,  Prev: CTABLES Totals
 ..................................
 
 Some categories might not be included in the data set being analyzed.
-For example, our example data set has no cases in the “15 or younger”
+For example, our example data set has no cases in the "15 or younger"
 age group.  By default, or with ‘EMPTY=INCLUDE’, PSPP includes these
 empty categories in output tables.  To exclude them, specify
 ‘EMPTY=EXCLUDE’.
@@ -5024,7 +4988,7 @@ value labels that are covered by ranges or ‘MISSING’ or ‘OTHERNM’.
 
    The following example syntax and output show the effect of
 ‘EMPTY=EXCLUDE’ for the ‘membersOver16’ variable, in which 0 is labeled
-“None” but no cases exist with that value:
+"None" but no cases exist with that value:
 
      CTABLES /TABLE=membersOver16.
      CTABLES /TABLE=membersOver16 /CATEGORIES VARIABLES=membersOver16 EMPTY=EXCLUDE.
@@ -5073,7 +5037,7 @@ the table output for the previous ‘TABLE’ subcommand.  Any number of
 strings may be specified for each kind of text, with each string
 appearing on a separate line in the output.  The title appears above the
 table, the caption below the table, and the corner text appears in the
-table’s upper left corner.  By default, the title is “Custom Tables” and
+table's upper left corner.  By default, the title is "Custom Tables" and
 the caption and corner text are empty.  With some table output styles,
 the corner text is not displayed.
 
@@ -5285,11 +5249,11 @@ For summary variables, values that are valid and in included categories
 are analyzed, and values that are missing or in excluded categories are
 not analyzed, with the following exceptions:
 
-   • The “VALIDN” summary functions (‘VALIDN’, ‘EVALIDN’, ‘UVALIDN’,
+   • The "VALIDN" summary functions (‘VALIDN’, ‘EVALIDN’, ‘UVALIDN’,
      ‘areaPCT.VALIDN’, and ‘UareaPCT.VALIDN’) only count valid values in
      included categories (not missing values in included categories).
 
-   • The “TOTALN” summary functions (‘TOTALN’, ‘ETOTALN’, ‘UTOTALN’,
+   • The "TOTALN" summary functions (‘TOTALN’, ‘ETOTALN’, ‘UTOTALN’,
      ‘areaPCT.TOTALN’), and ‘UareaPCT.TOTALN’ count all values (valid
      and missing) in included categories and missing (but not valid)
      values in excluded categories.
@@ -5300,16 +5264,16 @@ excluded categories, so all values are effectively included.
 
    The following table provides another view of the above rules:
 
-                                            VALIDN   other   TOTALN
-----------------------------------------------------------------------
+                                         VALIDN   other   TOTALN
+-------------------------------------------------------------------
 Categorical variables:
-    Valid values in included categories     yes      yes     yes
-    Missing values in included categories   —        yes     yes
-    Missing values in excluded categories   —        —       yes
-    Valid values in excluded categories     —        —       —
+ Valid values in included categories     yes      yes     yes
+ Missing values in included categories   --       yes     yes
+ Missing values in excluded categories   --       --      yes
+ Valid values in excluded categories     --       --      --
 Scale variables:
-    Valid values                            yes      yes     yes
-    User- or system-missing values          —        yes     yes
+ Valid values                            yes      yes     yes
+ User- or system-missing values          --       yes     yes
 
 
 File: pspp.info,  Node: CTABLES Scale Missing Values,  Prev: CTABLES Missing Values for Summary Variables,  Up: CTABLES Missing Value Treatment
@@ -5343,8 +5307,8 @@ categorical variable and ‘y’ and ‘z’ are scale:
 +-+-----+-----+" ]
 
 
-With the default missing-value treatment, ‘x’’s mean is 20, based on the
-values 10, 20, and 30, and ‘y’’s mean is 50, based on 40, 50, and 60:
+With the default missing-value treatment, ‘x’'s mean is 20, based on the
+values 10, 20, and 30, and ‘y’'s mean is 50, based on 40, 50, and 60:
 
      CTABLES /TABLE (y + z) > x.
 
@@ -5359,8 +5323,8 @@ values 10, 20, and 30, and ‘y’’s mean is 50, based on 40, 50, and 60:
 
 
 By adding ‘SMISSING=LISTWISE’, only cases where ‘y’ and ‘z’ are both
-non-missing are considered, so ‘x’’s mean becomes 15, as the average of
-10 and 20, and ‘y’’s mean becomes 55, the average of 50 and 60:
+non-missing are considered, so ‘x’'s mean becomes 15, as the average of
+10 and 20, and ‘y’'s mean becomes 55, the average of 50 and 60:
 
      CTABLES /SMISSING LISTWISE /TABLE (y + z) > x.
 
@@ -5488,8 +5452,8 @@ subtotals for an expression that refers to subtotals, ...).
 the later one take precedence.
 
    The following syntax and output shows how ‘PCOMPUTE’ can compute a
-total over subtotals, summing the “Frequent Drivers” and “Infrequent
-Drivers” subtotals to form an “All Drivers” postcompute.  It also shows
+total over subtotals, summing the "Frequent Drivers" and "Infrequent
+Drivers" subtotals to form an "All Drivers" postcompute.  It also shows
 how to calculate and display a percentage, in this case the percentage
 of valid responses that report never driving.  It uses ‘PPROPERTIES’
 (*note CTABLES PPROPERTIES::) to display the latter in ‘PCT’ format.
@@ -5573,7 +5537,7 @@ File: pspp.info,  Node: CTABLES Effective Weight,  Next: CTABLES Hiding Small Co
    The ‘WEIGHT’ subcommand is optional and must appear before ‘TABLE’.
 If it appears, it must name a numeric variable, known as the “effective
 weight” or “adjustment weight”.  The effective weight variable stands in
-for the dictionary’s weight variable (*note WEIGHT::), if any, in most
+for the dictionary's weight variable (*note WEIGHT::), if any, in most
 calculations in ‘CTABLES’.  The only exceptions are the ‘COUNT’,
 ‘TOTALN’, and ‘VALIDN’ summary functions, which use the dictionary
 weight instead.
@@ -5689,7 +5653,7 @@ extracted solution is rotated.  Three orthogonal rotation methods are
 available: ‘VARIMAX’ (which is the default), ‘EQUAMAX’, and ‘QUARTIMAX’.
 There is one oblique rotation method, viz: ‘PROMAX’.  Optionally you may
 enter the power of the promax rotation K, which must be enclosed in
-parentheses.  The default value of K is 5.  If you don’t want any
+parentheses.  The default value of K is 5.  If you don't want any
 rotation to be performed, the word ‘NOROTATE’ prevents the command from
 performing any rotation on the data.
 
@@ -5718,7 +5682,7 @@ analysis are reported:
    • ‘ALL’ All of the above are printed.
    • ‘DEFAULT’ Identical to ‘INITIAL’ and ‘EXTRACTION’.
 
-   If ‘/PLOT=EIGEN’ is given, then a “Scree” plot of the eigenvalues is
+   If ‘/PLOT=EIGEN’ is given, then a "Scree" plot of the eigenvalues is
 printed.  This can be useful for visualizing the factors and deciding
 which factors (components) should be retained.
 
@@ -5992,7 +5956,6 @@ which is easier to understand.
      means tables = mtbf
            by factory by environment.
 
-
 Example 15.4: Running ‘MEANS’ on the mtbf score with categories factory
 and environment
 
@@ -6030,7 +5993,6 @@ being tested.
 |                       Tropical             | 7.86|15|          6.20|
 |                       Total                | 8.78|30|          6.03|
 +--------------------------------------------+-----+--+--------------+" ]
-
 
 
 Result 15.3: The mtbf categorised by factory and environment
@@ -6084,7 +6046,7 @@ default value of 5 minutes is used.
 * CHISQUARE::               Chi-square Test
 * COCHRAN::                 Cochran Q Test
 * FRIEDMAN::                Friedman Test
-* KENDALL::                 Kendall’s W Test
+* KENDALL::                 Kendall's W Test
 * KOLMOGOROV-SMIRNOV::      Kolmogorov Smirnov Test
 * KRUSKAL-WALLIS::          Kruskal-Wallis Test
 * MANN-WHITNEY::            Mann Whitney U Test
@@ -6172,7 +6134,6 @@ chisquare:ex.
      npar test
           /chisquare=sex.
 
-
 Example 15.5: Performing a chi-square test to check for equal
 distribution of sexes
 
@@ -6181,14 +6142,13 @@ the dataset are ignored.
 
  [image src="screenshots/chisquare-ad.png" ]
 
-
 Screenshot 15.4: Performing a chi-square test using the graphic user
 interface
 
    In *note Result 15.4: chisquare:res. the summary box shows that in
 the sample, there are more males than females.  However the significance
-of chi-square result is greater than 0.05 — the most commonly accepted
-p-value — and therefore there is not enough evidence to reject the null
+of chi-square result is greater than 0.05 -- the most commonly accepted
+p-value -- and therefore there is not enough evidence to reject the null
 hypothesis and one must conclude that the evidence does not indicate
 that there is an imbalance of the sexes in the population.
 
@@ -6207,7 +6167,6 @@ that there is an imbalance of the sexes in the population.
 +--------------+----------+--+-----------+
 |Sex of subject|       .40| 1|       .527|
 +--------------+----------+--+-----------+" ]
-
 
 
 Result 15.4: The results of running a chi-square test on sex
@@ -6246,15 +6205,15 @@ statistic and its significance.
 
 File: pspp.info,  Node: KENDALL,  Next: KOLMOGOROV-SMIRNOV,  Prev: FRIEDMAN,  Up: NPAR TESTS
 
-15.12.5 Kendall’s W Test
+15.12.5 Kendall's W Test
 ------------------------
 
           [ /KENDALL = VAR_LIST ]
 
    The Kendall test investigates whether an arbitrary number of related
 samples come from the same population.  It is identical to the Friedman
-test except that the additional statistic W, Kendall’s Coefficient of
-Concordance is printed.  It has the range [0,1] — a value of zero
+test except that the additional statistic W, Kendall's Coefficient of
+Concordance is printed.  It has the range [0,1] -- a value of zero
 indicates no agreement between the samples whereas a value of unity
 indicates complete agreement.
 
@@ -6344,7 +6303,7 @@ File: pspp.info,  Node: MCNEMAR,  Next: MEDIAN,  Prev: MANN-WHITNEY,  Up: NPAR T
 
           [ /MCNEMAR VAR_LIST [ WITH VAR_LIST [ (PAIRED) ]]]
 
-   Use McNemar’s test to analyse the significance of the difference
+   Use McNemar's test to analyse the significance of the difference
 between pairs of correlated proportions.
 
    If the ‘WITH’ keyword is omitted, then tests for all combinations of
@@ -6394,7 +6353,7 @@ File: pspp.info,  Node: RUNS,  Next: SIGN,  Prev: MEDIAN,  Up: NPAR TESTS
    The ‘/RUNS’ subcommand tests whether a data sequence is randomly
 ordered.
 
-   It works by examining the number of times a variable’s value crosses
+   It works by examining the number of times a variable's value crosses
 a given threshold.  The desired threshold must be specified within
 parentheses.  It may either be specified as a number or as one of
 ‘MEAN’, ‘MEDIAN’ or ‘MODE’.  Following the threshold specification comes
@@ -6536,12 +6495,10 @@ this is excluded from the analysis using the ‘SELECT’ command.
      t-test testval = 76.8
      	/variables = weight.
 
-
 Example 15.6: Running a one-sample T-Test after excluding all
 non-positive values
 
  [image src="screenshots/one-sample-t-ad.png" ]
-
 
 Screenshot 15.5: Using the One-Sample T-Test dialog box to test weight
 for a mean of 76.8kg
@@ -6573,7 +6530,6 @@ weight of the persons in our population is different from 76.8kg.
 +--------------+----+--+------------+------------+--------------+-------------+" ]
 
 
-
 Results 15.2: The results of a one-sample T-test of weight using a test
 value of 76.8kg
 
@@ -6583,7 +6539,7 @@ File: pspp.info,  Node: Independent Samples Mode,  Next: Paired Samples Mode,  P
 15.13.2 Independent Samples Mode
 --------------------------------
 
-The ‘GROUPS’ subcommand invokes Independent Samples mode or ‘Groups’
+The ‘GROUPS’ subcommand invokes Independent Samples mode or 'Groups'
 mode.  This mode is used to test whether two groups of values have the
 same population mean.  In this mode, you must also use the ‘/VARIABLES’
 subcommand to tell PSPP the dependent variables you wish to test.
@@ -6620,7 +6576,6 @@ this is excluded from the analysis using the ‘SELECT’ command.
      t-test /variables = height
             /groups = sex(0,1).
 
-
 Example 15.7: Running a independent samples T-Test after excluding all
 observations less than 200kg
 
@@ -6628,7 +6583,6 @@ observations less than 200kg
 equal height.
 
  [image src="screenshots/independent-samples-t-ad.png" ]
-
 
 Screenshot 15.6: Using the Independent Sample T-test dialog, to test for
 differences of height between values of sex
@@ -6639,14 +6593,13 @@ variable for the ‘GROUP’ subcommand.  The group values are 0 (male) and
 
    If you are running the proceedure using syntax, then you need to
 enter the values corresponding to each group within parentheses.  If you
-are using the graphic user interface, then you have to open the “Define
-Groups” dialog box and enter the values corresponding to each group as
+are using the graphic user interface, then you have to open the "Define
+Groups" dialog box and enter the values corresponding to each group as
 shown in *note Screenshot 15.7: define-groups-t:scr.  If, as in this
 case, the dataset has defined value labels for the group variable, then
 you can enter them by label or by value.
 
  [image src="screenshots/define-groups-t-ad.png" ]
-
 
 Screenshot 15.7: Setting the values of the grouping variable for an
 Independent Samples T-test
@@ -6724,7 +6677,6 @@ females are unequal.
 +---------------------+------+------+" ]
 
 
-
 Result 15.5: The results of an independent samples T-test of height by
 sex
 
@@ -6798,7 +6750,7 @@ available:
    • ‘LSD’ Least Significant Difference.
    • ‘TUKEY’ Tukey Honestly Significant Difference.
    • ‘BONFERRONI’ Bonferroni test.
-   • ‘SCHEFFE’ Scheffé’s test.
+   • ‘SCHEFFE’ Scheffé's test.
    • ‘SIDAK’ Sidak test.
    • ‘GH’ The Games-Howell test.
 
@@ -6868,7 +6820,7 @@ clustered on the basis of the non-missing values.  The default is
 If ‘CLUSTER’ is set, the cluster memberships of the individual cases are
 displayed (potentially generating lengthy output).
 
-   You can specify the subcommand ‘SAVE’ to ask that each case’s cluster
+   You can specify the subcommand ‘SAVE’ to ask that each case's cluster
 membership and the euclidean distance between the case and its cluster
 center be saved to a new variable in the active dataset.  To save the
 cluster membership use the ‘CLUSTER’ keyword and to save the distance

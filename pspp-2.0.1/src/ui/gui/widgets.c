@@ -93,7 +93,7 @@ typedef GType (*get_type_func)(void);
 
 static const get_type_func dialog_action_types[]=
 {
-  psppire_dialog_action_custom_tables_get_type ();
+  psppire_dialog_action_custom_tables_get_type,
   psppire_dialog_action_1sks_get_type,
   psppire_dialog_action_autorecode_get_type,
   psppire_dialog_action_aggregate_get_type,
@@ -136,7 +136,7 @@ static const get_type_func dialog_action_types[]=
   psppire_dialog_action_two_sample_get_type,
   psppire_dialog_action_weight_get_type,
   psppire_dialog_action_univariate_get_type
-    psppire_dialog_action_custom_tables_get_type
+    
 };
 
 

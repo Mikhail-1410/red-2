@@ -1,0 +1,26 @@
+                                   Variables
++----------+--------+--------------+-----+-----+---------+----------+---------+
+|          |        |  Measurement |     |     |         |   Print  |  Write  |
+|Name      |Position|     Level    | Role|Width|Alignment|  Format  |  Format |
++----------+--------+--------------+-----+-----+---------+----------+---------+
+|occupation|       6|Unknown       |Input|    8|Right    |F2.0      |F2.0     |
++----------+--------+--------------+-----+-----+---------+----------+---------+
+
+            Value Labels
++---------------+------------------+
+|Variable Value |       Label      |
++---------------+------------------+
+|occupation 1   |Artist            |
+|           2   |Baker             |
+|           3   |Barrister         |
+|           4   |Carpenter         |
+|           5   |Cleaner           |
+|           6   |Cook              |
+|           7   |Manager           |
+|           8   |Mathematician     |
+|           9   |Painter           |
+|           10  |Payload Specialist|
+|           11  |Plumber           |
+|           12  |Scientist         |
+|           13  |Tailor            |
++---------------+------------------+

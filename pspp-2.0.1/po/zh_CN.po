@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp-1.0.1\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2017-08-29 16:17+0800\n"
 "Last-Translator: Shulin Yang <shulin.yang.9@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -14052,31 +14052,37 @@ msgstr "K独立样本检验(_I)..."
 msgid "ROC Cur_ve..."
 msgstr "ROC曲线(_v)..."
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "自定义"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "图形(_G)"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "散点图(_S)"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "直方图(_H)"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "条形图(_B)"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "工具(_U)"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "变量(_V)..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "数据文件注释(_C)..."
 
@@ -14318,10 +14324,7 @@ msgid ""
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
@@ -14329,12 +14332,6 @@ msgstr ""
 #| msgid "Variable View"
 msgid "GNU PSPP Variable View"
 msgstr "变量视图"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "统计量"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14352,6 +14349,11 @@ msgstr "替代SPSS的免费数据统计分析软件"
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "统计量"
 
 #~ msgid "Sorry. The help system hasn't yet been implemented."
 #~ msgstr "很抱歉，帮助系统尚未完成。"

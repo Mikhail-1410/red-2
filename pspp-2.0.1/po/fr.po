@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 1.6.0\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2022-11-02 20:00+0100\n"
 "Last-Translator: Eric Thivant <eric.thivant@wanadoo.fr>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -3595,8 +3595,8 @@ msgstr "Fonction macro %s nécessite au moins un argument."
 #, c-format
 msgid "Argument to !BLANKS must be non-negative integer (not \"%s\")."
 msgstr ""
-"Argument à ! Les blancs doivent être des entiers non négatifs (et non des « "
-"%s »)."
+"Argument à ! Les blancs doivent être des entiers non négatifs (et non des "
+"« %s »)."
 
 #: src/language/lexer/macro.c:1235
 #, c-format
@@ -11746,8 +11746,8 @@ msgstr ""
 msgid ""
 "Directly import your spreadsheets using the \"File | Import Data\" menu."
 msgstr ""
-"Importez directement vos feuilles de calcul à l’aide de la rubrique « "
-"Fichier | Importer des données » menu."
+"Importez directement vos feuilles de calcul à l’aide de la rubrique "
+"« Fichier | Importer des données » menu."
 
 #: src/ui/gui/main.c:187
 msgid ""
@@ -11764,8 +11764,9 @@ msgid ""
 "When browsing large data sets, use \"Windows | Split\" to see both ends of "
 "the data in the same view."
 msgstr ""
-"Lorsque vous parcourez des ensembles de données volumineux, utilisez « "
-"Windows | Split » pour voir les deux extrémités des données dans la même vue."
+"Lorsque vous parcourez des ensembles de données volumineux, utilisez "
+"« Windows | Split » pour voir les deux extrémités des données dans la même "
+"vue."
 
 #: src/ui/gui/main.c:189
 msgid ""
@@ -14345,31 +14346,37 @@ msgstr "Échantillons K _Indépendants…"
 msgid "ROC Cur_ve..."
 msgstr "_Courbe ROC..."
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "Personnalisé"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "_Graphiques"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "_Nuage de points"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "_Histogramme"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "Diagramme en barres"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_Outils"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "_Variables..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "_Commentaires du fichier de données..."
 
@@ -14621,21 +14628,12 @@ msgstr ""
 "des données échantillonnées."
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
 msgid "GNU PSPP Variable View"
 msgstr "GNU PSPP Visionneuse de variables"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "Statistiques"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14653,6 +14651,11 @@ msgstr "Analyse des données statistiques avec une alternative libre à SPSS"
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr "statistics;analysis;spss;"
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "Statistiques"
 
 #, c-format
 #~ msgid ""

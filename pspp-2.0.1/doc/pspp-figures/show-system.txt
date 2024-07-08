@@ -1,0 +1,9 @@
+                        System Information
++----------------+-----------------------------------------------+
+|Version         |GNU pspp 2.0.1                                 |
+|Host System     |aarch64-apple-darwin23.5.0                     |
+|Build System    |aarch64-apple-darwin23.5.0                     |
+|Locale Directory|/usr/local/share/locale                        |
+|Journal File    |/Users/mihailzaharov/.local/state/pspp/pspp.jnl|
+|Compiler Version|Apple LLVM 15.0.0 (clang-1500.3.9.4)           |
++----------------+-----------------------------------------------+

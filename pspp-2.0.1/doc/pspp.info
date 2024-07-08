@@ -1,4 +1,4 @@
-This is pspp.info, produced by makeinfo version 7.0.3 from pspp.texi.
+This is pspp.info, produced by makeinfo version 7.1 from pspp.texi.
 
 This manual is for GNU PSPP version 2.0.1, software for statistical
 analysis.
@@ -20,436 +20,436 @@ END-INFO-DIR-ENTRY
 
 
 Indirect:
-pspp.info-1: 851
-pspp.info-2: 302989
-pspp.info-3: 602469
+pspp.info-1: 849
+pspp.info-2: 302374
+pspp.info-3: 601320
 
 Tag Table:
 (Indirect)
-Node: Top851
-Node: Introduction3275
-Node: License4319
-Node: Invoking PSPP6513
-Node: Main Options7195
-Node: PDF PostScript SVG and PNG Output Options14335
-Node: Plain Text Output Options18584
-Node: SPV Output Options21015
-Node: TeX Output Options21937
-Node: HTML Output Options22585
-Node: OpenDocument Output Options23847
-Node: Comma-Separated Value Output Options24424
-Node: Invoking PSPPIRE27193
-Node: Using PSPP28017
-Ref: Using PSPP-Footnote-129993
-Node: Preparation of Data Files30093
-Node: Defining Variables31254
-Node: Listing the data34168
-Node: Reading data from a text file35112
-Node: Reading data from a pre-prepared PSPP file36363
-Node: Saving data to a PSPP file.37195
-Node: Reading data from other sources37855
-Node: Exiting PSPP38285
-Node: Data Screening and Transformation38499
-Node: Identifying incorrect data39083
-Node: Dealing with suspicious data42944
-Node: Inverting negatively coded variables44280
-Node: Testing data consistency50352
-Node: Testing for normality52119
-Node: Hypothesis Testing59301
-Ref: Hypothesis Testing-Footnote-160585
-Node: Testing for differences of means60670
-Node: Linear Regression68049
-Node: Language71903
-Node: Tokens72770
-Node: Commands77698
-Node: Syntax Variants78966
-Node: Types of Commands80572
-Node: Order of Commands82073
-Node: Missing Observations84534
-Node: Datasets85877
-Node: Attributes87011
-Ref: Measurement Level89843
-Node: System Variables92410
-Node: Sets of Variables93605
-Node: Input and Output Formats95126
-Node: Basic Numeric Formats97288
-Node: Custom Currency Formats105504
-Node: Legacy Numeric Formats107847
-Node: Binary and Hexadecimal Numeric Formats110990
-Node: Time and Date Formats115206
-Node: Date Component Formats121889
-Node: String Formats122972
-Node: Scratch Variables123708
-Node: Files124968
-Node: File Handles126323
-Node: BNF128486
-Node: Expressions130798
-Node: Boolean Values131944
-Node: Missing Values in Expressions132637
-Node: Grouping Operators133481
-Node: Arithmetic Operators133902
-Node: Logical Operators134807
-Node: Relational Operators135775
-Node: Functions136754
-Node: Mathematics138291
-Node: Miscellaneous Mathematics139181
-Node: Trigonometry140875
-Node: Missing Value Functions142029
-Node: Set Membership143698
-Node: Statistical Functions145008
-Node: String Functions147225
-Node: Time and Date152199
-Node: Time and Date Concepts153010
-Node: Time Construction154155
-Node: Time Extraction154775
-Node: Date Construction155555
-Node: Date Extraction157753
-Node: Time and Date Arithmetic160379
-Node: Miscellaneous Functions163221
-Ref: LAG163448
-Node: Statistical Distribution Functions165520
-Node: Continuous Distributions167916
-Node: Discrete Distributions174738
-Node: Order of Operations176544
-Node: Data Input and Output177092
-Node: BEGIN DATA178997
-Node: CLOSE FILE HANDLE179600
-Node: DATAFILE ATTRIBUTE180213
-Node: DATASET182472
-Node: DATA LIST185525
-Node: DATA LIST FIXED186576
-Node: DATA LIST FIXED Examples192136
-Node: DATA LIST FREE194145
-Node: DATA LIST LIST196520
-Node: END CASE197275
-Node: END FILE197541
-Node: FILE HANDLE197808
-Node: INPUT PROGRAM206269
-Node: LIST211343
-Node: NEW FILE212751
-Node: PRINT212978
-Node: PRINT EJECT216122
-Node: PRINT SPACE217358
-Node: REREAD218264
-Node: WRITE219624
-Node: System and Portable File IO220956
-Node: APPLY DICTIONARY221970
-Node: EXPORT224725
-Node: GET226500
-Node: GET DATA229084
-Node: GET DATA /TYPE=GNM/ODS230308
-Node: GET DATA /TYPE=PSQL232915
-Node: GET DATA /TYPE=TXT235450
-Node: GET DATA /TYPE=TXT /ARRANGEMENT=DELIMITED237324
-Node: GET DATA /TYPE=TXT /ARRANGEMENT=FIXED242765
-Node: IMPORT245272
-Node: SAVE246257
-Node: SAVE DATA COLLECTION250179
-Node: SAVE TRANSLATE251557
-Node: SAVE TRANSLATE /TYPE=CSV and TYPE=TAB253786
-Node: SYSFILE INFO256983
-Node: XEXPORT258067
-Node: XSAVE258915
-Node: Combining Data Files259765
-Node: Combining Files Common Syntax261221
-Node: ADD FILES268228
-Node: MATCH FILES269634
-Node: UPDATE272414
-Node: Manipulating Variables274685
-Node: DISPLAY276547
-Node: NUMERIC279004
-Node: STRING279628
-Node: RENAME VARIABLES280840
-Node: SORT VARIABLES281737
-Node: DELETE VARIABLES284256
-Node: VARIABLE LABELS284957
-Node: PRINT FORMATS285844
-Node: WRITE FORMATS286319
-Node: FORMATS286783
-Node: VALUE LABELS287617
-Node: ADD VALUE LABELS288946
-Node: MISSING VALUES289387
-Node: VARIABLE ATTRIBUTE291211
-Node: VARIABLE ALIGNMENT293833
-Node: VARIABLE WIDTH294386
-Node: VARIABLE LEVEL294871
-Node: VARIABLE ROLE295251
-Node: VECTOR296216
-Node: MRSETS297832
-Node: LEAVE302989
-Node: Data Manipulation304313
-Node: AGGREGATE305192
-Ref: aggregate:ex313560
-Ref: aggregate:res314104
-Node: AUTORECODE315747
-Ref: autorecode:ex319281
-Ref: autorecode:scr319941
-Ref: autorecode:res320336
-Ref: AUTORECODE-Footnote-1321691
-Node: COMPUTE321932
-Ref: bmi:ex324047
-Ref: bmi:scr324800
-Ref: bmi:res325375
-Ref: COMPUTE-Footnote-1326097
-Node: COUNT326230
-Ref: count:ex328543
-Ref: count:scr329232
-Ref: count-define:scr329672
-Ref: count:res330106
-Node: FLIP330734
-Ref: flip:ex333497
-Ref: flip:res334314
-Node: IF336316
-Node: RECODE337897
-Node: SORT CASES345300
-Ref: sort-cases:ex346751
-Ref: sort-cases:res347196
-Ref: sort-simple:scr349426
-Ref: sort:scr350051
-Node: Data Selection350162
-Node: FILTER350956
-Node: N OF CASES352071
-Node: SAMPLE353547
-Node: SELECT IF355319
-Ref: select-if:ex356787
-Ref: select-if:res357274
-Node: SPLIT FILE358601
-Ref: split:ex360720
-Ref: split:res361402
-Ref: split-status-bar:scr363685
-Ref: SPLIT FILE-Footnote-1363877
-Node: TEMPORARY364001
-Ref: temporary:ex364987
-Ref: temporary:res365643
-Node: WEIGHT366647
-Ref: weight:ex368290
-Ref: weight:res369118
-Node: Conditionals and Looping370702
-Node: BREAK371276
-Node: DEFINE371588
-Node: Macro Overview371982
-Node: Macro Introduction373070
-Node: Macro Bodies375195
-Node: Macro Arguments376446
-Node: Controlling Macro Expansion382237
-Node: Macro Functions383852
-Node: Macro Expressions392041
-Node: Macro Conditional Expansion393503
-Node: Macro Loops394175
-Node: Macro Variable Assignment395720
-Node: Macro Settings396298
-Node: Macro Notes397692
-Node: DO IF400231
-Node: DO REPEAT401178
-Node: LOOP403823
-Node: Statistics406519
-Node: DESCRIPTIVES407824
-Ref: descriptives:ex411959
-Ref: descriptives:scr412245
-Ref: descriptives:res413108
-Node: FREQUENCIES415283
-Ref: frequencies:ex420358
-Ref: frequencies:scr420776
-Ref: frequencies:res421419
-Ref: FREQUENCIES-Footnote-1423895
-Node: EXAMINE424151
-Ref: EXAMINE-Footnote-1431276
-Node: GRAPH431497
-Node: SCATTERPLOT432284
-Node: HISTOGRAM432963
-Node: BAR CHART433521
-Node: CORRELATIONS435544
-Node: CROSSTABS438371
-Ref: crosstabs:ex444467
-Ref: crosstabs:scr445085
-Ref: crosstabs:res446261
-Node: CTABLES450313
-Node: CTABLES Basics453170
-Node: CTABLES Categorical Variable Basics453735
-Node: CTABLES Scalar Variable Basics463213
-Node: CTABLES Overriding Measurement Level467005
-Node: CTABLES Data Summarization472493
-Node: CTABLES Summary Functions for Individual Cells479895
-Node: CTABLES Summary Functions for Groups of Cells482914
-Ref: CTABLES Summary Functions for Groups of Cells-Footnote-1487058
-Node: CTABLES Summary Functions for Adjusted Weights487170
-Node: CTABLES Unweighted Summary Functions487917
-Node: CTABLES Statistics Positions and Labels489208
-Node: CTABLES Category Label Positions491844
-Node: CTABLES Per-Variable Category Options503567
-Node: CTABLES Explicit Categories505047
-Ref: CTABLES Explicit Category List505241
-Node: CTABLES Implicit Categories508334
-Node: CTABLES Totals and Subtotals511479
-Node: CTABLES Categories Without Values517465
-Node: CTABLES Titles520567
-Node: CTABLES Table Formatting521886
-Node: CTABLES Display of Variable Labels523354
-Node: CTABLES Missing Value Treatment524364
-Node: CTABLES Missing Values for Cell-Defining Variables525056
-Node: CTABLES Missing Values for Summary Variables527668
-Node: CTABLES Scale Missing Values529517
-Node: CTABLES Computed Categories531865
-Node: CTABLES PCOMPUTE532726
-Node: CTABLES PPROPERTIES538482
-Node: CTABLES Effective Weight539749
-Node: CTABLES Hiding Small Counts540691
-Node: FACTOR543512
-Node: GLM550240
-Node: LOGISTIC REGRESSION552409
-Node: MEANS555678
-Ref: means:ex560004
-Ref: means:res560573
-Node: NPAR TESTS562892
-Node: BINOMIAL564809
-Node: CHISQUARE566676
-Ref: chisquare:ex568195
-Ref: chisquare:scr568457
-Ref: chisquare:res569005
-Node: COCHRAN569676
-Node: FRIEDMAN570142
-Node: KENDALL570634
-Node: KOLMOGOROV-SMIRNOV571201
-Node: KRUSKAL-WALLIS572969
-Node: MANN-WHITNEY573865
-Node: MCNEMAR574725
-Node: MEDIAN575741
-Node: RUNS576789
-Node: SIGN577502
-Node: WILCOXON578412
-Node: T-TEST579441
-Node: One Sample Mode581302
-Ref: one-sample-t:ex582566
-Ref: one-sample-t:scr582778
-Ref: one-sample-t:res583268
-Node: Independent Samples Mode584663
-Ref: indepdendent-samples-t:ex586470
-Ref: independent-samples-t:scr586800
-Ref: define-groups-t:scr587612
-Ref: independent-samples-t:res588444
-Node: Paired Samples Mode591561
-Node: ONEWAY592450
-Node: QUICK CLUSTER595430
-Node: RANK598977
-Node: REGRESSION602469
-Node: Syntax603899
-Node: Examples606882
-Node: RELIABILITY607637
-Ref: reliability:ex610350
-Ref: reliability:src610744
-Ref: reliability:res611171
-Node: ROC611668
-Node: Matrices614915
-Node: Matrix Files615436
-Ref: Matrix File Row Types617304
-Node: MATRIX DATA618865
-Node: MATRIX DATA with ROWTYPE_623139
-Ref: MATRIX DATA Example 1623565
-Ref: MATRIX DATA Example 4627072
-Ref: MATRIX DATA Example 5627827
-Node: MATRIX DATA without ROWTYPE_628387
-Ref: MATRIX DATA Example 8630533
-Node: MCONVERT634199
-Node: MATRIX635519
-Node: Matrix Expressions639994
-Node: Matrix Construction Operator641374
-Node: Matrix Sequence Operator642792
-Node: Matrix Index Operator643871
-Node: Matrix Unary Operators645775
-Node: Matrix Elementwise Binary Operators646468
-Node: Matrix Multiplication Operator648690
-Node: Matrix Exponentiation Operator649621
-Node: Matrix Functions650509
-Node: Matrix Elementwise Functions651414
-Node: Matrix Logical Functions654322
-Node: Matrix Construction Functions655122
-Ref: MDIAG657119
-Node: Matrix Minimum and Maximum and Sum Functions658819
-Node: Matrix Property Functions660841
-Node: Matrix Rank Ordering Functions661548
-Node: Matrix Algebra Functions662990
-Ref: EVAL664272
-Ref: SVAL666883
-Node: Matrix Statistical Distribution Functions668128
-Node: Matrix EOF Function669114
-Ref: EOF Matrix Function669383
-Node: Matrix COMPUTE Command670203
-Node: Matrix CALL command670657
-Ref: CALL EIGEN671390
-Ref: CALL SVD672399
-Ref: CALL SETDIAG673211
-Node: Matrix PRINT Command673897
-Node: Matrix DO IF Command678045
-Node: Matrix LOOP and BREAK Commands679364
-Node: Matrix BREAK Command681642
-Node: Matrix READ and WRITE Commands682662
-Node: Matrix READ Command685143
-Node: Matrix WRITE Command689293
-Node: Matrix GET Command691505
-Node: Matrix SAVE Command694322
-Node: Matrix MGET Command696288
-Node: Matrix MSAVE Command698421
-Node: Matrix DISPLAY Command701117
-Node: Matrix RELEASE Command701536
-Node: Utilities701943
-Node: ADD DOCUMENT703814
-Node: CACHE704426
-Node: CD704614
-Node: COMMENT704840
-Node: DOCUMENT705699
-Node: DISPLAY DOCUMENTS706559
-Node: DISPLAY FILE LABEL706909
-Node: DROP DOCUMENTS707248
-Node: ECHO707660
-Node: ERASE707976
-Node: EXECUTE708273
-Node: FILE LABEL708504
-Node: FINISH708940
-Node: HOST709161
-Node: INCLUDE711053
-Node: INSERT711862
-Node: OUTPUT714954
-Node: PERMISSIONS716575
-Node: PRESERVE and RESTORE717325
-Node: SET717714
-Ref: SET BLANKS720540
-Ref: SET DECIMAL720812
-Ref: SET FORMAT721330
-Ref: SET EPOCH721467
-Ref: SET RIB721883
-Ref: SET RRB722494
-Ref: SET MXLOOPS725051
-Ref: SET SEED725259
-Ref: SET FUZZBITS725449
-Ref: SET SCALEMIN725731
-Ref: CCx Settings726452
-Ref: SET LEADZERO726870
-Ref: SET MDISPLAY727230
-Ref: SET WIB728920
-Ref: SET WRB729531
-Ref: SET TVARS731638
-Ref: SET MEXPAND735081
-Ref: SET MPRINT735152
-Ref: SET MITERATE735341
-Ref: SET MNEST735574
-Node: SHOW735879
-Node: SUBTITLE737903
-Node: TITLE738450
-Node: Invoking pspp-convert738935
-Node: Invoking pspp-output745366
-Node: The pspp-output detect Command746655
-Node: The pspp-output dir Command747096
-Node: The pspp-output convert Command747785
-Node: The pspp-output get-table-look Command749646
-Node: The pspp-output convert-table-look Command750484
-Node: Input Selection Options751076
-Node: Invoking pspp-dump-sav754964
-Node: Not Implemented756397
-Node: Bugs761318
-Node: Function Index766410
-Node: Command Index798037
-Node: Concept Index809370
-Node: GNU Free Documentation License854168
+Node: Top849
+Node: Introduction3270
+Node: License4312
+Node: Invoking PSPP6504
+Node: Main Options7182
+Node: PDF PostScript SVG and PNG Output Options14304
+Node: Plain Text Output Options18549
+Node: SPV Output Options20978
+Node: TeX Output Options21900
+Node: HTML Output Options22548
+Node: OpenDocument Output Options23808
+Node: Comma-Separated Value Output Options24385
+Node: Invoking PSPPIRE27152
+Node: Using PSPP27976
+Ref: Using PSPP-Footnote-129950
+Node: Preparation of Data Files30050
+Node: Defining Variables31205
+Node: Listing the data34113
+Node: Reading data from a text file35057
+Node: Reading data from a pre-prepared PSPP file36306
+Node: Saving data to a PSPP file.37134
+Node: Reading data from other sources37794
+Node: Exiting PSPP38222
+Node: Data Screening and Transformation38436
+Node: Identifying incorrect data39018
+Node: Dealing with suspicious data42877
+Node: Inverting negatively coded variables44205
+Node: Testing data consistency50269
+Node: Testing for normality52034
+Node: Hypothesis Testing59215
+Ref: Hypothesis Testing-Footnote-160491
+Node: Testing for differences of means60576
+Node: Linear Regression67949
+Node: Language71803
+Node: Tokens72670
+Node: Commands77593
+Node: Syntax Variants78861
+Node: Types of Commands80467
+Node: Order of Commands81964
+Node: Missing Observations84425
+Node: Datasets85764
+Node: Attributes86898
+Ref: Measurement Level89728
+Node: System Variables92293
+Node: Sets of Variables93488
+Node: Input and Output Formats95009
+Node: Basic Numeric Formats97171
+Node: Custom Currency Formats105373
+Node: Legacy Numeric Formats107712
+Node: Binary and Hexadecimal Numeric Formats110847
+Node: Time and Date Formats115055
+Node: Date Component Formats121728
+Node: String Formats122811
+Node: Scratch Variables123547
+Node: Files124797
+Node: File Handles126150
+Node: BNF128303
+Node: Expressions130610
+Node: Boolean Values131756
+Node: Missing Values in Expressions132449
+Node: Grouping Operators133293
+Node: Arithmetic Operators133714
+Node: Logical Operators134619
+Node: Relational Operators135584
+Node: Functions136563
+Node: Mathematics138100
+Node: Miscellaneous Mathematics138990
+Node: Trigonometry140684
+Node: Missing Value Functions141838
+Node: Set Membership143507
+Node: Statistical Functions144817
+Node: String Functions147030
+Node: Time and Date151994
+Node: Time and Date Concepts152805
+Node: Time Construction153950
+Node: Time Extraction154570
+Node: Date Construction155350
+Node: Date Extraction157546
+Node: Time and Date Arithmetic160172
+Node: Miscellaneous Functions163014
+Ref: LAG163241
+Node: Statistical Distribution Functions165313
+Node: Continuous Distributions167709
+Node: Discrete Distributions174531
+Node: Order of Operations176337
+Node: Data Input and Output176885
+Node: BEGIN DATA178786
+Node: CLOSE FILE HANDLE179389
+Node: DATAFILE ATTRIBUTE180002
+Node: DATASET182243
+Node: DATA LIST185282
+Node: DATA LIST FIXED186333
+Node: DATA LIST FIXED Examples191885
+Node: DATA LIST FREE193894
+Node: DATA LIST LIST196255
+Node: END CASE196998
+Node: END FILE197264
+Node: FILE HANDLE197531
+Node: INPUT PROGRAM205944
+Node: LIST211018
+Node: NEW FILE212426
+Node: PRINT212653
+Node: PRINT EJECT215783
+Node: PRINT SPACE217011
+Node: REREAD217909
+Node: WRITE219265
+Node: System and Portable File IO220589
+Node: APPLY DICTIONARY221603
+Node: EXPORT224338
+Node: GET226105
+Node: GET DATA228679
+Node: GET DATA /TYPE=GNM/ODS229903
+Node: GET DATA /TYPE=PSQL232492
+Node: GET DATA /TYPE=TXT235027
+Node: GET DATA /TYPE=TXT /ARRANGEMENT=DELIMITED236891
+Node: GET DATA /TYPE=TXT /ARRANGEMENT=FIXED242328
+Node: IMPORT244831
+Node: SAVE245812
+Node: SAVE DATA COLLECTION249722
+Node: SAVE TRANSLATE251092
+Node: SAVE TRANSLATE /TYPE=CSV and TYPE=TAB253317
+Node: SYSFILE INFO256498
+Node: XEXPORT257574
+Node: XSAVE258418
+Node: Combining Data Files259262
+Node: Combining Files Common Syntax260718
+Node: ADD FILES267705
+Node: MATCH FILES269107
+Node: UPDATE271883
+Node: Manipulating Variables274146
+Node: DISPLAY276006
+Node: NUMERIC278459
+Node: STRING279081
+Node: RENAME VARIABLES280293
+Node: SORT VARIABLES281190
+Node: DELETE VARIABLES283703
+Node: VARIABLE LABELS284404
+Node: PRINT FORMATS285281
+Node: WRITE FORMATS285756
+Node: FORMATS286220
+Node: VALUE LABELS287054
+Node: ADD VALUE LABELS288375
+Node: MISSING VALUES288808
+Node: VARIABLE ATTRIBUTE290632
+Node: VARIABLE ALIGNMENT293236
+Node: VARIABLE WIDTH293789
+Node: VARIABLE LEVEL294274
+Node: VARIABLE ROLE294654
+Node: VECTOR295615
+Node: MRSETS297231
+Node: LEAVE302374
+Node: Data Manipulation303697
+Node: AGGREGATE304576
+Ref: aggregate:ex312934
+Ref: aggregate:res313477
+Node: AUTORECODE315119
+Ref: autorecode:ex318639
+Ref: autorecode:scr319298
+Ref: autorecode:res319692
+Ref: AUTORECODE-Footnote-1321046
+Node: COMPUTE321275
+Ref: bmi:ex323382
+Ref: bmi:scr324132
+Ref: bmi:res324706
+Ref: COMPUTE-Footnote-1325427
+Node: COUNT325556
+Ref: count:ex327866
+Ref: count:scr328551
+Ref: count-define:scr328980
+Ref: count:res329409
+Node: FLIP330036
+Ref: flip:ex332795
+Ref: flip:res333609
+Node: IF335610
+Node: RECODE337185
+Node: SORT CASES344582
+Ref: sort-cases:ex346033
+Ref: sort-cases:res346477
+Ref: sort-simple:scr348698
+Ref: sort:scr349318
+Node: Data Selection349428
+Node: FILTER350220
+Node: N OF CASES351335
+Node: SAMPLE352809
+Node: SELECT IF354581
+Ref: select-if:ex356049
+Ref: select-if:res356535
+Node: SPLIT FILE357861
+Ref: split:ex359979
+Ref: split:res360659
+Ref: split-status-bar:scr362941
+Ref: SPLIT FILE-Footnote-1363132
+Node: TEMPORARY363256
+Ref: temporary:ex364242
+Ref: temporary:res364897
+Node: WEIGHT365900
+Ref: weight:ex367543
+Ref: weight:res368370
+Node: Conditionals and Looping369953
+Node: BREAK370527
+Node: DEFINE370839
+Node: Macro Overview371233
+Node: Macro Introduction372321
+Node: Macro Bodies374438
+Node: Macro Arguments375689
+Node: Controlling Macro Expansion381470
+Node: Macro Functions383083
+Node: Macro Expressions391264
+Node: Macro Conditional Expansion392726
+Node: Macro Loops393398
+Node: Macro Variable Assignment394941
+Node: Macro Settings395519
+Node: Macro Notes396911
+Node: DO IF399448
+Node: DO REPEAT400395
+Node: LOOP403036
+Node: Statistics405732
+Node: DESCRIPTIVES407037
+Ref: descriptives:ex411172
+Ref: descriptives:scr411457
+Ref: descriptives:res412319
+Node: FREQUENCIES414493
+Ref: frequencies:ex419564
+Ref: frequencies:scr419981
+Ref: frequencies:res420619
+Ref: FREQUENCIES-Footnote-1423094
+Node: EXAMINE423350
+Ref: EXAMINE-Footnote-1430475
+Node: GRAPH430694
+Node: SCATTERPLOT431481
+Node: HISTOGRAM432160
+Node: BAR CHART432718
+Node: CORRELATIONS434741
+Node: CROSSTABS437568
+Ref: crosstabs:ex443642
+Ref: crosstabs:scr444259
+Ref: crosstabs:res445430
+Node: CTABLES449481
+Node: CTABLES Basics452332
+Node: CTABLES Categorical Variable Basics452897
+Node: CTABLES Scalar Variable Basics462367
+Node: CTABLES Overriding Measurement Level466159
+Node: CTABLES Data Summarization471641
+Node: CTABLES Summary Functions for Individual Cells479040
+Node: CTABLES Summary Functions for Groups of Cells481999
+Ref: CTABLES Summary Functions for Groups of Cells-Footnote-1486127
+Node: CTABLES Summary Functions for Adjusted Weights486239
+Node: CTABLES Unweighted Summary Functions486974
+Node: CTABLES Statistics Positions and Labels488201
+Node: CTABLES Category Label Positions490837
+Node: CTABLES Per-Variable Category Options502556
+Node: CTABLES Explicit Categories504036
+Ref: CTABLES Explicit Category List504230
+Node: CTABLES Implicit Categories507323
+Node: CTABLES Totals and Subtotals510468
+Node: CTABLES Categories Without Values516442
+Node: CTABLES Titles519536
+Node: CTABLES Table Formatting520849
+Node: CTABLES Display of Variable Labels522317
+Node: CTABLES Missing Value Treatment523327
+Node: CTABLES Missing Values for Cell-Defining Variables524019
+Node: CTABLES Missing Values for Summary Variables526631
+Node: CTABLES Scale Missing Values528435
+Node: CTABLES Computed Categories530775
+Node: CTABLES PCOMPUTE531636
+Node: CTABLES PPROPERTIES537380
+Node: CTABLES Effective Weight538647
+Node: CTABLES Hiding Small Counts539587
+Node: FACTOR542408
+Node: GLM549130
+Node: LOGISTIC REGRESSION551299
+Node: MEANS554568
+Ref: means:ex558894
+Ref: means:res559462
+Node: NPAR TESTS561780
+Node: BINOMIAL563695
+Node: CHISQUARE565562
+Ref: chisquare:ex567081
+Ref: chisquare:scr567342
+Ref: chisquare:res567887
+Node: COCHRAN568557
+Node: FRIEDMAN569023
+Node: KENDALL569515
+Node: KOLMOGOROV-SMIRNOV570077
+Node: KRUSKAL-WALLIS571845
+Node: MANN-WHITNEY572741
+Node: MCNEMAR573601
+Node: MEDIAN574615
+Node: RUNS575663
+Node: SIGN576374
+Node: WILCOXON577284
+Node: T-TEST578313
+Node: One Sample Mode580174
+Ref: one-sample-t:ex581438
+Ref: one-sample-t:scr581649
+Ref: one-sample-t:res582138
+Node: Independent Samples Mode583532
+Ref: indepdendent-samples-t:ex585335
+Ref: independent-samples-t:scr585664
+Ref: define-groups-t:scr586471
+Ref: independent-samples-t:res587302
+Node: Paired Samples Mode590418
+Node: ONEWAY591307
+Node: QUICK CLUSTER594285
+Node: RANK597830
+Node: REGRESSION601320
+Node: Syntax602750
+Node: Examples605732
+Node: RELIABILITY606487
+Ref: reliability:ex609194
+Ref: reliability:src609587
+Ref: reliability:res610011
+Node: ROC610507
+Node: Matrices613754
+Node: Matrix Files614273
+Ref: Matrix File Row Types616139
+Node: MATRIX DATA617700
+Node: MATRIX DATA with ROWTYPE_621968
+Ref: MATRIX DATA Example 1622392
+Ref: MATRIX DATA Example 4625897
+Ref: MATRIX DATA Example 5626652
+Node: MATRIX DATA without ROWTYPE_627212
+Ref: MATRIX DATA Example 8629358
+Node: MCONVERT633022
+Node: MATRIX634334
+Node: Matrix Expressions638809
+Node: Matrix Construction Operator640189
+Node: Matrix Sequence Operator641607
+Node: Matrix Index Operator642686
+Node: Matrix Unary Operators644590
+Node: Matrix Elementwise Binary Operators645283
+Node: Matrix Multiplication Operator647505
+Node: Matrix Exponentiation Operator648436
+Node: Matrix Functions649324
+Node: Matrix Elementwise Functions650227
+Node: Matrix Logical Functions653135
+Node: Matrix Construction Functions653935
+Ref: MDIAG655930
+Node: Matrix Minimum and Maximum and Sum Functions657630
+Node: Matrix Property Functions659650
+Node: Matrix Rank Ordering Functions660353
+Node: Matrix Algebra Functions661795
+Ref: EVAL663077
+Ref: SVAL665688
+Node: Matrix Statistical Distribution Functions666933
+Node: Matrix EOF Function667919
+Ref: EOF Matrix Function668188
+Node: Matrix COMPUTE Command669008
+Node: Matrix CALL command669462
+Ref: CALL EIGEN670195
+Ref: CALL SVD671204
+Ref: CALL SETDIAG672016
+Node: Matrix PRINT Command672702
+Node: Matrix DO IF Command676848
+Node: Matrix LOOP and BREAK Commands678167
+Node: Matrix BREAK Command680443
+Node: Matrix READ and WRITE Commands681463
+Node: Matrix READ Command683944
+Node: Matrix WRITE Command688090
+Node: Matrix GET Command690300
+Node: Matrix SAVE Command693117
+Node: Matrix MGET Command695081
+Node: Matrix MSAVE Command697212
+Node: Matrix DISPLAY Command699908
+Node: Matrix RELEASE Command700327
+Node: Utilities700734
+Node: ADD DOCUMENT702601
+Node: CACHE703201
+Node: CD703389
+Node: COMMENT703611
+Node: DOCUMENT704470
+Node: DISPLAY DOCUMENTS705327
+Node: DISPLAY FILE LABEL705677
+Node: DROP DOCUMENTS706016
+Node: ECHO706428
+Node: ERASE706740
+Node: EXECUTE707037
+Node: FILE LABEL707268
+Node: FINISH707704
+Node: HOST707925
+Node: INCLUDE709805
+Node: INSERT710606
+Node: OUTPUT713690
+Node: PERMISSIONS715309
+Node: PRESERVE and RESTORE716053
+Node: SET716442
+Ref: SET BLANKS719230
+Ref: SET DECIMAL719499
+Ref: SET FORMAT720017
+Ref: SET EPOCH720154
+Ref: SET RIB720570
+Ref: SET RRB721181
+Ref: SET MXLOOPS723738
+Ref: SET SEED723946
+Ref: SET FUZZBITS724136
+Ref: SET SCALEMIN724418
+Ref: CCx Settings725139
+Ref: SET LEADZERO725557
+Ref: SET MDISPLAY725917
+Ref: SET WIB727607
+Ref: SET WRB728218
+Ref: SET TVARS730323
+Ref: SET MEXPAND733762
+Ref: SET MPRINT733833
+Ref: SET MITERATE734022
+Ref: SET MNEST734255
+Node: SHOW734560
+Node: SUBTITLE736580
+Node: TITLE737123
+Node: Invoking pspp-convert737604
+Node: Invoking pspp-output744027
+Node: The pspp-output detect Command745316
+Node: The pspp-output dir Command745757
+Node: The pspp-output convert Command746446
+Node: The pspp-output get-table-look Command748305
+Node: The pspp-output convert-table-look Command749143
+Node: Input Selection Options749735
+Node: Invoking pspp-dump-sav753621
+Node: Not Implemented755054
+Node: Bugs759975
+Node: Function Index765156
+Node: Command Index796783
+Node: Concept Index808116
+Node: GNU Free Documentation License852906
 
 End Tag Table
 

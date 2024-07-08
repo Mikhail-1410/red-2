@@ -1,0 +1,17 @@
+Scale: ANY
+
+Case Processing Summary
++--------+--+-------+
+|Cases   | N|Percent|
++--------+--+-------+
+|Valid   |17| 100.0%|
+|Excluded| 0|    .0%|
+|Total   |17| 100.0%|
++--------+--+-------+
+
+    Reliability Statistics
++----------------+----------+
+|Cronbach's Alpha|N of Items|
++----------------+----------+
+|             .81|         3|
++----------------+----------+

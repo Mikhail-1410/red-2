@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 0.8.4\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2014-11-16 18:18+0100\n"
 "Last-Translator: Radosław Rogoza <rogoza.radoslaw@gmail.com>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
@@ -14638,35 +14638,41 @@ msgstr "_Test t dla prób niezależnych"
 msgid "ROC Cur_ve..."
 msgstr "Krz_ywa ROC"
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "Format użytkownika"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 #, fuzzy
 #| msgid "_Scree plot"
 msgid "_Scatterplot"
 msgstr "_Wykres osypiska"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 #, fuzzy
 #| msgid "Draw _histograms"
 msgid "_Histogram"
 msgstr "Rysuj histogramy"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr ""
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "_Narzędzia"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "_Zmienne..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "_Komentarze do danych..."
 
@@ -14922,10 +14928,7 @@ msgid ""
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
@@ -14933,12 +14936,6 @@ msgstr ""
 #| msgid "Variable View"
 msgid "GNU PSPP Variable View"
 msgstr "Zmienne"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "Statystyki"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14958,6 +14955,11 @@ msgstr ""
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "Statystyki"
 
 #~ msgid "Sorry. The help system hasn't yet been implemented."
 #~ msgstr "Przepraszamy. System pomocy nie został jeszcze zaimplementowany."

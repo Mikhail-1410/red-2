@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 0.10.2\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-03-21 16:29-0700\n"
+"POT-Creation-Date: 2024-07-08 03:34+0300\n"
 "PO-Revision-Date: 2016-09-15 16:33+0900\n"
 "Last-Translator: Tetsuya Suga <t-suga@users.sourceforge.net>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -14386,31 +14386,37 @@ msgstr "独立したサンプルのｔ検定(_I) ..."
 msgid "ROC Cur_ve..."
 msgstr "ROC 曲線(_V) ..."
 
-#: src/ui/gui/data-editor.ui:378
+#: src/ui/gui/data-editor.ui:376
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom _Tables..."
+msgstr "カスタム"
+
+#: src/ui/gui/data-editor.ui:382
 msgid "_Graphs"
 msgstr "グラフ(_G)"
 
-#: src/ui/gui/data-editor.ui:381
+#: src/ui/gui/data-editor.ui:385
 msgid "_Scatterplot"
 msgstr "散布図(_S)"
 
-#: src/ui/gui/data-editor.ui:385
+#: src/ui/gui/data-editor.ui:389
 msgid "_Histogram"
 msgstr "ヒストグラムの描画(_H)"
 
-#: src/ui/gui/data-editor.ui:389
+#: src/ui/gui/data-editor.ui:393
 msgid "_Barchart"
 msgstr "バーチャート(_B)"
 
-#: src/ui/gui/data-editor.ui:395
+#: src/ui/gui/data-editor.ui:399
 msgid "_Utilities"
 msgstr "ユーティリティ(_U)"
 
-#: src/ui/gui/data-editor.ui:398
+#: src/ui/gui/data-editor.ui:402
 msgid "_Variables..."
 msgstr "変数(_V) ..."
 
-#: src/ui/gui/data-editor.ui:402
+#: src/ui/gui/data-editor.ui:406
 msgid "Data File _Comments..."
 msgstr "データファイルのコメント(_C) ..."
 
@@ -14666,10 +14672,7 @@ msgid ""
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:32
-msgid ""
-"The Flatpak for PSPP includes graphical and command-line interfaces. To use "
-"the command-line interface, run: <code>flatpak run --command=pspp org.gnu."
-"pspp</code>."
+msgid "flatpak run --command=pspp org.gnu.pspp"
 msgstr ""
 
 #: doc/org.gnu.pspp.metainfo.xml.in:43
@@ -14677,12 +14680,6 @@ msgstr ""
 #| msgid "Variable View"
 msgid "GNU PSPP Variable View"
 msgstr "変数ビュー"
-
-#: doc/org.gnu.pspp.metainfo.xml.in:52
-#, fuzzy
-#| msgid "Statistics"
-msgid "statistics"
-msgstr "統計"
 
 #: doc/org.gnu.pspp.metainfo.xml.in:56
 msgid "Free Software Foundation"
@@ -14700,6 +14697,11 @@ msgstr "フリーな SPSS 代替ソフトウェアによる統計データ分析
 #: doc/org.gnu.pspp.desktop.in:17
 msgid "statistics;analysis;spss;"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Statistics"
+#~ msgid "statistics"
+#~ msgstr "統計"
 
 #~ msgid "Sorry. The help system hasn't yet been implemented."
 #~ msgstr "ヘルプシステムはまだ実装されていません．"
