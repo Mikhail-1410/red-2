@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 2.0.0-pre3\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-07-08 03:34+0300\n"
+"POT-Creation-Date: 2024-07-11 09:18+0000\n"
 "PO-Revision-Date: 2023-11-05 10:29+0100\n"
 "Last-Translator: Friedrich Beckmann <friedrich.beckmann@gmx.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -5240,6 +5240,7 @@ msgstr ""
 "anzuwenden."
 
 #: src/language/commands/ctables.c:4583 src/ui/gui/ctables.ui:20
+#: src/ui/gui/custom-tables.ui:5
 msgid "Custom Tables"
 msgstr "Benutzerdefinierte Tabellen"
 
@@ -12274,6 +12275,10 @@ msgstr "Ma_ximum:"
 #: src/ui/gui/chi-square.ui:381
 msgid "Expected Range:"
 msgstr "Erwarteter Bereich:"
+
+#: src/ui/gui/custom-tables.ui:14
+msgid "Создать отчет"
+msgstr ""
 
 #: src/ui/gui/descriptives.ui:131 src/ui/gui/factor.ui:801
 #: src/ui/gui/recode.ui:641

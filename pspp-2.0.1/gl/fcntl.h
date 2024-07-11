@@ -648,7 +648,7 @@ _GL_CXXALIASWARN (creat);
 #endif
 
 #if 1
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef fcntl
 #   define fcntl rpl_fcntl
@@ -677,7 +677,7 @@ _GL_WARN_ON_USE (fcntl, "fcntl is not always POSIX compliant - "
 #endif
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef open
 #   define open rpl_open

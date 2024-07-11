@@ -20,16 +20,16 @@
 
 # Variables used internally by the testsuite.
 EXEEXT=''
-PERL='/usr/bin/perl'
+PERL='/usr/sbin/perl'
 PYTHON3='python3'
 TEX='no'
 GWC='@GWC@'
 WITH_PERL_MODULE='yes'
-host='aarch64-apple-darwin23.5.0'
+host='x86_64-pc-linux-gnu'
 PACKAGE_STRING='GNU PSPP 2.0.1'
 PACKAGE_BUGREPORT='bug-gnu-pspp@gnu.org'
 
-XMLLINT='/usr/bin/xmllint'
+XMLLINT='/bin/xmllint'
 if echo | $XMLLINT - >/dev/null 2>&1; then
     HAVE_XMLLINT=no
 else

@@ -29,7 +29,7 @@
 
 
 /* The include_next requires a split double-inclusion guard.  */
-#if 0
+#if 1
 # if defined __HAIKU__
 /* Work around <https://dev.haiku-os.org/ticket/17040>.  */
 #  include <stdint.h>
@@ -596,21 +596,21 @@ _GL_WARN_EXTERN_C int _gl_warn_on_use
 _GL_INLINE_HEADER_BEGIN
 
 
-#if !(0 || (defined __cplusplus && 0))
+#if !(1 || (defined __cplusplus && 0))
 
 /* An 8-bit variant of wchar_t.
    Note: This type is only mandated by ISO C 23 or newer, and it does
    denote UTF-8 units.  */
 typedef unsigned char char8_t;
 
-#elif 1
+#elif 0
 
 typedef unsigned char gl_char8_t;
 # define char8_t gl_char8_t
 
 #endif
 
-#if !(0 || (defined __cplusplus && 0))
+#if !(1 || (defined __cplusplus && 0))
 
 /* A 16-bit variant of wchar_t.
    Note: This type is only mandated by ISO C 11 or newer.  In ISO C 23
@@ -618,14 +618,14 @@ typedef unsigned char gl_char8_t;
    so only on platforms on which __STDC_UTF_16__ was defined.  */
 typedef uint_least16_t char16_t;
 
-#elif 1
+#elif 0
 
 typedef uint_least16_t gl_char16_t;
 # define char16_t gl_char16_t
 
 #endif
 
-#if !(0 || (defined __cplusplus && 0))
+#if !(1 || (defined __cplusplus && 0))
 
 /* A 32-bit variant of wchar_t.
    Note: This type is only mandated by ISO C 11 or newer.  In ISO C 23
@@ -635,7 +635,7 @@ typedef uint_least16_t gl_char16_t;
    only if the module 'uchar-c23' is in use.  */
 typedef uint_least32_t char32_t;
 
-#elif 1
+#elif 0
 
 typedef uint_least32_t gl_char32_t;
 # define char32_t gl_char32_t
@@ -1138,7 +1138,7 @@ _GL_CXXALIASWARN (c32tob);
 
 /* Converts a multibyte character to a 32-bit wide character.  */
 #if 1
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef mbrtoc32
 #   define mbrtoc32 rpl_mbrtoc32
@@ -1148,7 +1148,7 @@ _GL_FUNCDECL_RPL (mbrtoc32, size_t,
 _GL_CXXALIAS_RPL (mbrtoc32, size_t,
                   (char32_t *pc, const char *s, size_t n, mbstate_t *ps));
 # else
-#  if !0
+#  if !1
 _GL_FUNCDECL_SYS (mbrtoc32, size_t,
                   (char32_t *pc, const char *s, size_t n, mbstate_t *ps));
 #  endif
@@ -1180,7 +1180,7 @@ _GL_FUNCDECL_RPL (mbrtoc16, size_t,
 _GL_CXXALIAS_RPL (mbrtoc16, size_t,
                   (char16_t *pc, const char *s, size_t n, mbstate_t *ps));
 # else
-#  if !0
+#  if !1
 _GL_FUNCDECL_SYS (mbrtoc16, size_t,
                   (char16_t *pc, const char *s, size_t n, mbstate_t *ps));
 #  endif

@@ -1890,8 +1890,6 @@ src_ui_gui_libpsppire_glade_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 @building_gui_TRUE@	$(EXTRA_pkgdir)
 src_ui_gui_libwidgets_essential_la_LIBADD =
 am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
-	src/ui/gui/psppire-dialog-action-custom-tables.c \
-	src/ui/gui/psppire-dialog-action-custom-tables.h \
 	src/ui/gui/psppire-acr.c src/ui/gui/psppire-acr.h \
 	src/ui/gui/psppire-buttonbox.c src/ui/gui/psppire-buttonbox.h \
 	src/ui/gui/psppire-checkbox-treeview.c \
@@ -1922,6 +1920,8 @@ am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
 	src/ui/gui/psppire-dialog-action-count.h \
 	src/ui/gui/psppire-dialog-action-crosstabs.c \
 	src/ui/gui/psppire-dialog-action-crosstabs.h \
+	src/ui/gui/psppire-dialog-action-custom-tables.c \
+	src/ui/gui/psppire-dialog-action-custom-tables.h \
 	src/ui/gui/psppire-dialog-action-descriptives.c \
 	src/ui/gui/psppire-dialog-action-descriptives.h \
 	src/ui/gui/psppire-dialog-action-examine.c \
@@ -2013,8 +2013,7 @@ am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
 	src/ui/gui/dialog-common.h src/ui/gui/widgets.c \
 	src/ui/gui/widgets.h src/ui/gui/dict-display.c \
 	src/ui/gui/dict-display.h
-@building_gui_TRUE@am_src_ui_gui_libwidgets_essential_la_OBJECTS = src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo \
-@building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-acr.lo \
+@building_gui_TRUE@am_src_ui_gui_libwidgets_essential_la_OBJECTS = src/ui/gui/libwidgets_essential_la-psppire-acr.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-buttonbox.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-checkbox-treeview.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-conf.lo \
@@ -2031,6 +2030,7 @@ am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-correlation.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-count.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo \
+@building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-examine.lo \
 @building_gui_TRUE@	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-factor.lo \
@@ -3567,27 +3567,27 @@ am__dist_src_ui_gui_psppire_DATA_DIST = src/ui/gui/aggregate.ui \
 	src/ui/gui/correlation.ui src/ui/gui/count.ui \
 	src/ui/gui/comments.ui src/ui/gui/crosstabs.ui \
 	src/ui/gui/chi-square.ui src/ui/gui/ctables.ui \
-	src/ui/gui/descriptives.ui src/ui/gui/entry-dialog.ui \
-	src/ui/gui/examine.ui src/ui/gui/goto-case.ui \
-	src/ui/gui/factor.ui src/ui/gui/find.ui \
-	src/ui/gui/frequencies.ui src/ui/gui/histogram.ui \
-	src/ui/gui/indep-samples.ui src/ui/gui/k-independent.ui \
-	src/ui/gui/k-means.ui src/ui/gui/k-related.ui \
-	src/ui/gui/ks-one-sample.ui src/ui/gui/logistic.ui \
-	src/ui/gui/means.ui src/ui/gui/missing-val-dialog.ui \
-	src/ui/gui/oneway.ui src/ui/gui/options.ui \
-	src/ui/gui/paired-samples.ui src/ui/gui/rank.ui \
-	src/ui/gui/runs.ui src/ui/gui/sort.ui src/ui/gui/split-file.ui \
-	src/ui/gui/recode.ui src/ui/gui/regression.ui \
-	src/ui/gui/reliability.ui src/ui/gui/roc.ui \
-	src/ui/gui/scatterplot.ui src/ui/gui/select-cases.ui \
-	src/ui/gui/spreadsheet-import.ui src/ui/gui/t-test.ui \
-	src/ui/gui/text-data-import.ui src/ui/gui/transpose.ui \
-	src/ui/gui/univariate.ui src/ui/gui/val-labs-dialog.ui \
-	src/ui/gui/variable-info.ui src/ui/gui/data-editor.ui \
-	src/ui/gui/output-window.ui src/ui/gui/syntax-editor.ui \
-	src/ui/gui/var-type-dialog.ui src/ui/gui/weight.ui \
-	$(top_srcdir)/src/ui/gui/pspp.lang
+	src/ui/gui/custom-tables.ui src/ui/gui/descriptives.ui \
+	src/ui/gui/entry-dialog.ui src/ui/gui/examine.ui \
+	src/ui/gui/goto-case.ui src/ui/gui/factor.ui \
+	src/ui/gui/find.ui src/ui/gui/frequencies.ui \
+	src/ui/gui/histogram.ui src/ui/gui/indep-samples.ui \
+	src/ui/gui/k-independent.ui src/ui/gui/k-means.ui \
+	src/ui/gui/k-related.ui src/ui/gui/ks-one-sample.ui \
+	src/ui/gui/logistic.ui src/ui/gui/means.ui \
+	src/ui/gui/missing-val-dialog.ui src/ui/gui/oneway.ui \
+	src/ui/gui/options.ui src/ui/gui/paired-samples.ui \
+	src/ui/gui/rank.ui src/ui/gui/runs.ui src/ui/gui/sort.ui \
+	src/ui/gui/split-file.ui src/ui/gui/recode.ui \
+	src/ui/gui/regression.ui src/ui/gui/reliability.ui \
+	src/ui/gui/roc.ui src/ui/gui/scatterplot.ui \
+	src/ui/gui/select-cases.ui src/ui/gui/spreadsheet-import.ui \
+	src/ui/gui/t-test.ui src/ui/gui/text-data-import.ui \
+	src/ui/gui/transpose.ui src/ui/gui/univariate.ui \
+	src/ui/gui/val-labs-dialog.ui src/ui/gui/variable-info.ui \
+	src/ui/gui/data-editor.ui src/ui/gui/output-window.ui \
+	src/ui/gui/syntax-editor.ui src/ui/gui/var-type-dialog.ui \
+	src/ui/gui/weight.ui $(top_srcdir)/src/ui/gui/pspp.lang
 DATA = $(desktop_DATA) $(dist_appdata_DATA) $(dist_docbook_DATA) \
 	$(dist_src_ui_gui_psppire_DATA) $(examples_DATA) $(mime_DATA) \
 	$(nodist_src_ui_gui_psppire_DATA)
@@ -7324,6 +7324,7 @@ UI_FILES = \
 	src/ui/gui/crosstabs.ui \
 	src/ui/gui/chi-square.ui \
 	src/ui/gui/ctables.ui \
+	src/ui/gui/custom-tables.ui \
 	src/ui/gui/descriptives.ui \
 	src/ui/gui/entry-dialog.ui \
 	src/ui/gui/examine.ui \
@@ -7474,8 +7475,6 @@ UI_FILES = \
 @building_gui_TRUE@	src/ui/gui/windows-menu.h
 
 @building_gui_TRUE@src_ui_gui_libwidgets_essential_la_SOURCES = \
-@building_gui_TRUE@	src/ui/gui/psppire-dialog-action-custom-tables.c \
-@building_gui_TRUE@	src/ui/gui/psppire-dialog-action-custom-tables.h \
 @building_gui_TRUE@	src/ui/gui/psppire-acr.c \
 @building_gui_TRUE@	src/ui/gui/psppire-acr.h \
 @building_gui_TRUE@	src/ui/gui/psppire-buttonbox.c \
@@ -7509,6 +7508,8 @@ UI_FILES = \
 @building_gui_TRUE@	src/ui/gui/psppire-dialog-action-count.h \
 @building_gui_TRUE@	src/ui/gui/psppire-dialog-action-crosstabs.c \
 @building_gui_TRUE@	src/ui/gui/psppire-dialog-action-crosstabs.h \
+@building_gui_TRUE@	src/ui/gui/psppire-dialog-action-custom-tables.c \
+@building_gui_TRUE@	src/ui/gui/psppire-dialog-action-custom-tables.h \
 @building_gui_TRUE@	src/ui/gui/psppire-dialog-action-descriptives.c \
 @building_gui_TRUE@	src/ui/gui/psppire-dialog-action-descriptives.h \
 @building_gui_TRUE@	src/ui/gui/psppire-dialog-action-examine.c \
@@ -10238,9 +10239,6 @@ src/ui/gui/libpsppire_glade_la-dummy.lo: src/ui/gui/$(am__dirstamp) \
 
 src/ui/gui/libpsppire-glade.la: $(src_ui_gui_libpsppire_glade_la_OBJECTS) $(src_ui_gui_libpsppire_glade_la_DEPENDENCIES) $(EXTRA_src_ui_gui_libpsppire_glade_la_DEPENDENCIES) src/ui/gui/$(am__dirstamp)
 	$(AM_V_CCLD)$(src_ui_gui_libpsppire_glade_la_LINK) $(am_src_ui_gui_libpsppire_glade_la_rpath) $(src_ui_gui_libpsppire_glade_la_OBJECTS) $(src_ui_gui_libpsppire_glade_la_LIBADD) $(LIBS)
-src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo:  \
-	src/ui/gui/$(am__dirstamp) \
-	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
 src/ui/gui/libwidgets_essential_la-psppire-acr.lo:  \
 	src/ui/gui/$(am__dirstamp) \
 	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
@@ -10290,6 +10288,9 @@ src/ui/gui/libwidgets_essential_la-psppire-dialog-action-count.lo:  \
 	src/ui/gui/$(am__dirstamp) \
 	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
 src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo:  \
+	src/ui/gui/$(am__dirstamp) \
+	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
+src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo:  \
 	src/ui/gui/$(am__dirstamp) \
 	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
 src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo:  \
@@ -15380,13 +15381,6 @@ src/ui/gui/libpsppire_glade_la-dummy.lo: src/ui/gui/dummy.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libpsppire_glade_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libpsppire_glade_la-dummy.lo `test -f 'src/ui/gui/dummy.c' || echo '$(srcdir)/'`src/ui/gui/dummy.c
 
-src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo: src/ui/gui/psppire-dialog-action-custom-tables.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Plo
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='src/ui/gui/psppire-dialog-action-custom-tables.c' object='src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
-
 src/ui/gui/libwidgets_essential_la-psppire-acr.lo: src/ui/gui/psppire-acr.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-acr.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-acr.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-acr.lo `test -f 'src/ui/gui/psppire-acr.c' || echo '$(srcdir)/'`src/ui/gui/psppire-acr.c
 @am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-acr.Tpo src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-acr.Plo
@@ -15505,6 +15499,13 @@ src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo: src/ui/gu
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='src/ui/gui/psppire-dialog-action-crosstabs.c' object='src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo `test -f 'src/ui/gui/psppire-dialog-action-crosstabs.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-crosstabs.c
+
+src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo: src/ui/gui/psppire-dialog-action-custom-tables.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Plo
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='src/ui/gui/psppire-dialog-action-custom-tables.c' object='src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
 
 src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo: src/ui/gui/psppire-dialog-action-descriptives.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-descriptives.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo `test -f 'src/ui/gui/psppire-dialog-action-descriptives.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-descriptives.c

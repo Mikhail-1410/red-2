@@ -18997,15 +18997,15 @@ following:
 <!-- Use HTML for HTML output. -->
 <!-- Use the Texi-fied version of the plaintext output for other output formats. -->
 <!-- Some of these could do better, but we have not yet implemented it. -->
-</screen><screen>                        System Information
-+----------------+-----------------------------------------------+
-|Version         |GNU pspp 2.0.1                                 |
-|Host System     |aarch64-apple-darwin23.5.0                     |
-|Build System    |aarch64-apple-darwin23.5.0                     |
-|Locale Directory|/usr/local/share/locale                        |
-|Journal File    |/Users/mihailzaharov/.local/state/pspp/pspp.jnl|
-|Compiler Version|Apple LLVM 15.0.0 (clang-1500.3.9.4)           |
-+----------------+-----------------------------------------------+
+</screen><screen>                 System Information
++----------------+--------------------------------+
+|Version         |GNU pspp 2.0.1                  |
+|Host System     |x86_64-pc-linux-gnu             |
+|Build System    |x86_64-pc-linux-gnu             |
+|Locale Directory|/usr/local/share/locale         |
+|Journal File    |/root/.local/state/pspp/pspp.jnl|
+|Compiler Version|14.1.1 20240522                 |
++----------------+--------------------------------+
 </screen><screen>
 The bug I'm seeing is that executing the following syntax:
 

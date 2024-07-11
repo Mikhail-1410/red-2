@@ -5,19 +5,19 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libpspp-2.0.1.dylib'
+dlname='libpspp-2.0.1.so'
 
 # Names of this library.
-library_names='libpspp-2.0.1.dylib libpspp.dylib'
+library_names='libpspp-2.0.1.so libpspp-2.0.1.so libpspp.so'
 
 # The name of the static archive.
 old_library='libpspp.a'
 
 # Linker flags that cannot go in dependency_libs.
-inherited_linker_flags=' '
+inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib -L/opt/homebrew/Cellar/pango/1.54.0/lib -L/opt/homebrew/Cellar/glib/2.80.3/lib -L/opt/homebrew/opt/gettext/lib -L/opt/homebrew/Cellar/harfbuzz/8.5.0/lib -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz -lcairo -lxml2 -lgsl -lm -liconv -lgslcblas -lz'
+dependency_libs=' -lgobject-2.0 -lglib-2.0 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lcairo -lxml2 -lgsl -lreadline -lgslcblas -lz -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

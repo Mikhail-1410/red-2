@@ -24,7 +24,7 @@
    or error_at_line(...) invocations.  */
 
 /* The include_next requires a split double-inclusion guard.  */
-#if 0
+#if 1
 # include_next <error.h>
 #endif
 
@@ -440,7 +440,7 @@ _GL_CXXALIAS_RPL (error, void,
      __gl_error_call (rpl_error, status, __VA_ARGS__)
 # endif
 #else
-# if ! 0
+# if ! 1
 _GL_FUNCDECL_SYS (error, void,
                   (int __status, int __errnum, const char *__format, ...)
                   _GL_ATTRIBUTE_FORMAT ((_GL_ATTRIBUTE_SPEC_PRINTF_ERROR, 3, 4)));
@@ -496,7 +496,7 @@ _GL_CXXALIAS_RPL (error_at_line, void,
      __gl_error_call (rpl_error_at_line, status, __VA_ARGS__)
 # endif
 #else
-# if ! 0
+# if ! 1
 _GL_FUNCDECL_SYS (error_at_line, void,
                   (int __status, int __errnum, const char *__filename,
                    unsigned int __lineno, const char *__format, ...)

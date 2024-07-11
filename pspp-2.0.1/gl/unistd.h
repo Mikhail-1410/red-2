@@ -684,7 +684,7 @@ _GL_WARN_EXTERN_C int _gl_warn_on_use
 
 
 /* Get getopt(), optarg, optind, opterr, optopt.  */
-#if 1 && 01 && !defined _GL_SYSTEM_GETOPT
+#if 1 && 00 && !defined _GL_SYSTEM_GETOPT
 # include <getopt-cdefs.h>
 # include <getopt-pfx-core.h>
 #endif
@@ -1108,7 +1108,7 @@ _GL_WARN_ON_USE (dup3, "dup3 is unportable - "
    -Wl,--disable-auto-import is in use.  */
 _GL_EXTERN_C __declspec(dllimport) char **environ;
 # endif
-# if !0
+# if !1
 /* Set of environment variables and values.  An array of strings of the form
    "VARIABLE=VALUE", terminated with a NULL.  */
 #  if defined __APPLE__ && defined __MACH__
@@ -1401,7 +1401,7 @@ _GL_FUNCDECL_RPL (execvpe, int,
 _GL_CXXALIAS_RPL (execvpe, int,
                   (const char *program, char * const *argv, char * const *env));
 # else
-#  if !0
+#  if !1
 _GL_FUNCDECL_SYS (execvpe, int,
                   (const char *program, char * const *argv, char * const *env)
                   _GL_ARG_NONNULL ((1, 2)));
@@ -1432,7 +1432,7 @@ _GL_CXXALIAS_MDA_CAST (execvpe, intptr_t,
                        (const char *program, char * const *argv,
                         char * const *env));
 # elif 1
-#  if !0
+#  if !1
 _GL_FUNCDECL_SYS (execvpe, int,
                   (const char *program, char * const *argv, char * const *env)
                   _GL_ARG_NONNULL ((1, 2)));
@@ -2313,7 +2313,7 @@ _GL_WARN_ON_USE (pipe, "pipe is unportable - "
    Return 0 upon success, or -1 with errno set upon failure.
    See also the Linux man page at
    <https://www.kernel.org/doc/man-pages/online/pages/man2/pipe2.2.html>.  */
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef pipe2
 #   define pipe2 rpl_pipe2
@@ -2459,7 +2459,7 @@ _GL_CXXALIASWARN (read);
    successful, otherwise -1 and errno set.
    See the POSIX:2008 specification
    <https://pubs.opengroup.org/onlinepubs/9699919799/functions/readlink.html>.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define readlink rpl_readlink
 #  endif

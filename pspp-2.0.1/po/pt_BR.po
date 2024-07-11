@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp-0.6.2-pre4\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-07-08 03:34+0300\n"
+"POT-Creation-Date: 2024-07-11 09:18+0000\n"
 "PO-Revision-Date: 2009-09-07 02:30-0300\n"
 "Last-Translator: Michel Almada de Castro Boaventura <michel@cecaps.ufmg.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
@@ -5487,6 +5487,7 @@ msgid ""
 msgstr ""
 
 #: src/language/commands/ctables.c:4583 src/ui/gui/ctables.ui:20
+#: src/ui/gui/custom-tables.ui:5
 #, fuzzy
 #| msgid "Custom"
 msgid "Custom Tables"
@@ -12879,6 +12880,10 @@ msgstr ""
 #| msgid "Expected N"
 msgid "Expected Range:"
 msgstr "N esperado"
+
+#: src/ui/gui/custom-tables.ui:14
+msgid "Создать отчет"
+msgstr ""
 
 #: src/ui/gui/descriptives.ui:131 src/ui/gui/factor.ui:801
 #: src/ui/gui/recode.ui:641

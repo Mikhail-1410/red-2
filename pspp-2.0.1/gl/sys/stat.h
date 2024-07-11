@@ -1015,7 +1015,7 @@ _GL_WARN_ON_USE (fchmodat, "fchmodat is not portable - "
 
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef fstat
 #   define fstat rpl_fstat
@@ -1341,7 +1341,7 @@ _GL_WARN_ON_USE (mknodat, "mknodat is not portable - "
 
 
 #if 1
-# if 1
+# if 0
 #  if !0
     /* We can't use the object-like #define stat rpl_stat, because of
        struct stat.  This means that rpl_stat will not be used if the user
@@ -1423,7 +1423,7 @@ _GL_WARN_ON_USE (stat, "stat is unportable - "
 #  endif
 _GL_CXXALIAS_RPL_1 (lstat, stat, int,
                     (const char *restrict name, struct stat *restrict buf));
-# elif 1
+# elif 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef lstat
 #   define lstat rpl_lstat

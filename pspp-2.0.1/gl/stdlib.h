@@ -780,7 +780,7 @@ _GL_WARN_ON_USE (_Exit, "_Exit is unportable - "
 
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef free
 #   define free rpl_free
@@ -941,7 +941,7 @@ _GL_FUNCDECL_RPL (canonicalize_file_name, char *,
                   _GL_ATTRIBUTE_MALLOC _GL_ATTRIBUTE_DEALLOC_FREE);
 _GL_CXXALIAS_RPL (canonicalize_file_name, char *, (const char *name));
 # else
-#  if !0 || __GNUC__ >= 11
+#  if !1 || __GNUC__ >= 11
 #   if __GLIBC__ + (__GLIBC_MINOR__ >= 2) > 2
 _GL_FUNCDECL_SYS (canonicalize_file_name, char *,
                   (const char *name)
@@ -959,7 +959,7 @@ _GL_CXXALIAS_SYS (canonicalize_file_name, char *, (const char *name));
 # endif
 # ifndef GNULIB_defined_canonicalize_file_name
 #  define GNULIB_defined_canonicalize_file_name \
-     (!0 || 0)
+     (!1 || 0)
 # endif
 _GL_CXXALIASWARN (canonicalize_file_name);
 #else
@@ -1095,15 +1095,15 @@ _GL_WARN_ON_USE (getloadavg, "getloadavg is not portable - "
 #   undef getprogname
 #   define getprogname rpl_getprogname
 #  endif
-#  if 0
+#  if 1
 _GL_FUNCDECL_RPL (getprogname, const char *, (void) _GL_ATTRIBUTE_PURE);
 #  else
 _GL_FUNCDECL_RPL (getprogname, const char *, (void));
 #  endif
 _GL_CXXALIAS_RPL (getprogname, const char *, (void));
 # else
-#  if !1
-#   if 0
+#  if !0
+#   if 1
 _GL_FUNCDECL_SYS (getprogname, const char *, (void) _GL_ATTRIBUTE_PURE);
 #   else
 _GL_FUNCDECL_SYS (getprogname, const char *, (void));
@@ -1988,7 +1988,7 @@ _GL_FUNCDECL_RPL (reallocarray, void *,
 _GL_CXXALIAS_RPL (reallocarray, void *,
                   (void *ptr, size_t nmemb, size_t size));
 # else
-#  if ! 0
+#  if ! 1
 _GL_FUNCDECL_SYS (reallocarray, void *,
                   (void *ptr, size_t nmemb, size_t size));
 #  endif
@@ -2007,7 +2007,7 @@ _GL_WARN_ON_USE (reallocarray, "reallocarray is not portable - "
 #endif
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define realpath rpl_realpath
 #  endif
@@ -2052,7 +2052,7 @@ _GL_WARN_ON_USE (rpmatch, "rpmatch is unportable - "
 
 #if 1
 /* Look up NAME in the environment, returning 0 in insecure situations.  */
-# if !0
+# if !1
 _GL_FUNCDECL_SYS (secure_getenv, char *,
                   (char const *name) _GL_ARG_NONNULL ((1)));
 # endif

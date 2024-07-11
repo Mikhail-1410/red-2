@@ -1,12 +1,12 @@
 # This Makefile is for the PSPP extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 7.62 (Revision: 76200) from the contents of
+# 7.70 (Revision: 77000) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
 #
-#   MakeMaker ARGV: (q[PREFIX=/usr/local], q[OPTIMIZE=-g -O2 -DGCC_LINT -I/opt/homebrew/Cellar/gsl/2.8/include -I/opt/homebrew/Cellar/cairo/1.18.0/include -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi -Wno-error], q[LD=cc -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib])
+#   MakeMaker ARGV: (q[PREFIX=/usr/local], q[OPTIMIZE=-g -O2 -DGCC_LINT -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -Wno-error], q[LD=cc ])
 #
 
 #   MakeMaker Parameters:
@@ -16,46 +16,47 @@
 #     BUILD_REQUIRES => {  }
 #     CONFIGURE_REQUIRES => {  }
 #     DISTNAME => q[PSPP-Perl]
-#     FULLPERL => q[PSPP_TEST_CMD="/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/ui/terminal/pspp" $(PERL)]
-#     INC => q[-I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1  -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/gl -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/gl -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1]
+#     FULLPERL => q[PSPP_TEST_CMD="/pspp-2.0.1/src/ui/terminal/pspp" $(PERL)]
+#     INC => q[-I /pspp-2.0.1  -I /pspp-2.0.1/src -I /pspp-2.0.1/gl -I /pspp-2.0.1/gl -I /pspp-2.0.1]
 #     MAKEFILE => q[MakefileX]
 #     MAN3PODS => { Examples.pod=>q[$(INST_MAN3DIR)/PSPP::Examples.3pm], lib/PSPP.pm=>q[$(INST_MAN3DIR)/PSPP.3pm] }
-#     MYEXTLIB => q[/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/.libs/libpspp-core.$(SO)]
+#     MYEXTLIB => q[/pspp-2.0.1/src/.libs/libpspp-core.$(SO)]
 #     NAME => q[PSPP]
 #     PM => { lib/PSPP.pm=>q[$(INST_LIBDIR)/PSPP.pm] }
 #     PREREQ_PM => { POSIX=>q[0] }
 #     TEST_REQUIRES => {  }
-#     VERSION_FROM => q[/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/libpspp/version.c]
+#     VERSION_FROM => q[/pspp-2.0.1/src/libpspp/version.c]
 
 # --- MakeMaker post_initialize section:
 
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /System/Library/Perl/5.34/darwin-thread-multi-2level/Config.pm).
+# These definitions are from config.sh (via /usr/lib/perl5/5.38/core_perl/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = cc
-CCCDLFLAGS =  
-CCDLFLAGS =  
-DLEXT = bundle
+CCCDLFLAGS = -fPIC
+CCDLFLAGS = -Wl,-E -Wl,-rpath,/usr/lib/perl5/5.38/core_perl/CORE
+CPPRUN = cc  -E
+DLEXT = so
 DLSRC = dl_dlopen.xs
 EXE_EXT = 
 FULL_AR = /usr/bin/ar
-LD = cc -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib
-LDDLFLAGS =  -bundle -undefined dynamic_lookup -fstack-protector-strong
-LDFLAGS =  -fstack-protector-strong
-LIBC = 
+LD = cc 
+LDDLFLAGS = -shared -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -L/usr/lib/db5.3 -fstack-protector-strong
+LDFLAGS = -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -flto=auto -fstack-protector-strong -L/usr/lib/db5.3
+LIBC = /lib/../lib/libc.so.6
 LIB_EXT = .a
 OBJ_EXT = .o
-OSNAME = darwin
-OSVERS = 23.0
-RANLIB = ranlib
-SITELIBEXP = /Library/Perl/5.34
-SITEARCHEXP = /Library/Perl/5.34/darwin-thread-multi-2level
-SO = dylib
-VENDORARCHEXP = /Network/Library/Perl/5.34/darwin-thread-multi-2level
-VENDORLIBEXP = /Network/Library/Perl/5.34
+OSNAME = linux
+OSVERS = 5.12.15-arch1-1
+RANLIB = :
+SITELIBEXP = /usr/share/perl5/site_perl
+SITEARCHEXP = /usr/lib/perl5/5.38/site_perl
+SO = so
+VENDORARCHEXP = /usr/lib/perl5/5.38/vendor_perl
+VENDORLIBEXP = /usr/share/perl5/vendor_perl
 
 
 # --- MakeMaker constants section:
@@ -77,7 +78,7 @@ INST_BIN = blib/bin
 INST_LIB = blib/lib
 INST_MAN1DIR = blib/man1
 INST_MAN3DIR = blib/man3
-MAN1EXT = 1
+MAN1EXT = 1p
 MAN3EXT = 3pm
 MAN1SECTION = 1
 MAN3SECTION = 3
@@ -87,55 +88,55 @@ PREFIX = /usr/local
 PERLPREFIX = $(PREFIX)
 SITEPREFIX = $(PREFIX)
 VENDORPREFIX = $(PREFIX)
-INSTALLPRIVLIB = $(PERLPREFIX)/lib/perl5
+INSTALLPRIVLIB = $(PERLPREFIX)/share/perl5/core_perl
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = $(SITEPREFIX)/lib/perl5/site_perl
+INSTALLSITELIB = $(SITEPREFIX)/share/perl5/site_perl
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
-INSTALLVENDORLIB = $(VENDORPREFIX)/lib/perl5
+INSTALLVENDORLIB = $(VENDORPREFIX)/share/perl5/vendor_perl
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = $(PERLPREFIX)/lib/perl5/5.34.1/darwin-thread-multi-2level
+INSTALLARCHLIB = $(PERLPREFIX)/lib/perl5/5.38/core_perl
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = $(SITEPREFIX)/lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level
+INSTALLSITEARCH = $(SITEPREFIX)/lib/perl5/5.38/site_perl
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
-INSTALLVENDORARCH = $(VENDORPREFIX)/lib/perl5/5.34.1/darwin-thread-multi-2level
+INSTALLVENDORARCH = $(VENDORPREFIX)/lib/perl5/5.38/vendor_perl
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
 INSTALLBIN = $(PERLPREFIX)/bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
-INSTALLSITEBIN = $(SITEPREFIX)/local/bin
+INSTALLSITEBIN = $(SITEPREFIX)/bin
 DESTINSTALLSITEBIN = $(DESTDIR)$(INSTALLSITEBIN)
 INSTALLVENDORBIN = $(VENDORPREFIX)/bin
 DESTINSTALLVENDORBIN = $(DESTDIR)$(INSTALLVENDORBIN)
-INSTALLSCRIPT = $(PERLPREFIX)/bin
+INSTALLSCRIPT = $(PERLPREFIX)/bin/core_perl
 DESTINSTALLSCRIPT = $(DESTDIR)$(INSTALLSCRIPT)
-INSTALLSITESCRIPT = $(SITEPREFIX)/local/bin
+INSTALLSITESCRIPT = $(SITEPREFIX)/bin/site_perl
 DESTINSTALLSITESCRIPT = $(DESTDIR)$(INSTALLSITESCRIPT)
-INSTALLVENDORSCRIPT = $(VENDORPREFIX)/bin
+INSTALLVENDORSCRIPT = $(VENDORPREFIX)/bin/vendor_perl
 DESTINSTALLVENDORSCRIPT = $(DESTDIR)$(INSTALLVENDORSCRIPT)
 INSTALLMAN1DIR = $(PERLPREFIX)/share/man/man1
 DESTINSTALLMAN1DIR = $(DESTDIR)$(INSTALLMAN1DIR)
-INSTALLSITEMAN1DIR = $(SITEPREFIX)/local/share/man/man1
+INSTALLSITEMAN1DIR = $(SITEPREFIX)/share/man/man1
 DESTINSTALLSITEMAN1DIR = $(DESTDIR)$(INSTALLSITEMAN1DIR)
 INSTALLVENDORMAN1DIR = $(VENDORPREFIX)/share/man/man1
 DESTINSTALLVENDORMAN1DIR = $(DESTDIR)$(INSTALLVENDORMAN1DIR)
 INSTALLMAN3DIR = $(PERLPREFIX)/share/man/man3
 DESTINSTALLMAN3DIR = $(DESTDIR)$(INSTALLMAN3DIR)
-INSTALLSITEMAN3DIR = $(SITEPREFIX)/local/share/man/man3
+INSTALLSITEMAN3DIR = $(SITEPREFIX)/share/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = $(VENDORPREFIX)/share/man/man3
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = /System/Library/Perl/5.34
-PERL_ARCHLIB = /System/Library/Perl/5.34/darwin-thread-multi-2level
-PERL_ARCHLIBDEP = /System/Library/Perl/5.34/darwin-thread-multi-2level
+PERL_LIB = /usr/share/perl5/core_perl
+PERL_ARCHLIB = /usr/lib/perl5/5.38/core_perl
+PERL_ARCHLIBDEP = /usr/lib/perl5/5.38/core_perl
 LIBPERL_A = libperl.a
-MYEXTLIB = /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/.libs/libpspp-core.$(SO)
+MYEXTLIB = /pspp-2.0.1/src/.libs/libpspp-core.$(SO)
 FIRST_MAKEFILE = MakefileX
 MAKEFILE_OLD = MakefileX.old
 MAKE_APERL_FILE = MakefileX.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /System/Library/Perl/5.34/darwin-thread-multi-2level/CORE
-PERL_INCDEP = /System/Library/Perl/5.34/darwin-thread-multi-2level/CORE
+PERL_INC = /usr/lib/perl5/5.38/core_perl/CORE
+PERL_INCDEP = /usr/lib/perl5/5.38/core_perl/CORE
 PERL = "/usr/bin/perl"
-FULLPERL = PSPP_TEST_CMD="/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/ui/terminal/pspp" $(PERL)
+FULLPERL = PSPP_TEST_CMD="/pspp-2.0.1/src/ui/terminal/pspp" $(PERL)
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -148,9 +149,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /System/Library/Perl/5.34/ExtUtils/MakeMaker.pm
-MM_VERSION  = 7.62
-MM_REVISION = 76200
+MAKEMAKER   = /usr/share/perl5/core_perl/ExtUtils/MakeMaker.pm
+MM_VERSION  = 7.70
+MM_REVISION = 77000
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -161,8 +162,8 @@ FULLEXT = PSPP
 BASEEXT = PSPP
 PARENT_NAME = 
 DLBASE = $(BASEEXT)
-VERSION_FROM = /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/libpspp/version.c
-INC = -I"/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1" -I"/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src" -I"/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/gl" -I"/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/gl" -I"/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1"
+VERSION_FROM = /pspp-2.0.1/src/libpspp/version.c
+INC = -I"/pspp-2.0.1" -I"/pspp-2.0.1/src" -I"/pspp-2.0.1/gl" -I"/pspp-2.0.1/gl" -I"/pspp-2.0.1"
 OBJECT = $(BASEEXT)$(OBJ_EXT)
 LDFROM = $(OBJECT)
 LINKTYPE = dynamic
@@ -177,11 +178,8 @@ MAN1PODS =
 MAN3PODS = Examples.pod \
 	lib/PSPP.pm
 
-SDKROOT := $(shell xcrun --show-sdk-path)
-PERL_SYSROOT = $(SDKROOT)
-
 # Where is the Config information that we are using/depend on
-CONFIGDEP = $(PERL_ARCHLIBDEP)$(DFSEP)Config.pm $(PERL_SYSROOT)$(PERL_INCDEP)$(DFSEP)config.h
+CONFIGDEP = $(PERL_ARCHLIBDEP)$(DFSEP)Config.pm $(PERL_INCDEP)$(DFSEP)config.h
 
 # Where to build things
 INST_LIBDIR      = $(INST_LIB)
@@ -205,7 +203,7 @@ TO_INST_PM = lib/PSPP.pm
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 7.62
+MM_Unix_VERSION = 7.70
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -217,12 +215,12 @@ AUTOSPLITFILE = $(ABSPERLRUN)  -e 'use AutoSplit;  autosplit($$$$ARGV[0], $$$$AR
 
 # --- MakeMaker tool_xsubpp section:
 
-XSUBPPDIR = /System/Library/Perl/5.34/ExtUtils
+XSUBPPDIR = /usr/share/perl5/core_perl/ExtUtils
 XSUBPP = "$(XSUBPPDIR)$(DFSEP)xsubpp"
 XSUBPPRUN = $(PERLRUN) $(XSUBPP)
 XSPROTOARG = 
-XSUBPPDEPS = /System/Library/Perl/5.34/ExtUtils/typemap typemap /System/Library/Perl/5.34/ExtUtils$(DFSEP)xsubpp
-XSUBPPARGS = -typemap '/System/Library/Perl/5.34/ExtUtils/typemap' -typemap '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/perl-module/typemap'
+XSUBPPDEPS = /usr/share/perl5/core_perl/ExtUtils/typemap typemap /usr/share/perl5/core_perl/ExtUtils$(DFSEP)xsubpp
+XSUBPPARGS = -typemap '/usr/share/perl5/core_perl/ExtUtils/typemap' -typemap '/pspp-2.0.1/perl-module/typemap'
 XSUBPP_EXTRA_ARGS =
 
 
@@ -264,7 +262,7 @@ makemakerdflt : all
 
 
 # --- MakeMaker dist section:
-TAR = COPY_EXTENDED_ATTRIBUTES_DISABLE=1 COPYFILE_DISABLE=1 tar
+TAR = tar
 TARFLAGS = cvf
 ZIP = zip
 ZIPFLAGS = -r
@@ -290,9 +288,10 @@ DISTVNAME = PSPP-Perl-2.0.1
 
 # --- MakeMaker cflags section:
 
-CCFLAGS = -g -pipe -fno-strict-aliasing -fstack-protector-strong -DPERL_USE_SAFE_PUTENV -Wno-error=implicit-function-declaration
-OPTIMIZE = -g -O2 -DGCC_LINT -I/opt/homebrew/Cellar/gsl/2.8/include -I/opt/homebrew/Cellar/cairo/1.18.0/include -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi -Wno-error
+CCFLAGS = -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/include/db5.3 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+OPTIMIZE = -g -O2 -DGCC_LINT -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -Wno-error
 PERLTYPE = 
+MPOLLUTE = 
 
 
 # --- MakeMaker const_loadlibs section:
@@ -318,7 +317,7 @@ PASTHRU = LIBPERL_A="$(LIBPERL_A)"\
 	OPTIMIZE="$(OPTIMIZE)"\
 	PREFIX="$(PREFIX)"\
 	PASTHRU_DEFINE='$(DEFINE) $(PASTHRU_DEFINE)'\
-	PASTHRU_INC='-I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1  -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/gl -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/gl -I /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1 $(PASTHRU_INC)'
+	PASTHRU_INC='-I /pspp-2.0.1  -I /pspp-2.0.1/src -I /pspp-2.0.1/gl -I /pspp-2.0.1/gl -I /pspp-2.0.1 $(PASTHRU_INC)'
 
 
 # --- MakeMaker special_targets section:
@@ -331,28 +330,28 @@ PASTHRU = LIBPERL_A="$(LIBPERL_A)"\
 # --- MakeMaker c_o section:
 
 .c.i:
-	cc  -E -c $(PASTHRU_INC) $(INC) \
+	$(CPPRUN) -c $(PASTHRU_INC) $(INC) \
 	$(CCFLAGS) $(OPTIMIZE) \
 	$(PERLTYPE) $(MPOLLUTE) $(DEFINE_VERSION) \
-	$(XS_DEFINE_VERSION) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c > $*.i
+	$(XS_DEFINE_VERSION) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c > $*.i
 
 .c.s :
-	$(CCCMD) -S $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c 
+	$(CCCMD) -S $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c 
 
 .c$(OBJ_EXT) :
-	$(CCCMD) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c
+	$(CCCMD) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c
 
 .cpp$(OBJ_EXT) :
-	$(CCCMD) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.cpp
+	$(CCCMD) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.cpp
 
 .cxx$(OBJ_EXT) :
-	$(CCCMD) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.cxx
+	$(CCCMD) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.cxx
 
 .cc$(OBJ_EXT) :
-	$(CCCMD) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.cc
+	$(CCCMD) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.cc
 
 .C$(OBJ_EXT) :
-	$(CCCMD) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.C
+	$(CCCMD) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.C
 
 
 # --- MakeMaker xs_c section:
@@ -366,7 +365,7 @@ PASTHRU = LIBPERL_A="$(LIBPERL_A)"\
 .xs$(OBJ_EXT) :
 	$(XSUBPPRUN) $(XSPROTOARG) $(XSUBPPARGS) $*.xs > $*.xsc
 	$(MV) $*.xsc $*.c
-	$(CCCMD) $(CCCDLFLAGS) -iwithsysroot "$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c 
+	$(CCCMD) $(CCCDLFLAGS) "-I$(PERL_INC)" $(PASTHRU_DEFINE) $(DEFINE) $*.c 
 
 
 # --- MakeMaker top_targets section:
@@ -598,7 +597,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'dynamic_config: 1' >> META_new.yml
-	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 7.62, CPAN::Meta::Converter version 2.150010'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 7.70, CPAN::Meta::Converter version 2.150010'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license: unknown' >> META_new.yml
 	$(NOECHO) $(ECHO) 'meta-spec:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  url: http://module-build.sourceforge.net/META-spec-v1.4.html' >> META_new.yml
@@ -620,7 +619,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      "John Darrington <john@darrington.wattle.id.au>"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
 	$(NOECHO) $(ECHO) '   "dynamic_config" : 1,' >> META_new.json
-	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 7.62, CPAN::Meta::Converter version 2.150010",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 7.70, CPAN::Meta::Converter version 2.150010",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "license" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '      "unknown"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
@@ -654,7 +653,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
 	$(NOECHO) $(ECHO) '   "release_status" : "stable",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "version" : "v2.0.1",' >> META_new.json
-	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 4.06"' >> META_new.json
+	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 4.16"' >> META_new.json
 	$(NOECHO) $(ECHO) '}' >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -735,7 +734,7 @@ distdir : create_distdir distmeta
 
 # --- MakeMaker dist_test section:
 disttest : distdir
-	cd $(DISTVNAME) && $(ABSPERLRUN) Makefile.PL "PREFIX=/usr/local" "OPTIMIZE=-g -O2 -DGCC_LINT -I/opt/homebrew/Cellar/gsl/2.8/include -I/opt/homebrew/Cellar/cairo/1.18.0/include -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi -Wno-error" "LD=cc -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib"
+	cd $(DISTVNAME) && $(ABSPERLRUN) Makefile.PL "PREFIX=/usr/local" "OPTIMIZE=-g -O2 -DGCC_LINT -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -Wno-error" "LD=cc "
 	cd $(DISTVNAME) && $(MAKE) $(PASTHRU)
 	cd $(DISTVNAME) && $(MAKE) test $(PASTHRU)
 
@@ -889,7 +888,91 @@ FORCE :
 
 
 # --- MakeMaker perldepend section:
-PERL_HDRS = 
+PERL_HDRS = \
+        $(PERL_INCDEP)/EXTERN.h            \
+        $(PERL_INCDEP)/INTERN.h            \
+        $(PERL_INCDEP)/XSUB.h            \
+        $(PERL_INCDEP)/av.h            \
+        $(PERL_INCDEP)/bitcount.h            \
+        $(PERL_INCDEP)/charclass_invlists.h            \
+        $(PERL_INCDEP)/config.h            \
+        $(PERL_INCDEP)/cop.h            \
+        $(PERL_INCDEP)/cv.h            \
+        $(PERL_INCDEP)/dosish.h            \
+        $(PERL_INCDEP)/ebcdic_tables.h            \
+        $(PERL_INCDEP)/embed.h            \
+        $(PERL_INCDEP)/embedvar.h            \
+        $(PERL_INCDEP)/fakesdio.h            \
+        $(PERL_INCDEP)/feature.h            \
+        $(PERL_INCDEP)/form.h            \
+        $(PERL_INCDEP)/git_version.h            \
+        $(PERL_INCDEP)/gv.h            \
+        $(PERL_INCDEP)/handy.h            \
+        $(PERL_INCDEP)/hv.h            \
+        $(PERL_INCDEP)/hv_func.h            \
+        $(PERL_INCDEP)/hv_macro.h            \
+        $(PERL_INCDEP)/inline.h            \
+        $(PERL_INCDEP)/intrpvar.h            \
+        $(PERL_INCDEP)/invlist_inline.h            \
+        $(PERL_INCDEP)/iperlsys.h            \
+        $(PERL_INCDEP)/keywords.h            \
+        $(PERL_INCDEP)/l1_char_class_tab.h            \
+        $(PERL_INCDEP)/malloc_ctl.h            \
+        $(PERL_INCDEP)/metaconfig.h            \
+        $(PERL_INCDEP)/mg.h            \
+        $(PERL_INCDEP)/mg_data.h            \
+        $(PERL_INCDEP)/mg_raw.h            \
+        $(PERL_INCDEP)/mg_vtable.h            \
+        $(PERL_INCDEP)/mydtrace.h            \
+        $(PERL_INCDEP)/nostdio.h            \
+        $(PERL_INCDEP)/op.h            \
+        $(PERL_INCDEP)/op_reg_common.h            \
+        $(PERL_INCDEP)/opcode.h            \
+        $(PERL_INCDEP)/opnames.h            \
+        $(PERL_INCDEP)/overload.h            \
+        $(PERL_INCDEP)/pad.h            \
+        $(PERL_INCDEP)/parser.h            \
+        $(PERL_INCDEP)/patchlevel.h            \
+        $(PERL_INCDEP)/perl.h            \
+        $(PERL_INCDEP)/perl_inc_macro.h            \
+        $(PERL_INCDEP)/perl_langinfo.h            \
+        $(PERL_INCDEP)/perl_siphash.h            \
+        $(PERL_INCDEP)/perlapi.h            \
+        $(PERL_INCDEP)/perlio.h            \
+        $(PERL_INCDEP)/perliol.h            \
+        $(PERL_INCDEP)/perlsdio.h            \
+        $(PERL_INCDEP)/perlstatic.h            \
+        $(PERL_INCDEP)/perlvars.h            \
+        $(PERL_INCDEP)/perly.h            \
+        $(PERL_INCDEP)/pp.h            \
+        $(PERL_INCDEP)/pp_proto.h            \
+        $(PERL_INCDEP)/proto.h            \
+        $(PERL_INCDEP)/reentr.h            \
+        $(PERL_INCDEP)/regcharclass.h            \
+        $(PERL_INCDEP)/regcomp.h            \
+        $(PERL_INCDEP)/regcomp_internal.h            \
+        $(PERL_INCDEP)/regexp.h            \
+        $(PERL_INCDEP)/reginline.h            \
+        $(PERL_INCDEP)/regnodes.h            \
+        $(PERL_INCDEP)/sbox32_hash.h            \
+        $(PERL_INCDEP)/scope.h            \
+        $(PERL_INCDEP)/scope_types.h            \
+        $(PERL_INCDEP)/sv.h            \
+        $(PERL_INCDEP)/sv_inline.h            \
+        $(PERL_INCDEP)/thread.h            \
+        $(PERL_INCDEP)/time64.h            \
+        $(PERL_INCDEP)/time64_config.h            \
+        $(PERL_INCDEP)/uconfig.h            \
+        $(PERL_INCDEP)/uni_keywords.h            \
+        $(PERL_INCDEP)/unicode_constants.h            \
+        $(PERL_INCDEP)/unixish.h            \
+        $(PERL_INCDEP)/utf8.h            \
+        $(PERL_INCDEP)/utfebcdic.h            \
+        $(PERL_INCDEP)/util.h            \
+        $(PERL_INCDEP)/uudmap.h            \
+        $(PERL_INCDEP)/vutil.h            \
+        $(PERL_INCDEP)/warnings.h            \
+        $(PERL_INCDEP)/zaphod32_hash.h            
 
 $(OBJECT) : $(PERL_HDRS)
 
@@ -908,7 +991,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 	-$(NOECHO) $(RM_F) $(MAKEFILE_OLD)
 	-$(NOECHO) $(MV)   $(FIRST_MAKEFILE) $(MAKEFILE_OLD)
 	- $(MAKE) $(USEMAKEFILE) $(MAKEFILE_OLD) clean $(DEV_NULL)
-	$(PERLRUN) Makefile.PL "PREFIX=/usr/local" "OPTIMIZE=-g -O2 -DGCC_LINT -I/opt/homebrew/Cellar/gsl/2.8/include -I/opt/homebrew/Cellar/cairo/1.18.0/include -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi -Wno-error" "LD=cc -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib"
+	$(PERLRUN) Makefile.PL "PREFIX=/usr/local" "OPTIMIZE=-g -O2 -DGCC_LINT -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -Wno-error" "LD=cc "
 	$(NOECHO) $(ECHO) "==> Your Makefile has been rebuilt. <=="
 	$(NOECHO) $(ECHO) "==> Please rerun the $(MAKE) command.  <=="
 	$(FALSE)
@@ -919,8 +1002,8 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
-FULLPERL      = PSPP_TEST_CMD="/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/src/ui/terminal/pspp" $(PERL)
-MAP_PERLINC   = "-Iblib/arch" "-Iblib/lib" "-I/System/Library/Perl/5.34/darwin-thread-multi-2level" "-I/System/Library/Perl/5.34"
+FULLPERL      = PSPP_TEST_CMD="/pspp-2.0.1/src/ui/terminal/pspp" $(PERL)
+MAP_PERLINC   = "-Iblib/arch" "-Iblib/lib" "-I/usr/lib/perl5/5.38/core_perl" "-I/usr/share/perl5/core_perl"
 
 $(MAP_TARGET) :: $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -932,8 +1015,8 @@ $(MAKE_APERL_FILE) : static $(FIRST_MAKEFILE) pm_to_blib
 		MAKEFILE=$(MAKE_APERL_FILE) LINKTYPE=static \
 		MAKEAPERL=1 NORECURS=1 CCCDLFLAGS= \
 		PREFIX=/usr/local \
-		OPTIMIZE='-g -O2 -DGCC_LINT -I/opt/homebrew/Cellar/gsl/2.8/include -I/opt/homebrew/Cellar/cairo/1.18.0/include -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi -Wno-error' \
-		LD='cc -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib'
+		OPTIMIZE='-g -O2 -DGCC_LINT -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -Wno-error' \
+		LD='cc '
 
 
 # --- MakeMaker test section:
@@ -964,10 +1047,10 @@ testdb_dynamic :: dynamic pure_all
 subdirs-test_static :: static pure_all
 
 test_static :: subdirs-test_static $(MAP_TARGET)
-	PERL_DL_NONLAZY=1 "/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/perl-module/$(MAP_TARGET)" $(MAP_PERLINC) "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness($(TEST_VERBOSE), '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
+	PERL_DL_NONLAZY=1 "/pspp-2.0.1/perl-module/$(MAP_TARGET)" $(MAP_PERLINC) "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness($(TEST_VERBOSE), '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
 
 testdb_static :: static pure_all $(MAP_TARGET)
-	PERL_DL_NONLAZY=1 "/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/perl-module/$(MAP_TARGET)" $(MAP_PERLINC) "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
+	PERL_DL_NONLAZY=1 "/pspp-2.0.1/perl-module/$(MAP_TARGET)" $(MAP_PERLINC) "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
 
 
 
@@ -979,7 +1062,7 @@ ppd :
 	$(NOECHO) $(ECHO) '    <AUTHOR>John Darrington &lt;john@darrington.wattle.id.au&gt;</AUTHOR>' >> PSPP-Perl.ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> PSPP-Perl.ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="POSIX::" />' >> PSPP-Perl.ppd
-	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="darwin-thread-multi-2level-5.34" />' >> PSPP-Perl.ppd
+	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-thread-multi-5.38" />' >> PSPP-Perl.ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> PSPP-Perl.ppd
 	$(NOECHO) $(ECHO) '    </IMPLEMENTATION>' >> PSPP-Perl.ppd
 	$(NOECHO) $(ECHO) '</SOFTPKG>' >> PSPP-Perl.ppd

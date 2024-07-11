@@ -665,7 +665,7 @@ _GL_WARN_EXTERN_C int _gl_warn_on_use
 /* Make _GL_ATTRIBUTE_DEALLOC_FREE work, even though <stdlib.h> may not have
    been included yet.  */
 #if 1
-# if (1 && !defined free \
+# if (0 && !defined free \
       && !(defined __cplusplus && defined GNULIB_NAMESPACE))
 /* We can't do '#define free rpl_free' here.  */
 #  if defined __cplusplus && (__GLIBC__ + (__GLIBC_MINOR__ >= 14) > 2)
@@ -820,7 +820,7 @@ _GL_WARN_ON_USE (memchr, "memchr has platform-specific bugs - "
 
 /* Return the first occurrence of NEEDLE in HAYSTACK.  */
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define memmem rpl_memmem
 #  endif
@@ -870,7 +870,7 @@ _GL_CXXALIAS_RPL (mempcpy, void *,
                   (void *restrict __dest, void const *restrict __src,
                    size_t __n));
 # else
-#  if !0
+#  if !1
 _GL_FUNCDECL_SYS (mempcpy, void *,
                   (void *restrict __dest, void const *restrict __src,
                    size_t __n)
@@ -893,7 +893,7 @@ _GL_WARN_ON_USE (mempcpy, "mempcpy is unportable - "
 
 /* Search backwards through a block for a byte (specified as an int).  */
 #if 1
-# if ! 0
+# if ! 1
 _GL_FUNCDECL_SYS (memrchr, void *, (void const *, int, size_t)
                                    _GL_ATTRIBUTE_PURE
                                    _GL_ARG_NONNULL ((1)));
@@ -955,7 +955,7 @@ _GL_WARN_ON_USE (memset_explicit, "memset_explicit is unportable - "
    memchr(S,C,N), at the expense of undefined behavior if C does not
    occur within N bytes.  */
 #if 1
-# if ! 0
+# if ! 1
 _GL_FUNCDECL_SYS (rawmemchr, void *, (void const *__s, int __c_in)
                                      _GL_ATTRIBUTE_PURE
                                      _GL_ARG_NONNULL ((1)));
@@ -1471,7 +1471,7 @@ _GL_WARN_ON_USE (strstr, "strstr is quadratic on many systems, and cannot "
 /* Find the first occurrence of NEEDLE in HAYSTACK, using case-insensitive
    comparison.  */
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define strcasestr rpl_strcasestr
 #  endif
@@ -1814,7 +1814,7 @@ _GL_EXTERN_C char * mbstok_r (char *restrict string, const char *delim,
 
 /* Map any int, typically from errno, into an error message.  */
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef strerror
 #   define strerror rpl_strerror

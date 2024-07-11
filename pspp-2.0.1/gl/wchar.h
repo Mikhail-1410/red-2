@@ -62,7 +62,7 @@
 
 #define _GL_ALREADY_INCLUDING_WCHAR_H
 
-#if 0
+#if 1
 # include <features.h> /* for __GLIBC__ */
 #endif
 
@@ -727,7 +727,7 @@ typedef int rpl_mbstate_t;
 /* Make _GL_ATTRIBUTE_DEALLOC_FREE work, even though <stdlib.h> may not have
    been included yet.  */
 #if 1
-# if (1 && !defined free \
+# if (0 && !defined free \
       && !(defined __cplusplus && defined GNULIB_NAMESPACE))
 /* We can't do '#define free rpl_free' here.  */
 #  if defined __cplusplus && (__GLIBC__ + (__GLIBC_MINOR__ >= 14) > 2)
@@ -770,7 +770,7 @@ _GL_EXTERN_C void free (void *);
 
 /* Convert a single-byte character to a wide character.  */
 #if 1
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef btowc
 #   define btowc rpl_btowc
@@ -853,7 +853,7 @@ _GL_WARN_ON_USE (mbsinit, "mbsinit is unportable - "
 
 /* Convert a multibyte character to a wide character.  */
 #if 1
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef mbrtowc
 #   define mbrtowc rpl_mbrtowc
@@ -919,7 +919,7 @@ _GL_WARN_ON_USE (mbrlen, "mbrlen is unportable - "
 
 /* Convert a string to a wide string.  */
 #if 1
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef mbsrtowcs
 #   define mbsrtowcs rpl_mbsrtowcs
@@ -1118,7 +1118,7 @@ _GL_WARN_ON_USE (wcsnrtombs, "wcsnrtombs is unportable - "
 
 /* Return the number of screen columns needed for WC.  */
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef wcwidth
 #   define wcwidth rpl_wcwidth
@@ -1266,7 +1266,7 @@ _GL_CXXALIAS_RPL (wmempcpy, wchar_t *,
                   (wchar_t *restrict dest,
                    const wchar_t *restrict src, size_t n));
 # else
-#  if !0
+#  if !1
 _GL_FUNCDECL_SYS (wmempcpy, wchar_t *,
                   (wchar_t *restrict dest,
                    const wchar_t *restrict src, size_t n));

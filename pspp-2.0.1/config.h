@@ -48,7 +48,7 @@
 
 /* Define to 1 if translation of program messages to the user's native
    language is requested. */
-/* #undef ENABLE_NLS */
+#define ENABLE_NLS 1
 
 /* Define to 1 if the package shall run at any location in the file system. */
 /* #undef ENABLE_RELOCATABLE */
@@ -102,7 +102,7 @@
 
 /* Define to 1 if realpath() can malloc memory, always gives an absolute path,
    and handles leading slashes and a trailing slash correctly. */
-/* #undef FUNC_REALPATH_WORKS */
+#define FUNC_REALPATH_WORKS 1
 
 /* Define to 1 if ungetc is broken when used on arbitrary bytes. */
 /* #undef FUNC_UNGETC_BROKEN */
@@ -639,8 +639,8 @@
    whether the gnulib module xalloc-die shall be considered present. */
 #define GNULIB_XALLOC_DIE 1
 
-/* Define to 1 if 'TIOCGWINSZ' requires <sys/ioctl.h>. */
-/* #undef GWINSZ_IN_SYS_IOCTL */
+/* Define to 1 if `TIOCGWINSZ' requires <sys/ioctl.h>. */
+#define GWINSZ_IN_SYS_IOCTL 1
 
 /* Define to 1 if you have 'alloca' after including <alloca.h>, a header that
    may be supplied by this distribution. */
@@ -659,30 +659,30 @@
 /* Define to 1 if you have the <bp-sym.h> header file. */
 /* #undef HAVE_BP_SYM_H */
 
-/* Define to 1 if you have the 'btowc' function. */
+/* Define to 1 if you have the `btowc' function. */
 #define HAVE_BTOWC 1
 
 /* Define to 1 if you have the <byteswap.h> header file. */
-/* #undef HAVE_BYTESWAP_H */
+#define HAVE_BYTESWAP_H 1
 
-/* Define to 1 if you have the 'canonicalize_file_name' function. */
-/* #undef HAVE_CANONICALIZE_FILE_NAME */
+/* Define to 1 if you have the `canonicalize_file_name' function. */
+#define HAVE_CANONICALIZE_FILE_NAME 1
 
 /* Define to 1 if you have the Mac OS X function
    CFLocaleCopyPreferredLanguages in the CoreFoundation framework. */
-#define HAVE_CFLOCALECOPYPREFERREDLANGUAGES 1
+/* #undef HAVE_CFLOCALECOPYPREFERREDLANGUAGES */
 
 /* Define to 1 if you have the Mac OS X function CFPreferencesCopyAppValue in
    the CoreFoundation framework. */
-#define HAVE_CFPREFERENCESCOPYAPPVALUE 1
+/* #undef HAVE_CFPREFERENCESCOPYAPPVALUE */
 
-/* Define to 1 if you have the 'clock_getres' function. */
+/* Define to 1 if you have the `clock_getres' function. */
 #define HAVE_CLOCK_GETRES 1
 
-/* Define to 1 if you have the 'clock_gettime' function. */
+/* Define to 1 if you have the `clock_gettime' function. */
 #define HAVE_CLOCK_GETTIME 1
 
-/* Define to 1 if you have the 'clock_settime' function. */
+/* Define to 1 if you have the `clock_settime' function. */
 #define HAVE_CLOCK_SETTIME 1
 
 /* Define if the copysignf function is declared in <math.h> and available in
@@ -697,7 +697,7 @@
    libc. */
 /* #undef HAVE_COPYSIGN_IN_LIBC */
 
-/* Define to 1 if you have the 'copy_file_range' function. */
+/* Define to 1 if you have the `copy_file_range' function. */
 /* #undef HAVE_COPY_FILE_RANGE */
 
 /* Define to 1 if you have the <crtdefs.h> header file. */
@@ -717,265 +717,265 @@
 
 /* Define if the GNU dcgettext() function is already present or preinstalled.
    */
-/* #undef HAVE_DCGETTEXT */
+#define HAVE_DCGETTEXT 1
 
-/* Define to 1 if you have the declaration of 'alarm', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `alarm', and to 0 if you don't.
    */
 #define HAVE_DECL_ALARM 1
 
-/* Define to 1 if you have the declaration of 'clearerr_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `clearerr_unlocked', and to 0 if
    you don't. */
 #define HAVE_DECL_CLEARERR_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'copysign', and to 0 if you
+/* Define to 1 if you have the declaration of `copysign', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_COPYSIGN */
 
-/* Define to 1 if you have the declaration of 'copysignf', and to 0 if you
+/* Define to 1 if you have the declaration of `copysignf', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_COPYSIGNF */
 
-/* Define to 1 if you have the declaration of 'copysignl', and to 0 if you
+/* Define to 1 if you have the declaration of `copysignl', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_COPYSIGNL */
 
-/* Define to 1 if you have the declaration of 'ecvt', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `ecvt', and to 0 if you don't.
    */
 #define HAVE_DECL_ECVT 1
 
-/* Define to 1 if you have the declaration of 'execvpe', and to 0 if you
+/* Define to 1 if you have the declaration of `execvpe', and to 0 if you
    don't. */
-#define HAVE_DECL_EXECVPE 0
+#define HAVE_DECL_EXECVPE 1
 
-/* Define to 1 if you have the declaration of 'fcloseall', and to 0 if you
+/* Define to 1 if you have the declaration of `fcloseall', and to 0 if you
    don't. */
-#define HAVE_DECL_FCLOSEALL 0
+#define HAVE_DECL_FCLOSEALL 1
 
-/* Define to 1 if you have the declaration of 'fcvt', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `fcvt', and to 0 if you don't.
    */
 #define HAVE_DECL_FCVT 1
 
-/* Define to 1 if you have the declaration of 'feof_unlocked', and to 0 if you
+/* Define to 1 if you have the declaration of `feof_unlocked', and to 0 if you
    don't. */
 #define HAVE_DECL_FEOF_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'ferror_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `ferror_unlocked', and to 0 if
    you don't. */
 #define HAVE_DECL_FERROR_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'fflush_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `fflush_unlocked', and to 0 if
    you don't. */
-#define HAVE_DECL_FFLUSH_UNLOCKED 0
+#define HAVE_DECL_FFLUSH_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'fgets_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `fgets_unlocked', and to 0 if
    you don't. */
-#define HAVE_DECL_FGETS_UNLOCKED 0
+#define HAVE_DECL_FGETS_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'flockfile', and to 0 if you
+/* Define to 1 if you have the declaration of `flockfile', and to 0 if you
    don't. */
 #define HAVE_DECL_FLOCKFILE 1
 
-/* Define to 1 if you have the declaration of 'fputc_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `fputc_unlocked', and to 0 if
    you don't. */
-#define HAVE_DECL_FPUTC_UNLOCKED 0
+#define HAVE_DECL_FPUTC_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'fputs_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `fputs_unlocked', and to 0 if
    you don't. */
-#define HAVE_DECL_FPUTS_UNLOCKED 0
+#define HAVE_DECL_FPUTS_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'fread_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `fread_unlocked', and to 0 if
    you don't. */
-#define HAVE_DECL_FREAD_UNLOCKED 0
+#define HAVE_DECL_FREAD_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'fseeko', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `fseeko', and to 0 if you don't.
    */
 #define HAVE_DECL_FSEEKO 1
 
-/* Define to 1 if you have the declaration of 'ftello', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `ftello', and to 0 if you don't.
    */
 #define HAVE_DECL_FTELLO 1
 
-/* Define to 1 if you have the declaration of 'funlockfile', and to 0 if you
+/* Define to 1 if you have the declaration of `funlockfile', and to 0 if you
    don't. */
 #define HAVE_DECL_FUNLOCKFILE 1
 
-/* Define to 1 if you have the declaration of 'fwrite_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `fwrite_unlocked', and to 0 if
    you don't. */
-#define HAVE_DECL_FWRITE_UNLOCKED 0
+#define HAVE_DECL_FWRITE_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'gcvt', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `gcvt', and to 0 if you don't.
    */
 #define HAVE_DECL_GCVT 1
 
-/* Define to 1 if you have the declaration of 'getchar_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `getchar_unlocked', and to 0 if
    you don't. */
 #define HAVE_DECL_GETCHAR_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'getc_unlocked', and to 0 if you
+/* Define to 1 if you have the declaration of `getc_unlocked', and to 0 if you
    don't. */
 #define HAVE_DECL_GETC_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'getdelim', and to 0 if you
+/* Define to 1 if you have the declaration of `getdelim', and to 0 if you
    don't. */
 #define HAVE_DECL_GETDELIM 1
 
-/* Define to 1 if you have the declaration of 'getdtablesize', and to 0 if you
+/* Define to 1 if you have the declaration of `getdtablesize', and to 0 if you
    don't. */
 #define HAVE_DECL_GETDTABLESIZE 1
 
-/* Define to 1 if you have the declaration of 'getline', and to 0 if you
+/* Define to 1 if you have the declaration of `getline', and to 0 if you
    don't. */
 #define HAVE_DECL_GETLINE 1
 
-/* Define to 1 if you have the declaration of 'getw', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `getw', and to 0 if you don't.
    */
 #define HAVE_DECL_GETW 1
 
-/* Define to 1 if you have the declaration of 'isblank', and to 0 if you
+/* Define to 1 if you have the declaration of `isblank', and to 0 if you
    don't. */
-#define HAVE_DECL_ISBLANK 1
+/* #undef HAVE_DECL_ISBLANK */
 
-/* Define to 1 if you have the declaration of 'isfinite', and to 0 if you
+/* Define to 1 if you have the declaration of `isfinite', and to 0 if you
    don't. */
 #define HAVE_DECL_ISFINITE 1
 
-/* Define to 1 if you have the declaration of 'isinf', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `isinf', and to 0 if you don't.
    */
 #define HAVE_DECL_ISINF 1
 
-/* Define to 1 if you have the declaration of 'iswblank', and to 0 if you
+/* Define to 1 if you have the declaration of `iswblank', and to 0 if you
    don't. */
 #define HAVE_DECL_ISWBLANK 1
 
-/* Define to 1 if you have the declaration of 'localtime_r', and to 0 if you
+/* Define to 1 if you have the declaration of `localtime_r', and to 0 if you
    don't. */
 #define HAVE_DECL_LOCALTIME_R 1
 
-/* Define to 1 if you have the declaration of 'mbrtowc', and to 0 if you
+/* Define to 1 if you have the declaration of `mbrtowc', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_MBRTOWC */
 
-/* Define to 1 if you have the declaration of 'mbsinit', and to 0 if you
+/* Define to 1 if you have the declaration of `mbsinit', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_MBSINIT */
 
-/* Define to 1 if you have the declaration of 'mbsrtowcs', and to 0 if you
+/* Define to 1 if you have the declaration of `mbsrtowcs', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_MBSRTOWCS */
 
-/* Define to 1 if you have the declaration of 'memmem', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `memmem', and to 0 if you don't.
    */
 #define HAVE_DECL_MEMMEM 1
 
-/* Define to 1 if you have the declaration of 'memrchr', and to 0 if you
+/* Define to 1 if you have the declaration of `memrchr', and to 0 if you
    don't. */
-#define HAVE_DECL_MEMRCHR 0
+#define HAVE_DECL_MEMRCHR 1
 
-/* Define to 1 if you have the declaration of 'program_invocation_name', and
+/* Define to 1 if you have the declaration of `program_invocation_name', and
    to 0 if you don't. */
-#define HAVE_DECL_PROGRAM_INVOCATION_NAME 0
+#define HAVE_DECL_PROGRAM_INVOCATION_NAME 1
 
-/* Define to 1 if you have the declaration of 'program_invocation_short_name',
+/* Define to 1 if you have the declaration of `program_invocation_short_name',
    and to 0 if you don't. */
-#define HAVE_DECL_PROGRAM_INVOCATION_SHORT_NAME 0
+#define HAVE_DECL_PROGRAM_INVOCATION_SHORT_NAME 1
 
-/* Define to 1 if you have the declaration of 'putchar_unlocked', and to 0 if
+/* Define to 1 if you have the declaration of `putchar_unlocked', and to 0 if
    you don't. */
 #define HAVE_DECL_PUTCHAR_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'putc_unlocked', and to 0 if you
+/* Define to 1 if you have the declaration of `putc_unlocked', and to 0 if you
    don't. */
 #define HAVE_DECL_PUTC_UNLOCKED 1
 
-/* Define to 1 if you have the declaration of 'putw', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `putw', and to 0 if you don't.
    */
 #define HAVE_DECL_PUTW 1
 
-/* Define to 1 if you have the declaration of 'round', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `round', and to 0 if you don't.
    */
 #define HAVE_DECL_ROUND 1
 
-/* Define to 1 if you have the declaration of 'setenv', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `setenv', and to 0 if you don't.
    */
 #define HAVE_DECL_SETENV 1
 
-/* Define to 1 if you have the declaration of 'SIGWINCH', and to 0 if you
+/* Define to 1 if you have the declaration of `SIGWINCH', and to 0 if you
    don't. */
 #define HAVE_DECL_SIGWINCH 1
 
-/* Define to 1 if you have the declaration of 'snprintf', and to 0 if you
+/* Define to 1 if you have the declaration of `snprintf', and to 0 if you
    don't. */
 #define HAVE_DECL_SNPRINTF 1
 
-/* Define to 1 if you have the declaration of 'strdup', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `strdup', and to 0 if you don't.
    */
 #define HAVE_DECL_STRDUP 1
 
-/* Define to 1 if you have the declaration of 'strerror_r', and to 0 if you
+/* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
    don't. */
 #define HAVE_DECL_STRERROR_R 1
 
-/* Define to 1 if you have the declaration of 'strncasecmp', and to 0 if you
+/* Define to 1 if you have the declaration of `strncasecmp', and to 0 if you
    don't. */
 #define HAVE_DECL_STRNCASECMP 1
 
-/* Define to 1 if you have the declaration of 'strndup', and to 0 if you
+/* Define to 1 if you have the declaration of `strndup', and to 0 if you
    don't. */
 #define HAVE_DECL_STRNDUP 1
 
-/* Define to 1 if you have the declaration of 'strnlen', and to 0 if you
+/* Define to 1 if you have the declaration of `strnlen', and to 0 if you
    don't. */
 #define HAVE_DECL_STRNLEN 1
 
-/* Define to 1 if you have the declaration of 'strtok_r', and to 0 if you
+/* Define to 1 if you have the declaration of `strtok_r', and to 0 if you
    don't. */
 #define HAVE_DECL_STRTOK_R 1
 
-/* Define to 1 if you have the declaration of 'towlower', and to 0 if you
+/* Define to 1 if you have the declaration of `towlower', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_TOWLOWER */
 
-/* Define to 1 if you have the declaration of 'trunc', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `trunc', and to 0 if you don't.
    */
 #define HAVE_DECL_TRUNC 1
 
-/* Define to 1 if you have the declaration of 'tzname', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `tzname', and to 0 if you don't.
    */
 /* #undef HAVE_DECL_TZNAME */
 
-/* Define to 1 if you have the declaration of 'unsetenv', and to 0 if you
+/* Define to 1 if you have the declaration of `unsetenv', and to 0 if you
    don't. */
 #define HAVE_DECL_UNSETENV 1
 
-/* Define to 1 if you have the declaration of 'vsnprintf', and to 0 if you
+/* Define to 1 if you have the declaration of `vsnprintf', and to 0 if you
    don't. */
 #define HAVE_DECL_VSNPRINTF 1
 
-/* Define to 1 if you have the declaration of 'wcrtomb', and to 0 if you
+/* Define to 1 if you have the declaration of `wcrtomb', and to 0 if you
    don't. */
 /* #undef HAVE_DECL_WCRTOMB */
 
-/* Define to 1 if you have the declaration of 'wcsdup', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `wcsdup', and to 0 if you don't.
    */
 #define HAVE_DECL_WCSDUP 1
 
-/* Define to 1 if you have the declaration of 'wcwidth', and to 0 if you
+/* Define to 1 if you have the declaration of `wcwidth', and to 0 if you
    don't. */
 #define HAVE_DECL_WCWIDTH 1
 
-/* Define to 1 if you have the declaration of '_fseeki64', and to 0 if you
+/* Define to 1 if you have the declaration of `_fseeki64', and to 0 if you
    don't. */
 /* #undef HAVE_DECL__FSEEKI64 */
 
-/* Define to 1 if you have the declaration of '_snprintf', and to 0 if you
+/* Define to 1 if you have the declaration of `_snprintf', and to 0 if you
    don't. */
 #define HAVE_DECL__SNPRINTF 0
 
-/* Define to 1 if you have the declaration of '__argv', and to 0 if you don't.
+/* Define to 1 if you have the declaration of `__argv', and to 0 if you don't.
    */
-/* #undef HAVE_DECL___ARGV */
+#define HAVE_DECL___ARGV 0
 
-/* Define to 1 if you have the declaration of '__fsetlocking', and to 0 if you
+/* Define to 1 if you have the declaration of `__fsetlocking', and to 0 if you
    don't. */
 /* #undef HAVE_DECL___FSETLOCKING */
 
@@ -986,18 +986,18 @@
 #define HAVE_DUPLOCALE 1
 
 /* Define if you have the declaration of environ. */
-/* #undef HAVE_ENVIRON_DECL */
+#define HAVE_ENVIRON_DECL 1
 
 /* Define to 1 if you have the `error' function. */
-/* #undef HAVE_ERROR */
+#define HAVE_ERROR 1
 
 /* Define to 1 if you have the <error.h> header file. */
-/* #undef HAVE_ERROR_H */
+#define HAVE_ERROR_H 1
 
-/* Define to 1 if you have the 'execl' function. */
+/* Define to 1 if you have the `execl' function. */
 #define HAVE_EXECL 1
 
-/* Define to 1 if you have the 'explicit_memset' function. */
+/* Define to 1 if you have the `explicit_memset' function. */
 /* #undef HAVE_EXPLICIT_MEMSET */
 
 /* Define to 1 if you have the `faccessat' function. */
@@ -1007,44 +1007,44 @@
    OpenBSD. */
 /* #undef HAVE_FAKE_LOCALES */
 
-/* Define to 1 if you have the 'fcntl' function. */
+/* Define to 1 if you have the `fcntl' function. */
 #define HAVE_FCNTL 1
 
 /* Define to 1 if you have the <features.h> header file. */
-/* #undef HAVE_FEATURES_H */
+#define HAVE_FEATURES_H 1
 
-/* Define to 1 if you have the 'feholdexcept' function. */
+/* Define to 1 if you have the `feholdexcept' function. */
 #define HAVE_FEHOLDEXCEPT 1
 
 /* Define to 1 if you have the <fenv.h> header file. */
 #define HAVE_FENV_H 1
 
-/* Define to 1 if you have the 'finite' function. */
-/* #undef HAVE_FINITE */
+/* Define to 1 if you have the `finite' function. */
+#define HAVE_FINITE 1
 
-/* Define to 1 if you have the 'flockfile' function. */
-#define HAVE_FLOCKFILE 1
+/* Define to 1 if you have the `flockfile' function. */
+/* #undef HAVE_FLOCKFILE */
 
-/* Define to 1 if you have the 'fnmatch' function. */
+/* Define to 1 if you have the `fnmatch' function. */
 #define HAVE_FNMATCH 1
 
 /* Define to 1 if you have the <fnmatch.h> header file. */
 #define HAVE_FNMATCH_H 1
 
-/* Define to 1 if you have the 'fork' function. */
+/* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
 
-/* Define to 1 if you have the 'fpsetmask' function. */
+/* Define to 1 if you have the `fpsetmask' function. */
 /* #undef HAVE_FPSETMASK */
 
 /* Define to 1 if you have the <fpu_control.h> header file. */
-/* #undef HAVE_FPU_CONTROL_H */
+#define HAVE_FPU_CONTROL_H 1
 
 /* Define to 1 if you have the `freelocale' function. */
 #define HAVE_FREELOCALE 1
 
 /* Define if the 'free' function is guaranteed to preserve errno. */
-/* #undef HAVE_FREE_POSIX */
+#define HAVE_FREE_POSIX 1
 
 /* Define if the frexpl function is available in libc. */
 #define HAVE_FREXPL_IN_LIBC 1
@@ -1052,61 +1052,64 @@
 /* Define if the frexp function is available in libc. */
 #define HAVE_FREXP_IN_LIBC 1
 
-/* Define to 1 if you have the 'funlockfile' function. */
-#define HAVE_FUNLOCKFILE 1
+/* Define to 1 if fseeko (and presumably ftello) exists and is declared. */
+#define HAVE_FSEEKO 1
 
-/* Define to 1 if you have the 'getcwd' function. */
+/* Define to 1 if you have the `funlockfile' function. */
+/* #undef HAVE_FUNLOCKFILE */
+
+/* Define to 1 if you have the `getcwd' function. */
 #define HAVE_GETCWD 1
 
 /* Define to 1 if you have the `getdelim' function. */
 #define HAVE_GETDELIM 1
 
-/* Define to 1 if you have the 'getdtablesize' function. */
+/* Define to 1 if you have the `getdtablesize' function. */
 #define HAVE_GETDTABLESIZE 1
 
-/* Define to 1 if you have the 'getegid' function. */
+/* Define to 1 if you have the `getegid' function. */
 #define HAVE_GETEGID 1
 
-/* Define to 1 if you have the 'geteuid' function. */
+/* Define to 1 if you have the `geteuid' function. */
 #define HAVE_GETEUID 1
 
-/* Define to 1 if you have the 'getexecname' function. */
+/* Define to 1 if you have the `getexecname' function. */
 /* #undef HAVE_GETEXECNAME */
 
-/* Define to 1 if you have the 'getgid' function. */
+/* Define to 1 if you have the `getgid' function. */
 #define HAVE_GETGID 1
 
 /* Define to 1 if you have the `getline' function. */
 #define HAVE_GETLINE 1
 
-/* Define to 1 if you have the 'getlocalename_l' function. */
+/* Define to 1 if you have the `getlocalename_l' function. */
 /* #undef HAVE_GETLOCALENAME_L */
 
 /* Define to 1 if you have the <getopt.h> header file. */
 #define HAVE_GETOPT_H 1
 
-/* Define to 1 if you have the 'getopt_long_only' function. */
+/* Define to 1 if you have the `getopt_long_only' function. */
 #define HAVE_GETOPT_LONG_ONLY 1
 
-/* Define to 1 if you have the 'getpass' function. */
+/* Define to 1 if you have the `getpass' function. */
 #define HAVE_GETPASS 1
 
-/* Define to 1 if you have the 'getpid' function. */
+/* Define to 1 if you have the `getpid' function. */
 #define HAVE_GETPID 1
 
 /* Define to 1 if you have the `getprogname' function. */
-#define HAVE_GETPROGNAME 1
+/* #undef HAVE_GETPROGNAME */
 
 /* Define to 1 if you have the `getrandom' function. */
-/* #undef HAVE_GETRANDOM */
+#define HAVE_GETRANDOM 1
 
 /* Define if the GNU gettext() function is already present or preinstalled. */
-/* #undef HAVE_GETTEXT */
+#define HAVE_GETTEXT 1
 
-/* Define to 1 if you have the 'gettimeofday' function. */
+/* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
 
-/* Define to 1 if you have the 'getuid' function. */
+/* Define to 1 if you have the `getuid' function. */
 #define HAVE_GETUID 1
 
 /* Define if the uselocale exists, may be safely called, and returns
@@ -1114,7 +1117,7 @@
 #define HAVE_GOOD_USELOCALE 1
 
 /* g_memdup2 check */
-/* #undef HAVE_G_MEMDUP2 */
+#define HAVE_G_MEMDUP2 1
 
 /* Define if you have the iconv() function and it works. */
 #define HAVE_ICONV 1
@@ -1137,13 +1140,13 @@
    declares uintmax_t. */
 #define HAVE_INTTYPES_H_WITH_UINTMAX 1
 
-/* Define to 1 if you have the 'isblank' function. */
+/* Define to 1 if you have the `isblank' function. */
 #define HAVE_ISBLANK 1
 
-/* Define to 1 if you have the 'isinf' function. */
+/* Define to 1 if you have the `isinf' function. */
 #define HAVE_ISINF 1
 
-/* Define to 1 if you have the 'isnan' function. */
+/* Define to 1 if you have the `isnan' function. */
 #define HAVE_ISNAN 1
 
 /* Define if the isnan(double) function is available in libc. */
@@ -1156,15 +1159,15 @@
 #define HAVE_ISNANL_IN_LIBC 1
 
 /* Define to 1 if you have the `issetugid' function. */
-#define HAVE_ISSETUGID 1
+/* #undef HAVE_ISSETUGID */
 
 /* Define to 1 if you have the `iswblank' function. */
 #define HAVE_ISWBLANK 1
 
-/* Define to 1 if you have the 'iswcntrl' function. */
+/* Define to 1 if you have the `iswcntrl' function. */
 #define HAVE_ISWCNTRL 1
 
-/* Define to 1 if you have the 'iswctype' function. */
+/* Define to 1 if you have the `iswctype' function. */
 #define HAVE_ISWCTYPE 1
 
 /* Define if you have <langinfo.h> and nl_langinfo(CODESET). */
@@ -1177,7 +1180,7 @@
 #define HAVE_LC_MESSAGES 1
 
 /* Define if you have LC_PAPER. */
-/* #undef HAVE_LC_PAPER */
+#define HAVE_LC_PAPER 1
 
 /* Define if the ldexpl function is available in libc. */
 #define HAVE_LDEXPL_IN_LIBC 1
@@ -1186,7 +1189,7 @@
 #define HAVE_LDEXP_IN_LIBC 1
 
 /* Define to 1 if you have the <libintl.h> header file. */
-#define HAVE_LIBINTL_H 1
+/* #undef HAVE_LIBINTL_H */
 
 /* Define to 1 if the bcrypt library is guaranteed to be present. */
 /* #undef HAVE_LIB_BCRYPT */
@@ -1194,27 +1197,27 @@
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1
 
-/* Define to 1 if you have the 'link' function. */
+/* Define to 1 if you have the `link' function. */
 #define HAVE_LINK 1
 
 /* Define if localtime-like functions can loop forever on extreme arguments.
    */
 /* #undef HAVE_LOCALTIME_INFLOOP_BUG */
 
-/* Define to 1 if you have the 'localtime_r' function. */
+/* Define to 1 if you have the `localtime_r' function. */
 #define HAVE_LOCALTIME_R 1
 
 /* Define to 1 if the system has the type 'long long int'. */
 #define HAVE_LONG_LONG_INT 1
 
-/* Define to 1 if you have the 'lstat' function. */
+/* Define to 1 if you have the `lstat' function. */
 #define HAVE_LSTAT 1
 
 /* Define to 1 if you have the <mach-o/dyld.h> header file. */
 /* #undef HAVE_MACH_O_DYLD_H */
 
 /* Define to 1 if you have the <malloc.h> header file. */
-/* #undef HAVE_MALLOC_H */
+#define HAVE_MALLOC_H 1
 
 /* Define if malloc, realloc, and calloc set errno on allocation failure. */
 #define HAVE_MALLOC_POSIX 1
@@ -1226,13 +1229,13 @@
 /* Define to 1 if you have the <math.h> header file. */
 #define HAVE_MATH_H 1
 
-/* Define to 1 if you have the 'mbrtowc' function. */
+/* Define to 1 if you have the `mbrtowc' function. */
 #define HAVE_MBRTOWC 1
 
-/* Define to 1 if you have the 'mbsinit' function. */
+/* Define to 1 if you have the `mbsinit' function. */
 #define HAVE_MBSINIT 1
 
-/* Define to 1 if you have the 'mbsrtowcs' function. */
+/* Define to 1 if you have the `mbsrtowcs' function. */
 #define HAVE_MBSRTOWCS 1
 
 /* Define to 1 if <wchar.h> declares mbstate_t. */
@@ -1241,20 +1244,20 @@
 /* Define to 1 if you have the `mbtowc' function. */
 #define HAVE_MBTOWC 1
 
-/* Define to 1 if you have the 'memmem' function. */
+/* Define to 1 if you have the `memmem' function. */
 #define HAVE_MEMMEM 1
 
 /* Define to 1 if you have the `mempcpy' function. */
-/* #undef HAVE_MEMPCPY */
+#define HAVE_MEMPCPY 1
 
-/* Define to 1 if you have the 'memrchr' function. */
-/* #undef HAVE_MEMRCHR */
+/* Define to 1 if you have the `memrchr' function. */
+#define HAVE_MEMRCHR 1
 
 /* Define to 1 if you have the `memset_explicit' function. */
 /* #undef HAVE_MEMSET_EXPLICIT */
 
-/* Define to 1 if you have the 'memset_s' function. */
-#define HAVE_MEMSET_S 1
+/* Define to 1 if you have the `memset_s' function. */
+/* #undef HAVE_MEMSET_S */
 
 /* Define to 1 if you have the <minix/config.h> header file. */
 /* #undef HAVE_MINIX_CONFIG_H */
@@ -1265,13 +1268,13 @@
 /* Define to 1 if <sys/param.h> defines the MIN and MAX macros. */
 #define HAVE_MINMAX_IN_SYS_PARAM_H 1
 
-/* Define to 1 if you have the 'mkdtemp' function. */
+/* Define to 1 if you have the `mkdtemp' function. */
 #define HAVE_MKDTEMP 1
 
-/* Define to 1 if you have the 'mkstemp' function. */
+/* Define to 1 if you have the `mkstemp' function. */
 #define HAVE_MKSTEMP 1
 
-/* Define to 1 if you have the 'mprotect' function. */
+/* Define to 1 if you have the `mprotect' function. */
 #define HAVE_MPROTECT 1
 
 /* Define to 1 on MSVC platforms that have the "invalid parameter handler"
@@ -1289,9 +1292,9 @@
 #define HAVE_NL_LANGINFO 1
 
 /* Define to 1 if you have the `pipe2' function. */
-/* #undef HAVE_PIPE2 */
+#define HAVE_PIPE2 1
 
-/* Define to 1 if you have the 'popen' function. */
+/* Define to 1 if you have the `popen' function. */
 #define HAVE_POPEN 1
 
 /* Define if you have the <pthread.h> header and the POSIX threads API. */
@@ -1308,45 +1311,45 @@
 
 /* Define if the 'pthread_rwlock_rdlock' function prefers a writer to a
    reader. */
-#define HAVE_PTHREAD_RWLOCK_RDLOCK_PREFER_WRITER 1
+/* #undef HAVE_PTHREAD_RWLOCK_RDLOCK_PREFER_WRITER */
 
 /* Define to 1 if you have the <pwd.h> header file. */
 #define HAVE_PWD_H 1
 
-/* Define to 1 if you have the 'raise' function. */
+/* Define to 1 if you have the `raise' function. */
 #define HAVE_RAISE 1
 
-/* Define to 1 if you have the 'rawmemchr' function. */
-/* #undef HAVE_RAWMEMCHR */
+/* Define to 1 if you have the `rawmemchr' function. */
+#define HAVE_RAWMEMCHR 1
 
 /* Define if you have the readline library. */
-/* #undef HAVE_READLINE */
+#define HAVE_READLINE 1
 
-/* Define to 1 if you have the 'readlink' function. */
+/* Define to 1 if you have the `readlink' function. */
 #define HAVE_READLINK 1
 
 /* Define to 1 if you have the `readlinkat' function. */
 #define HAVE_READLINKAT 1
 
 /* Define to 1 if you have the `reallocarray' function. */
-/* #undef HAVE_REALLOCARRAY */
+#define HAVE_REALLOCARRAY 1
 
-/* Define to 1 if you have the 'realpath' function. */
+/* Define to 1 if you have the `realpath' function. */
 #define HAVE_REALPATH 1
 
 /* Define if the readline library provides rl_echo_signal_char. */
-/* #undef HAVE_RL_ECHO_SIGNAL_CHAR */
+#define HAVE_RL_ECHO_SIGNAL_CHAR 1
 
 /* Define if the readline library provides rl_outstream. */
-/* #undef HAVE_RL_OUTSTREAM */
+#define HAVE_RL_OUTSTREAM 1
 
-/* Define to 1 if you have the 'round' function. */
+/* Define to 1 if you have the `round' function. */
 #define HAVE_ROUND 1
 
 /* Define to 1 if 'long double' and 'double' have the same representation. */
-#define HAVE_SAME_LONG_DOUBLE_AS_DOUBLE 1
+/* #undef HAVE_SAME_LONG_DOUBLE_AS_DOUBLE */
 
-/* Define to 1 if the system has the type 'sa_family_t'. */
+/* Define to 1 if the system has the type `sa_family_t'. */
 #define HAVE_SA_FAMILY_T 1
 
 /* Define to 1 if you have the <sdkddkver.h> header file. */
@@ -1355,28 +1358,28 @@
 /* Define to 1 if you have the <search.h> header file. */
 #define HAVE_SEARCH_H 1
 
-/* Define to 1 if you have the 'secure_getenv' function. */
-/* #undef HAVE_SECURE_GETENV */
+/* Define to 1 if you have the `secure_getenv' function. */
+#define HAVE_SECURE_GETENV 1
 
-/* Define to 1 if you have the 'setdtablesize' function. */
+/* Define to 1 if you have the `setdtablesize' function. */
 /* #undef HAVE_SETDTABLESIZE */
 
-/* Define to 1 if you have the 'setenv' function. */
+/* Define to 1 if you have the `setenv' function. */
 #define HAVE_SETENV 1
 
-/* Define to 1 if you have the 'shutdown' function. */
+/* Define to 1 if you have the `shutdown' function. */
 #define HAVE_SHUTDOWN 1
 
-/* Define to 1 if you have the 'sigaction' function. */
+/* Define to 1 if you have the `sigaction' function. */
 #define HAVE_SIGACTION 1
 
-/* Define to 1 if you have the 'sigaltstack' function. */
+/* Define to 1 if you have the `sigaltstack' function. */
 #define HAVE_SIGALTSTACK 1
 
-/* Define to 1 if the system has the type 'siginfo_t'. */
+/* Define to 1 if the system has the type `siginfo_t'. */
 /* #undef HAVE_SIGINFO_T */
 
-/* Define to 1 if you have the 'siginterrupt' function. */
+/* Define to 1 if you have the `siginterrupt' function. */
 #define HAVE_SIGINTERRUPT 1
 
 /* Define to 1 if 'sig_atomic_t' is a signed integer type. */
@@ -1388,13 +1391,13 @@
 /* Define to 1 if 'wint_t' is a signed integer type. */
 /* #undef HAVE_SIGNED_WINT_T */
 
-/* Define to 1 if the system has the type 'sigset_t'. */
+/* Define to 1 if the system has the type `sigset_t'. */
 #define HAVE_SIGSET_T 1
 
-/* Define to 1 if the system has the type 'sig_atomic_t'. */
+/* Define to 1 if the system has the type `sig_atomic_t'. */
 #define HAVE_SIG_ATOMIC_T 1
 
-/* Define to 1 if you have the 'snprintf' function. */
+/* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1
 
 /* Define if the return value of the snprintf function is the number of of
@@ -1413,7 +1416,7 @@
 #define HAVE_STDBOOL_H 1
 
 /* Define to 1 if you have the <stdckdint.h> header file. */
-/* #undef HAVE_STDCKDINT_H */
+#define HAVE_STDCKDINT_H 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -1423,7 +1426,7 @@
 #define HAVE_STDINT_H_WITH_UINTMAX 1
 
 /* Define to 1 if you have the <stdio_ext.h> header file. */
-/* #undef HAVE_STDIO_EXT_H */
+#define HAVE_STDIO_EXT_H 1
 
 /* Define to 1 if you have the <stdio.h> header file. */
 #define HAVE_STDIO_H 1
@@ -1434,13 +1437,13 @@
 /* Define to 1 if you have the `stpcpy' function. */
 #define HAVE_STPCPY 1
 
-/* Define to 1 if you have the 'strcasecmp' function. */
+/* Define to 1 if you have the `strcasecmp' function. */
 #define HAVE_STRCASECMP 1
 
-/* Define to 1 if you have the 'strcasestr' function. */
+/* Define to 1 if you have the `strcasestr' function. */
 #define HAVE_STRCASESTR 1
 
-/* Define if you have 'strerror_r'. */
+/* Define if you have `strerror_r'. */
 #define HAVE_STRERROR_R 1
 
 /* Define to 1 if you have the <strings.h> header file. */
@@ -1449,64 +1452,64 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
-/* Define to 1 if you have the 'strncasecmp' function. */
+/* Define to 1 if you have the `strncasecmp' function. */
 #define HAVE_STRNCASECMP 1
 
-/* Define to 1 if you have the 'strndup' function. */
+/* Define to 1 if you have the `strndup' function. */
 #define HAVE_STRNDUP 1
 
-/* Define to 1 if you have the 'strnlen' function. */
+/* Define to 1 if you have the `strnlen' function. */
 #define HAVE_STRNLEN 1
 
-/* Define to 1 if you have the 'strsep' function. */
+/* Define to 1 if you have the `strsep' function. */
 #define HAVE_STRSEP 1
 
 /* Define to 1 if the system has the 'strtod_l' function. */
 #define HAVE_STRTOD_L 1
 
-/* Define to 1 if you have the 'strtok_r' function. */
+/* Define to 1 if you have the `strtok_r' function. */
 #define HAVE_STRTOK_R 1
 
-/* Define to 1 if 'decimal_point' is a member of 'struct lconv'. */
+/* Define to 1 if `decimal_point' is a member of `struct lconv'. */
 /* #undef HAVE_STRUCT_LCONV_DECIMAL_POINT */
 
-/* Define to 1 if 'int_p_cs_precedes' is a member of 'struct lconv'. */
+/* Define to 1 if `int_p_cs_precedes' is a member of `struct lconv'. */
 /* #undef HAVE_STRUCT_LCONV_INT_P_CS_PRECEDES */
 
-/* Define to 1 if 'sa_sigaction' is a member of 'struct sigaction'. */
+/* Define to 1 if `sa_sigaction' is a member of `struct sigaction'. */
 #define HAVE_STRUCT_SIGACTION_SA_SIGACTION 1
 
-/* Define to 1 if the system has the type 'struct sockaddr_storage'. */
+/* Define to 1 if the system has the type `struct sockaddr_storage'. */
 #define HAVE_STRUCT_SOCKADDR_STORAGE 1
 
-/* Define to 1 if 'ss_family' is a member of 'struct sockaddr_storage'. */
+/* Define to 1 if `ss_family' is a member of `struct sockaddr_storage'. */
 #define HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY 1
 
-/* Define to 1 if 'st_atimensec' is a member of 'struct stat'. */
+/* Define to 1 if `st_atimensec' is a member of `struct stat'. */
 /* #undef HAVE_STRUCT_STAT_ST_ATIMENSEC */
 
-/* Define to 1 if 'st_atimespec.tv_nsec' is a member of 'struct stat'. */
-#define HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC 1
+/* Define to 1 if `st_atimespec.tv_nsec' is a member of `struct stat'. */
+/* #undef HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC */
 
-/* Define to 1 if 'st_atim.st__tim.tv_nsec' is a member of 'struct stat'. */
+/* Define to 1 if `st_atim.st__tim.tv_nsec' is a member of `struct stat'. */
 /* #undef HAVE_STRUCT_STAT_ST_ATIM_ST__TIM_TV_NSEC */
 
-/* Define to 1 if 'st_atim.tv_nsec' is a member of 'struct stat'. */
-/* #undef HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC */
+/* Define to 1 if `st_atim.tv_nsec' is a member of `struct stat'. */
+#define HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC 1
 
-/* Define to 1 if 'st_birthtimensec' is a member of 'struct stat'. */
+/* Define to 1 if `st_birthtimensec' is a member of `struct stat'. */
 /* #undef HAVE_STRUCT_STAT_ST_BIRTHTIMENSEC */
 
-/* Define to 1 if 'st_birthtimespec.tv_nsec' is a member of 'struct stat'. */
-#define HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC 1
+/* Define to 1 if `st_birthtimespec.tv_nsec' is a member of `struct stat'. */
+/* #undef HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC */
 
-/* Define to 1 if 'st_birthtim.tv_nsec' is a member of 'struct stat'. */
+/* Define to 1 if `st_birthtim.tv_nsec' is a member of `struct stat'. */
 /* #undef HAVE_STRUCT_STAT_ST_BIRTHTIM_TV_NSEC */
 
-/* Define to 1 if 'tm_zone' is a member of 'struct tm'. */
+/* Define to 1 if `tm_zone' is a member of `struct tm'. */
 #define HAVE_STRUCT_TM_TM_ZONE 1
 
-/* Define to 1 if you have the 'symlink' function. */
+/* Define to 1 if you have the `symlink' function. */
 #define HAVE_SYMLINK 1
 
 /* Define to 1 if you have the <sys/bitypes.h> header file. */
@@ -1531,7 +1534,7 @@
 #define HAVE_SYS_SELECT_H 1
 
 /* Define to 1 if you have the <sys/single_threaded.h> header file. */
-/* #undef HAVE_SYS_SINGLE_THREADED_H */
+#define HAVE_SYS_SINGLE_THREADED_H 1
 
 /* Define to 1 if you have the <sys/socket.h> header file. */
 #define HAVE_SYS_SOCKET_H 1
@@ -1564,7 +1567,7 @@
 /* #undef HAVE_THRD_CREATE */
 
 /* Define to 1 if you have the <threads.h> header file. */
-/* #undef HAVE_THREADS_H */
+#define HAVE_THREADS_H 1
 
 /* Define to 1 if you have the `timegm' function. */
 #define HAVE_TIMEGM 1
@@ -1572,28 +1575,28 @@
 /* Define if you have the timespec_get function. */
 #define HAVE_TIMESPEC_GET 1
 
-/* Define to 1 if the system has the type 'timezone_t'. */
+/* Define to 1 if the system has the type `timezone_t'. */
 /* #undef HAVE_TIMEZONE_T */
 
 /* Define if struct tm has the tm_gmtoff member. */
 #define HAVE_TM_GMTOFF 1
 
-/* Define to 1 if your 'struct tm' has 'tm_zone'. Deprecated, use
-   'HAVE_STRUCT_TM_TM_ZONE' instead. */
+/* Define to 1 if your `struct tm' has `tm_zone'. Deprecated, use
+   `HAVE_STRUCT_TM_TM_ZONE' instead. */
 #define HAVE_TM_ZONE 1
 
-/* Define to 1 if you have the 'towlower' function. */
+/* Define to 1 if you have the `towlower' function. */
 #define HAVE_TOWLOWER 1
 
 /* Define to 1 if you have the `tsearch' function. */
 #define HAVE_TSEARCH 1
 
-/* Define to 1 if you don't have 'tm_zone' but do have the external array
-   'tzname'. */
+/* Define to 1 if you don't have `tm_zone' but do have the external array
+   `tzname'. */
 /* #undef HAVE_TZNAME */
 
 /* Define to 1 if you have the <uchar.h> header file. */
-/* #undef HAVE_UCHAR_H */
+#define HAVE_UCHAR_H 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
@@ -1601,7 +1604,7 @@
 /* Define to 1 if you have the <unistring/woe32dll.h> header file. */
 /* #undef HAVE_UNISTRING_WOE32DLL_H */
 
-/* Define to 1 if you have the 'unsetenv' function. */
+/* Define to 1 if you have the `unsetenv' function. */
 #define HAVE_UNSETENV 1
 
 /* Define to 1 if the system has the type 'unsigned long long int'. */
@@ -1613,17 +1616,17 @@
 /* Define if you have a global __progname variable */
 /* #undef HAVE_VAR___PROGNAME */
 
-/* Define to 1 if you have the 'vasnprintf' function. */
+/* Define to 1 if you have the `vasnprintf' function. */
 /* #undef HAVE_VASNPRINTF */
 
-/* Define to 1 if you have the 'vasprintf' function. */
+/* Define to 1 if you have the `vasprintf' function. */
 #define HAVE_VASPRINTF 1
 
 /* Define to 1 or 0, depending whether the compiler supports simple visibility
    declarations. */
-#define HAVE_VISIBILITY 1
+/* #undef HAVE_VISIBILITY */
 
-/* Define to 1 if you have the 'vsnprintf' function. */
+/* Define to 1 if you have the `vsnprintf' function. */
 #define HAVE_VSNPRINTF 1
 
 /* Define to 1 if you have the <wchar.h> header file. */
@@ -1632,21 +1635,21 @@
 /* Define if you have the 'wchar_t' type. */
 #define HAVE_WCHAR_T 1
 
-/* Define to 1 if you have the 'wcrtomb' function. */
+/* Define to 1 if you have the `wcrtomb' function. */
 #define HAVE_WCRTOMB 1
 
-/* Define to 1 if you have the 'wcslen' function. */
+/* Define to 1 if you have the `wcslen' function. */
 #define HAVE_WCSLEN 1
 
 /* Define to 1 if you have the <wctype.h> header file. */
 #define HAVE_WCTYPE_H 1
 
-/* Define to 1 if you have the 'wcwidth' function. */
+/* Define to 1 if you have the `wcwidth' function. */
 #define HAVE_WCWIDTH 1
 
 /* Define to 1 if the compiler and linker support weak declarations of
    symbols. */
-/* #undef HAVE_WEAK_SYMBOLS */
+#define HAVE_WEAK_SYMBOLS 1
 
 /* Define to 1 if you have the <winsock2.h> header file. */
 /* #undef HAVE_WINSOCK2_H */
@@ -1655,10 +1658,10 @@
 #define HAVE_WINT_T 1
 
 /* Define to 1 if you have the `wmempcpy' function. */
-/* #undef HAVE_WMEMPCPY */
+#define HAVE_WMEMPCPY 1
 
 /* Define if the mbrtoc32 function basically works. */
-/* #undef HAVE_WORKING_MBRTOC32 */
+#define HAVE_WORKING_MBRTOC32 1
 
 /* Define to 1 if O_NOATIME works. */
 #define HAVE_WORKING_O_NOATIME 1
@@ -1673,21 +1676,21 @@
 /* #undef HAVE_WS2TCPIP_H */
 
 /* Define to 1 if you have the <xlocale.h> header file. */
-#define HAVE_XLOCALE_H 1
+/* #undef HAVE_XLOCALE_H */
 
 /* Define to 1 if you have the <zlib.h> header file. */
 #define HAVE_ZLIB_H 1
 
-/* Define to 1 if you have the '_fseeki64' function. */
+/* Define to 1 if you have the `_fseeki64' function. */
 /* #undef HAVE__FSEEKI64 */
 
-/* Define to 1 if you have the '_ftelli64' function. */
+/* Define to 1 if you have the `_ftelli64' function. */
 /* #undef HAVE__FTELLI64 */
 
-/* Define to 1 if you have the '_NSGetExecutablePath' function. */
+/* Define to 1 if you have the `_NSGetExecutablePath' function. */
 /* #undef HAVE__NSGETEXECUTABLEPATH */
 
-/* Define to 1 if you have the '_set_invalid_parameter_handler' function. */
+/* Define to 1 if you have the `_set_invalid_parameter_handler' function. */
 /* #undef HAVE__SET_INVALID_PARAMETER_HANDLER */
 
 /* Define to 1 if the compiler supports __builtin_expect,
@@ -1707,7 +1710,7 @@
 /* #undef HAVE___FSETLOCKING */
 
 /* Define to 1 if ctype.h defines __header_inline. */
-#define HAVE___HEADER_INLINE 1
+/* #undef HAVE___HEADER_INLINE */
 
 /* Please see the Gnulib manual for how to use these macros.
 
@@ -1819,10 +1822,10 @@
 /* Define to 1 if the compiler supports the keyword '__inline'. */
 #define HAVE___INLINE 1
 
-/* Define to 1 if you have the '__secure_getenv' function. */
+/* Define to 1 if you have the `__secure_getenv' function. */
 /* #undef HAVE___SECURE_GETENV */
 
-/* Define to 1 if you have the '__setfpucw' function. */
+/* Define to 1 if you have the `__setfpucw' function. */
 /* #undef HAVE___SETFPUCW */
 
 /* Define as const if the declaration of iconv() needs const. */
@@ -1833,10 +1836,10 @@
 
 /* Define as the bit index in the word where to find bit 0 of the exponent of
    'long double'. */
-#define LDBL_EXPBIT0_BIT 20
+#define LDBL_EXPBIT0_BIT 0
 
 /* Define as the word index where to find the exponent of 'long double'. */
-#define LDBL_EXPBIT0_WORD 1
+#define LDBL_EXPBIT0_WORD 2
 
 /* Define as the bit index in the word where to find the sign of 'long
    double'. */
@@ -1853,7 +1856,7 @@
 
 /* Define to 1 if 'lstat' dereferences a symlink specified with a trailing
    slash. */
-/* #undef LSTAT_FOLLOWS_SLASHED_SYMLINK */
+#define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
 
 /* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
@@ -1870,7 +1873,7 @@
 
 /* Define if the mbrtoc32 function may signal encoding errors in the C locale.
    */
-/* #undef MBRTOC32_IN_C_LOCALE_MAYBE_EILSEQ */
+#define MBRTOC32_IN_C_LOCALE_MAYBE_EILSEQ 1
 
 /* Define if the mbrtowc function does not return (size_t) -2 for empty input.
    */
@@ -1878,7 +1881,7 @@
 
 /* Define if the mbrtowc function may signal encoding errors in the C locale.
    */
-/* #undef MBRTOWC_IN_C_LOCALE_MAYBE_EILSEQ */
+#define MBRTOWC_IN_C_LOCALE_MAYBE_EILSEQ 1
 
 /* Define if the mbrtowc function has the NULL pwc argument bug. */
 /* #undef MBRTOWC_NULL_ARG1_BUG */
@@ -1917,15 +1920,15 @@
 
 /* Define if the compilation of mktime.c should define 'mktime' with the
    algorithmic workarounds. */
-#define NEED_MKTIME_WORKING 1
+/* #undef NEED_MKTIME_WORKING */
 
 /* Define if the vasnprintf implementation needs special code for the 'a' and
    'A' directives. */
-#define NEED_PRINTF_DIRECTIVE_A 1
+/* #undef NEED_PRINTF_DIRECTIVE_A */
 
 /* Define if the vasnprintf implementation needs special code for the 'b'
    directive. */
-#define NEED_PRINTF_DIRECTIVE_B 1
+/* #undef NEED_PRINTF_DIRECTIVE_B */
 
 /* Define if the vasnprintf implementation needs special code for the 'F'
    directive. */
@@ -1986,7 +1989,7 @@
 #define NO_INLINE_GETPASS 1
 
 /* Define to 1 if open() fails to recognize a trailing slash. */
-#define OPEN_TRAILING_SLASH_BUG 1
+/* #undef OPEN_TRAILING_SLASH_BUG */
 
 /* Name of package */
 #define PACKAGE "pspp"
@@ -2020,7 +2023,7 @@
 
 /* Define to the type that is the result of default argument promotions of
    type mode_t. */
-#define PROMOTED_MODE_T int
+#define PROMOTED_MODE_T mode_t
 
 /* Define to 1 if building in support for reading from postgres databases. */
 /* #undef PSQL_SUPPORT */
@@ -2033,7 +2036,7 @@
 /* #undef PTRDIFF_T_SUFFIX */
 
 /* Define to 1 if readlink fails to recognize a trailing slash. */
-#define READLINK_TRAILING_SLASH_BUG 1
+/* #undef READLINK_TRAILING_SLASH_BUG */
 
 /* Define to 1 if readlink sets errno instead of truncating a too-long link.
    */
@@ -2049,11 +2052,11 @@
 
 /* Define if rename does not correctly handle slashes on the destination
    argument, such as on Solaris 11 or NetBSD 1.6. */
-#define RENAME_TRAILING_SLASH_DEST_BUG 1
+/* #undef RENAME_TRAILING_SLASH_DEST_BUG */
 
 /* Define if rename does not correctly handle slashes on the source argument,
    such as on Solaris 9 or cygwin 1.5. */
-#define RENAME_TRAILING_SLASH_SOURCE_BUG 1
+/* #undef RENAME_TRAILING_SLASH_SOURCE_BUG */
 
 /* Define if fprintf is overridden by a POSIX compliant gnulib implementation.
    */
@@ -2061,17 +2064,17 @@
 
 /* Define to 1 if stat needs help when passed a file name with a trailing
    slash */
-#define REPLACE_FUNC_STAT_FILE 1
+/* #undef REPLACE_FUNC_STAT_FILE */
 
 /* Define if nl_langinfo exists but is overridden by gnulib. */
-#define REPLACE_NL_LANGINFO 1
+/* #undef REPLACE_NL_LANGINFO */
 
 /* Define if printf is overridden by a POSIX compliant gnulib implementation.
    */
 #define REPLACE_PRINTF_POSIX 1
 
 /* Define to 1 if strerror(0) does not return a message implying success. */
-#define REPLACE_STRERROR_0 1
+/* #undef REPLACE_STRERROR_0 */
 
 /* Define if vasnprintf exists but is overridden by gnulib. */
 /* #undef REPLACE_VASNPRINTF */
@@ -2085,7 +2088,7 @@
 #define REPLACE_VPRINTF_POSIX 1
 
 /* Define to 1 if setlocale (LC_ALL, NULL) is multithread-safe. */
-#define SETLOCALE_NULL_ALL_MTSAFE 0
+#define SETLOCALE_NULL_ALL_MTSAFE 1
 
 /* Define to 1 if setlocale (category, NULL) is multithread-safe. */
 #define SETLOCALE_NULL_ONE_MTSAFE 1
@@ -2097,7 +2100,7 @@
    'sig_atomic_t'. */
 /* #undef SIG_ATOMIC_T_SUFFIX */
 
-/* The size of 'ptrdiff_t', as computed by sizeof. */
+/* The size of `ptrdiff_t', as computed by sizeof. */
 #define SIZEOF_PTRDIFF_T 8
 
 /* Define as the maximum value of type 'size_t', if the system doesn't define
@@ -2118,30 +2121,30 @@
 	STACK_DIRECTION = 0 => direction of growth unknown */
 /* #undef STACK_DIRECTION */
 
-/* Define to 1 if the 'S_IS*' macros in <sys/stat.h> do not work properly. */
+/* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
 /* #undef STAT_MACROS_BROKEN */
 
-/* Define to 1 if all of the C89 standard headers exist (not just the ones
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
    required in a freestanding environment). This macro is provided for
    backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
 
 /* Define to 1 if strerror_r returns char *. */
-/* #undef STRERROR_R_CHAR_P */
+#define STRERROR_R_CHAR_P 1
 
 /* Define to 1 if time_t is signed. */
 #define TIME_T_IS_SIGNED 1
 
-/* Define to 1 if your <sys/time.h> declares 'struct tm'. */
+/* Define to 1 if your <sys/time.h> declares `struct tm'. */
 /* #undef TM_IN_SYS_TIME */
 
 /* Define to 1 if the type of the st_atim member of a struct stat is struct
    timespec. */
-/* #undef TYPEOF_STRUCT_STAT_ST_ATIM_IS_STRUCT_TIMESPEC */
+#define TYPEOF_STRUCT_STAT_ST_ATIM_IS_STRUCT_TIMESPEC 1
 
 /* Define to the prefix of C symbols at the assembler and linker level, either
    an underscore or empty. */
-#define USER_LABEL_PREFIX _
+#define USER_LABEL_PREFIX 
 
 /* Define if the combination of the ISO C and POSIX multithreading APIs can be
    used. */
@@ -2155,7 +2158,7 @@
 
 /* Define if references to the POSIX multithreading library are satisfied by
    libc. */
-/* #undef USE_POSIX_THREADS_FROM_LIBC */
+#define USE_POSIX_THREADS_FROM_LIBC 1
 
 /* Define if references to the POSIX multithreading library should be made
    weak. */
@@ -2164,7 +2167,7 @@
 /* Define to 1 if the openssl library is present. */
 /* #undef USE_SSL */
 
-/* Enable extensions on AIX, Interix, z/OS.  */
+/* Enable extensions on AIX 3, Interix.  */
 #ifndef _ALL_SOURCE
 # define _ALL_SOURCE 1
 #endif
@@ -2312,6 +2315,9 @@
 /* Define to enable the declarations of ISO C 11 types and functions. */
 /* #undef _ISOC11_SOURCE */
 
+/* Define to 1 to make fseeko visible on some hosts (e.g. glibc 2.2). */
+/* #undef _LARGEFILE_SOURCE */
+
 /* Define to 1 on platforms where this makes off_t a 64-bit type. */
 /* #undef _LARGE_FILES */
 
@@ -2360,10 +2366,10 @@
 
 /* Define if you want <regex.h> to include <limits.h>, so that it consistently
    overrides <limits.h>'s RE_DUP_MAX. */
-#define _REGEX_INCLUDE_LIMITS_H 1
+/* #undef _REGEX_INCLUDE_LIMITS_H */
 
 /* Define if you want regoff_t to be at least as wide POSIX requires. */
-#define _REGEX_LARGE_OFFSETS 1
+/* #undef _REGEX_LARGE_OFFSETS */
 
 /* Number of bits in time_t, on hosts where this is settable. */
 /* #undef _TIME_BITS */
@@ -2373,7 +2379,7 @@
 
 /* Define to rpl_ if the getopt replacement functions and variables should be
    used. */
-#define __GETOPT_PREFIX rpl_
+/* #undef __GETOPT_PREFIX */
 
 /* Define to 1 on platforms where this makes time_t a 64-bit type. */
 /* #undef __MINGW_USE_VC2005_COMPAT */
@@ -2926,13 +2932,13 @@
 /* Avoid making zlib call gnulib's crc32() instead of its own. */
 #define crc32 gl_crc32
 
-/* Define as 'int' if <sys/types.h> doesn't define. */
+/* Define to `int' if <sys/types.h> doesn't define. */
 /* #undef gid_t */
 
 /* A replacement for va_copy, if needed.  */
 #define gl_va_copy(a,b) ((a) = (b))
 
-/* Define to '__inline__' or '__inline' if that's what the C compiler
+/* Define to `__inline__' or `__inline' if that's what the C compiler
    calls it, or to nothing if 'inline' is not supported under any name.  */
 #ifndef __cplusplus
 /* #undef inline */
@@ -2973,7 +2979,7 @@
 /* Define to the real name of the mktime_internal function. */
 /* #undef mktime_internal */
 
-/* Define to 'int' if <sys/types.h> does not define. */
+/* Define to `int' if <sys/types.h> does not define. */
 /* #undef mode_t */
 
 /* Define to the name of the strftime replacement function. */
@@ -2982,7 +2988,7 @@
 /* Define to the type of st_nlink in struct stat, or a supertype. */
 /* #undef nlink_t */
 
-/* Define to 'long int' if <sys/types.h> does not define. */
+/* Define to `long int' if <sys/types.h> does not define. */
 /* #undef off_t */
 
 /* Define as a signed integer type capable of holding a process identifier. */
@@ -2993,49 +2999,49 @@
 /* #undef ptrdiff_t */
 
 /* Define to rpl_re_comp if the replacement should be used. */
-#define re_comp rpl_re_comp
+/* #undef re_comp */
 
 /* Define to rpl_re_compile_fastmap if the replacement should be used. */
-#define re_compile_fastmap rpl_re_compile_fastmap
+/* #undef re_compile_fastmap */
 
 /* Define to rpl_re_compile_pattern if the replacement should be used. */
-#define re_compile_pattern rpl_re_compile_pattern
+/* #undef re_compile_pattern */
 
 /* Define to rpl_re_exec if the replacement should be used. */
-#define re_exec rpl_re_exec
+/* #undef re_exec */
 
 /* Define to rpl_re_match if the replacement should be used. */
-#define re_match rpl_re_match
+/* #undef re_match */
 
 /* Define to rpl_re_match_2 if the replacement should be used. */
-#define re_match_2 rpl_re_match_2
+/* #undef re_match_2 */
 
 /* Define to rpl_re_search if the replacement should be used. */
-#define re_search rpl_re_search
+/* #undef re_search */
 
 /* Define to rpl_re_search_2 if the replacement should be used. */
-#define re_search_2 rpl_re_search_2
+/* #undef re_search_2 */
 
 /* Define to rpl_re_set_registers if the replacement should be used. */
-#define re_set_registers rpl_re_set_registers
+/* #undef re_set_registers */
 
 /* Define to rpl_re_set_syntax if the replacement should be used. */
-#define re_set_syntax rpl_re_set_syntax
+/* #undef re_set_syntax */
 
 /* Define to rpl_re_syntax_options if the replacement should be used. */
-#define re_syntax_options rpl_re_syntax_options
+/* #undef re_syntax_options */
 
 /* Define to rpl_regcomp if the replacement should be used. */
-#define regcomp rpl_regcomp
+/* #undef regcomp */
 
 /* Define to rpl_regerror if the replacement should be used. */
-#define regerror rpl_regerror
+/* #undef regerror */
 
 /* Define to rpl_regexec if the replacement should be used. */
-#define regexec rpl_regexec
+/* #undef regexec */
 
 /* Define to rpl_regfree if the replacement should be used. */
-#define regfree rpl_regfree
+/* #undef regfree */
 
 /* Define to the equivalent of the C99 'restrict' keyword, or to
    nothing if this is not supported.  Do not define if restrict is
@@ -3056,7 +3062,7 @@
    accessed atomically even in the presence of asynchronous signals. */
 /* #undef sig_atomic_t */
 
-/* Define as 'unsigned int' if <stddef.h> doesn't define. */
+/* Define to `unsigned int' if <sys/types.h> does not define. */
 /* #undef size_t */
 
 /* type to use in place of socklen_t if not defined */
@@ -3065,7 +3071,7 @@
 /* Define as a signed type of the same size as size_t. */
 /* #undef ssize_t */
 
-/* Define as 'int' if <sys/types.h> doesn't define. */
+/* Define to `int' if <sys/types.h> doesn't define. */
 /* #undef uid_t */
 
 

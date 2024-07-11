@@ -14,10 +14,10 @@ library_names=''
 old_library='liboutput.a'
 
 # Linker flags that cannot go in dependency_libs.
-inherited_linker_flags=' '
+inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib -L/opt/homebrew/Cellar/pango/1.54.0/lib -L/opt/homebrew/Cellar/glib/2.80.3/lib -L/opt/homebrew/opt/gettext/lib -L/opt/homebrew/Cellar/harfbuzz/8.5.0/lib -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz -lcairo -lxml2 -liconv -lgslcblas -lz'
+dependency_libs=' -lgobject-2.0 -lglib-2.0 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lcairo -lxml2 -lreadline -lgslcblas -lz -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

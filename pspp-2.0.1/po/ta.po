@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pspp 2.0.0-pre1\n"
 "Report-Msgid-Bugs-To: pspp-dev@gnu.org\n"
-"POT-Creation-Date: 2024-07-08 03:34+0300\n"
+"POT-Creation-Date: 2024-07-11 09:18+0000\n"
 "PO-Revision-Date: 2023-06-23 22:03+0100\n"
 "Last-Translator: Anbarasan Sivakumar <ivanovicha350@gmail.com>\n"
 "Language-Team: Tamil <tamil@systemreboot.net>\n"
@@ -5310,6 +5310,7 @@ msgstr ""
 "கட்டளை இதை %s சர மாறிக்கு செயல்படுத்த முயல்கிறது."
 
 #: src/language/commands/ctables.c:4583 src/ui/gui/ctables.ui:20
+#: src/ui/gui/custom-tables.ui:5
 msgid "Custom Tables"
 msgstr "தனிப்பயனாக்கப்பட்ட அட்டவணைகள்"
 
@@ -12281,6 +12282,10 @@ msgstr "_மேல்:"
 #: src/ui/gui/chi-square.ui:381
 msgid "Expected Range:"
 msgstr "எதிர்ப்பார்க்கப்பட்ட வரம்பு:"
+
+#: src/ui/gui/custom-tables.ui:14
+msgid "Создать отчет"
+msgstr ""
 
 #: src/ui/gui/descriptives.ui:131 src/ui/gui/factor.ui:801
 #: src/ui/gui/recode.ui:641

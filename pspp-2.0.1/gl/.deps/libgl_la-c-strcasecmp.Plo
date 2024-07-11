@@ -1,56 +1,44 @@
-gl/libgl_la-c-strcasecmp.lo: gl/c-strcasecmp.c config.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
-  gl/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h \
-  gl/c-strcase.h gl/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
-  gl/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
-  gl/c-ctype.h
-
+gl/libgl_la-c-strcasecmp.lo: gl/c-strcasecmp.c /usr/include/stdc-predef.h \
+ config.h /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdbool.h \
+ /usr/include/assert.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h gl/c-strcase.h gl/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h gl/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/bits/pthread_stack_min-dynamic.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h gl/c-ctype.h
+/usr/include/stdc-predef.h:
 config.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h:
-
-gl/assert.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h:
-
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdbool.h:
+/usr/include/assert.h:
+/usr/include/features.h:
+/usr/include/features-time64.h:
+/usr/include/bits/wordsize.h:
+/usr/include/bits/timesize.h:
+/usr/include/sys/cdefs.h:
+/usr/include/bits/long-double.h:
+/usr/include/gnu/stubs.h:
+/usr/include/gnu/stubs-64.h:
 gl/c-strcase.h:
-
 gl/stddef.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h:
-
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h:
 gl/limits.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h:
-
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/limits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/syslimits.h:
+/usr/include/limits.h:
+/usr/include/bits/libc-header-start.h:
+/usr/include/bits/posix1_lim.h:
+/usr/include/bits/local_lim.h:
+/usr/include/linux/limits.h:
+/usr/include/bits/pthread_stack_min-dynamic.h:
+/usr/include/bits/posix2_lim.h:
+/usr/include/bits/xopen_lim.h:
+/usr/include/bits/uio_lim.h:
 gl/c-ctype.h:

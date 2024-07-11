@@ -14,10 +14,10 @@ library_names=''
 old_library='libgl.a'
 
 # Linker flags that cannot go in dependency_libs.
-inherited_linker_flags=' '
+inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib -liconv -lgslcblas -lz'
+dependency_libs=' -lreadline -lgslcblas -lz -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

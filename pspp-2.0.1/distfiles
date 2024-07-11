@@ -1805,6 +1805,7 @@ src/ui/gui/correlation.ui
 src/ui/gui/count.ui
 src/ui/gui/crosstabs.ui
 src/ui/gui/ctables.ui
+src/ui/gui/custom-tables.ui
 src/ui/gui/data-editor.ui
 src/ui/gui/descriptives.ui
 src/ui/gui/dialog-common.c

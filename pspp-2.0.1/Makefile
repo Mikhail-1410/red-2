@@ -608,8 +608,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = aarch64-apple-darwin23.5.0
-host_triplet = aarch64-apple-darwin23.5.0
+build_triplet = x86_64-pc-linux-gnu
+host_triplet = x86_64-pc-linux-gnu
 noinst_PROGRAMS = $(am__EXEEXT_2) utilities/pspp-dump-sav$(EXEEXT)
 check_PROGRAMS = tests/data/datasheet-test$(EXEEXT) \
 	tests/data/sack$(EXEEXT) tests/data/spreadsheet-test$(EXEEXT) \
@@ -648,28 +648,28 @@ check_PROGRAMS = tests/data/datasheet-test$(EXEEXT) \
 	tests/output/tex-strings$(EXEEXT)
 bin_PROGRAMS = src/ui/terminal/pspp$(EXEEXT) $(am__EXEEXT_1) \
 	utilities/pspp-convert$(EXEEXT) utilities/pspp-output$(EXEEXT)
-#am__append_1 = gl/btowc.c
-am__append_2 = gl/canonicalize-lgpl.c
+am__append_1 = gl/btowc.c
+#am__append_2 = gl/canonicalize-lgpl.c
 #am__append_3 = gl/close.c
 #am__append_4 = gl/dup2.c
-am__append_5 = gl/error.c
-#am__append_6 = gl/fcntl.c
+#am__append_5 = gl/error.c
+am__append_6 = gl/fcntl.c
 #am__append_7 = gl/float.c
 #am__append_8 = gl/itold.c
 #am__append_9 = gl/floor.c
-am__append_10 = gl/free.c
+#am__append_10 = gl/free.c
 am__append_11 = gl/fseek.c
 am__append_12 = gl/fseeko.c
 am__append_13 = gl/fseterr.c
-am__append_14 = gl/fstat.c
+#am__append_14 = gl/fstat.c
 #am__append_15 = gl/ftell.c
 #am__append_16 = gl/ftello.c
-am__append_17 = gl/getdelim.c
+#am__append_17 = gl/getdelim.c
 #am__append_18 = gl/getdtablesize.c
 #am__append_19 = gl/getline.c
-am__append_20 = gl/getopt.c gl/getopt1.c
-#am__append_21 = gl/getprogname.c
-am__append_22 = gl/getrandom.c
+#am__append_20 = gl/getopt.c gl/getopt1.c
+am__append_21 = gl/getprogname.c
+#am__append_22 = gl/getrandom.c
 #am__append_23 = gl/gettimeofday.c
 #am__append_24 = gl/isblank.c
 #am__append_25 = gl/isfinite.c
@@ -679,50 +679,50 @@ am__append_22 = gl/getrandom.c
 #am__append_29 = gl/iswxdigit.c
 #am__append_30 = gl/localeconv.c
 #am__append_31 = gl/lseek.c
-am__append_32 = gl/lstat.c
+#am__append_32 = gl/lstat.c
 am__append_33 = gl/mbrtoc32.c
-#am__append_34 = gl/mbrtowc.c
+am__append_34 = gl/mbrtowc.c
 #am__append_35 = gl/mbsinit.c
-#am__append_36 = gl/mbsrtowcs.c
+am__append_36 = gl/mbsrtowcs.c
 #am__append_37 = gl/mbtowc.c
 #am__append_38 = gl/memchr.c
-am__append_39 = gl/mempcpy.c
-am__append_40 = gl/memrchr.c
+#am__append_39 = gl/mempcpy.c
+#am__append_40 = gl/memrchr.c
 am__append_41 = gl/memset_explicit.c
 #am__append_42 = gl/mkdir.c
 #am__append_43 = gl/mkdtemp.c
 #am__append_44 = gl/mkstemp.c
 #am__append_45 = gl/msvc-inval.c
 #am__append_46 = gl/msvc-nothrow.c
-am__append_47 = gl/nl_langinfo.c
+#am__append_47 = gl/nl_langinfo.c
 #am__append_48 = gl/nl_langinfo-lock.c
-am__append_49 = gl/open.c
+#am__append_49 = gl/open.c
 #am__append_50 = gl/raise.c
-am__append_51 = gl/rawmemchr.c
+#am__append_51 = gl/rawmemchr.c
 #am__append_52 = gl/read.c
-am__append_53 = gl/readlink.c
-am__append_54 = gl/reallocarray.c
-am__append_55 = gl/regex.c
+#am__append_53 = gl/readlink.c
+#am__append_54 = gl/reallocarray.c
+#am__append_55 = gl/regex.c
 #am__append_56 = gl/progreloc.c
-am__append_57 = gl/rename.c
+#am__append_57 = gl/rename.c
 #am__append_58 = gl/rmdir.c
 #am__append_59 = gl/round.c
-am__append_60 = gl/secure_getenv.c
+#am__append_60 = gl/secure_getenv.c
 #am__append_61 = gl/select.c
 #am__append_62 = gl/setenv.c
-am__append_63 = gl/setlocale-lock.c
+#am__append_63 = gl/setlocale-lock.c
 #am__append_64 = gl/sigaction.c
 #am__append_65 = gl/signbitf.c gl/signbitd.c gl/signbitl.c
 #am__append_66 = gl/sigprocmask.c
-am__append_67 = gl/stat.c
+#am__append_67 = gl/stat.c
 #am__append_68 = gl/stdio-read.c
 #am__append_69 = gl/stdio-write.c
 #am__append_70 = gl/stpcpy.c
 #am__append_71 = gl/strcasecmp.c
 #am__append_72 = gl/strncasecmp.c
 #am__append_73 = gl/strdup.c
-am__append_74 = gl/strerror.c
-am__append_75 = gl/strerror-override.c
+#am__append_74 = gl/strerror.c
+#am__append_75 = gl/strerror-override.c
 #am__append_76 = gl/strncat.c
 #am__append_77 = gl/strndup.c
 #am__append_78 = gl/strnlen.c
@@ -731,7 +731,7 @@ am__append_75 = gl/strerror-override.c
 #am__append_81 = gl/strtok_r.c
 #am__append_82 = gl/time_r.c
 am__append_83 = gl/time_rz.c
-am__append_84 = gl/timegm.c
+#am__append_84 = gl/timegm.c
 #am__append_85 = gl/trunc.c
 #am__append_86 = gl/tzset.c
 am__append_87 = gl/unicase/empty-prefix-context.c
@@ -790,14 +790,14 @@ am__append_139 = gl/uniwidth/u8-width.c
 am__append_140 = gl/uniwidth/width.c
 #am__append_141 = gl/unsetenv.c
 #am__append_142 = gl/wcrtomb.c
-am__append_143 = gl/wcwidth.c
+#am__append_143 = gl/wcwidth.c
 #am__append_144 = gl/windows-mutex.c
 #am__append_145 = gl/windows-once.c
 #am__append_146 = gl/windows-recmutex.c
 #am__append_147 = gl/windows-rwlock.c
 #am__append_148 = gl/windows-spin.c
 #am__append_149 = gl/wmemchr.c
-am__append_150 = gl/wmempcpy.c
+#am__append_150 = gl/wmempcpy.c
 #am__append_151 = gl/write.c
 #am__append_152 = `$(RELOCATABLE_LDFLAGS) $(bindir)`
 
@@ -817,57 +817,57 @@ am__append_150 = gl/wmempcpy.c
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#am__append_153 = src/ui/gui/README \
-#	src/ui/gui/marshaller-list \
-#	src/ui/gui/pspplogo.svg \
-#	src/ui/gui/pspp.rc.in \
-#	src/ui/gui/resources.xml \
-#	src/ui/gui/include/gtk/gtk.in.h \
-#	src/ui/gui/include/glib.in.h $(icons) \
-#	$(icon_srcs) \
-#	src/ui/gui/icons/COPYING_CCBYSA3 \
-#	$(top_srcdir)/src/ui/gui/artwork/splash.svg \
-#	$(icons) $(icon_srcs) \
-#	src/ui/gui/psppire.xml \
-#	src/ui/gui/glade-wrapper.in
-#am__append_154 = src/ui/gui/psppire
-#am__append_155 = src/ui/gui/spreadsheet-test
-#am__append_156 = -Wno-unused-parameter
-#am__append_157 = -Wno-unused-parameter
-##am__append_158 = `$(RELOCATABLE_LDFLAGS) $(bindir)`
-#am__append_159 = -rpath $(pkglibdir)
-##am__append_160 = src/ui/gui/pspp.res
-##am__append_161 = -mwindows -mwin32
-#am__append_162 = install-lang install-icons \
-#	install-ext-icons update-icon-cache
-#am__append_163 = src/ui/gui/libwidgets-essential.la
+am__append_153 = src/ui/gui/README \
+	src/ui/gui/marshaller-list \
+	src/ui/gui/pspplogo.svg \
+	src/ui/gui/pspp.rc.in \
+	src/ui/gui/resources.xml \
+	src/ui/gui/include/gtk/gtk.in.h \
+	src/ui/gui/include/glib.in.h $(icons) \
+	$(icon_srcs) \
+	src/ui/gui/icons/COPYING_CCBYSA3 \
+	$(top_srcdir)/src/ui/gui/artwork/splash.svg \
+	$(icons) $(icon_srcs) \
+	src/ui/gui/psppire.xml \
+	src/ui/gui/glade-wrapper.in
+am__append_154 = src/ui/gui/psppire
+am__append_155 = src/ui/gui/spreadsheet-test
+am__append_156 = -Wno-unused-parameter
+am__append_157 = -Wno-unused-parameter
+#am__append_158 = `$(RELOCATABLE_LDFLAGS) $(bindir)`
+am__append_159 = -rpath $(pkglibdir)
+#am__append_160 = src/ui/gui/pspp.res
+#am__append_161 = -mwindows -mwin32
+am__append_162 = install-lang install-icons \
+	install-ext-icons update-icon-cache
+am__append_163 = src/ui/gui/libwidgets-essential.la
 
 # The unused-parameter warning is not by default disabled
 # in AM_CFLAGS because the core pspp code has this enabled.
 # This is only disabled in the gui code where we have many
 # callbacks from gtk3 which have fixed parameters
-#am__append_164 = -Wno-unused-parameter
-#am__append_165 = -Isrc
+am__append_164 = -Wno-unused-parameter
+am__append_165 = -Isrc
 
 # <gtk/gtk.h> wrapper
 
 # <glib.h> wrapper
-#am__append_166 = src/ui/gui/psppire-marshal.c \
-#	src/ui/gui/psppire-marshal.h \
-#	src/ui/gui/resources.c \
-#	src/ui/gui/include/gtk/gtk.h \
-#	src/ui/gui/include/glib.h
-#am__append_167 = src/ui/gui/psppire-marshal.c \
-#	src/ui/gui/psppire-marshal.h \
-#	src/ui/gui/.deps/psppire-marshal.Plo \
-#	src/ui/gui/resources.c \
-#	$(nodist_src_ui_gui_psppire_DATA) \
-#	src/ui/gui/include/gtk/gtk.h \
-#	src/ui/gui/include/glib.h
-#am__append_168 = uninstall-icons \
-#	uninstall-ext-icons update-icon-cache
-#am__append_169 = -Wno-unused-parameter
-#am__append_170 = glade-tools
+am__append_166 = src/ui/gui/psppire-marshal.c \
+	src/ui/gui/psppire-marshal.h \
+	src/ui/gui/resources.c \
+	src/ui/gui/include/gtk/gtk.h \
+	src/ui/gui/include/glib.h
+am__append_167 = src/ui/gui/psppire-marshal.c \
+	src/ui/gui/psppire-marshal.h \
+	src/ui/gui/.deps/psppire-marshal.Plo \
+	src/ui/gui/resources.c \
+	$(nodist_src_ui_gui_psppire_DATA) \
+	src/ui/gui/include/gtk/gtk.h \
+	src/ui/gui/include/glib.h
+am__append_168 = uninstall-icons \
+	uninstall-ext-icons update-icon-cache
+am__append_169 = -Wno-unused-parameter
+am__append_170 = glade-tools
 #am__append_171 = `$(RELOCATABLE_LDFLAGS) $(bindir)`
 #am__append_172 = `$(RELOCATABLE_LDFLAGS) $(bindir)`
 am__append_173 = module-make module-copy
@@ -1085,7 +1085,7 @@ mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = config.h
 CONFIG_CLEAN_FILES = po/Makefile tests/atlocal perl-module/lib/PSPP.pm
 CONFIG_CLEAN_VPATH_FILES =
-#am__EXEEXT_1 = src/ui/gui/psppire$(EXEEXT)
+am__EXEEXT_1 = src/ui/gui/psppire$(EXEEXT)
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(EXTRA_pkgdir)" \
 	"$(DESTDIR)$(pkglibdir)" "$(DESTDIR)$(infodir)" \
 	"$(DESTDIR)$(man1dir)" "$(DESTDIR)$(desktopdir)" \
@@ -1093,8 +1093,8 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(EXTRA_pkgdir)" \
 	"$(DESTDIR)$(src_ui_gui_psppiredir)" \
 	"$(DESTDIR)$(examplesdir)" "$(DESTDIR)$(mimedir)" \
 	"$(DESTDIR)$(src_ui_gui_psppiredir)"
-#am__EXEEXT_2 =  \
-#	src/ui/gui/spreadsheet-test$(EXEEXT)
+am__EXEEXT_2 =  \
+	src/ui/gui/spreadsheet-test$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 LIBRARIES = $(noinst_LIBRARIES)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
@@ -1238,31 +1238,31 @@ am__gl_libgl_la_SOURCES_DIST = gl/allocator.c gl/areadlink.c \
 	gl/xstrndup.h gl/xstrndup.c gl/xvasprintf.h gl/xvasprintf.c \
 	gl/xasprintf.c
 am__dirstamp = $(am__leading_dot)dirstamp
-#am__objects_1 = gl/libgl_la-btowc.lo
-am__objects_2 = gl/libgl_la-canonicalize-lgpl.lo
+am__objects_1 = gl/libgl_la-btowc.lo
+#am__objects_2 = gl/libgl_la-canonicalize-lgpl.lo
 #am__objects_3 = gl/libgl_la-close.lo
 #am__objects_4 = gl/libgl_la-dup2.lo
-am__objects_5 = gl/libgl_la-error.lo
-#am__objects_6 = gl/libgl_la-fcntl.lo
+#am__objects_5 = gl/libgl_la-error.lo
+am__objects_6 = gl/libgl_la-fcntl.lo
 #am__objects_7 = gl/libgl_la-float.lo
 #am__objects_8 = gl/libgl_la-itold.lo
 #am__objects_9 = gl/libgl_la-floor.lo
-am__objects_10 = gl/libgl_la-free.lo
+#am__objects_10 = gl/libgl_la-free.lo
 am__objects_11 = gl/libgl_la-fseek.lo
 am__objects_12 = gl/libgl_la-fseeko.lo
 am__objects_13 = gl/libgl_la-fseterr.lo
-am__objects_14 = gl/libgl_la-fstat.lo
+#am__objects_14 = gl/libgl_la-fstat.lo
 #am__objects_15 = gl/libgl_la-ftell.lo
 #am__objects_16 = gl/libgl_la-ftello.lo
-am__objects_17 = gl/libgl_la-getdelim.lo
+#am__objects_17 = gl/libgl_la-getdelim.lo
 #am__objects_18 =  \
 #	gl/libgl_la-getdtablesize.lo
 #am__objects_19 = gl/libgl_la-getline.lo
-am__objects_20 = gl/libgl_la-getopt.lo \
-	gl/libgl_la-getopt1.lo
-#am__objects_21 =  \
-#	gl/libgl_la-getprogname.lo
-am__objects_22 = gl/libgl_la-getrandom.lo
+#am__objects_20 = gl/libgl_la-getopt.lo \
+#	gl/libgl_la-getopt1.lo
+am__objects_21 =  \
+	gl/libgl_la-getprogname.lo
+#am__objects_22 = gl/libgl_la-getrandom.lo
 #am__objects_23 =  \
 #	gl/libgl_la-gettimeofday.lo
 #am__objects_24 = gl/libgl_la-isblank.lo
@@ -1274,15 +1274,15 @@ am__objects_22 = gl/libgl_la-getrandom.lo
 #am__objects_30 =  \
 #	gl/libgl_la-localeconv.lo
 #am__objects_31 = gl/libgl_la-lseek.lo
-am__objects_32 = gl/libgl_la-lstat.lo
+#am__objects_32 = gl/libgl_la-lstat.lo
 am__objects_33 = gl/libgl_la-mbrtoc32.lo
-#am__objects_34 = gl/libgl_la-mbrtowc.lo
+am__objects_34 = gl/libgl_la-mbrtowc.lo
 #am__objects_35 = gl/libgl_la-mbsinit.lo
-#am__objects_36 = gl/libgl_la-mbsrtowcs.lo
+am__objects_36 = gl/libgl_la-mbsrtowcs.lo
 #am__objects_37 = gl/libgl_la-mbtowc.lo
 #am__objects_38 = gl/libgl_la-memchr.lo
-am__objects_39 = gl/libgl_la-mempcpy.lo
-am__objects_40 = gl/libgl_la-memrchr.lo
+#am__objects_39 = gl/libgl_la-mempcpy.lo
+#am__objects_40 = gl/libgl_la-memrchr.lo
 am__objects_41 = gl/libgl_la-memset_explicit.lo
 #am__objects_42 = gl/libgl_la-mkdir.lo
 #am__objects_43 = gl/libgl_la-mkdtemp.lo
@@ -1291,33 +1291,33 @@ am__objects_41 = gl/libgl_la-memset_explicit.lo
 #	gl/libgl_la-msvc-inval.lo
 #am__objects_46 =  \
 #	gl/libgl_la-msvc-nothrow.lo
-am__objects_47 =  \
-	gl/libgl_la-nl_langinfo.lo
+#am__objects_47 =  \
+#	gl/libgl_la-nl_langinfo.lo
 #am__objects_48 = gl/libgl_la-nl_langinfo-lock.lo
-am__objects_49 = gl/libgl_la-open.lo
+#am__objects_49 = gl/libgl_la-open.lo
 #am__objects_50 = gl/libgl_la-raise.lo
-am__objects_51 = gl/libgl_la-rawmemchr.lo
+#am__objects_51 = gl/libgl_la-rawmemchr.lo
 #am__objects_52 = gl/libgl_la-read.lo
-am__objects_53 = gl/libgl_la-readlink.lo
-am__objects_54 =  \
-	gl/libgl_la-reallocarray.lo
-am__objects_55 = gl/libgl_la-regex.lo
+#am__objects_53 = gl/libgl_la-readlink.lo
+#am__objects_54 =  \
+#	gl/libgl_la-reallocarray.lo
+#am__objects_55 = gl/libgl_la-regex.lo
 #am__objects_56 = gl/libgl_la-progreloc.lo
-am__objects_57 = gl/libgl_la-rename.lo
+#am__objects_57 = gl/libgl_la-rename.lo
 #am__objects_58 = gl/libgl_la-rmdir.lo
 #am__objects_59 = gl/libgl_la-round.lo
-am__objects_60 =  \
-	gl/libgl_la-secure_getenv.lo
+#am__objects_60 =  \
+#	gl/libgl_la-secure_getenv.lo
 #am__objects_61 = gl/libgl_la-select.lo
 #am__objects_62 = gl/libgl_la-setenv.lo
-am__objects_63 = gl/libgl_la-setlocale-lock.lo
+#am__objects_63 = gl/libgl_la-setlocale-lock.lo
 #am__objects_64 = gl/libgl_la-sigaction.lo
 #am__objects_65 = gl/libgl_la-signbitf.lo \
 #	gl/libgl_la-signbitd.lo \
 #	gl/libgl_la-signbitl.lo
 #am__objects_66 =  \
 #	gl/libgl_la-sigprocmask.lo
-am__objects_67 = gl/libgl_la-stat.lo
+#am__objects_67 = gl/libgl_la-stat.lo
 #am__objects_68 =  \
 #	gl/libgl_la-stdio-read.lo
 #am__objects_69 =  \
@@ -1328,8 +1328,8 @@ am__objects_67 = gl/libgl_la-stat.lo
 #am__objects_72 =  \
 #	gl/libgl_la-strncasecmp.lo
 #am__objects_73 = gl/libgl_la-strdup.lo
-am__objects_74 = gl/libgl_la-strerror.lo
-am__objects_75 = gl/libgl_la-strerror-override.lo
+#am__objects_74 = gl/libgl_la-strerror.lo
+#am__objects_75 = gl/libgl_la-strerror-override.lo
 #am__objects_76 = gl/libgl_la-strncat.lo
 #am__objects_77 = gl/libgl_la-strndup.lo
 #am__objects_78 = gl/libgl_la-strnlen.lo
@@ -1338,7 +1338,7 @@ am__objects_75 = gl/libgl_la-strerror-override.lo
 #am__objects_81 = gl/libgl_la-strtok_r.lo
 #am__objects_82 = gl/libgl_la-time_r.lo
 am__objects_83 = gl/libgl_la-time_rz.lo
-am__objects_84 = gl/libgl_la-timegm.lo
+#am__objects_84 = gl/libgl_la-timegm.lo
 #am__objects_85 = gl/libgl_la-trunc.lo
 #am__objects_86 = gl/libgl_la-tzset.lo
 am__objects_87 = gl/unicase/libgl_la-empty-prefix-context.lo
@@ -1400,7 +1400,7 @@ am__objects_139 = gl/uniwidth/libgl_la-u8-width.lo
 am__objects_140 = gl/uniwidth/libgl_la-width.lo
 #am__objects_141 = gl/libgl_la-unsetenv.lo
 #am__objects_142 = gl/libgl_la-wcrtomb.lo
-am__objects_143 = gl/libgl_la-wcwidth.lo
+#am__objects_143 = gl/libgl_la-wcwidth.lo
 #am__objects_144 =  \
 #	gl/libgl_la-windows-mutex.lo
 #am__objects_145 =  \
@@ -1410,7 +1410,7 @@ am__objects_143 = gl/libgl_la-wcwidth.lo
 #am__objects_148 =  \
 #	gl/libgl_la-windows-spin.lo
 #am__objects_149 = gl/libgl_la-wmemchr.lo
-am__objects_150 = gl/libgl_la-wmempcpy.lo
+#am__objects_150 = gl/libgl_la-wmempcpy.lo
 #am__objects_151 = gl/libgl_la-write.lo
 am_gl_libgl_la_OBJECTS = gl/libgl_la-allocator.lo \
 	gl/libgl_la-areadlink.lo gl/libgl_la-asyncsafe-spin.lo \
@@ -1874,24 +1874,22 @@ nodist_src_output_liboutput_la_OBJECTS = $(am__objects_157) \
 src_output_liboutput_la_OBJECTS =  \
 	$(am_src_output_liboutput_la_OBJECTS) \
 	$(nodist_src_output_liboutput_la_OBJECTS)
-#src_ui_gui_libpsppire_glade_la_DEPENDENCIES =  \
-#	src/ui/gui/libwidgets-essential.la \
-#	src/ui/gui/psppire-marshal.lo
+src_ui_gui_libpsppire_glade_la_DEPENDENCIES =  \
+	src/ui/gui/libwidgets-essential.la \
+	src/ui/gui/psppire-marshal.lo
 am__src_ui_gui_libpsppire_glade_la_SOURCES_DIST = src/ui/gui/dummy.c
-#am_src_ui_gui_libpsppire_glade_la_OBJECTS =  \
-#	src/ui/gui/libpsppire_glade_la-dummy.lo
+am_src_ui_gui_libpsppire_glade_la_OBJECTS =  \
+	src/ui/gui/libpsppire_glade_la-dummy.lo
 src_ui_gui_libpsppire_glade_la_OBJECTS =  \
 	$(am_src_ui_gui_libpsppire_glade_la_OBJECTS)
 src_ui_gui_libpsppire_glade_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(src_ui_gui_libpsppire_glade_la_CFLAGS) $(CFLAGS) \
 	$(src_ui_gui_libpsppire_glade_la_LDFLAGS) $(LDFLAGS) -o $@
-#am_src_ui_gui_libpsppire_glade_la_rpath = -rpath \
-#	$(EXTRA_pkgdir)
+am_src_ui_gui_libpsppire_glade_la_rpath = -rpath \
+	$(EXTRA_pkgdir)
 src_ui_gui_libwidgets_essential_la_LIBADD =
 am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
-	src/ui/gui/psppire-dialog-action-custom-tables.c \
-	src/ui/gui/psppire-dialog-action-custom-tables.h \
 	src/ui/gui/psppire-acr.c src/ui/gui/psppire-acr.h \
 	src/ui/gui/psppire-buttonbox.c src/ui/gui/psppire-buttonbox.h \
 	src/ui/gui/psppire-checkbox-treeview.c \
@@ -1922,6 +1920,8 @@ am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
 	src/ui/gui/psppire-dialog-action-count.h \
 	src/ui/gui/psppire-dialog-action-crosstabs.c \
 	src/ui/gui/psppire-dialog-action-crosstabs.h \
+	src/ui/gui/psppire-dialog-action-custom-tables.c \
+	src/ui/gui/psppire-dialog-action-custom-tables.h \
 	src/ui/gui/psppire-dialog-action-descriptives.c \
 	src/ui/gui/psppire-dialog-action-descriptives.h \
 	src/ui/gui/psppire-dialog-action-examine.c \
@@ -2013,83 +2013,83 @@ am__src_ui_gui_libwidgets_essential_la_SOURCES_DIST =  \
 	src/ui/gui/dialog-common.h src/ui/gui/widgets.c \
 	src/ui/gui/widgets.h src/ui/gui/dict-display.c \
 	src/ui/gui/dict-display.h
-#am_src_ui_gui_libwidgets_essential_la_OBJECTS = src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-acr.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-buttonbox.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-checkbox-treeview.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-conf.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-data-sheet.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-1sks.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-aggregate.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-autorecode.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-barchart.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-binomial.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-chisquare.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-comments.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-compute.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-correlation.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-count.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-examine.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-factor.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-flip.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-frequencies.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-histogram.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-indep-samps.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-k-independent.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-kmeans.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-k-related.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-logistic.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-means.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-oneway.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-paired.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-rank.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-recode.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-recode-different.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-recode-same.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-regression.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-reliability.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-roc.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-runs.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-scatterplot.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-select.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-sort.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-split.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-ctables.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-tt1s.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-two-sample.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-univariate.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-var-info.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-weight.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dialog.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-search-dialog.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dict.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-dictview.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-format.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-keypad.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-means-layer.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-select-dest.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-selector.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-text-file.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-val-chooser.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-var-info.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-var-ptr.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-var-view.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-var-sheet-header.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-variable-sheet.lo \
-#	src/ui/gui/libwidgets_essential_la-psppire-window-base.lo \
-#	src/ui/gui/libwidgets_essential_la-dialog-common.lo \
-#	src/ui/gui/libwidgets_essential_la-widgets.lo \
-#	src/ui/gui/libwidgets_essential_la-dict-display.lo
+am_src_ui_gui_libwidgets_essential_la_OBJECTS = src/ui/gui/libwidgets_essential_la-psppire-acr.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-buttonbox.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-checkbox-treeview.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-conf.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-data-sheet.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-1sks.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-aggregate.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-autorecode.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-barchart.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-binomial.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-chisquare.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-comments.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-compute.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-correlation.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-count.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-examine.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-factor.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-flip.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-frequencies.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-histogram.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-indep-samps.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-k-independent.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-kmeans.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-k-related.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-logistic.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-means.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-oneway.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-paired.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-rank.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-recode.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-recode-different.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-recode-same.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-regression.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-reliability.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-roc.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-runs.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-scatterplot.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-select.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-sort.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-split.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-ctables.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-tt1s.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-two-sample.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-univariate.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-var-info.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog-action-weight.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dialog.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-search-dialog.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dict.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-dictview.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-format.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-keypad.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-means-layer.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-select-dest.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-selector.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-text-file.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-val-chooser.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-var-info.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-var-ptr.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-var-view.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-var-sheet-header.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-variable-sheet.lo \
+	src/ui/gui/libwidgets_essential_la-psppire-window-base.lo \
+	src/ui/gui/libwidgets_essential_la-dialog-common.lo \
+	src/ui/gui/libwidgets_essential_la-widgets.lo \
+	src/ui/gui/libwidgets_essential_la-dict-display.lo
 src_ui_gui_libwidgets_essential_la_OBJECTS =  \
 	$(am_src_ui_gui_libwidgets_essential_la_OBJECTS)
 src_ui_gui_libwidgets_essential_la_LINK = $(LIBTOOL) $(AM_V_lt) \
 	--tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link \
 	$(CCLD) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) \
 	$(AM_LDFLAGS) $(LDFLAGS) -o $@
-#am_src_ui_gui_libwidgets_essential_la_rpath =
+am_src_ui_gui_libwidgets_essential_la_rpath =
 src_ui_libuicommon_la_LIBADD =
 am_src_ui_libuicommon_la_OBJECTS = src/ui/source-init-opts.lo \
 	src/ui/syntax-gen.lo
@@ -2157,54 +2157,54 @@ am__src_ui_gui_psppire_SOURCES_DIST = src/ui/gui/builder-wrapper.c \
 	src/ui/gui/var-type-dialog.c src/ui/gui/var-type-dialog.h \
 	src/ui/gui/widget-io.c src/ui/gui/widget-io.h \
 	src/ui/gui/windows-menu.c src/ui/gui/windows-menu.h
-#am_src_ui_gui_psppire_OBJECTS = src/ui/gui/psppire-builder-wrapper.$(OBJEXT) \
-#	src/ui/gui/psppire-entry-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-executor.$(OBJEXT) \
-#	src/ui/gui/psppire-find-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-goto-case-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-helper.$(OBJEXT) \
-#	src/ui/gui/psppire-help-menu.$(OBJEXT) \
-#	src/ui/gui/psppire-main.$(OBJEXT) \
-#	src/ui/gui/psppire-missing-val-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-options-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-data-editor.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-data-store.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-data-window.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-delimited-text.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-encoding-selector.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-import-assistant.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-import-spreadsheet.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-import-textfile.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-lex-reader.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-output-view.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-output-window.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-scanf.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-spreadsheet-data-model.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-spreadsheet-model.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-syntax-window.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-value-entry.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-window.$(OBJEXT) \
-#	src/ui/gui/psppire-psppire-window-register.$(OBJEXT) \
-#	src/ui/gui/psppire-t-test-options.$(OBJEXT) \
-#	src/ui/gui/psppire-val-labs-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-value-variant.$(OBJEXT) \
-#	src/ui/gui/psppire-var-display.$(OBJEXT) \
-#	src/ui/gui/psppire-var-type-dialog.$(OBJEXT) \
-#	src/ui/gui/psppire-widget-io.$(OBJEXT) \
-#	src/ui/gui/psppire-windows-menu.$(OBJEXT)
-#nodist_src_ui_gui_psppire_OBJECTS = src/ui/gui/psppire-psppire-marshal.$(OBJEXT) \
-#	src/ui/gui/psppire-resources.$(OBJEXT)
+am_src_ui_gui_psppire_OBJECTS = src/ui/gui/psppire-builder-wrapper.$(OBJEXT) \
+	src/ui/gui/psppire-entry-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-executor.$(OBJEXT) \
+	src/ui/gui/psppire-find-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-goto-case-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-helper.$(OBJEXT) \
+	src/ui/gui/psppire-help-menu.$(OBJEXT) \
+	src/ui/gui/psppire-main.$(OBJEXT) \
+	src/ui/gui/psppire-missing-val-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-options-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-psppire.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-data-editor.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-data-store.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-data-window.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-delimited-text.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-encoding-selector.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-import-assistant.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-import-spreadsheet.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-import-textfile.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-lex-reader.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-output-view.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-output-window.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-scanf.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-spreadsheet-data-model.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-spreadsheet-model.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-syntax-window.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-value-entry.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-window.$(OBJEXT) \
+	src/ui/gui/psppire-psppire-window-register.$(OBJEXT) \
+	src/ui/gui/psppire-t-test-options.$(OBJEXT) \
+	src/ui/gui/psppire-val-labs-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-value-variant.$(OBJEXT) \
+	src/ui/gui/psppire-var-display.$(OBJEXT) \
+	src/ui/gui/psppire-var-type-dialog.$(OBJEXT) \
+	src/ui/gui/psppire-widget-io.$(OBJEXT) \
+	src/ui/gui/psppire-windows-menu.$(OBJEXT)
+nodist_src_ui_gui_psppire_OBJECTS = src/ui/gui/psppire-psppire-marshal.$(OBJEXT) \
+	src/ui/gui/psppire-resources.$(OBJEXT)
 src_ui_gui_psppire_OBJECTS = $(am_src_ui_gui_psppire_OBJECTS) \
 	$(nodist_src_ui_gui_psppire_OBJECTS)
-#src_ui_gui_psppire_DEPENDENCIES =  \
-#	src/ui/gui/libwidgets-essential.la \
-#	src/ui/libuicommon.la src/libpspp.la \
-#	src/libpspp-core.la $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__append_160)
+src_ui_gui_psppire_DEPENDENCIES =  \
+	src/ui/gui/libwidgets-essential.la \
+	src/ui/libuicommon.la src/libpspp.la \
+	src/libpspp-core.la $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__append_160)
 src_ui_gui_psppire_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(src_ui_gui_psppire_CFLAGS) $(CFLAGS) \
@@ -2212,13 +2212,13 @@ src_ui_gui_psppire_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 am__src_ui_gui_spreadsheet_test_SOURCES_DIST =  \
 	src/ui/gui/spreadsheet-test.c \
 	src/ui/gui/psppire-spreadsheet-model.c
-#am_src_ui_gui_spreadsheet_test_OBJECTS = src/ui/gui/src_ui_gui_spreadsheet_test-spreadsheet-test.$(OBJEXT) \
-#	src/ui/gui/src_ui_gui_spreadsheet_test-psppire-spreadsheet-model.$(OBJEXT)
+am_src_ui_gui_spreadsheet_test_OBJECTS = src/ui/gui/src_ui_gui_spreadsheet_test-spreadsheet-test.$(OBJEXT) \
+	src/ui/gui/src_ui_gui_spreadsheet_test-psppire-spreadsheet-model.$(OBJEXT)
 src_ui_gui_spreadsheet_test_OBJECTS =  \
 	$(am_src_ui_gui_spreadsheet_test_OBJECTS)
-#src_ui_gui_spreadsheet_test_DEPENDENCIES =  \
-#	src/libpspp-core.la $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
+src_ui_gui_spreadsheet_test_DEPENDENCIES =  \
+	src/libpspp-core.la $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 src_ui_gui_spreadsheet_test_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(src_ui_gui_spreadsheet_test_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
@@ -3567,27 +3567,27 @@ am__dist_src_ui_gui_psppire_DATA_DIST = src/ui/gui/aggregate.ui \
 	src/ui/gui/correlation.ui src/ui/gui/count.ui \
 	src/ui/gui/comments.ui src/ui/gui/crosstabs.ui \
 	src/ui/gui/chi-square.ui src/ui/gui/ctables.ui \
-	src/ui/gui/descriptives.ui src/ui/gui/entry-dialog.ui \
-	src/ui/gui/examine.ui src/ui/gui/goto-case.ui \
-	src/ui/gui/factor.ui src/ui/gui/find.ui \
-	src/ui/gui/frequencies.ui src/ui/gui/histogram.ui \
-	src/ui/gui/indep-samples.ui src/ui/gui/k-independent.ui \
-	src/ui/gui/k-means.ui src/ui/gui/k-related.ui \
-	src/ui/gui/ks-one-sample.ui src/ui/gui/logistic.ui \
-	src/ui/gui/means.ui src/ui/gui/missing-val-dialog.ui \
-	src/ui/gui/oneway.ui src/ui/gui/options.ui \
-	src/ui/gui/paired-samples.ui src/ui/gui/rank.ui \
-	src/ui/gui/runs.ui src/ui/gui/sort.ui src/ui/gui/split-file.ui \
-	src/ui/gui/recode.ui src/ui/gui/regression.ui \
-	src/ui/gui/reliability.ui src/ui/gui/roc.ui \
-	src/ui/gui/scatterplot.ui src/ui/gui/select-cases.ui \
-	src/ui/gui/spreadsheet-import.ui src/ui/gui/t-test.ui \
-	src/ui/gui/text-data-import.ui src/ui/gui/transpose.ui \
-	src/ui/gui/univariate.ui src/ui/gui/val-labs-dialog.ui \
-	src/ui/gui/variable-info.ui src/ui/gui/data-editor.ui \
-	src/ui/gui/output-window.ui src/ui/gui/syntax-editor.ui \
-	src/ui/gui/var-type-dialog.ui src/ui/gui/weight.ui \
-	$(top_srcdir)/src/ui/gui/pspp.lang
+	src/ui/gui/custom-tables.ui src/ui/gui/descriptives.ui \
+	src/ui/gui/entry-dialog.ui src/ui/gui/examine.ui \
+	src/ui/gui/goto-case.ui src/ui/gui/factor.ui \
+	src/ui/gui/find.ui src/ui/gui/frequencies.ui \
+	src/ui/gui/histogram.ui src/ui/gui/indep-samples.ui \
+	src/ui/gui/k-independent.ui src/ui/gui/k-means.ui \
+	src/ui/gui/k-related.ui src/ui/gui/ks-one-sample.ui \
+	src/ui/gui/logistic.ui src/ui/gui/means.ui \
+	src/ui/gui/missing-val-dialog.ui src/ui/gui/oneway.ui \
+	src/ui/gui/options.ui src/ui/gui/paired-samples.ui \
+	src/ui/gui/rank.ui src/ui/gui/runs.ui src/ui/gui/sort.ui \
+	src/ui/gui/split-file.ui src/ui/gui/recode.ui \
+	src/ui/gui/regression.ui src/ui/gui/reliability.ui \
+	src/ui/gui/roc.ui src/ui/gui/scatterplot.ui \
+	src/ui/gui/select-cases.ui src/ui/gui/spreadsheet-import.ui \
+	src/ui/gui/t-test.ui src/ui/gui/text-data-import.ui \
+	src/ui/gui/transpose.ui src/ui/gui/univariate.ui \
+	src/ui/gui/val-labs-dialog.ui src/ui/gui/variable-info.ui \
+	src/ui/gui/data-editor.ui src/ui/gui/output-window.ui \
+	src/ui/gui/syntax-editor.ui src/ui/gui/var-type-dialog.ui \
+	src/ui/gui/weight.ui $(top_srcdir)/src/ui/gui/pspp.lang
 DATA = $(desktop_DATA) $(dist_appdata_DATA) $(dist_docbook_DATA) \
 	$(dist_src_ui_gui_psppire_DATA) $(examples_DATA) $(mime_DATA) \
 	$(nodist_src_ui_gui_psppire_DATA)
@@ -4324,7 +4324,7 @@ pkgdatadir = ${datadir}/${PACKAGE}
 pkgincludedir = ${includedir}/${PACKAGE}
 pkglibdir = ${libdir}/${PACKAGE}
 pkglibexecdir = ${libexecdir}/${PACKAGE}
-ACLOCAL = ${SHELL} '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/build-aux/missing' aclocal-1.16
+ACLOCAL = ${SHELL} '/pspp-2.0.1/build-aux/missing' aclocal-1.16
 ALLOCA = 
 ALLOCA_H = $(top_build_prefix)gl/alloca.h
 AMTAR = $${TAR-tar}
@@ -4333,27 +4333,27 @@ APPLE_UNIVERSAL_BUILD = 0
 AR = ar
 ARFLAGS = cr
 AS = as
-ASM_SYMBOL_PREFIX = "_"
-ASSERT_H = $(top_build_prefix)gl/assert.h
-AUTOCONF = ${SHELL} '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/build-aux/missing' autoconf
-AUTOHEADER = ${SHELL} '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/build-aux/missing' autoheader
-AUTOMAKE = ${SHELL} '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/build-aux/missing' automake-1.16
-AWK = awk
+ASM_SYMBOL_PREFIX = ""
+ASSERT_H = 
+AUTOCONF = ${SHELL} '/pspp-2.0.1/build-aux/missing' autoconf
+AUTOHEADER = ${SHELL} '/pspp-2.0.1/build-aux/missing' autoheader
+AUTOMAKE = ${SHELL} '/pspp-2.0.1/build-aux/missing' automake-1.16
+AWK = gawk
 BITSIZEOF_PTRDIFF_T = 
 BITSIZEOF_SIG_ATOMIC_T = 
 BITSIZEOF_SIZE_T = 
 BITSIZEOF_WCHAR_T = 32
 BITSIZEOF_WINT_T = 
-BYTESWAP_H = $(top_build_prefix)gl/byteswap.h
-CAIRO_CFLAGS = -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi
-CAIRO_LIBS = -L/opt/homebrew/Cellar/cairo/1.18.0/lib -L/opt/homebrew/Cellar/pango/1.54.0/lib -L/opt/homebrew/Cellar/glib/2.80.3/lib -L/opt/homebrew/opt/gettext/lib -L/opt/homebrew/Cellar/harfbuzz/8.5.0/lib -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz -lcairo
+BYTESWAP_H = 
+CAIRO_CFLAGS = -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread
+CAIRO_LIBS = -lgobject-2.0 -lglib-2.0 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lcairo
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2 -DGCC_LINT
-CFLAG_VISIBILITY = -fvisibility=hidden
+CFLAG_VISIBILITY = 
 CLOCK_TIME_LIB = 
 CPP = gcc -E
-CPPFLAGS = -I/opt/homebrew/Cellar/gsl/2.8/include -I/opt/homebrew/Cellar/cairo/1.18.0/include -I/opt/homebrew/Cellar/cairo/1.18.0/include/cairo -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/pango/1.54.0/include/pango-1.0 -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/fribidi/1.0.15/include/fribidi -I/opt/homebrew/Cellar/glib/2.80.3/include -I/opt/homebrew/Cellar/harfbuzz/8.5.0/include/harfbuzz -I/opt/homebrew/Cellar/glib/2.80.3/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.80.3/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.44/include -I/opt/homebrew/Cellar/graphite2/1.3.14/include -I/opt/homebrew/Cellar/fontconfig/2.15.0/include -I/opt/homebrew/opt/freetype/include/freetype2 -I/opt/homebrew/opt/libpng/include/libpng16 -I/opt/homebrew/Cellar/libxext/1.3.6/include -I/opt/homebrew/Cellar/libxrender/0.9.11/include -I/opt/homebrew/Cellar/libx11/1.8.9/include -I/opt/homebrew/Cellar/libxcb/1.17.0/include -I/opt/homebrew/Cellar/libxau/1.0.11/include -I/opt/homebrew/Cellar/libxdmcp/1.1.5/include -I/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1 -I/opt/homebrew/Cellar/xorgproto/2024.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/ffi
+CPPFLAGS =  -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread
 CSCOPE = cscope
 CTAGS = ctags
 CXX_HAS_CHAR8_TYPE = 0
@@ -4362,12 +4362,12 @@ CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H -DEXEEXT=\"\"
 DEPDIR = .deps
 DLLTOOL = false
-DSYMUTIL = dsymutil
+DSYMUTIL = 
 DUMPBIN = 
-ECHO_C = \c
-ECHO_N = 
+ECHO_C = 
+ECHO_N = -n
 ECHO_T = 
-EGREP = /usr/bin/grep -E
+EGREP = /usr/sbin/grep -E
 EMULTIHOP_HIDDEN = 
 EMULTIHOP_VALUE = 
 ENOLINK_HIDDEN = 
@@ -4377,18 +4377,18 @@ EOVERFLOW_VALUE =
 ERRNO_H = 
 ETAGS = etags
 EXEEXT = 
-FGREP = /usr/bin/grep -F
+FGREP = /usr/sbin/grep -F
 FILECMD = file
 FLOAT_H = 
 FLOOR_LIBM = 
-FNMATCH_H = $(top_build_prefix)gl/fnmatch.h
-GETOPT_CDEFS_H = $(top_build_prefix)gl/getopt-cdefs.h
-GETOPT_H = $(top_build_prefix)gl/getopt.h
+FNMATCH_H = 
+GETOPT_CDEFS_H = 
+GETOPT_H = 
 GETRANDOM_LIB = 
-GLIB_CFLAGS = 
-GLIB_COMPILE_RESOURCES = 
-GLIB_GENMARSHAL = 
-GLIB_LIBS = 
+GLIB_CFLAGS = -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+GLIB_COMPILE_RESOURCES = glib-compile-resources
+GLIB_GENMARSHAL = glib-genmarshal
+GLIB_LIBS = -lglib-2.0
 GL_CFLAG_ALLOW_WARNINGS = -Wno-error
 GL_CFLAG_GNULIB_WARNINGS = -Wno-missing-prototypes -Wno-unused-parameter -Wno-alloc-size-larger-than
 GL_GNULIB_ACCEPT = 0
@@ -4964,7 +4964,7 @@ GL_GNULIB_UNINORM_NFC_DLL_VARIABLE = LIBUNISTRING_DLL_VARIABLE
 GL_GNULIB_UNINORM_NFD_DLL_VARIABLE = 
 GL_GNULIB_UNINORM_NFKC_DLL_VARIABLE = LIBUNISTRING_DLL_VARIABLE
 GL_GNULIB_UNINORM_NFKD_DLL_VARIABLE = 
-GL_GNULIB_UNISTD_H_GETOPT = 1
+GL_GNULIB_UNISTD_H_GETOPT = 0
 GL_GNULIB_UNISTD_H_NONBLOCKING = 0
 GL_GNULIB_UNISTD_H_SIGPIPE = 0
 GL_GNULIB_UNLINK = 0
@@ -5023,20 +5023,20 @@ GL_GNULIB_WMEMPCPY = 1
 GL_GNULIB_WMEMSET = 0
 GL_GNULIB_WRITE = 1
 GL_GNULIB__EXIT = 0
-GNULIBHEADERS_OVERRIDE_CHAR16_T = 1
-GNULIBHEADERS_OVERRIDE_CHAR32_T = 1
-GNULIBHEADERS_OVERRIDE_CHAR8_T = 1
+GNULIBHEADERS_OVERRIDE_CHAR16_T = 0
+GNULIBHEADERS_OVERRIDE_CHAR32_T = 0
+GNULIBHEADERS_OVERRIDE_CHAR8_T = 0
 GNULIBHEADERS_OVERRIDE_WINT_T = 0
 GNULIB_GETTIMEOFDAY = 0
-GREP = /usr/bin/grep
+GREP = /usr/sbin/grep
 GSL_CFLAGS = 
-GSL_LIBS = -L/opt/homebrew/Cellar/gsl/2.8/lib -lgsl -lgslcblas -lm
-GTHREAD_CFLAGS = 
-GTHREAD_LIBS = 
-GTKSOURCEVIEW_CFLAGS = 
-GTKSOURCEVIEW_LIBS = 
-GTK_CFLAGS = 
-GTK_LIBS = 
+GSL_LIBS = -lgsl -lgslcblas -lm
+GTHREAD_CFLAGS = -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+GTHREAD_LIBS = -lgthread-2.0 -pthread -lglib-2.0
+GTKSOURCEVIEW_CFLAGS = -I/usr/include/gtksourceview-4 -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/cloudproviders -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/sysprof-6 -pthread -I/usr/include/gio-unix-2.0 -I/usr/include/libxml2 -I/usr/include/fribidi
+GTKSOURCEVIEW_LIBS = -lgtksourceview-4 -lgtk-3 -lgdk-3 -lz -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lglib-2.0 -lgobject-2.0 -lcairo -lcairo-gobject -lgdk_pixbuf-2.0 -lgio-2.0
+GTK_CFLAGS = -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/cloudproviders -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -I/usr/include/gio-unix-2.0
+GTK_LIBS = -lgtk-3 -lgdk-3 -lz -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo -lcairo-gobject -lgdk_pixbuf-2.0 -lgio-2.0 -lglib-2.0 -lgobject-2.0
 HARD_LOCALE_LIB = 
 HAVE_ACCEPT4 = 1
 HAVE_ACOSF = 1
@@ -5052,7 +5052,7 @@ HAVE_ATOLL = 1
 HAVE_BTOWC = 1
 HAVE_C32RTOMB = 1
 HAVE_C99_STDINT_H = 1
-HAVE_CANONICALIZE_FILE_NAME = 0
+HAVE_CANONICALIZE_FILE_NAME = 1
 HAVE_CBRT = 1
 HAVE_CBRTF = 1
 HAVE_CBRTL = 1
@@ -5074,15 +5074,15 @@ HAVE_DECL_CEILL = 1
 HAVE_DECL_COPYSIGNF = 1
 HAVE_DECL_COSL = 1
 HAVE_DECL_ECVT = 1
-HAVE_DECL_ENVIRON = 0
-HAVE_DECL_EXECVPE = 0
+HAVE_DECL_ENVIRON = 1
+HAVE_DECL_EXECVPE = 1
 HAVE_DECL_EXP2 = 1
 HAVE_DECL_EXP2F = 1
 HAVE_DECL_EXP2L = 1
 HAVE_DECL_EXPL = 1
 HAVE_DECL_EXPM1L = 1
 HAVE_DECL_FCHDIR = 1
-HAVE_DECL_FCLOSEALL = 0
+HAVE_DECL_FCLOSEALL = 1
 HAVE_DECL_FCVT = 1
 HAVE_DECL_FDATASYNC = 1
 HAVE_DECL_FLOORF = 1
@@ -5113,9 +5113,9 @@ HAVE_DECL_LOG2L = 1
 HAVE_DECL_LOGB = 1
 HAVE_DECL_LOGL = 1
 HAVE_DECL_MEMMEM = 1
-HAVE_DECL_MEMRCHR = 0
+HAVE_DECL_MEMRCHR = 1
 HAVE_DECL_OBSTACK_PRINTF = 1
-HAVE_DECL_PROGRAM_INVOCATION_NAME = 0
+HAVE_DECL_PROGRAM_INVOCATION_NAME = 1
 HAVE_DECL_PUTW = 1
 HAVE_DECL_REMAINDER = 1
 HAVE_DECL_REMAINDERL = 1
@@ -5153,9 +5153,9 @@ HAVE_DECL_WCWIDTH = 1
 HAVE_DPRINTF = 1
 HAVE_DUP3 = 1
 HAVE_DUPLOCALE = 1
-HAVE_ERROR = 0
-HAVE_ERROR_AT_LINE = 0
-HAVE_ERROR_H = 0
+HAVE_ERROR = 1
+HAVE_ERROR_AT_LINE = 1
+HAVE_ERROR_H = 1
 HAVE_EUIDACCESS = 1
 HAVE_EXECVPE = 1
 HAVE_EXPF = 1
@@ -5171,7 +5171,7 @@ HAVE_FCHMODAT = 1
 HAVE_FCHOWNAT = 1
 HAVE_FCNTL = 1
 HAVE_FDATASYNC = 1
-HAVE_FEATURES_H = 0
+HAVE_FEATURES_H = 1
 HAVE_FFS = 1
 HAVE_FFSL = 1
 HAVE_FFSLL = 1
@@ -5198,8 +5198,8 @@ HAVE_GETLOGIN = 1
 HAVE_GETOPT_H = 1
 HAVE_GETPAGESIZE = 1
 HAVE_GETPASS = 1
-HAVE_GETPROGNAME = 1
-HAVE_GETRANDOM = 0
+HAVE_GETPROGNAME = 0
+HAVE_GETRANDOM = 1
 HAVE_GETSUBOPT = 1
 HAVE_GETTIMEOFDAY = 1
 HAVE_GETUMASK = 1
@@ -5221,7 +5221,7 @@ HAVE_ISNANF = 1
 HAVE_ISNANL = 1
 HAVE_ISWBLANK = 1
 HAVE_ISWCNTRL = 1
-HAVE_LANGINFO_ALTMON = 0
+HAVE_LANGINFO_ALTMON = 1
 HAVE_LANGINFO_CODESET = 1
 HAVE_LANGINFO_ERA = 1
 HAVE_LANGINFO_H = 1
@@ -5245,14 +5245,14 @@ HAVE_LSTAT = 1
 HAVE_MAX_ALIGN_T = 1
 HAVE_MBRLEN = 1
 HAVE_MBRTOC16 = 1
-HAVE_MBRTOC32 = 0
+HAVE_MBRTOC32 = 1
 HAVE_MBRTOWC = 1
 HAVE_MBSINIT = 1
 HAVE_MBSLEN = 0
 HAVE_MBSNRTOWCS = 1
 HAVE_MBSRTOWCS = 1
 HAVE_MBTOWC = 1
-HAVE_MEMPCPY = 0
+HAVE_MEMPCPY = 1
 HAVE_MEMSET_EXPLICIT = 0
 HAVE_MKDIRAT = 1
 HAVE_MKDTEMP = 1
@@ -5274,7 +5274,7 @@ HAVE_OPENAT = 1
 HAVE_OS_H = 0
 HAVE_PCLOSE = 1
 HAVE_PIPE = 1
-HAVE_PIPE2 = 0
+HAVE_PIPE2 = 1
 HAVE_POPEN = 1
 HAVE_POSIX_MEMALIGN = 1
 HAVE_POSIX_OPENPT = 1
@@ -5291,10 +5291,10 @@ HAVE_RAISE = 1
 HAVE_RANDOM = 1
 HAVE_RANDOM_H = 1
 HAVE_RANDOM_R = 1
-HAVE_RAWMEMCHR = 0
+HAVE_RAWMEMCHR = 1
 HAVE_READLINK = 1
 HAVE_READLINKAT = 1
-HAVE_REALLOCARRAY = 0
+HAVE_REALLOCARRAY = 1
 HAVE_REALPATH = 1
 HAVE_REMAINDER = 1
 HAVE_REMAINDERF = 1
@@ -5302,16 +5302,16 @@ HAVE_RENAMEAT = 1
 HAVE_RINT = 1
 HAVE_RINTL = 1
 HAVE_RPMATCH = 1
-HAVE_SAME_LONG_DOUBLE_AS_DOUBLE = 1
+HAVE_SAME_LONG_DOUBLE_AS_DOUBLE = 0
 HAVE_SA_FAMILY_T = 1
-HAVE_SECURE_GETENV = 0
+HAVE_SECURE_GETENV = 1
 HAVE_SETENV = 1
 HAVE_SETHOSTNAME = 1
 HAVE_SETSTATE = 1
 HAVE_SIGABBREV_NP = 1
 HAVE_SIGACTION = 1
 HAVE_SIGDESCR_NP = 1
-HAVE_SIGHANDLER_T = 0
+HAVE_SIGHANDLER_T = 1
 HAVE_SIGINFO_T = 1
 HAVE_SIGNED_SIG_ATOMIC_T = 
 HAVE_SIGNED_WCHAR_T = 
@@ -5349,7 +5349,7 @@ HAVE_STRVERSCMP = 1
 HAVE_SYMLINK = 1
 HAVE_SYMLINKAT = 1
 HAVE_SYS_BITYPES_H = 0
-HAVE_SYS_CDEFS_H = 1
+HAVE_SYS_CDEFS_H = 
 HAVE_SYS_INTTYPES_H = 0
 HAVE_SYS_LOADAVG_H = 0
 HAVE_SYS_PARAM_H = 0
@@ -5368,7 +5368,7 @@ HAVE_TIMESPEC_GET = 1
 HAVE_TIMESPEC_GETRES = 1
 HAVE_TIMEZONE_T = 0
 HAVE_TYPE_VOLATILE_SIG_ATOMIC_T = 1
-HAVE_UCHAR_H = 0
+HAVE_UCHAR_H = 1
 HAVE_UNISTD_H = 1
 HAVE_UNISTRING_WOE32DLL_H = 0
 HAVE_UNLINKAT = 1
@@ -5377,7 +5377,7 @@ HAVE_USLEEP = 1
 HAVE_UTIMENSAT = 1
 HAVE_VASPRINTF = 1
 HAVE_VDPRINTF = 1
-HAVE_VISIBILITY = 1
+HAVE_VISIBILITY = 
 HAVE_WCHAR_H = 1
 HAVE_WCHAR_T = 1
 HAVE_WCPCPY = 1
@@ -5416,15 +5416,15 @@ HAVE_WMEMCHR = 1
 HAVE_WMEMCMP = 1
 HAVE_WMEMCPY = 1
 HAVE_WMEMMOVE = 1
-HAVE_WMEMPCPY = 0
+HAVE_WMEMPCPY = 1
 HAVE_WMEMSET = 1
-HAVE_WORKING_MBRTOC32 = 0
+HAVE_WORKING_MBRTOC32 = 1
 HAVE_WS2TCPIP_H = 0
-HAVE_XLOCALE_H = 1
+HAVE_XLOCALE_H = 0
 HAVE__EXIT = 1
 INCLUDE_NEXT = include_next
 INCLUDE_NEXT_AS_FIRST_DIRECTIVE = include_next
-INSTALL = /opt/local/bin/ginstall -c
+INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_PROGRAM_ENV = 
@@ -5433,7 +5433,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INT32_MAX_LT_INTMAX_MAX = 1
 INT64_MAX_EQ_LONG_MAX = defined _LP64
 INTLLIBS = 
-INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation -Wl,-framework -Wl,CoreServices
+INTL_MACOSX_LIBS = 
 ISFINITE_LIBM = 
 ISINF_LIBM = 
 ISNAND_LIBM = 
@@ -5444,16 +5444,16 @@ LC_COLLATE_IMPLEMENTED = true
 LC_MONETARY_IMPLEMENTED = true
 LC_NUMERIC_IMPLEMENTED = true
 LC_TIME_IMPLEMENTED = true
-LD = /Library/Developer/CommandLineTools/usr/bin/ld
-LDFLAGS = -L/opt/homebrew/Cellar/gsl/2.8/lib -L/opt/homebrew/Cellar/cairo/1.18.0/lib
-LIBICONV = -liconv
+LD = /usr/sbin/ld -m elf_x86_64
+LDFLAGS = 
+LIBICONV = 
 LIBINTL = 
-LIBMULTITHREAD = -lpthread
+LIBMULTITHREAD = 
 LIBOBJS = 
-LIBPMULTITHREAD = -lpthread
+LIBPMULTITHREAD = 
 LIBPTHREAD = 
-LIBREADLINE = 
-LIBS = -liconv -lgslcblas -lz  
+LIBREADLINE = -lreadline
+LIBS =  -lreadline -lgslcblas -lz -lm  
 LIBSOCKET = 
 LIBSTDTHREAD = 
 LIBTHREAD = 
@@ -5467,7 +5467,7 @@ LIBUNISTRING_UNISTR_H = $(top_build_prefix)gl/unistr.h
 LIBUNISTRING_UNITYPES_H = $(top_build_prefix)gl/unitypes.h
 LIBUNISTRING_UNIWBRK_H = $(top_build_prefix)gl/uniwbrk.h
 LIBUNISTRING_UNIWIDTH_H = $(top_build_prefix)gl/uniwidth.h
-LIBXML2_CFLAGS = 
+LIBXML2_CFLAGS = -I/usr/include/libxml2
 LIBXML2_LIBS = -lxml2
 LIB_CLOCK_GETTIME = 
 LIB_GETRANDOM = 
@@ -5478,29 +5478,29 @@ LIB_SCHED_YIELD =
 LIB_SELECT = 
 LIB_SETLOCALE_NULL = 
 LIMITS_H = $(top_build_prefix)gl/limits.h
-LIPO = lipo
+LIPO = 
 LN_S = ln -s
 LOCALCHARSET_TESTS_ENVIRONMENT = 
 LOCALENAME_ENHANCE_LOCALE_FUNCS = 0
-LOCALE_FR = fr_FR.ISO8859-1
-LOCALE_FR_UTF8 = fr_FR.UTF-8
-LOCALE_JA = ja_JP.eucJP
-LOCALE_ZH_CN = zh_CN.GB18030
+LOCALE_FR = none
+LOCALE_FR_UTF8 = none
+LOCALE_JA = none
+LOCALE_ZH_CN = none
 LTALLOCA = 
-LTLIBICONV = -liconv
+LTLIBICONV = 
 LTLIBINTL = 
-LTLIBMULTITHREAD = -lpthread
+LTLIBMULTITHREAD = 
 LTLIBOBJS = 
-LTLIBREADLINE = 
+LTLIBREADLINE = -lreadline
 LTLIBTHREAD = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} '/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/build-aux/missing' makeinfo
+MAKEINFO = ${SHELL} '/pspp-2.0.1/build-aux/missing' makeinfo
 MANIFEST_TOOL = :
 MBRTOWC_LIB = 
-MKDIR_P = /opt/local/bin/gmkdir -p
+MKDIR_P = /usr/sbin/mkdir -p
 MSGFMT = msgfmt
-NEXT_ASSERT_H = <assert.h>
-NEXT_AS_FIRST_DIRECTIVE_ASSERT_H = <assert.h>
+NEXT_ASSERT_H = 
+NEXT_AS_FIRST_DIRECTIVE_ASSERT_H = 
 NEXT_AS_FIRST_DIRECTIVE_CTYPE_H = <ctype.h>
 NEXT_AS_FIRST_DIRECTIVE_ERRNO_H = 
 NEXT_AS_FIRST_DIRECTIVE_ERROR_H = <error.h>
@@ -5571,12 +5571,12 @@ NEXT_UCHAR_H = <uchar.h>
 NEXT_UNISTD_H = <unistd.h>
 NEXT_WCHAR_H = <wchar.h>
 NEXT_WCTYPE_H = <wctype.h>
-NM = /usr/bin/nm -B
-NMEDIT = nmedit
+NM = /usr/sbin/nm -B
+NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
-OTOOL = otool
-OTOOL64 = :
+OTOOL = 
+OTOOL64 = 
 PACKAGE = pspp
 PACKAGE_BUGREPORT = bug-gnu-pspp@gnu.org
 PACKAGE_NAME = GNU PSPP
@@ -5585,15 +5585,15 @@ PACKAGE_TARNAME = pspp
 PACKAGE_URL = https://www.gnu.org/software/pspp/
 PACKAGE_VERSION = 2.0.1
 PATH_SEPARATOR = :
-PERL = /usr/bin/perl
+PERL = /usr/sbin/perl
 PG_CFLAGS = 
 PG_CONFIG = 
 PG_LDFLAGS = 
 PG_LIBS = 
-PKG_CONFIG = /opt/homebrew/bin/pkg-config
+PKG_CONFIG = /usr/sbin/pkg-config
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /opt/homebrew/Cellar/gsl/2.8/lib/pkgconfig:/opt/homebrew/Cellar/cairo/1.18.0/lib/pkgconfig:/opt/homebrew/Cellar/cairo/1.18.0/lib/pkgconfig:/opt/homebrew/Cellar/gsl/2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig
-POSUB = 
+PKG_CONFIG_PATH = 
+POSUB = po
 PRAGMA_COLUMNS = 
 PRAGMA_SYSTEM_HEADER = #pragma GCC system_header
 PRIPTR_PREFIX = __PRIPTR_PREFIX
@@ -5617,7 +5617,7 @@ REPLACE_ALIGNED_ALLOC = 0
 REPLACE_ASINF = 0
 REPLACE_ATAN2F = 0
 REPLACE_ATANF = 0
-REPLACE_BTOWC = 0
+REPLACE_BTOWC = 1
 REPLACE_C32RTOMB = 0
 REPLACE_CALLOC_FOR_CALLOC_GNU = 0
 REPLACE_CALLOC_FOR_CALLOC_POSIX = 0
@@ -5661,7 +5661,7 @@ REPLACE_FACCESSAT = 0
 REPLACE_FCHMODAT = 0
 REPLACE_FCHOWNAT = 0
 REPLACE_FCLOSE = 1
-REPLACE_FCNTL = 0
+REPLACE_FCNTL = 1
 REPLACE_FDATASYNC = 0
 REPLACE_FDOPEN = 0
 REPLACE_FFLUSH = 0
@@ -5675,12 +5675,12 @@ REPLACE_FMAL = 0
 REPLACE_FMOD = 0
 REPLACE_FMODF = 0
 REPLACE_FMODL = 0
-REPLACE_FNMATCH = 1
+REPLACE_FNMATCH = 0
 REPLACE_FOPEN = 1
 REPLACE_FOPEN_FOR_FOPEN_GNU = 1
 REPLACE_FPRINTF = 1
 REPLACE_FPURGE = 0
-REPLACE_FREE = 1
+REPLACE_FREE = 0
 REPLACE_FREELOCALE = 0
 REPLACE_FREOPEN = 0
 REPLACE_FREXP = 0
@@ -5688,14 +5688,14 @@ REPLACE_FREXPF = 0
 REPLACE_FREXPL = 0
 REPLACE_FSEEK = 1
 REPLACE_FSEEKO = 1
-REPLACE_FSTAT = 1
+REPLACE_FSTAT = 0
 REPLACE_FSTATAT = 0
 REPLACE_FTELL = 0
 REPLACE_FTELLO = 0
 REPLACE_FTRUNCATE = 0
 REPLACE_FUTIMENS = 0
 REPLACE_GETCWD = 0
-REPLACE_GETDELIM = 1
+REPLACE_GETDELIM = 0
 REPLACE_GETDOMAINNAME = 0
 REPLACE_GETDTABLESIZE = 0
 REPLACE_GETENTROPY = 0
@@ -5754,22 +5754,22 @@ REPLACE_LOGBL = 0
 REPLACE_LOGF = 0
 REPLACE_LOGL = 0
 REPLACE_LSEEK = 0
-REPLACE_LSTAT = 1
+REPLACE_LSTAT = 0
 REPLACE_MALLOC_FOR_MALLOC_GNU = 0
 REPLACE_MALLOC_FOR_MALLOC_POSIX = 0
 REPLACE_MBRLEN = 0
 REPLACE_MBRTOC16 = 0
-REPLACE_MBRTOC32 = 0
-REPLACE_MBRTOWC = 0
+REPLACE_MBRTOC32 = 1
+REPLACE_MBRTOWC = 1
 REPLACE_MBSINIT = 0
 REPLACE_MBSNRTOWCS = 0
-REPLACE_MBSRTOWCS = 0
+REPLACE_MBSRTOWCS = 1
 REPLACE_MBSTATE_T = 0
 REPLACE_MBSTOWCS = 0
 REPLACE_MBTOWC = 0
 REPLACE_MB_CUR_MAX = 0
 REPLACE_MEMCHR = 0
-REPLACE_MEMMEM = 1
+REPLACE_MEMMEM = 0
 REPLACE_MEMPCPY = 0
 REPLACE_MEMSET_EXPLICIT = 0
 REPLACE_MKDIR = 0
@@ -5780,20 +5780,20 @@ REPLACE_MKNODAT = 0
 REPLACE_MKOSTEMP = 0
 REPLACE_MKOSTEMPS = 0
 REPLACE_MKSTEMP = 0
-REPLACE_MKTIME = 1
+REPLACE_MKTIME = 0
 REPLACE_MODF = 0
 REPLACE_MODFF = 0
 REPLACE_MODFL = 0
 REPLACE_NAN = 0
 REPLACE_NANOSLEEP = 0
 REPLACE_NEWLOCALE = 0
-REPLACE_NL_LANGINFO = 1
+REPLACE_NL_LANGINFO = 0
 REPLACE_NULL = 0
 REPLACE_OBSTACK_PRINTF = 0
-REPLACE_OPEN = 1
+REPLACE_OPEN = 0
 REPLACE_OPENAT = 0
 REPLACE_PERROR = 0
-REPLACE_PIPE2 = 0
+REPLACE_PIPE2 = 1
 REPLACE_POPEN = 0
 REPLACE_POSIX_MEMALIGN = 0
 REPLACE_POSIX_OPENPT = 0
@@ -5810,17 +5810,17 @@ REPLACE_RAISE = 0
 REPLACE_RANDOM = 0
 REPLACE_RANDOM_R = 0
 REPLACE_READ = 0
-REPLACE_READLINK = 1
+REPLACE_READLINK = 0
 REPLACE_READLINKAT = 0
 REPLACE_REALLOCARRAY = 0
 REPLACE_REALLOC_FOR_REALLOC_GNU = 0
 REPLACE_REALLOC_FOR_REALLOC_POSIX = 0
-REPLACE_REALPATH = 1
+REPLACE_REALPATH = 0
 REPLACE_REMAINDER = 0
 REPLACE_REMAINDERF = 0
 REPLACE_REMAINDERL = 0
 REPLACE_REMOVE = 0
-REPLACE_RENAME = 1
+REPLACE_RENAME = 0
 REPLACE_RENAMEAT = 0
 REPLACE_RINTL = 0
 REPLACE_RMDIR = 0
@@ -5841,15 +5841,15 @@ REPLACE_SNPRINTF = 1
 REPLACE_SPRINTF = 1
 REPLACE_SQRTF = 0
 REPLACE_SQRTL = 0
-REPLACE_STAT = 1
+REPLACE_STAT = 0
 REPLACE_STDIO_READ_FUNCS = 0
 REPLACE_STDIO_WRITE_FUNCS = 0
 REPLACE_STPCPY = 0
 REPLACE_STPNCPY = 0
-REPLACE_STRCASESTR = 1
+REPLACE_STRCASESTR = 0
 REPLACE_STRCHRNUL = 0
 REPLACE_STRDUP = 0
-REPLACE_STRERROR = 1
+REPLACE_STRERROR = 0
 REPLACE_STRERRORNAME_NP = 0
 REPLACE_STRERROR_R = 0
 REPLACE_STRFTIME = 0
@@ -5875,7 +5875,7 @@ REPLACE_SYMLINKAT = 0
 REPLACE_TANF = 0
 REPLACE_TANHF = 0
 REPLACE_TIME = 0
-REPLACE_TIMEGM = 1
+REPLACE_TIMEGM = 0
 REPLACE_TIMESPEC_GET = 0
 REPLACE_TIMESPEC_GETRES = 0
 REPLACE_TMPFILE = 0
@@ -5908,14 +5908,14 @@ REPLACE_WCSTOK = 0
 REPLACE_WCSWIDTH = 0
 REPLACE_WCTOB = 0
 REPLACE_WCTOMB = 0
-REPLACE_WCWIDTH = 1
+REPLACE_WCWIDTH = 0
 REPLACE_WMEMCMP = 0
 REPLACE_WMEMPCPY = 0
 REPLACE_WRITE = 0
 REPLACE__EXIT = 0
 ROUND_LIBM = 
 SCHED_YIELD_LIB = 
-SED = /usr/bin/sed
+SED = /usr/sbin/sed
 SELECT_LIB = 
 SETLOCALE_NULL_LIB = 
 SET_MAKE = 
@@ -5923,13 +5923,13 @@ SHELL = /bin/sh
 SIG_ATOMIC_T_SUFFIX = 
 SIZE_T_SUFFIX = 
 SMALL_WCHAR_T = 0
-SPREAD_SHEET_WIDGET_CFLAGS = 
-SPREAD_SHEET_WIDGET_LIBDIR = 
-SPREAD_SHEET_WIDGET_LIBS = 
+SPREAD_SHEET_WIDGET_CFLAGS = -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/cloudproviders -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/sysprof-6 -pthread -I/usr/include/gio-unix-2.0
+SPREAD_SHEET_WIDGET_LIBDIR = /usr/lib
+SPREAD_SHEET_WIDGET_LIBS = -lspread-sheet-widget -lgtk-3 -lgdk-3 -lz -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo -lcairo-gobject -lgdk_pixbuf-2.0 -lgio-2.0 -lglib-2.0 -lgobject-2.0
 STDARG_H = 
-STDCKDINT_H = $(top_build_prefix)gl/stdckdint.h
+STDCKDINT_H = 
 STDDEF_H = $(top_build_prefix)gl/stddef.h
-STDINT_H = $(top_build_prefix)gl/stdint.h
+STDINT_H = 
 STRIP = strip
 SYS_TIME_H_DEFINES_STRUCT_TIMESPEC = 0
 TEX = no
@@ -5943,7 +5943,7 @@ UNISTD_H_DEFINES_STRUCT_TIMESPEC = 0
 UNISTD_H_HAVE_SYS_RANDOM_H = 1
 UNISTD_H_HAVE_WINSOCK2_H = 0
 UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS = 0
-USE_NLS = no
+USE_NLS = yes
 VERSION = 2.0.1
 VERSION_FOR_PERL = 2.0.1
 WARNING_FLAGS =  -Wall -Wextra -Wwrite-strings -Wstrict-prototypes -Wpointer-arith -Wno-sign-compare -Wmissing-prototypes
@@ -5972,11 +5972,11 @@ WITH_PERL_MODULE = yes
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 XGETTEXT = xgettext
-XMLLINT = /usr/bin/xmllint
-abs_builddir = /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1
-abs_srcdir = /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1
-abs_top_builddir = /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1
-abs_top_srcdir = /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1
+XMLLINT = /bin/xmllint
+abs_builddir = /pspp-2.0.1
+abs_srcdir = /pspp-2.0.1
+abs_top_builddir = /pspp-2.0.1
+abs_top_srcdir = /pspp-2.0.1
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -5989,11 +5989,11 @@ binary_width = 64
 bindir = ${exec_prefix}/bin
 bindir_c = "/usr/local/bin"
 bindir_c_make = \"$(bindir)\"
-build = aarch64-apple-darwin23.5.0
+build = x86_64-pc-linux-gnu
 build_alias = 
-build_cpu = aarch64
-build_os = darwin23.5.0
-build_vendor = apple
+build_cpu = x86_64
+build_os = linux-gnu
+build_vendor = pc
 builddir = .
 datadir = ${datarootdir}
 datadir_c = "/usr/local/share"
@@ -6010,18 +6010,18 @@ dvidir_c_make = \"$(dvidir)\"
 exec_prefix = ${prefix}
 exec_prefix_c = "/usr/local"
 exec_prefix_c_make = \"$(exec_prefix)\"
-gl_LIBOBJDEPS =  gl/./$(DEPDIR)/asnprintf.Plo gl/./$(DEPDIR)/asprintf.Plo gl/./$(DEPDIR)/fnmatch.Plo gl/./$(DEPDIR)/fopen.Plo gl/./$(DEPDIR)/fprintf.Plo gl/./$(DEPDIR)/memmem.Plo gl/./$(DEPDIR)/mktime.Plo gl/./$(DEPDIR)/printf.Plo gl/./$(DEPDIR)/printf-args.Plo gl/./$(DEPDIR)/printf-parse.Plo gl/./$(DEPDIR)/snprintf.Plo gl/./$(DEPDIR)/sprintf.Plo gl/./$(DEPDIR)/strcasestr.Plo gl/./$(DEPDIR)/vasnprintf.Plo gl/./$(DEPDIR)/vasprintf.Plo gl/./$(DEPDIR)/vfprintf.Plo gl/./$(DEPDIR)/vprintf.Plo gl/./$(DEPDIR)/vsnprintf.Plo gl/./$(DEPDIR)/vsprintf.Plo
-gl_LIBOBJS =  gl/asnprintf.o gl/asprintf.o gl/fnmatch.o gl/fopen.o gl/fprintf.o gl/memmem.o gl/mktime.o gl/printf.o gl/printf-args.o gl/printf-parse.o gl/snprintf.o gl/sprintf.o gl/strcasestr.o gl/vasnprintf.o gl/vasprintf.o gl/vfprintf.o gl/vprintf.o gl/vsnprintf.o gl/vsprintf.o
-gl_LTLIBOBJS =  gl/asnprintf.lo gl/asprintf.lo gl/fnmatch.lo gl/fopen.lo gl/fprintf.lo gl/memmem.lo gl/mktime.lo gl/printf.lo gl/printf-args.lo gl/printf-parse.lo gl/snprintf.lo gl/sprintf.lo gl/strcasestr.lo gl/vasnprintf.lo gl/vasprintf.lo gl/vfprintf.lo gl/vprintf.lo gl/vsnprintf.lo gl/vsprintf.lo
+gl_LIBOBJDEPS =  gl/./$(DEPDIR)/asnprintf.Plo gl/./$(DEPDIR)/asprintf.Plo gl/./$(DEPDIR)/fopen.Plo gl/./$(DEPDIR)/fprintf.Plo gl/./$(DEPDIR)/mbsrtowcs-state.Plo gl/./$(DEPDIR)/mktime.Plo gl/./$(DEPDIR)/printf.Plo gl/./$(DEPDIR)/printf-args.Plo gl/./$(DEPDIR)/printf-parse.Plo gl/./$(DEPDIR)/snprintf.Plo gl/./$(DEPDIR)/sprintf.Plo gl/./$(DEPDIR)/vasnprintf.Plo gl/./$(DEPDIR)/vasprintf.Plo gl/./$(DEPDIR)/vfprintf.Plo gl/./$(DEPDIR)/vprintf.Plo gl/./$(DEPDIR)/vsnprintf.Plo gl/./$(DEPDIR)/vsprintf.Plo
+gl_LIBOBJS =  gl/asnprintf.o gl/asprintf.o gl/fopen.o gl/fprintf.o gl/mbsrtowcs-state.o gl/mktime.o gl/printf.o gl/printf-args.o gl/printf-parse.o gl/snprintf.o gl/sprintf.o gl/vasnprintf.o gl/vasprintf.o gl/vfprintf.o gl/vprintf.o gl/vsnprintf.o gl/vsprintf.o
+gl_LTLIBOBJS =  gl/asnprintf.lo gl/asprintf.lo gl/fopen.lo gl/fprintf.lo gl/mbsrtowcs-state.lo gl/mktime.lo gl/printf.lo gl/printf-args.lo gl/printf-parse.lo gl/snprintf.lo gl/sprintf.lo gl/vasnprintf.lo gl/vasprintf.lo gl/vfprintf.lo gl/vprintf.lo gl/vsnprintf.lo gl/vsprintf.lo
 gltests_LIBOBJDEPS = 
 gltests_LIBOBJS = 
 gltests_LTLIBOBJS = 
 gltests_WITNESS = IN_PSPP_GNULIB_TESTS
-host = aarch64-apple-darwin23.5.0
+host = x86_64-pc-linux-gnu
 host_alias = 
-host_cpu = aarch64
-host_os = darwin23.5.0
-host_vendor = apple
+host_cpu = x86_64
+host_os = linux-gnu
+host_vendor = pc
 htmldir = ${docdir}
 htmldir_c = "/usr/local/share/doc/pspp"
 htmldir_c_make = \"$(htmldir)\"
@@ -6031,7 +6031,7 @@ includedir_c_make = \"$(includedir)\"
 infodir = ${datarootdir}/info
 infodir_c = "/usr/local/share/info"
 infodir_c_make = \"$(infodir)\"
-install_sh = ${SHELL} /Users/mihailzaharov/Desktop/red-2/pspp-2.0.1/build-aux/install-sh
+install_sh = ${SHELL} /pspp-2.0.1/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libdir_c = "/usr/local/lib"
 libdir_c_make = \"$(libdir)\"
@@ -6563,7 +6563,7 @@ gl_libgl_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(CLOCK_TIME_LIB) \
 	$(ISNAND_LIBM) $(ISNANF_LIBM) $(ISNANL_LIBM) $(LIBSOCKET) \
 	$(LIBTHREAD) $(LTLIBC32CONV) $(LTLIBINTL) $(LTLIBUNISTRING) \
 	$(MBRTOWC_LIB) $(ROUND_LIBM) $(SELECT_LIB) \
-	$(SETLOCALE_NULL_LIB) $(TRUNC_LIBM) gl/-Wl,-framework -Wl,CoreFoundation -Wl,-framework -Wl,CoreServices
+	$(SETLOCALE_NULL_LIB) $(TRUNC_LIBM) gl/
 
 # Use this preprocessor expression to decide whether #include_next works.
 # Do not rely on a 'configure'-time test for this, since the expression
@@ -7324,6 +7324,7 @@ UI_FILES = \
 	src/ui/gui/crosstabs.ui \
 	src/ui/gui/chi-square.ui \
 	src/ui/gui/ctables.ui \
+	src/ui/gui/custom-tables.ui \
 	src/ui/gui/descriptives.ui \
 	src/ui/gui/entry-dialog.ui \
 	src/ui/gui/examine.ui \
@@ -7366,526 +7367,526 @@ UI_FILES = \
 	src/ui/gui/var-type-dialog.ui \
 	src/ui/gui/weight.ui
 
-#src_ui_gui_psppire_CPPFLAGS = $(AM_CPPFLAGS) -Isrc/ui/gui/include
-#src_ui_gui_psppire_CFLAGS = $(GTK_CFLAGS) \
-#	$(GTKSOURCEVIEW_CFLAGS) \
-#	$(SPREAD_SHEET_WIDGET_CFLAGS) \
-#	$(LIBRSVG_CFLAGS) $(AM_CFLAGS) \
-#	-DGDK_MULTIHEAD_SAFE=1 $(am__append_156) \
-#	$(am__append_161)
-#src_ui_gui_spreadsheet_test_CFLAGS = $(GTK_CFLAGS) \
-#	$(AM_CFLAGS) -DGDK_MULTIHEAD_SAFE=1 \
-#	$(am__append_157)
-#src_ui_gui_psppire_LDFLAGS = $(PSPPIRE_LDFLAGS) \
-#	$(PG_LDFLAGS) $(am__append_158) \
-#	$(am__append_159)
-#src_ui_gui_psppire_LDADD =  \
-#	src/ui/gui/libwidgets-essential.la \
-#	src/ui/libuicommon.la src/libpspp.la \
-#	src/libpspp-core.la $(GTK_LIBS) \
-#	$(GTHREAD_LIBS) $(GTKSOURCEVIEW_LIBS) \
-#	$(SPREAD_SHEET_WIDGET_LIBS) $(LIBRSVG_LIBS) \
-#	$(CAIRO_LIBS) $(LIBINTL) $(GSL_LIBS) \
-#	$(LIB_GETRANDOM) $(am__append_160)
-#src_ui_gui_spreadsheet_test_LDADD = \
-#	src/libpspp-core.la \
-#	$(GTK_LIBS) \
-#	$(GTHREAD_LIBS) \
-#	$(LIB_GETRANDOM)
+src_ui_gui_psppire_CPPFLAGS = $(AM_CPPFLAGS) -Isrc/ui/gui/include
+src_ui_gui_psppire_CFLAGS = $(GTK_CFLAGS) \
+	$(GTKSOURCEVIEW_CFLAGS) \
+	$(SPREAD_SHEET_WIDGET_CFLAGS) \
+	$(LIBRSVG_CFLAGS) $(AM_CFLAGS) \
+	-DGDK_MULTIHEAD_SAFE=1 $(am__append_156) \
+	$(am__append_161)
+src_ui_gui_spreadsheet_test_CFLAGS = $(GTK_CFLAGS) \
+	$(AM_CFLAGS) -DGDK_MULTIHEAD_SAFE=1 \
+	$(am__append_157)
+src_ui_gui_psppire_LDFLAGS = $(PSPPIRE_LDFLAGS) \
+	$(PG_LDFLAGS) $(am__append_158) \
+	$(am__append_159)
+src_ui_gui_psppire_LDADD =  \
+	src/ui/gui/libwidgets-essential.la \
+	src/ui/libuicommon.la src/libpspp.la \
+	src/libpspp-core.la $(GTK_LIBS) \
+	$(GTHREAD_LIBS) $(GTKSOURCEVIEW_LIBS) \
+	$(SPREAD_SHEET_WIDGET_LIBS) $(LIBRSVG_LIBS) \
+	$(CAIRO_LIBS) $(LIBINTL) $(GSL_LIBS) \
+	$(LIB_GETRANDOM) $(am__append_160)
+src_ui_gui_spreadsheet_test_LDADD = \
+	src/libpspp-core.la \
+	$(GTK_LIBS) \
+	$(GTHREAD_LIBS) \
+	$(LIB_GETRANDOM)
 
-#src_ui_gui_spreadsheet_test_SOURCES = src/ui/gui/spreadsheet-test.c src/ui/gui/psppire-spreadsheet-model.c
-#src_ui_gui_psppiredir = $(pkgdatadir)
-#dist_src_ui_gui_psppire_DATA = \
-#	$(UI_FILES) \
-#	$(top_srcdir)/src/ui/gui/pspp.lang
+src_ui_gui_spreadsheet_test_SOURCES = src/ui/gui/spreadsheet-test.c src/ui/gui/psppire-spreadsheet-model.c
+src_ui_gui_psppiredir = $(pkgdatadir)
+dist_src_ui_gui_psppire_DATA = \
+	$(UI_FILES) \
+	$(top_srcdir)/src/ui/gui/pspp.lang
 
-#src_ui_gui_psppire_SOURCES = \
-#	src/ui/gui/builder-wrapper.c \
-#	src/ui/gui/builder-wrapper.h \
-#	src/ui/gui/entry-dialog.c \
-#	src/ui/gui/entry-dialog.h \
-#	src/ui/gui/executor.c \
-#	src/ui/gui/executor.h \
-#	src/ui/gui/find-dialog.c \
-#	src/ui/gui/find-dialog.h \
-#	src/ui/gui/goto-case-dialog.c \
-#	src/ui/gui/goto-case-dialog.h \
-#	src/ui/gui/helper.c \
-#	src/ui/gui/helper.h \
-#	src/ui/gui/help-menu.c \
-#	src/ui/gui/help-menu.h \
-#	src/ui/gui/main.c \
-#	src/ui/gui/missing-val-dialog.c \
-#	src/ui/gui/missing-val-dialog.h \
-#	src/ui/gui/options-dialog.c \
-#	src/ui/gui/options-dialog.h \
-#	src/ui/gui/pre-initialisation.h \
-#	src/ui/gui/psppire.c \
-#	src/ui/gui/psppire-data-editor.c \
-#	src/ui/gui/psppire-data-editor.h \
-#	src/ui/gui/psppire-data-store.c \
-#	src/ui/gui/psppire-data-store.h \
-#	src/ui/gui/psppire-data-window.c \
-#	src/ui/gui/psppire-data-window.h \
-#	src/ui/gui/psppire-delimited-text.c \
-#	src/ui/gui/psppire-delimited-text.h \
-#	src/ui/gui/psppire-encoding-selector.c \
-#	src/ui/gui/psppire-encoding-selector.h \
-#	src/ui/gui/psppire.h \
-#	src/ui/gui/psppire-import-assistant.c \
-#	src/ui/gui/psppire-import-assistant.h \
-#	src/ui/gui/psppire-import-spreadsheet.c \
-#	src/ui/gui/psppire-import-spreadsheet.h \
-#	src/ui/gui/psppire-import-textfile.c \
-#	src/ui/gui/psppire-import-textfile.h \
-#	src/ui/gui/psppire-lex-reader.c \
-#	src/ui/gui/psppire-lex-reader.h \
-#	src/ui/gui/psppire-output-view.c \
-#	src/ui/gui/psppire-output-view.h \
-#	src/ui/gui/psppire-output-window.c \
-#	src/ui/gui/psppire-output-window.h \
-#	src/ui/gui/psppire-scanf.c \
-#	src/ui/gui/psppire-scanf.h \
-#	src/ui/gui/psppire-spreadsheet-data-model.c \
-#	src/ui/gui/psppire-spreadsheet-data-model.h \
-#	src/ui/gui/psppire-spreadsheet-model.c \
-#	src/ui/gui/psppire-spreadsheet-model.h \
-#	src/ui/gui/psppire-syntax-window.c \
-#	src/ui/gui/psppire-syntax-window.h \
-#	src/ui/gui/psppire-value-entry.c \
-#	src/ui/gui/psppire-value-entry.h \
-#	src/ui/gui/psppire-window.c \
-#	src/ui/gui/psppire-window.h \
-#	src/ui/gui/psppire-window-register.c \
-#	src/ui/gui/psppire-window-register.h \
-#	src/ui/gui/t-test-options.c \
-#	src/ui/gui/t-test-options.h \
-#	src/ui/gui/val-labs-dialog.c \
-#	src/ui/gui/val-labs-dialog.h \
-#	src/ui/gui/value-variant.c \
-#	src/ui/gui/value-variant.h \
-#	src/ui/gui/var-display.c \
-#	src/ui/gui/var-display.h \
-#	src/ui/gui/var-type-dialog.c \
-#	src/ui/gui/var-type-dialog.h \
-#	src/ui/gui/widget-io.c \
-#	src/ui/gui/widget-io.h \
-#	src/ui/gui/windows-menu.c \
-#	src/ui/gui/windows-menu.h
+src_ui_gui_psppire_SOURCES = \
+	src/ui/gui/builder-wrapper.c \
+	src/ui/gui/builder-wrapper.h \
+	src/ui/gui/entry-dialog.c \
+	src/ui/gui/entry-dialog.h \
+	src/ui/gui/executor.c \
+	src/ui/gui/executor.h \
+	src/ui/gui/find-dialog.c \
+	src/ui/gui/find-dialog.h \
+	src/ui/gui/goto-case-dialog.c \
+	src/ui/gui/goto-case-dialog.h \
+	src/ui/gui/helper.c \
+	src/ui/gui/helper.h \
+	src/ui/gui/help-menu.c \
+	src/ui/gui/help-menu.h \
+	src/ui/gui/main.c \
+	src/ui/gui/missing-val-dialog.c \
+	src/ui/gui/missing-val-dialog.h \
+	src/ui/gui/options-dialog.c \
+	src/ui/gui/options-dialog.h \
+	src/ui/gui/pre-initialisation.h \
+	src/ui/gui/psppire.c \
+	src/ui/gui/psppire-data-editor.c \
+	src/ui/gui/psppire-data-editor.h \
+	src/ui/gui/psppire-data-store.c \
+	src/ui/gui/psppire-data-store.h \
+	src/ui/gui/psppire-data-window.c \
+	src/ui/gui/psppire-data-window.h \
+	src/ui/gui/psppire-delimited-text.c \
+	src/ui/gui/psppire-delimited-text.h \
+	src/ui/gui/psppire-encoding-selector.c \
+	src/ui/gui/psppire-encoding-selector.h \
+	src/ui/gui/psppire.h \
+	src/ui/gui/psppire-import-assistant.c \
+	src/ui/gui/psppire-import-assistant.h \
+	src/ui/gui/psppire-import-spreadsheet.c \
+	src/ui/gui/psppire-import-spreadsheet.h \
+	src/ui/gui/psppire-import-textfile.c \
+	src/ui/gui/psppire-import-textfile.h \
+	src/ui/gui/psppire-lex-reader.c \
+	src/ui/gui/psppire-lex-reader.h \
+	src/ui/gui/psppire-output-view.c \
+	src/ui/gui/psppire-output-view.h \
+	src/ui/gui/psppire-output-window.c \
+	src/ui/gui/psppire-output-window.h \
+	src/ui/gui/psppire-scanf.c \
+	src/ui/gui/psppire-scanf.h \
+	src/ui/gui/psppire-spreadsheet-data-model.c \
+	src/ui/gui/psppire-spreadsheet-data-model.h \
+	src/ui/gui/psppire-spreadsheet-model.c \
+	src/ui/gui/psppire-spreadsheet-model.h \
+	src/ui/gui/psppire-syntax-window.c \
+	src/ui/gui/psppire-syntax-window.h \
+	src/ui/gui/psppire-value-entry.c \
+	src/ui/gui/psppire-value-entry.h \
+	src/ui/gui/psppire-window.c \
+	src/ui/gui/psppire-window.h \
+	src/ui/gui/psppire-window-register.c \
+	src/ui/gui/psppire-window-register.h \
+	src/ui/gui/t-test-options.c \
+	src/ui/gui/t-test-options.h \
+	src/ui/gui/val-labs-dialog.c \
+	src/ui/gui/val-labs-dialog.h \
+	src/ui/gui/value-variant.c \
+	src/ui/gui/value-variant.h \
+	src/ui/gui/var-display.c \
+	src/ui/gui/var-display.h \
+	src/ui/gui/var-type-dialog.c \
+	src/ui/gui/var-type-dialog.h \
+	src/ui/gui/widget-io.c \
+	src/ui/gui/widget-io.h \
+	src/ui/gui/windows-menu.c \
+	src/ui/gui/windows-menu.h
 
-#src_ui_gui_libwidgets_essential_la_SOURCES = \
-#	src/ui/gui/psppire-dialog-action-custom-tables.c \
-#	src/ui/gui/psppire-dialog-action-custom-tables.h \
-#	src/ui/gui/psppire-acr.c \
-#	src/ui/gui/psppire-acr.h \
-#	src/ui/gui/psppire-buttonbox.c \
-#	src/ui/gui/psppire-buttonbox.h \
-#	src/ui/gui/psppire-checkbox-treeview.c \
-#	src/ui/gui/psppire-checkbox-treeview.h \
-#	src/ui/gui/psppire-conf.c \
-#	src/ui/gui/psppire-conf.h \
-#	src/ui/gui/psppire-data-sheet.c \
-#	src/ui/gui/psppire-data-sheet.h \
-#	src/ui/gui/psppire-dialog-action-1sks.c \
-#	src/ui/gui/psppire-dialog-action-1sks.h \
-#	src/ui/gui/psppire-dialog-action-aggregate.c \
-#	src/ui/gui/psppire-dialog-action-aggregate.h \
-#	src/ui/gui/psppire-dialog-action-autorecode.c \
-#	src/ui/gui/psppire-dialog-action-autorecode.h \
-#	src/ui/gui/psppire-dialog-action-barchart.c \
-#	src/ui/gui/psppire-dialog-action-barchart.h \
-#	src/ui/gui/psppire-dialog-action-binomial.c \
-#	src/ui/gui/psppire-dialog-action-binomial.h \
-#	src/ui/gui/psppire-dialog-action.c \
-#	src/ui/gui/psppire-dialog-action-chisquare.c \
-#	src/ui/gui/psppire-dialog-action-chisquare.h \
-#	src/ui/gui/psppire-dialog-action-comments.c \
-#	src/ui/gui/psppire-dialog-action-comments.h \
-#	src/ui/gui/psppire-dialog-action-compute.c \
-#	src/ui/gui/psppire-dialog-action-compute.h \
-#	src/ui/gui/psppire-dialog-action-correlation.c \
-#	src/ui/gui/psppire-dialog-action-correlation.h \
-#	src/ui/gui/psppire-dialog-action-count.c \
-#	src/ui/gui/psppire-dialog-action-count.h \
-#	src/ui/gui/psppire-dialog-action-crosstabs.c \
-#	src/ui/gui/psppire-dialog-action-crosstabs.h \
-#	src/ui/gui/psppire-dialog-action-descriptives.c \
-#	src/ui/gui/psppire-dialog-action-descriptives.h \
-#	src/ui/gui/psppire-dialog-action-examine.c \
-#	src/ui/gui/psppire-dialog-action-examine.h \
-#	src/ui/gui/psppire-dialog-action-factor.c \
-#	src/ui/gui/psppire-dialog-action-factor.h \
-#	src/ui/gui/psppire-dialog-action-flip.c \
-#	src/ui/gui/psppire-dialog-action-flip.h \
-#	src/ui/gui/psppire-dialog-action-frequencies.c \
-#	src/ui/gui/psppire-dialog-action-frequencies.h \
-#	src/ui/gui/psppire-dialog-action.h \
-#	src/ui/gui/psppire-dialog-action-histogram.c \
-#	src/ui/gui/psppire-dialog-action-histogram.h \
-#	src/ui/gui/psppire-dialog-action-indep-samps.c \
-#	src/ui/gui/psppire-dialog-action-indep-samps.h \
-#	src/ui/gui/psppire-dialog-action-k-independent.c \
-#	src/ui/gui/psppire-dialog-action-k-independent.h \
-#	src/ui/gui/psppire-dialog-action-kmeans.c \
-#	src/ui/gui/psppire-dialog-action-kmeans.h \
-#	src/ui/gui/psppire-dialog-action-k-related.c \
-#	src/ui/gui/psppire-dialog-action-k-related.h \
-#	src/ui/gui/psppire-dialog-action-logistic.c \
-#	src/ui/gui/psppire-dialog-action-logistic.h \
-#	src/ui/gui/psppire-dialog-action-means.c \
-#	src/ui/gui/psppire-dialog-action-means.h \
-#	src/ui/gui/psppire-dialog-action-oneway.c \
-#	src/ui/gui/psppire-dialog-action-oneway.h \
-#	src/ui/gui/psppire-dialog-action-paired.c \
-#	src/ui/gui/psppire-dialog-action-paired.h \
-#	src/ui/gui/psppire-dialog-action-rank.c \
-#	src/ui/gui/psppire-dialog-action-rank.h \
-#	src/ui/gui/psppire-dialog-action-recode.c \
-#	src/ui/gui/psppire-dialog-action-recode-different.c \
-#	src/ui/gui/psppire-dialog-action-recode-different.h \
-#	src/ui/gui/psppire-dialog-action-recode.h \
-#	src/ui/gui/psppire-dialog-action-recode-same.c \
-#	src/ui/gui/psppire-dialog-action-recode-same.h \
-#	src/ui/gui/psppire-dialog-action-regression.c \
-#	src/ui/gui/psppire-dialog-action-regression.h \
-#	src/ui/gui/psppire-dialog-action-reliability.c \
-#	src/ui/gui/psppire-dialog-action-reliability.h \
-#	src/ui/gui/psppire-dialog-action-roc.c \
-#	src/ui/gui/psppire-dialog-action-roc.h \
-#	src/ui/gui/psppire-dialog-action-runs.c \
-#	src/ui/gui/psppire-dialog-action-runs.h \
-#	src/ui/gui/psppire-dialog-action-scatterplot.c \
-#	src/ui/gui/psppire-dialog-action-scatterplot.h \
-#	src/ui/gui/psppire-dialog-action-select.c \
-#	src/ui/gui/psppire-dialog-action-select.h \
-#	src/ui/gui/psppire-dialog-action-sort.c \
-#	src/ui/gui/psppire-dialog-action-sort.h \
-#	src/ui/gui/psppire-dialog-action-split.c \
-#	src/ui/gui/psppire-dialog-action-split.h \
-#	src/ui/gui/psppire-dialog-action-ctables.c \
-#	src/ui/gui/psppire-dialog-action-ctables.h \
-#	src/ui/gui/psppire-dialog-action-tt1s.c \
-#	src/ui/gui/psppire-dialog-action-tt1s.h \
-#	src/ui/gui/psppire-dialog-action-two-sample.c \
-#	src/ui/gui/psppire-dialog-action-two-sample.h \
-#	src/ui/gui/psppire-dialog-action-univariate.c \
-#	src/ui/gui/psppire-dialog-action-univariate.h \
-#	src/ui/gui/psppire-dialog-action-var-info.c \
-#	src/ui/gui/psppire-dialog-action-var-info.h \
-#	src/ui/gui/psppire-dialog-action-weight.c \
-#	src/ui/gui/psppire-dialog-action-weight.h \
-#	src/ui/gui/psppire-dialog.c \
-#	src/ui/gui/psppire-dialog.h \
-#	src/ui/gui/psppire-search-dialog.c \
-#	src/ui/gui/psppire-search-dialog.h \
-#	src/ui/gui/psppire-dict.c \
-#	src/ui/gui/psppire-dict.h \
-#	src/ui/gui/psppire-dictview.c \
-#	src/ui/gui/psppire-dictview.h \
-#	src/ui/gui/psppire-format.c \
-#	src/ui/gui/psppire-format.h \
-#	src/ui/gui/psppire-keypad.c \
-#	src/ui/gui/psppire-keypad.h \
-#	src/ui/gui/psppire-means-layer.c \
-#	src/ui/gui/psppire-means-layer.h \
-#	src/ui/gui/psppire-select-dest.c \
-#	src/ui/gui/psppire-select-dest.h \
-#	src/ui/gui/psppire-selector.c \
-#	src/ui/gui/psppire-selector.h \
-#	src/ui/gui/psppire-text-file.c \
-#	src/ui/gui/psppire-text-file.h \
-#	src/ui/gui/psppire-val-chooser.c \
-#	src/ui/gui/psppire-val-chooser.h \
-#	src/ui/gui/psppire-var-info.c \
-#	src/ui/gui/psppire-var-info.h \
-#	src/ui/gui/psppire-var-ptr.c \
-#	src/ui/gui/psppire-var-ptr.h \
-#	src/ui/gui/psppire-var-view.c \
-#	src/ui/gui/psppire-var-view.h \
-#	src/ui/gui/psppire-var-sheet-header.c \
-#	src/ui/gui/psppire-var-sheet-header.h \
-#	src/ui/gui/psppire-variable-sheet.c \
-#	src/ui/gui/psppire-variable-sheet.h \
-#	src/ui/gui/psppire-window-base.c \
-#	src/ui/gui/psppire-window-base.h \
-#	src/ui/gui/dialog-common.c \
-#	src/ui/gui/dialog-common.h \
-#	src/ui/gui/widgets.c \
-#	src/ui/gui/widgets.h \
-#	src/ui/gui/dict-display.c \
-#	src/ui/gui/dict-display.h
+src_ui_gui_libwidgets_essential_la_SOURCES = \
+	src/ui/gui/psppire-acr.c \
+	src/ui/gui/psppire-acr.h \
+	src/ui/gui/psppire-buttonbox.c \
+	src/ui/gui/psppire-buttonbox.h \
+	src/ui/gui/psppire-checkbox-treeview.c \
+	src/ui/gui/psppire-checkbox-treeview.h \
+	src/ui/gui/psppire-conf.c \
+	src/ui/gui/psppire-conf.h \
+	src/ui/gui/psppire-data-sheet.c \
+	src/ui/gui/psppire-data-sheet.h \
+	src/ui/gui/psppire-dialog-action-1sks.c \
+	src/ui/gui/psppire-dialog-action-1sks.h \
+	src/ui/gui/psppire-dialog-action-aggregate.c \
+	src/ui/gui/psppire-dialog-action-aggregate.h \
+	src/ui/gui/psppire-dialog-action-autorecode.c \
+	src/ui/gui/psppire-dialog-action-autorecode.h \
+	src/ui/gui/psppire-dialog-action-barchart.c \
+	src/ui/gui/psppire-dialog-action-barchart.h \
+	src/ui/gui/psppire-dialog-action-binomial.c \
+	src/ui/gui/psppire-dialog-action-binomial.h \
+	src/ui/gui/psppire-dialog-action.c \
+	src/ui/gui/psppire-dialog-action-chisquare.c \
+	src/ui/gui/psppire-dialog-action-chisquare.h \
+	src/ui/gui/psppire-dialog-action-comments.c \
+	src/ui/gui/psppire-dialog-action-comments.h \
+	src/ui/gui/psppire-dialog-action-compute.c \
+	src/ui/gui/psppire-dialog-action-compute.h \
+	src/ui/gui/psppire-dialog-action-correlation.c \
+	src/ui/gui/psppire-dialog-action-correlation.h \
+	src/ui/gui/psppire-dialog-action-count.c \
+	src/ui/gui/psppire-dialog-action-count.h \
+	src/ui/gui/psppire-dialog-action-crosstabs.c \
+	src/ui/gui/psppire-dialog-action-crosstabs.h \
+	src/ui/gui/psppire-dialog-action-custom-tables.c \
+	src/ui/gui/psppire-dialog-action-custom-tables.h \
+	src/ui/gui/psppire-dialog-action-descriptives.c \
+	src/ui/gui/psppire-dialog-action-descriptives.h \
+	src/ui/gui/psppire-dialog-action-examine.c \
+	src/ui/gui/psppire-dialog-action-examine.h \
+	src/ui/gui/psppire-dialog-action-factor.c \
+	src/ui/gui/psppire-dialog-action-factor.h \
+	src/ui/gui/psppire-dialog-action-flip.c \
+	src/ui/gui/psppire-dialog-action-flip.h \
+	src/ui/gui/psppire-dialog-action-frequencies.c \
+	src/ui/gui/psppire-dialog-action-frequencies.h \
+	src/ui/gui/psppire-dialog-action.h \
+	src/ui/gui/psppire-dialog-action-histogram.c \
+	src/ui/gui/psppire-dialog-action-histogram.h \
+	src/ui/gui/psppire-dialog-action-indep-samps.c \
+	src/ui/gui/psppire-dialog-action-indep-samps.h \
+	src/ui/gui/psppire-dialog-action-k-independent.c \
+	src/ui/gui/psppire-dialog-action-k-independent.h \
+	src/ui/gui/psppire-dialog-action-kmeans.c \
+	src/ui/gui/psppire-dialog-action-kmeans.h \
+	src/ui/gui/psppire-dialog-action-k-related.c \
+	src/ui/gui/psppire-dialog-action-k-related.h \
+	src/ui/gui/psppire-dialog-action-logistic.c \
+	src/ui/gui/psppire-dialog-action-logistic.h \
+	src/ui/gui/psppire-dialog-action-means.c \
+	src/ui/gui/psppire-dialog-action-means.h \
+	src/ui/gui/psppire-dialog-action-oneway.c \
+	src/ui/gui/psppire-dialog-action-oneway.h \
+	src/ui/gui/psppire-dialog-action-paired.c \
+	src/ui/gui/psppire-dialog-action-paired.h \
+	src/ui/gui/psppire-dialog-action-rank.c \
+	src/ui/gui/psppire-dialog-action-rank.h \
+	src/ui/gui/psppire-dialog-action-recode.c \
+	src/ui/gui/psppire-dialog-action-recode-different.c \
+	src/ui/gui/psppire-dialog-action-recode-different.h \
+	src/ui/gui/psppire-dialog-action-recode.h \
+	src/ui/gui/psppire-dialog-action-recode-same.c \
+	src/ui/gui/psppire-dialog-action-recode-same.h \
+	src/ui/gui/psppire-dialog-action-regression.c \
+	src/ui/gui/psppire-dialog-action-regression.h \
+	src/ui/gui/psppire-dialog-action-reliability.c \
+	src/ui/gui/psppire-dialog-action-reliability.h \
+	src/ui/gui/psppire-dialog-action-roc.c \
+	src/ui/gui/psppire-dialog-action-roc.h \
+	src/ui/gui/psppire-dialog-action-runs.c \
+	src/ui/gui/psppire-dialog-action-runs.h \
+	src/ui/gui/psppire-dialog-action-scatterplot.c \
+	src/ui/gui/psppire-dialog-action-scatterplot.h \
+	src/ui/gui/psppire-dialog-action-select.c \
+	src/ui/gui/psppire-dialog-action-select.h \
+	src/ui/gui/psppire-dialog-action-sort.c \
+	src/ui/gui/psppire-dialog-action-sort.h \
+	src/ui/gui/psppire-dialog-action-split.c \
+	src/ui/gui/psppire-dialog-action-split.h \
+	src/ui/gui/psppire-dialog-action-ctables.c \
+	src/ui/gui/psppire-dialog-action-ctables.h \
+	src/ui/gui/psppire-dialog-action-tt1s.c \
+	src/ui/gui/psppire-dialog-action-tt1s.h \
+	src/ui/gui/psppire-dialog-action-two-sample.c \
+	src/ui/gui/psppire-dialog-action-two-sample.h \
+	src/ui/gui/psppire-dialog-action-univariate.c \
+	src/ui/gui/psppire-dialog-action-univariate.h \
+	src/ui/gui/psppire-dialog-action-var-info.c \
+	src/ui/gui/psppire-dialog-action-var-info.h \
+	src/ui/gui/psppire-dialog-action-weight.c \
+	src/ui/gui/psppire-dialog-action-weight.h \
+	src/ui/gui/psppire-dialog.c \
+	src/ui/gui/psppire-dialog.h \
+	src/ui/gui/psppire-search-dialog.c \
+	src/ui/gui/psppire-search-dialog.h \
+	src/ui/gui/psppire-dict.c \
+	src/ui/gui/psppire-dict.h \
+	src/ui/gui/psppire-dictview.c \
+	src/ui/gui/psppire-dictview.h \
+	src/ui/gui/psppire-format.c \
+	src/ui/gui/psppire-format.h \
+	src/ui/gui/psppire-keypad.c \
+	src/ui/gui/psppire-keypad.h \
+	src/ui/gui/psppire-means-layer.c \
+	src/ui/gui/psppire-means-layer.h \
+	src/ui/gui/psppire-select-dest.c \
+	src/ui/gui/psppire-select-dest.h \
+	src/ui/gui/psppire-selector.c \
+	src/ui/gui/psppire-selector.h \
+	src/ui/gui/psppire-text-file.c \
+	src/ui/gui/psppire-text-file.h \
+	src/ui/gui/psppire-val-chooser.c \
+	src/ui/gui/psppire-val-chooser.h \
+	src/ui/gui/psppire-var-info.c \
+	src/ui/gui/psppire-var-info.h \
+	src/ui/gui/psppire-var-ptr.c \
+	src/ui/gui/psppire-var-ptr.h \
+	src/ui/gui/psppire-var-view.c \
+	src/ui/gui/psppire-var-view.h \
+	src/ui/gui/psppire-var-sheet-header.c \
+	src/ui/gui/psppire-var-sheet-header.h \
+	src/ui/gui/psppire-variable-sheet.c \
+	src/ui/gui/psppire-variable-sheet.h \
+	src/ui/gui/psppire-window-base.c \
+	src/ui/gui/psppire-window-base.h \
+	src/ui/gui/dialog-common.c \
+	src/ui/gui/dialog-common.h \
+	src/ui/gui/widgets.c \
+	src/ui/gui/widgets.h \
+	src/ui/gui/dict-display.c \
+	src/ui/gui/dict-display.h
 
-#src_ui_gui_libwidgets_essential_la_CFLAGS =  \
-#	$(GTK_CFLAGS) $(GTKSOURCEVIEW_CFLAGS) \
-#	$(SPREAD_SHEET_WIDGET_CFLAGS) $(AM_CFLAGS) \
-#	$(am__append_164)
-#src_ui_gui_libwidgets_essential_la_CPPFLAGS = $(AM_CPPFLAGS) -Isrc/ui/gui/include
-#nodist_src_ui_gui_psppire_SOURCES = \
-#	src/ui/gui/psppire-marshal.c \
-#	src/ui/gui/psppire-marshal.h \
-#	src/ui/gui/resources.c
+src_ui_gui_libwidgets_essential_la_CFLAGS =  \
+	$(GTK_CFLAGS) $(GTKSOURCEVIEW_CFLAGS) \
+	$(SPREAD_SHEET_WIDGET_CFLAGS) $(AM_CFLAGS) \
+	$(am__append_164)
+src_ui_gui_libwidgets_essential_la_CPPFLAGS = $(AM_CPPFLAGS) -Isrc/ui/gui/include
+nodist_src_ui_gui_psppire_SOURCES = \
+	src/ui/gui/psppire-marshal.c \
+	src/ui/gui/psppire-marshal.h \
+	src/ui/gui/resources.c
 
 
 # This is a generated file. Do not edit.
-#icons = \
-#	 src/ui/gui/icons/48x48/categories/align-left.png \
-#	 src/ui/gui/icons/48x48/categories/align-center.png \
-#	 src/ui/gui/icons/48x48/categories/align-right.png \
-#	 src/ui/gui/icons/48x48/categories/measure-scale.png \
-#	 src/ui/gui/icons/48x48/categories/measure-ordinal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-nominal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-date-scale.png \
-#	 src/ui/gui/icons/48x48/categories/measure-date-nominal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-date-ordinal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-time-scale.png \
-#	 src/ui/gui/icons/48x48/categories/measure-time-nominal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-time-ordinal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-string-nominal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-string-ordinal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-currency-scale.png \
-#	 src/ui/gui/icons/48x48/categories/measure-currency-nominal.png \
-#	 src/ui/gui/icons/48x48/categories/measure-currency-ordinal.png \
-#	 src/ui/gui/icons/48x48/categories/role-input.png \
-#	 src/ui/gui/icons/48x48/categories/role-target.png \
-#	 src/ui/gui/icons/48x48/categories/role-both.png \
-#	 src/ui/gui/icons/48x48/categories/role-none.png \
-#	 src/ui/gui/icons/48x48/categories/role-partition.png \
-#	 src/ui/gui/icons/48x48/categories/role-split.png \
-#	 src/ui/gui/icons/scalable/categories/align-left.svg \
-#	 src/ui/gui/icons/scalable/categories/align-center.svg \
-#	 src/ui/gui/icons/scalable/categories/align-right.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-scale.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-ordinal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-nominal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-date-scale.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-date-nominal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-date-ordinal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-time-scale.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-time-nominal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-time-ordinal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-string-nominal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-string-ordinal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-currency-scale.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-currency-nominal.svg \
-#	 src/ui/gui/icons/scalable/categories/measure-currency-ordinal.svg \
-#	 src/ui/gui/icons/scalable/categories/role-input.svg \
-#	 src/ui/gui/icons/scalable/categories/role-target.svg \
-#	 src/ui/gui/icons/scalable/categories/role-both.svg \
-#	 src/ui/gui/icons/scalable/categories/role-none.svg \
-#	 src/ui/gui/icons/scalable/categories/role-partition.svg \
-#	 src/ui/gui/icons/scalable/categories/role-split.svg \
-#	 src/ui/gui/icons/24x24/actions/pspp-file-open-data.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-file-save-data.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-edit-go-to-variable.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-edit-go-to-case.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-edit-find.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-edit-insert-case.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-edit-insert-variable.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-data-split-file.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-data-weight-cases.png \
-#	 src/ui/gui/icons/24x24/actions/pspp-view-value-labels.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-file-open-data.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-file-save-data.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-edit-go-to-variable.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-edit-go-to-case.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-edit-find.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-edit-insert-case.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-edit-insert-variable.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-data-split-file.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-data-weight-cases.png \
-#	 src/ui/gui/icons/48x48/actions/pspp-view-value-labels.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-file-open-data.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-file-save-data.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-edit-go-to-variable.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-edit-go-to-case.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-edit-find.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-edit-insert-case.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-edit-insert-variable.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-data-split-file.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-data-weight-cases.png \
-#	 src/ui/gui/icons/96x96/actions/pspp-view-value-labels.png \
-#	 src/ui/gui/icons/scalable/actions/pspp-file-open-data.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-file-save-data.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-edit-go-to-variable.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-edit-go-to-case.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-edit-find.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-edit-insert-case.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-edit-insert-variable.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-data-split-file.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-data-weight-cases.svg \
-#	 src/ui/gui/icons/scalable/actions/pspp-view-value-labels.svg \
-#	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-por.png \
-#	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-sav.png \
-#	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-sps.png \
-#	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-zsav.png \
-#	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-por.png \
-#	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-sav.png \
-#	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-sps.png \
-#	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-zsav.png \
-#	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-por.png \
-#	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-sav.png \
-#	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-sps.png \
-#	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-zsav.png \
-#	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-por.png \
-#	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-sav.png \
-#	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-sps.png \
-#	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-zsav.png \
-#	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-por.png \
-#	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-sav.png \
-#	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-sps.png \
-#	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-zsav.png \
-#	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-por.png \
-#	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-sav.png \
-#	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-sps.png \
-#	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-zsav.png \
-#	 src/ui/gui/icons/16x16/apps/org.gnu.pspp.png \
-#	 src/ui/gui/icons/32x32/apps/org.gnu.pspp.png \
-#	 src/ui/gui/icons/48x48/apps/org.gnu.pspp.png \
-#	 src/ui/gui/icons/256x256/apps/org.gnu.pspp.png \
-#	 src/ui/gui/icons/scalable/apps/org.gnu.pspp.svg \
-#	 src/ui/gui/icons/splash-t.png \
-#	 src/ui/gui/icons/splash-r.png
+icons = \
+	 src/ui/gui/icons/48x48/categories/align-left.png \
+	 src/ui/gui/icons/48x48/categories/align-center.png \
+	 src/ui/gui/icons/48x48/categories/align-right.png \
+	 src/ui/gui/icons/48x48/categories/measure-scale.png \
+	 src/ui/gui/icons/48x48/categories/measure-ordinal.png \
+	 src/ui/gui/icons/48x48/categories/measure-nominal.png \
+	 src/ui/gui/icons/48x48/categories/measure-date-scale.png \
+	 src/ui/gui/icons/48x48/categories/measure-date-nominal.png \
+	 src/ui/gui/icons/48x48/categories/measure-date-ordinal.png \
+	 src/ui/gui/icons/48x48/categories/measure-time-scale.png \
+	 src/ui/gui/icons/48x48/categories/measure-time-nominal.png \
+	 src/ui/gui/icons/48x48/categories/measure-time-ordinal.png \
+	 src/ui/gui/icons/48x48/categories/measure-string-nominal.png \
+	 src/ui/gui/icons/48x48/categories/measure-string-ordinal.png \
+	 src/ui/gui/icons/48x48/categories/measure-currency-scale.png \
+	 src/ui/gui/icons/48x48/categories/measure-currency-nominal.png \
+	 src/ui/gui/icons/48x48/categories/measure-currency-ordinal.png \
+	 src/ui/gui/icons/48x48/categories/role-input.png \
+	 src/ui/gui/icons/48x48/categories/role-target.png \
+	 src/ui/gui/icons/48x48/categories/role-both.png \
+	 src/ui/gui/icons/48x48/categories/role-none.png \
+	 src/ui/gui/icons/48x48/categories/role-partition.png \
+	 src/ui/gui/icons/48x48/categories/role-split.png \
+	 src/ui/gui/icons/scalable/categories/align-left.svg \
+	 src/ui/gui/icons/scalable/categories/align-center.svg \
+	 src/ui/gui/icons/scalable/categories/align-right.svg \
+	 src/ui/gui/icons/scalable/categories/measure-scale.svg \
+	 src/ui/gui/icons/scalable/categories/measure-ordinal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-nominal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-date-scale.svg \
+	 src/ui/gui/icons/scalable/categories/measure-date-nominal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-date-ordinal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-time-scale.svg \
+	 src/ui/gui/icons/scalable/categories/measure-time-nominal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-time-ordinal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-string-nominal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-string-ordinal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-currency-scale.svg \
+	 src/ui/gui/icons/scalable/categories/measure-currency-nominal.svg \
+	 src/ui/gui/icons/scalable/categories/measure-currency-ordinal.svg \
+	 src/ui/gui/icons/scalable/categories/role-input.svg \
+	 src/ui/gui/icons/scalable/categories/role-target.svg \
+	 src/ui/gui/icons/scalable/categories/role-both.svg \
+	 src/ui/gui/icons/scalable/categories/role-none.svg \
+	 src/ui/gui/icons/scalable/categories/role-partition.svg \
+	 src/ui/gui/icons/scalable/categories/role-split.svg \
+	 src/ui/gui/icons/24x24/actions/pspp-file-open-data.png \
+	 src/ui/gui/icons/24x24/actions/pspp-file-save-data.png \
+	 src/ui/gui/icons/24x24/actions/pspp-edit-go-to-variable.png \
+	 src/ui/gui/icons/24x24/actions/pspp-edit-go-to-case.png \
+	 src/ui/gui/icons/24x24/actions/pspp-edit-find.png \
+	 src/ui/gui/icons/24x24/actions/pspp-edit-insert-case.png \
+	 src/ui/gui/icons/24x24/actions/pspp-edit-insert-variable.png \
+	 src/ui/gui/icons/24x24/actions/pspp-data-split-file.png \
+	 src/ui/gui/icons/24x24/actions/pspp-data-weight-cases.png \
+	 src/ui/gui/icons/24x24/actions/pspp-view-value-labels.png \
+	 src/ui/gui/icons/48x48/actions/pspp-file-open-data.png \
+	 src/ui/gui/icons/48x48/actions/pspp-file-save-data.png \
+	 src/ui/gui/icons/48x48/actions/pspp-edit-go-to-variable.png \
+	 src/ui/gui/icons/48x48/actions/pspp-edit-go-to-case.png \
+	 src/ui/gui/icons/48x48/actions/pspp-edit-find.png \
+	 src/ui/gui/icons/48x48/actions/pspp-edit-insert-case.png \
+	 src/ui/gui/icons/48x48/actions/pspp-edit-insert-variable.png \
+	 src/ui/gui/icons/48x48/actions/pspp-data-split-file.png \
+	 src/ui/gui/icons/48x48/actions/pspp-data-weight-cases.png \
+	 src/ui/gui/icons/48x48/actions/pspp-view-value-labels.png \
+	 src/ui/gui/icons/96x96/actions/pspp-file-open-data.png \
+	 src/ui/gui/icons/96x96/actions/pspp-file-save-data.png \
+	 src/ui/gui/icons/96x96/actions/pspp-edit-go-to-variable.png \
+	 src/ui/gui/icons/96x96/actions/pspp-edit-go-to-case.png \
+	 src/ui/gui/icons/96x96/actions/pspp-edit-find.png \
+	 src/ui/gui/icons/96x96/actions/pspp-edit-insert-case.png \
+	 src/ui/gui/icons/96x96/actions/pspp-edit-insert-variable.png \
+	 src/ui/gui/icons/96x96/actions/pspp-data-split-file.png \
+	 src/ui/gui/icons/96x96/actions/pspp-data-weight-cases.png \
+	 src/ui/gui/icons/96x96/actions/pspp-view-value-labels.png \
+	 src/ui/gui/icons/scalable/actions/pspp-file-open-data.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-file-save-data.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-edit-go-to-variable.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-edit-go-to-case.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-edit-find.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-edit-insert-case.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-edit-insert-variable.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-data-split-file.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-data-weight-cases.svg \
+	 src/ui/gui/icons/scalable/actions/pspp-view-value-labels.svg \
+	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-por.png \
+	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-sav.png \
+	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-sps.png \
+	 src/ui/gui/icons/16x16/mimetypes/application-x-spss-zsav.png \
+	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-por.png \
+	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-sav.png \
+	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-sps.png \
+	 src/ui/gui/icons/22x22/mimetypes/application-x-spss-zsav.png \
+	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-por.png \
+	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-sav.png \
+	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-sps.png \
+	 src/ui/gui/icons/24x24/mimetypes/application-x-spss-zsav.png \
+	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-por.png \
+	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-sav.png \
+	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-sps.png \
+	 src/ui/gui/icons/32x32/mimetypes/application-x-spss-zsav.png \
+	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-por.png \
+	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-sav.png \
+	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-sps.png \
+	 src/ui/gui/icons/48x48/mimetypes/application-x-spss-zsav.png \
+	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-por.png \
+	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-sav.png \
+	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-sps.png \
+	 src/ui/gui/icons/256x256/mimetypes/application-x-spss-zsav.png \
+	 src/ui/gui/icons/16x16/apps/org.gnu.pspp.png \
+	 src/ui/gui/icons/32x32/apps/org.gnu.pspp.png \
+	 src/ui/gui/icons/48x48/apps/org.gnu.pspp.png \
+	 src/ui/gui/icons/256x256/apps/org.gnu.pspp.png \
+	 src/ui/gui/icons/scalable/apps/org.gnu.pspp.svg \
+	 src/ui/gui/icons/splash-t.png \
+	 src/ui/gui/icons/splash-r.png
 
-#icon_srcs = \
-#	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-por.svg \
-#	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-sav.svg \
-#	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-sps.svg \
-#	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-zsav.svg \
-#	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-por.svg \
-#	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-sav.svg \
-#	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-sps.svg \
-#	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-zsav.svg \
-#	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-por.svg \
-#	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-sav.svg \
-#	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-sps.svg \
-#	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-zsav.svg \
-#	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-por.svg \
-#	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-sav.svg \
-#	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-sps.svg \
-#	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-zsav.svg \
-#	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-por.svg \
-#	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-sav.svg \
-#	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-sps.svg \
-#	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-zsav.svg \
-#	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-por.svg \
-#	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-sav.svg \
-#	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-sps.svg \
-#	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-zsav.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-bivariate-correlation.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-compare-means.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-descriptive-statistics.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-factor-analysis.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-kmeans-cluster.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-non-parametric-statistics.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-regression.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-reliability.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-roc-curve.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-analyze-univariate-analysis.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-data-aggregate.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-data-select-cases.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-data-sort-cases.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-data-split-file.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-data-transpose.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-data-weight-cases.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-display-information-external-file.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-display-information-working-file.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-clear.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-copy.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-cut.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-delete.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-find.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-go-to-case.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-go-to-variable.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-insert-case.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-insert-variable.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-paste.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-redo.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-select-all.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-edit-undo.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-display-information.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-export-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-import-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-new-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-open-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-print.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-quit.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-recently-used.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-rename-data-set.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-save-as.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-save-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-syntax-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-file-system-data.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-help-about.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-help-reference-manual.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-run-all.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-run-current-line.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-run-selection.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-run-to-end.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-automatic-recode.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-compute.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-count.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-into-different-variables.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-into-same-variables.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-rank-cases.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-transform-run-pending.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-utilities-data-file-comments.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-utilities-variables.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-view-font.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-view-value-labels.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-windows-minimize-all.svg \
-#	 src/ui/gui/artwork/scalable/actions/pspp-windows-split.svg \
-#	 src/ui/gui/artwork/scalable/apps/org.gnu.pspp.svg \
-#	 src/ui/gui/artwork/scalable/categories/align-center.svg \
-#	 src/ui/gui/artwork/scalable/categories/align-left.svg \
-#	 src/ui/gui/artwork/scalable/categories/align-right.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-currency-nominal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-currency-ordinal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-currency-scale.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-date-nominal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-date-ordinal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-date-scale.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-nominal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-ordinal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-scale.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-string-nominal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-string-ordinal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-time-nominal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-time-ordinal.svg \
-#	 src/ui/gui/artwork/scalable/categories/measure-time-scale.svg \
-#	 src/ui/gui/artwork/scalable/categories/role-both.svg \
-#	 src/ui/gui/artwork/scalable/categories/role-input.svg \
-#	 src/ui/gui/artwork/scalable/categories/role-none.svg \
-#	 src/ui/gui/artwork/scalable/categories/role-partition.svg \
-#	 src/ui/gui/artwork/scalable/categories/role-split.svg \
-#	 src/ui/gui/artwork/scalable/categories/role-target.svg \
-#	 src/ui/gui/artwork/splash-r.svg \
-#	 src/ui/gui/artwork/splash.svg \
-#	 src/ui/gui/artwork/splash-t.svg 
+icon_srcs = \
+	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-por.svg \
+	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-sav.svg \
+	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-sps.svg \
+	 src/ui/gui/artwork/16x16/mimetypes/application-x-spss-zsav.svg \
+	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-por.svg \
+	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-sav.svg \
+	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-sps.svg \
+	 src/ui/gui/artwork/22x22/mimetypes/application-x-spss-zsav.svg \
+	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-por.svg \
+	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-sav.svg \
+	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-sps.svg \
+	 src/ui/gui/artwork/24x24/mimetypes/application-x-spss-zsav.svg \
+	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-por.svg \
+	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-sav.svg \
+	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-sps.svg \
+	 src/ui/gui/artwork/256x256/mimetypes/application-x-spss-zsav.svg \
+	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-por.svg \
+	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-sav.svg \
+	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-sps.svg \
+	 src/ui/gui/artwork/32x32/mimetypes/application-x-spss-zsav.svg \
+	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-por.svg \
+	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-sav.svg \
+	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-sps.svg \
+	 src/ui/gui/artwork/48x48/mimetypes/application-x-spss-zsav.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-bivariate-correlation.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-compare-means.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-descriptive-statistics.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-factor-analysis.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-kmeans-cluster.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-non-parametric-statistics.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-regression.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-reliability.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-roc-curve.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-analyze-univariate-analysis.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-data-aggregate.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-data-select-cases.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-data-sort-cases.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-data-split-file.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-data-transpose.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-data-weight-cases.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-display-information-external-file.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-display-information-working-file.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-clear.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-copy.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-cut.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-delete.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-find.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-go-to-case.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-go-to-variable.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-insert-case.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-insert-variable.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-paste.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-redo.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-select-all.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-edit-undo.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-display-information.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-export-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-import-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-new-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-open-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-print.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-quit.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-recently-used.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-rename-data-set.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-save-as.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-save-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-syntax-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-file-system-data.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-help-about.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-help-reference-manual.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-run-all.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-run-current-line.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-run-selection.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-run-to-end.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-automatic-recode.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-compute.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-count.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-into-different-variables.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-into-same-variables.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-rank-cases.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-transform-run-pending.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-utilities-data-file-comments.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-utilities-variables.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-view-font.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-view-value-labels.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-windows-minimize-all.svg \
+	 src/ui/gui/artwork/scalable/actions/pspp-windows-split.svg \
+	 src/ui/gui/artwork/scalable/apps/org.gnu.pspp.svg \
+	 src/ui/gui/artwork/scalable/categories/align-center.svg \
+	 src/ui/gui/artwork/scalable/categories/align-left.svg \
+	 src/ui/gui/artwork/scalable/categories/align-right.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-currency-nominal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-currency-ordinal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-currency-scale.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-date-nominal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-date-ordinal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-date-scale.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-nominal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-ordinal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-scale.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-string-nominal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-string-ordinal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-time-nominal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-time-ordinal.svg \
+	 src/ui/gui/artwork/scalable/categories/measure-time-scale.svg \
+	 src/ui/gui/artwork/scalable/categories/role-both.svg \
+	 src/ui/gui/artwork/scalable/categories/role-input.svg \
+	 src/ui/gui/artwork/scalable/categories/role-none.svg \
+	 src/ui/gui/artwork/scalable/categories/role-partition.svg \
+	 src/ui/gui/artwork/scalable/categories/role-split.svg \
+	 src/ui/gui/artwork/scalable/categories/role-target.svg \
+	 src/ui/gui/artwork/splash-r.svg \
+	 src/ui/gui/artwork/splash.svg \
+	 src/ui/gui/artwork/splash-t.svg 
 
-#themedir = $(DESTDIR)$(datadir)/icons/hicolor
-#sizes = 16x16 22x22 24x24 32x32 48x48 96x96 256x256 scalable
-##w32_icons = src/ui/gui/icons/pspp.ico \
-##src/ui/gui/icons/pspp-sav.ico \
-##src/ui/gui/icons/pspp-zsav.ico \
-##src/ui/gui/icons/pspp-por.ico \
-##src/ui/gui/icons/pspp-sps.ico
+themedir = $(DESTDIR)$(datadir)/icons/hicolor
+sizes = 16x16 22x22 24x24 32x32 48x48 96x96 256x256 scalable
+#w32_icons = src/ui/gui/icons/pspp.ico \
+#src/ui/gui/icons/pspp-sav.ico \
+#src/ui/gui/icons/pspp-zsav.ico \
+#src/ui/gui/icons/pspp-por.ico \
+#src/ui/gui/icons/pspp-sps.ico
 
-#nodist_src_ui_gui_psppire_DATA = src/ui/gui/icons/splash.png
+nodist_src_ui_gui_psppire_DATA = src/ui/gui/icons/splash.png
 
 #### Build the tools needed to run glade on our .ui files
-#EXTRA_pkgdir = $(abs_builddir)/src/ui/gui
-#EXTRA_pkg_LTLIBRARIES = src/ui/gui/libpsppire-glade.la
-#src_ui_gui_libpsppire_glade_la_SOURCES = \
-#	src/ui/gui/dummy.c
+EXTRA_pkgdir = $(abs_builddir)/src/ui/gui
+EXTRA_pkg_LTLIBRARIES = src/ui/gui/libpsppire-glade.la
+src_ui_gui_libpsppire_glade_la_SOURCES = \
+	src/ui/gui/dummy.c
 
-#src_ui_gui_libpsppire_glade_la_LIBADD = \
-#	src/ui/gui/libwidgets-essential.la \
-#	src/ui/gui/psppire-marshal.lo
+src_ui_gui_libpsppire_glade_la_LIBADD = \
+	src/ui/gui/libwidgets-essential.la \
+	src/ui/gui/psppire-marshal.lo
 
-#src_ui_gui_libpsppire_glade_la_CFLAGS =  \
-#	$(GTK_CFLAGS) $(AM_CFLAGS) \
-#	$(am__append_169)
-#src_ui_gui_libpsppire_glade_la_LDFLAGS = -release $(VERSION)  $(SPREAD_SHEET_WIDGET_LIBS)
+src_ui_gui_libpsppire_glade_la_CFLAGS =  \
+	$(GTK_CFLAGS) $(AM_CFLAGS) \
+	$(am__append_169)
+src_ui_gui_libpsppire_glade_la_LDFLAGS = -release $(VERSION)  $(SPREAD_SHEET_WIDGET_LIBS)
 src_ui_libuicommon_la_SOURCES = \
 	src/ui/source-init-opts.c src/ui/source-init-opts.h \
 	src/ui/syntax-gen.c src/ui/syntax-gen.h
@@ -8615,8 +8616,8 @@ clean-noinstPROGRAMS:
 clean-noinstLIBRARIES:
 	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
 
-install-EXTRA_pkgLTLIBRARIES: $(EXTRA_pkg_LTLIBRARIES)
-	@$(NORMAL_INSTALL)
+#install-EXTRA_pkgLTLIBRARIES: $(EXTRA_pkg_LTLIBRARIES)
+#	@$(NORMAL_INSTALL)
 	@list='$(EXTRA_pkg_LTLIBRARIES)'; test -n "$(EXTRA_pkgdir)" || list=; \
 	list2=; for p in $$list; do \
 	  if test -f $$p; then \
@@ -10238,9 +10239,6 @@ src/ui/gui/libpsppire_glade_la-dummy.lo: src/ui/gui/$(am__dirstamp) \
 
 src/ui/gui/libpsppire-glade.la: $(src_ui_gui_libpsppire_glade_la_OBJECTS) $(src_ui_gui_libpsppire_glade_la_DEPENDENCIES) $(EXTRA_src_ui_gui_libpsppire_glade_la_DEPENDENCIES) src/ui/gui/$(am__dirstamp)
 	$(AM_V_CCLD)$(src_ui_gui_libpsppire_glade_la_LINK) $(am_src_ui_gui_libpsppire_glade_la_rpath) $(src_ui_gui_libpsppire_glade_la_OBJECTS) $(src_ui_gui_libpsppire_glade_la_LIBADD) $(LIBS)
-src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo:  \
-	src/ui/gui/$(am__dirstamp) \
-	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
 src/ui/gui/libwidgets_essential_la-psppire-acr.lo:  \
 	src/ui/gui/$(am__dirstamp) \
 	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
@@ -10290,6 +10288,9 @@ src/ui/gui/libwidgets_essential_la-psppire-dialog-action-count.lo:  \
 	src/ui/gui/$(am__dirstamp) \
 	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
 src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo:  \
+	src/ui/gui/$(am__dirstamp) \
+	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
+src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo:  \
 	src/ui/gui/$(am__dirstamp) \
 	src/ui/gui/$(DEPDIR)/$(am__dirstamp)
 src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo:  \
@@ -15380,13 +15381,6 @@ src/ui/gui/libpsppire_glade_la-dummy.lo: src/ui/gui/dummy.c
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libpsppire_glade_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libpsppire_glade_la-dummy.lo `test -f 'src/ui/gui/dummy.c' || echo '$(srcdir)/'`src/ui/gui/dummy.c
 
-src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo: src/ui/gui/psppire-dialog-action-custom-tables.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
-	$(AM_V_at)$(am__mv) src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Plo
-#	$(AM_V_CC)source='src/ui/gui/psppire-dialog-action-custom-tables.c' object='src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo' libtool=yes \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
-
 src/ui/gui/libwidgets_essential_la-psppire-acr.lo: src/ui/gui/psppire-acr.c
 	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-acr.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-acr.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-acr.lo `test -f 'src/ui/gui/psppire-acr.c' || echo '$(srcdir)/'`src/ui/gui/psppire-acr.c
 	$(AM_V_at)$(am__mv) src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-acr.Tpo src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-acr.Plo
@@ -15505,6 +15499,13 @@ src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo: src/ui/gu
 #	$(AM_V_CC)source='src/ui/gui/psppire-dialog-action-crosstabs.c' object='src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-crosstabs.lo `test -f 'src/ui/gui/psppire-dialog-action-crosstabs.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-crosstabs.c
+
+src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo: src/ui/gui/psppire-dialog-action-custom-tables.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
+	$(AM_V_at)$(am__mv) src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Tpo src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-custom-tables.Plo
+#	$(AM_V_CC)source='src/ui/gui/psppire-dialog-action-custom-tables.c' object='src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-custom-tables.lo `test -f 'src/ui/gui/psppire-dialog-action-custom-tables.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-custom-tables.c
 
 src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo: src/ui/gui/psppire-dialog-action-descriptives.c
 	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_ui_gui_libwidgets_essential_la_CPPFLAGS) $(CPPFLAGS) $(src_ui_gui_libwidgets_essential_la_CFLAGS) $(CFLAGS) -MT src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo -MD -MP -MF src/ui/gui/$(DEPDIR)/libwidgets_essential_la-psppire-dialog-action-descriptives.Tpo -c -o src/ui/gui/libwidgets_essential_la-psppire-dialog-action-descriptives.lo `test -f 'src/ui/gui/psppire-dialog-action-descriptives.c' || echo '$(srcdir)/'`src/ui/gui/psppire-dialog-action-descriptives.c
@@ -18135,7 +18136,7 @@ maintainer-clean-generic:
 	@echo "it deletes files that may require special tools to rebuild."
 	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
 	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
-installcheck-local:
+#installcheck-local:
 uninstall-hook:
 clean: clean-recursive
 
@@ -20040,32 +20041,32 @@ gl/alloca.h: gl/alloca.in.h $(top_builddir)/config.status
 
 # We need the following in order to create <assert.h> when the system
 # doesn't have one that works with the given compiler.
-gl/assert.h: gl/assert.in.h gl/verify.h $(top_builddir)/config.status
-	$(AM_V_GEN)$(MKDIR_P) 'gl'
-	$(gl_V_at){ $(SED_HEADER_STDOUT) \
-	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
-	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
-	      -e 's|@''PRAGMA_COLUMNS''@||g' \
-	      -e 's|@''NEXT_ASSERT_H''@|$(NEXT_ASSERT_H)|g' \
-	      < $(top_srcdir)/gl/assert.in.h && \
-	  sed -e '/@assert.h omit start@/,/@assert.h omit end@/d' \
-	      -e 's|_gl_verify|_gl_static_assert|g' \
-	      -e 's|_GL_VERIFY|_GL_STATIC_ASSERT|g' \
-	      -e 's|_GL\(_STATIC_ASSERT_H\)|_GL\1|g' \
-	      < $(top_srcdir)/gl/verify.h; \
-	} > $@-t
-	$(AM_V_at)mv $@-t $@
-#gl/assert.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/assert.h: gl/assert.in.h gl/verify.h $(top_builddir)/config.status
+#	$(AM_V_GEN)$(MKDIR_P) 'gl'
+#	$(gl_V_at){ $(SED_HEADER_STDOUT) \
+#	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
+#	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+#	      -e 's|@''PRAGMA_COLUMNS''@||g' \
+#	      -e 's|@''NEXT_ASSERT_H''@|$(NEXT_ASSERT_H)|g' \
+#	      < $(top_srcdir)/gl/assert.in.h && \
+#	  sed -e '/@assert.h omit start@/,/@assert.h omit end@/d' \
+#	      -e 's|_gl_verify|_gl_static_assert|g' \
+#	      -e 's|_GL_VERIFY|_GL_STATIC_ASSERT|g' \
+#	      -e 's|_GL\(_STATIC_ASSERT_H\)|_GL\1|g' \
+#	      < $(top_srcdir)/gl/verify.h; \
+#	} > $@-t
+#	$(AM_V_at)mv $@-t $@
+gl/assert.h: $(top_builddir)/config.status
+	rm -f $@
 
 # We need the following in order to create <byteswap.h> when the system
 # doesn't have one.
-gl/byteswap.h: gl/byteswap.in.h $(top_builddir)/config.status
-	$(AM_V_GEN)$(MKDIR_P) 'gl'
-	$(gl_V_at)$(SED_HEADER_TO_AT_t) $(top_srcdir)/gl/byteswap.in.h
-	$(AM_V_at)mv $@-t $@
-#gl/byteswap.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/byteswap.h: gl/byteswap.in.h $(top_builddir)/config.status
+#	$(AM_V_GEN)$(MKDIR_P) 'gl'
+#	$(gl_V_at)$(SED_HEADER_TO_AT_t) $(top_srcdir)/gl/byteswap.in.h
+#	$(AM_V_at)mv $@-t $@
+gl/byteswap.h: $(top_builddir)/config.status
+	rm -f $@
 
 # Listed in the same order as the GNU makefile conventions, and
 # provided by autoconf 2.59c+ or 2.70.
@@ -20208,50 +20209,50 @@ gl/float.h: $(top_builddir)/config.status
 	rm -f $@
 
 # We need the following in order to create <fnmatch.h>.
-gl/fnmatch.h: gl/fnmatch.in.h $(top_builddir)/config.status $(CXXDEFS_H) $(ARG_NONNULL_H) $(WARN_ON_USE_H)
-	$(AM_V_GEN)$(MKDIR_P) 'gl'
-	$(gl_V_at)$(SED_HEADER_STDOUT) \
-	      -e 's|@''GUARD_PREFIX''@|GL|g' \
-	      -e 's|@''HAVE_FNMATCH_H''@|$(HAVE_FNMATCH_H)|g' \
-	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
-	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
-	      -e 's|@''PRAGMA_COLUMNS''@||g' \
-	      -e 's|@''NEXT_FNMATCH_H''@|$(NEXT_FNMATCH_H)|g' \
-	      -e 's/@''GNULIB_FNMATCH''@/$(GL_GNULIB_FNMATCH)/g' \
-	      -e 's|@''HAVE_FNMATCH''@|$(HAVE_FNMATCH)|g' \
-	      -e 's|@''REPLACE_FNMATCH''@|$(REPLACE_FNMATCH)|g' \
-	      -e '/definitions of _GL_FUNCDECL_RPL/r $(CXXDEFS_H)' \
-	      -e '/definition of _GL_ARG_NONNULL/r $(ARG_NONNULL_H)' \
-	      -e '/definition of _GL_WARN_ON_USE/r $(WARN_ON_USE_H)' \
-	      $(top_srcdir)/gl/fnmatch.in.h > $@-t
-	$(AM_V_at)mv $@-t $@
-#gl/fnmatch.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/fnmatch.h: gl/fnmatch.in.h $(top_builddir)/config.status $(CXXDEFS_H) $(ARG_NONNULL_H) $(WARN_ON_USE_H)
+#	$(AM_V_GEN)$(MKDIR_P) 'gl'
+#	$(gl_V_at)$(SED_HEADER_STDOUT) \
+#	      -e 's|@''GUARD_PREFIX''@|GL|g' \
+#	      -e 's|@''HAVE_FNMATCH_H''@|$(HAVE_FNMATCH_H)|g' \
+#	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
+#	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+#	      -e 's|@''PRAGMA_COLUMNS''@||g' \
+#	      -e 's|@''NEXT_FNMATCH_H''@|$(NEXT_FNMATCH_H)|g' \
+#	      -e 's/@''GNULIB_FNMATCH''@/$(GL_GNULIB_FNMATCH)/g' \
+#	      -e 's|@''HAVE_FNMATCH''@|$(HAVE_FNMATCH)|g' \
+#	      -e 's|@''REPLACE_FNMATCH''@|$(REPLACE_FNMATCH)|g' \
+#	      -e '/definitions of _GL_FUNCDECL_RPL/r $(CXXDEFS_H)' \
+#	      -e '/definition of _GL_ARG_NONNULL/r $(ARG_NONNULL_H)' \
+#	      -e '/definition of _GL_WARN_ON_USE/r $(WARN_ON_USE_H)' \
+#	      $(top_srcdir)/gl/fnmatch.in.h > $@-t
+#	$(AM_V_at)mv $@-t $@
+gl/fnmatch.h: $(top_builddir)/config.status
+	rm -f $@
 
 # We need the following in order to create <getopt.h> when the system
 # doesn't have one that works with the given compiler.
-gl/getopt.h: gl/getopt.in.h $(top_builddir)/config.status $(ARG_NONNULL_H)
-	$(AM_V_GEN)$(MKDIR_P) 'gl'
-	$(gl_V_at)$(SED_HEADER_STDOUT) \
-	      -e 's|@''GUARD_PREFIX''@|GL|g' \
-	      -e 's|@''HAVE_GETOPT_H''@|$(HAVE_GETOPT_H)|g' \
-	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
-	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
-	      -e 's|@''PRAGMA_COLUMNS''@||g' \
-	      -e 's|@''NEXT_GETOPT_H''@|$(NEXT_GETOPT_H)|g' \
-	      -e '/definition of _GL_ARG_NONNULL/r $(ARG_NONNULL_H)' \
-	      $(top_srcdir)/gl/getopt.in.h > $@-t
-	$(AM_V_at)mv $@-t $@
-#gl/getopt.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/getopt.h: gl/getopt.in.h $(top_builddir)/config.status $(ARG_NONNULL_H)
+#	$(AM_V_GEN)$(MKDIR_P) 'gl'
+#	$(gl_V_at)$(SED_HEADER_STDOUT) \
+#	      -e 's|@''GUARD_PREFIX''@|GL|g' \
+#	      -e 's|@''HAVE_GETOPT_H''@|$(HAVE_GETOPT_H)|g' \
+#	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
+#	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+#	      -e 's|@''PRAGMA_COLUMNS''@||g' \
+#	      -e 's|@''NEXT_GETOPT_H''@|$(NEXT_GETOPT_H)|g' \
+#	      -e '/definition of _GL_ARG_NONNULL/r $(ARG_NONNULL_H)' \
+#	      $(top_srcdir)/gl/getopt.in.h > $@-t
+#	$(AM_V_at)mv $@-t $@
+gl/getopt.h: $(top_builddir)/config.status
+	rm -f $@
 
-gl/getopt-cdefs.h: gl/getopt-cdefs.in.h $(top_builddir)/config.status
-	$(AM_V_GEN)$(SED_HEADER_STDOUT) \
-	  -e 's|@''HAVE_SYS_CDEFS_H''@|$(HAVE_SYS_CDEFS_H)|g' \
-	  $(top_srcdir)/gl/getopt-cdefs.in.h > $@-t
-	$(AM_V_at)mv $@-t $@
-#gl/getopt-cdefs.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/getopt-cdefs.h: gl/getopt-cdefs.in.h $(top_builddir)/config.status
+#	$(AM_V_GEN)$(SED_HEADER_STDOUT) \
+#	  -e 's|@''HAVE_SYS_CDEFS_H''@|$(HAVE_SYS_CDEFS_H)|g' \
+#	  $(top_srcdir)/gl/getopt-cdefs.in.h > $@-t
+#	$(AM_V_at)mv $@-t $@
+gl/getopt-cdefs.h: $(top_builddir)/config.status
+	rm -f $@
 
 gl/malloc/dynarray.gl.h: gl/malloc/dynarray.h
 	$(AM_V_GEN)$(MKDIR_P) 'gl/malloc'
@@ -20755,13 +20756,13 @@ gl/stdarg.h: $(top_builddir)/config.status
 
 # We need the following in order to create <stdckdint.h> when the system
 # doesn't have one that works with the given compiler.
-gl/stdckdint.h: gl/stdckdint.in.h $(top_builddir)/config.status
-	$(AM_V_GEN)$(MKDIR_P) 'gl'
-	$(gl_V_at)$(SED_HEADER_STDOUT) \
-	  $(top_srcdir)/gl/stdckdint.in.h > $@-t
-	$(AM_V_at)mv $@-t $@
-#gl/stdckdint.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/stdckdint.h: gl/stdckdint.in.h $(top_builddir)/config.status
+#	$(AM_V_GEN)$(MKDIR_P) 'gl'
+#	$(gl_V_at)$(SED_HEADER_STDOUT) \
+#	  $(top_srcdir)/gl/stdckdint.in.h > $@-t
+#	$(AM_V_at)mv $@-t $@
+gl/stdckdint.h: $(top_builddir)/config.status
+	rm -f $@
 
 # We need the following in order to create <stddef.h> when the system
 # doesn't have one that works with the given compiler.
@@ -20783,40 +20784,40 @@ gl/stddef.h: gl/stddef.in.h $(top_builddir)/config.status
 
 # We need the following in order to create <stdint.h> when the system
 # doesn't have one that works with the given compiler.
-gl/stdint.h: gl/stdint.in.h $(top_builddir)/config.status
-	$(AM_V_GEN)$(MKDIR_P) 'gl'
-	$(gl_V_at)$(SED_HEADER_STDOUT) \
-	      -e 's|@''GUARD_PREFIX''@|GL|g' \
-	      -e 's/@''HAVE_STDINT_H''@/$(HAVE_STDINT_H)/g' \
-	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
-	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
-	      -e 's|@''PRAGMA_COLUMNS''@||g' \
-	      -e 's|@''NEXT_STDINT_H''@|$(NEXT_STDINT_H)|g' \
-	      -e 's/@''HAVE_C99_STDINT_H''@/$(HAVE_C99_STDINT_H)/g' \
-	      -e 's/@''HAVE_SYS_TYPES_H''@/$(HAVE_SYS_TYPES_H)/g' \
-	      -e 's/@''HAVE_INTTYPES_H''@/$(HAVE_INTTYPES_H)/g' \
-	      -e 's/@''HAVE_SYS_INTTYPES_H''@/$(HAVE_SYS_INTTYPES_H)/g' \
-	      -e 's/@''HAVE_SYS_BITYPES_H''@/$(HAVE_SYS_BITYPES_H)/g' \
-	      -e 's/@''HAVE_WCHAR_H''@/$(HAVE_WCHAR_H)/g' \
-	      -e 's/@''APPLE_UNIVERSAL_BUILD''@/$(APPLE_UNIVERSAL_BUILD)/g' \
-	      -e 's/@''BITSIZEOF_PTRDIFF_T''@/$(BITSIZEOF_PTRDIFF_T)/g' \
-	      -e 's/@''PTRDIFF_T_SUFFIX''@/$(PTRDIFF_T_SUFFIX)/g' \
-	      -e 's/@''BITSIZEOF_SIG_ATOMIC_T''@/$(BITSIZEOF_SIG_ATOMIC_T)/g' \
-	      -e 's/@''HAVE_SIGNED_SIG_ATOMIC_T''@/$(HAVE_SIGNED_SIG_ATOMIC_T)/g' \
-	      -e 's/@''SIG_ATOMIC_T_SUFFIX''@/$(SIG_ATOMIC_T_SUFFIX)/g' \
-	      -e 's/@''BITSIZEOF_SIZE_T''@/$(BITSIZEOF_SIZE_T)/g' \
-	      -e 's/@''SIZE_T_SUFFIX''@/$(SIZE_T_SUFFIX)/g' \
-	      -e 's/@''BITSIZEOF_WCHAR_T''@/$(BITSIZEOF_WCHAR_T)/g' \
-	      -e 's/@''HAVE_SIGNED_WCHAR_T''@/$(HAVE_SIGNED_WCHAR_T)/g' \
-	      -e 's/@''WCHAR_T_SUFFIX''@/$(WCHAR_T_SUFFIX)/g' \
-	      -e 's/@''BITSIZEOF_WINT_T''@/$(BITSIZEOF_WINT_T)/g' \
-	      -e 's/@''HAVE_SIGNED_WINT_T''@/$(HAVE_SIGNED_WINT_T)/g' \
-	      -e 's/@''WINT_T_SUFFIX''@/$(WINT_T_SUFFIX)/g' \
-	      -e 's/@''GNULIBHEADERS_OVERRIDE_WINT_T''@/$(GNULIBHEADERS_OVERRIDE_WINT_T)/g' \
-	      $(top_srcdir)/gl/stdint.in.h > $@-t
-	$(AM_V_at)mv $@-t $@
-#gl/stdint.h: $(top_builddir)/config.status
-#	rm -f $@
+#gl/stdint.h: gl/stdint.in.h $(top_builddir)/config.status
+#	$(AM_V_GEN)$(MKDIR_P) 'gl'
+#	$(gl_V_at)$(SED_HEADER_STDOUT) \
+#	      -e 's|@''GUARD_PREFIX''@|GL|g' \
+#	      -e 's/@''HAVE_STDINT_H''@/$(HAVE_STDINT_H)/g' \
+#	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
+#	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+#	      -e 's|@''PRAGMA_COLUMNS''@||g' \
+#	      -e 's|@''NEXT_STDINT_H''@|$(NEXT_STDINT_H)|g' \
+#	      -e 's/@''HAVE_C99_STDINT_H''@/$(HAVE_C99_STDINT_H)/g' \
+#	      -e 's/@''HAVE_SYS_TYPES_H''@/$(HAVE_SYS_TYPES_H)/g' \
+#	      -e 's/@''HAVE_INTTYPES_H''@/$(HAVE_INTTYPES_H)/g' \
+#	      -e 's/@''HAVE_SYS_INTTYPES_H''@/$(HAVE_SYS_INTTYPES_H)/g' \
+#	      -e 's/@''HAVE_SYS_BITYPES_H''@/$(HAVE_SYS_BITYPES_H)/g' \
+#	      -e 's/@''HAVE_WCHAR_H''@/$(HAVE_WCHAR_H)/g' \
+#	      -e 's/@''APPLE_UNIVERSAL_BUILD''@/$(APPLE_UNIVERSAL_BUILD)/g' \
+#	      -e 's/@''BITSIZEOF_PTRDIFF_T''@/$(BITSIZEOF_PTRDIFF_T)/g' \
+#	      -e 's/@''PTRDIFF_T_SUFFIX''@/$(PTRDIFF_T_SUFFIX)/g' \
+#	      -e 's/@''BITSIZEOF_SIG_ATOMIC_T''@/$(BITSIZEOF_SIG_ATOMIC_T)/g' \
+#	      -e 's/@''HAVE_SIGNED_SIG_ATOMIC_T''@/$(HAVE_SIGNED_SIG_ATOMIC_T)/g' \
+#	      -e 's/@''SIG_ATOMIC_T_SUFFIX''@/$(SIG_ATOMIC_T_SUFFIX)/g' \
+#	      -e 's/@''BITSIZEOF_SIZE_T''@/$(BITSIZEOF_SIZE_T)/g' \
+#	      -e 's/@''SIZE_T_SUFFIX''@/$(SIZE_T_SUFFIX)/g' \
+#	      -e 's/@''BITSIZEOF_WCHAR_T''@/$(BITSIZEOF_WCHAR_T)/g' \
+#	      -e 's/@''HAVE_SIGNED_WCHAR_T''@/$(HAVE_SIGNED_WCHAR_T)/g' \
+#	      -e 's/@''WCHAR_T_SUFFIX''@/$(WCHAR_T_SUFFIX)/g' \
+#	      -e 's/@''BITSIZEOF_WINT_T''@/$(BITSIZEOF_WINT_T)/g' \
+#	      -e 's/@''HAVE_SIGNED_WINT_T''@/$(HAVE_SIGNED_WINT_T)/g' \
+#	      -e 's/@''WINT_T_SUFFIX''@/$(WINT_T_SUFFIX)/g' \
+#	      -e 's/@''GNULIBHEADERS_OVERRIDE_WINT_T''@/$(GNULIBHEADERS_OVERRIDE_WINT_T)/g' \
+#	      $(top_srcdir)/gl/stdint.in.h > $@-t
+#	$(AM_V_at)mv $@-t $@
+gl/stdint.h: $(top_builddir)/config.status
+	rm -f $@
 
 # We need the following in order to create <stdio.h> when the system
 # doesn't have one that works with the given compiler.
@@ -22166,7 +22167,7 @@ mostlyclean-local: mostlyclean-generic
 	:
 distclean-local: distclean-gnulib-libobjs
 distclean-gnulib-libobjs:
-	-rm -f  gl/./$(DEPDIR)/asnprintf.Plo gl/./$(DEPDIR)/asprintf.Plo gl/./$(DEPDIR)/fnmatch.Plo gl/./$(DEPDIR)/fopen.Plo gl/./$(DEPDIR)/fprintf.Plo gl/./$(DEPDIR)/memmem.Plo gl/./$(DEPDIR)/mktime.Plo gl/./$(DEPDIR)/printf.Plo gl/./$(DEPDIR)/printf-args.Plo gl/./$(DEPDIR)/printf-parse.Plo gl/./$(DEPDIR)/snprintf.Plo gl/./$(DEPDIR)/sprintf.Plo gl/./$(DEPDIR)/strcasestr.Plo gl/./$(DEPDIR)/vasnprintf.Plo gl/./$(DEPDIR)/vasprintf.Plo gl/./$(DEPDIR)/vfprintf.Plo gl/./$(DEPDIR)/vprintf.Plo gl/./$(DEPDIR)/vsnprintf.Plo gl/./$(DEPDIR)/vsprintf.Plo
+	-rm -f  gl/./$(DEPDIR)/asnprintf.Plo gl/./$(DEPDIR)/asprintf.Plo gl/./$(DEPDIR)/fopen.Plo gl/./$(DEPDIR)/fprintf.Plo gl/./$(DEPDIR)/mbsrtowcs-state.Plo gl/./$(DEPDIR)/mktime.Plo gl/./$(DEPDIR)/printf.Plo gl/./$(DEPDIR)/printf-args.Plo gl/./$(DEPDIR)/printf-parse.Plo gl/./$(DEPDIR)/snprintf.Plo gl/./$(DEPDIR)/sprintf.Plo gl/./$(DEPDIR)/vasnprintf.Plo gl/./$(DEPDIR)/vasprintf.Plo gl/./$(DEPDIR)/vfprintf.Plo gl/./$(DEPDIR)/vprintf.Plo gl/./$(DEPDIR)/vsnprintf.Plo gl/./$(DEPDIR)/vsprintf.Plo
 maintainer-clean-local: distclean-gnulib-libobjs
 
 $(POTFILE): $(ALL_TRANSLATABLE_FILES) Makefile
@@ -22290,145 +22291,145 @@ src/language/expressions/evaluate.lo src/language/expressions/helpers.lo \
 src/language/expressions/optimize.lo src/language/expressions/parse.lo: \
 $(expressions_built_sources)
 
-#install-lang:
-#	$(INSTALL_DATA) $(top_srcdir)/src/ui/gui/pspp.lang $(DESTDIR)$(pkgdatadir)
+install-lang:
+	$(INSTALL_DATA) $(top_srcdir)/src/ui/gui/pspp.lang $(DESTDIR)$(pkgdatadir)
 
-#src/ui/gui/pspp.rc: src/ui/gui/pspp.rc.in
-#	@$(MKDIR_P) src/ui/gui
-#	sed -e 's/%version%/'$(PACKAGE_VERSION)'/' $< > $@
+src/ui/gui/pspp.rc: src/ui/gui/pspp.rc.in
+	@$(MKDIR_P) src/ui/gui
+	sed -e 's/%version%/'$(PACKAGE_VERSION)'/' $< > $@
 
-#src/ui/gui/resources.c: src/ui/gui/resources.xml
-#	$(AM_V_at)$(GLIB_COMPILE_RESOURCES) --sourcedir=$(top_srcdir)/src/ui/gui --generate-source $< --target=$@,out
-#	$(AM_V_GEN)echo '#include <config.h>' > $@,tmp
-#	cat $@,out >> $@,tmp
-#	$(RM) $@,out
-#	mv $@,tmp $@
+src/ui/gui/resources.c: src/ui/gui/resources.xml
+	$(AM_V_at)$(GLIB_COMPILE_RESOURCES) --sourcedir=$(top_srcdir)/src/ui/gui --generate-source $< --target=$@,out
+	$(AM_V_GEN)echo '#include <config.h>' > $@,tmp
+	cat $@,out >> $@,tmp
+	$(RM) $@,out
+	mv $@,tmp $@
 
-#src/ui/gui/psppire-marshal.c: src/ui/gui/marshaller-list
-#	$(AM_V_GEN)echo '#include <config.h>' > $@
-#	$(AM_V_at)$(GLIB_GENMARSHAL) --body --quiet --include-header=ui/gui/psppire-marshal.h --prefix=psppire_marshal $? >> $@
+src/ui/gui/psppire-marshal.c: src/ui/gui/marshaller-list
+	$(AM_V_GEN)echo '#include <config.h>' > $@
+	$(AM_V_at)$(GLIB_GENMARSHAL) --body --quiet --include-header=ui/gui/psppire-marshal.h --prefix=psppire_marshal $? >> $@
 
-#src/ui/gui/psppire-marshal.h: src/ui/gui/marshaller-list
-#	$(AM_V_GEN)$(GLIB_GENMARSHAL) --header --quiet --prefix=psppire_marshal $? > $@
+src/ui/gui/psppire-marshal.h: src/ui/gui/marshaller-list
+	$(AM_V_GEN)$(GLIB_GENMARSHAL) --header --quiet --prefix=psppire_marshal $? > $@
 
 #ensure the installcheck passes even if there is no X server available
-#installcheck-local:
-#	DISPLAY=/invalid/port $(MAKE) $(AM_MAKEFLAGS) installcheck-binPROGRAMS
-#src/ui/gui/include/gtk/gtk.h: src/ui/gui/include/gtk/gtk.in.h
-#	@$(MKDIR_P) src/ui/gui/include/gtk
-#	$(AM_V_GEN)rm -f $@-t $@ && \
-#	{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
-#	  $(SED) -e 's|%''INCLUDE_NEXT''%|$(INCLUDE_NEXT)|g' \
-#	      -e 's|%''PRAGMA_SYSTEM_HEADER''%|$(PRAGMA_SYSTEM_HEADER)|g' \
-#	      -e 's|%''PRAGMA_COLUMNS''%|$(PRAGMA_COLUMNS)|g' \
-#	      -e 's|%''NEXT_GTK_GTK_H''%|$(NEXT_GTK_GTK_H)|g' \
-#	      < $(srcdir)/src/ui/gui/include/gtk/gtk.in.h; \
-#	} > $@-t && \
-#	mv $@-t $@
-#src/ui/gui/include/glib.h: src/ui/gui/include/glib.in.h
-#	@$(MKDIR_P) src/ui/gui/include
-#	$(AM_V_GEN)rm -f $@-t $@ && \
-#	{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
-#	  $(SED) -e 's|%''INCLUDE_NEXT''%|$(INCLUDE_NEXT)|g' \
-#	      -e 's|%''PRAGMA_SYSTEM_HEADER''%|$(PRAGMA_SYSTEM_HEADER)|g' \
-#	      -e 's|%''PRAGMA_COLUMNS''%|$(PRAGMA_COLUMNS)|g' \
-#	      -e 's|%''NEXT_GLIB_H''%|$(NEXT_GLIB_H)|g' \
-#	      < $(srcdir)/src/ui/gui/include/glib.in.h; \
-#	} > $@-t && \
-#	mv $@-t $@
+installcheck-local:
+	DISPLAY=/invalid/port $(MAKE) $(AM_MAKEFLAGS) installcheck-binPROGRAMS
+src/ui/gui/include/gtk/gtk.h: src/ui/gui/include/gtk/gtk.in.h
+	@$(MKDIR_P) src/ui/gui/include/gtk
+	$(AM_V_GEN)rm -f $@-t $@ && \
+	{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+	  $(SED) -e 's|%''INCLUDE_NEXT''%|$(INCLUDE_NEXT)|g' \
+	      -e 's|%''PRAGMA_SYSTEM_HEADER''%|$(PRAGMA_SYSTEM_HEADER)|g' \
+	      -e 's|%''PRAGMA_COLUMNS''%|$(PRAGMA_COLUMNS)|g' \
+	      -e 's|%''NEXT_GTK_GTK_H''%|$(NEXT_GTK_GTK_H)|g' \
+	      < $(srcdir)/src/ui/gui/include/gtk/gtk.in.h; \
+	} > $@-t && \
+	mv $@-t $@
+src/ui/gui/include/glib.h: src/ui/gui/include/glib.in.h
+	@$(MKDIR_P) src/ui/gui/include
+	$(AM_V_GEN)rm -f $@-t $@ && \
+	{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+	  $(SED) -e 's|%''INCLUDE_NEXT''%|$(INCLUDE_NEXT)|g' \
+	      -e 's|%''PRAGMA_SYSTEM_HEADER''%|$(PRAGMA_SYSTEM_HEADER)|g' \
+	      -e 's|%''PRAGMA_COLUMNS''%|$(PRAGMA_COLUMNS)|g' \
+	      -e 's|%''NEXT_GLIB_H''%|$(NEXT_GLIB_H)|g' \
+	      < $(srcdir)/src/ui/gui/include/glib.in.h; \
+	} > $@-t && \
+	mv $@-t $@
 
-#install-ext-icons:
-#	for context in apps mimetypes; do \
-#		for size in $(sizes); do \
-#		$(MKDIR_P) $(themedir)/$$size/$$context ; \
-#			if (cd $(top_srcdir)/src/ui/gui/icons/$$size/$$context && \
-#				(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
-#				$(INSTALL_DATA) $(top_srcdir)/src/ui/gui/icons/$$size/$$context/* $(themedir)/$$size/$$context ; \
-#			fi ; \
-#		done ; \
-#	done
+install-ext-icons:
+	for context in apps mimetypes; do \
+		for size in $(sizes); do \
+		$(MKDIR_P) $(themedir)/$$size/$$context ; \
+			if (cd $(top_srcdir)/src/ui/gui/icons/$$size/$$context && \
+				(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
+				$(INSTALL_DATA) $(top_srcdir)/src/ui/gui/icons/$$size/$$context/* $(themedir)/$$size/$$context ; \
+			fi ; \
+		done ; \
+	done
 
-#uninstall-ext-icons:
-#	for context in apps mimetypes; do \
-#		for size in $(sizes); do \
-#			if (cd $(top_srcdir)/src/ui/gui/icons/$$size/$$context && \
-#				(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
-#				  rm -rf $(themedir)/$$size/$$context/application-x-spss-* ; \
-#				  rm -rf $(themedir)/$$size/$$context/pspp* ; \
-#				  rm -rf $(themedir)/$$size/$$context/org.gnu.pspp*; \
-#			fi ; \
-#		done ; \
-#	done
+uninstall-ext-icons:
+	for context in apps mimetypes; do \
+		for size in $(sizes); do \
+			if (cd $(top_srcdir)/src/ui/gui/icons/$$size/$$context && \
+				(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
+				  rm -rf $(themedir)/$$size/$$context/application-x-spss-* ; \
+				  rm -rf $(themedir)/$$size/$$context/pspp* ; \
+				  rm -rf $(themedir)/$$size/$$context/org.gnu.pspp*; \
+			fi ; \
+		done ; \
+	done
 
-#install-icons:
-#	for wicon in $(w32_icons); do \
-#	  $(MKDIR_P) $(DESTDIR)$(pkgdatadir)/icons/ ; \
-#	  $(INSTALL_DATA) $$wicon $(DESTDIR)$(pkgdatadir)/icons/ ; \
-#	done
-#	for context in actions categories ; do \
-#	  $(MKDIR_P) $(DESTDIR)$(pkgdatadir)/$$context; \
-#	  for size in $(sizes); do \
-#		if (cd $(top_srcdir)/src/ui/gui/icons/$$context/$$size && \
-#			(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
-#			$(MKDIR_P) $(DESTDIR)$(pkgdatadir)/$$context/$$size ; \
-#			$(INSTALL_DATA) $(top_srcdir)/src/ui/gui/icons/$$context/$$size/* $(DESTDIR)$(pkgdatadir)/$$context/$$size ; \
-#		fi ; \
-#	  done ; \
-#	done
+install-icons:
+	for wicon in $(w32_icons); do \
+	  $(MKDIR_P) $(DESTDIR)$(pkgdatadir)/icons/ ; \
+	  $(INSTALL_DATA) $$wicon $(DESTDIR)$(pkgdatadir)/icons/ ; \
+	done
+	for context in actions categories ; do \
+	  $(MKDIR_P) $(DESTDIR)$(pkgdatadir)/$$context; \
+	  for size in $(sizes); do \
+		if (cd $(top_srcdir)/src/ui/gui/icons/$$context/$$size && \
+			(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
+			$(MKDIR_P) $(DESTDIR)$(pkgdatadir)/$$context/$$size ; \
+			$(INSTALL_DATA) $(top_srcdir)/src/ui/gui/icons/$$context/$$size/* $(DESTDIR)$(pkgdatadir)/$$context/$$size ; \
+		fi ; \
+	  done ; \
+	done
 
-#uninstall-icons:
-#	for context in actions categories ; do \
-#	  for size in $(sizes); do \
-#		if (cd $(top_srcdir)/src/ui/gui/icons/$$context/$$size && \
-#			(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
-#			rm -rf $(DESTDIR)$(pkgdatadir)/$$context/$$size ; \
-#		fi ; \
-#	  done ; \
-#	done
-#	rm -f $(DESTDIR)$(pkgdatadir)/icons/pspp*.ico
+uninstall-icons:
+	for context in actions categories ; do \
+	  for size in $(sizes); do \
+		if (cd $(top_srcdir)/src/ui/gui/icons/$$context/$$size && \
+			(test ! "`printf '%s %s %s' . .. *`" = '. .. *' || test -f '*')) 2> /dev/null ; then \
+			rm -rf $(DESTDIR)$(pkgdatadir)/$$context/$$size ; \
+		fi ; \
+	  done ; \
+	done
+	rm -f $(DESTDIR)$(pkgdatadir)/icons/pspp*.ico
 
-#src/ui/gui/icons/splash.png: $(top_srcdir)/src/ui/gui/icons/splash-t.png $(top_srcdir)/src/ui/gui/icons/splash-r.png Makefile
-#	@$(MKDIR_P) src/ui/gui/icons
-#	@case `echo $(VERSION) | $(SED) -e 's/[0-9][0-9]*\.[0-9]*\([0-9]\)\.[0-9][0-9]*/\1/'` in \
-#	  [13579]) cp $(top_srcdir)/src/ui/gui/icons/splash-t.png $@ ; \
-#	;;\
-#	  *) cp $(top_srcdir)/src/ui/gui/icons/splash-r.png $@ ; \
-#	;;\
-#esac
+src/ui/gui/icons/splash.png: $(top_srcdir)/src/ui/gui/icons/splash-t.png $(top_srcdir)/src/ui/gui/icons/splash-r.png Makefile
+	@$(MKDIR_P) src/ui/gui/icons
+	@case `echo $(VERSION) | $(SED) -e 's/[0-9][0-9]*\.[0-9]*\([0-9]\)\.[0-9][0-9]*/\1/'` in \
+	  [13579]) cp $(top_srcdir)/src/ui/gui/icons/splash-t.png $@ ; \
+	;;\
+	  *) cp $(top_srcdir)/src/ui/gui/icons/splash-r.png $@ ; \
+	;;\
+esac
 
-#src/ui/gui/icons/pspp.ico: src/ui/gui/icons/16x16/apps/org.gnu.pspp.png src/ui/gui/icons/32x32/apps/org.gnu.pspp.png src/ui/gui/icons/48x48/apps/org.gnu.pspp.png src/ui/gui/icons/256x256/apps/org.gnu.pspp.png
-#	$(MKDIR_P) ${@D}
-#	convert $^ $@
+src/ui/gui/icons/pspp.ico: src/ui/gui/icons/16x16/apps/org.gnu.pspp.png src/ui/gui/icons/32x32/apps/org.gnu.pspp.png src/ui/gui/icons/48x48/apps/org.gnu.pspp.png src/ui/gui/icons/256x256/apps/org.gnu.pspp.png
+	$(MKDIR_P) ${@D}
+	convert $^ $@
 
-#src/ui/gui/icons/pspp-sav.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-sav.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-sav.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-sav.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-sav.png
-#	$(MKDIR_P) ${@D}
-#	convert $^ $@
+src/ui/gui/icons/pspp-sav.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-sav.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-sav.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-sav.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-sav.png
+	$(MKDIR_P) ${@D}
+	convert $^ $@
 
-#src/ui/gui/icons/pspp-zsav.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-zsav.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-zsav.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-zsav.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-zsav.png
-#	$(MKDIR_P) ${@D}
-#	convert $^ $@
+src/ui/gui/icons/pspp-zsav.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-zsav.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-zsav.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-zsav.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-zsav.png
+	$(MKDIR_P) ${@D}
+	convert $^ $@
 
-#src/ui/gui/icons/pspp-por.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-por.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-por.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-por.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-por.png
-#	$(MKDIR_P) ${@D}
-#	convert $^ $@
+src/ui/gui/icons/pspp-por.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-por.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-por.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-por.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-por.png
+	$(MKDIR_P) ${@D}
+	convert $^ $@
 
-#src/ui/gui/icons/pspp-sps.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-sps.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-sps.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-sps.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-sps.png
-#	$(MKDIR_P) ${@D}
-#	convert $^ $@
+src/ui/gui/icons/pspp-sps.ico: src/ui/gui/icons/16x16/mimetypes/application-x-spss-sps.png src/ui/gui/icons/32x32/mimetypes/application-x-spss-sps.png src/ui/gui/icons/48x48/mimetypes/application-x-spss-sps.png src/ui/gui/icons/256x256/mimetypes/application-x-spss-sps.png
+	$(MKDIR_P) ${@D}
+	convert $^ $@
 
-#src/ui/gui/pspp.res: src/ui/gui/pspp.rc $(w32_icons)
-#	@$(MKDIR_P) src/ui/gui
-#	$(host_triplet)-windres  $< -O coff -o $@
+src/ui/gui/pspp.res: src/ui/gui/pspp.rc $(w32_icons)
+	@$(MKDIR_P) src/ui/gui
+	$(host_triplet)-windres  $< -O coff -o $@
 
-#src/ui/gui/glade-wrapper: src/ui/gui/glade-wrapper.in
-#	$(SED) -e 's%\@abs_top_srcdir\@%/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1%g' -e 's%\@abs_top_builddir\@%/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1%g'  $< > $@
-#	chmod a+x $@
-#glade-tools: src/ui/gui/glade-wrapper src/ui/gui/libpsppire-glade.la
+src/ui/gui/glade-wrapper: src/ui/gui/glade-wrapper.in
+	$(SED) -e 's%\@abs_top_srcdir\@%/pspp-2.0.1%g' -e 's%\@abs_top_builddir\@%/pspp-2.0.1%g'  $< > $@
+	chmod a+x $@
+glade-tools: src/ui/gui/glade-wrapper src/ui/gui/libpsppire-glade.la
 
 # This works around a possible bug in Automake 1.16.1 which installs
 # EXTRA_pkgLTLIBRARIES if DESTDIR is set.  It should not do that.
-#install-EXTRA_pkgLTLIBRARIES:
-#	true
+install-EXTRA_pkgLTLIBRARIES:
+	true
 
 check-programs: $(check_PROGRAMS)
 
@@ -22584,8 +22585,8 @@ doc/org.gnu.pspp.desktop: doc/org.gnu.pspp.desktop.in $(POFILES)
 
 doc-make: doc/doc-make.in Makefile
 	$(SED) -e 's|%top_srcdir%|.|g' \
-	-e 's|%abs_builddir%|/Users/mihailzaharov/Desktop/red-2/pspp-2.0.1|g' \
-	-e 's|%MKDIR_P%|/opt/local/bin/gmkdir -p|g' \
+	-e 's|%abs_builddir%|/pspp-2.0.1|g' \
+	-e 's|%MKDIR_P%|/usr/sbin/mkdir -p|g' \
 	-e 's|%src_ui_gui_psppiredir%|$(src_ui_gui_psppiredir)|g' \
 	-e 's|%UI_FILES%|$(UI_FILES)|g' \
 	-e 's|%IMAGES%|$(INFO_SCREENSHOTS) $(HTML_SCREENSHOTS) $(EPS_SCREENSHOTS) $(PDF_SCREENSHOTS)|g' \

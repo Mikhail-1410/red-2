@@ -825,15 +825,7 @@ to list the data.  The optional text ‘/format=numbered’ requests the
 case numbers to be shown along with the data.  It should show the
 following output:
 
- [image src="pspp-figures/tutorial1.png" text="           Data List
-+-----------+---------+------+
-|Case Number| forename|height|
-+-----------+---------+------+
-|1          |Ahmed    |188.00|
-|2          |Bertram  |167.00|
-|3          |Catherine|134.23|
-|4          |David    |109.10|
-+-----------+---------+------+" ]
+ [image src="pspp-figures/tutorial1.png" ]
 
 
 Note that the numeric variable height is displayed to 2 decimal places,
@@ -960,16 +952,7 @@ identify the erroneous values:
 
 For this example, PSPP produces the following output:
 
- [image src="pspp-figures/tutorial2a.png" text="                  Descriptive Statistics
-+---------------------+--+-------+-------+-------+-------+
-|                     | N|  Mean |Std Dev|Minimum|Maximum|
-+---------------------+--+-------+-------+-------+-------+
-|Sex of subject       |40|    .45|    .50|Male   |Female |
-|Weight in kilograms  |40|  72.12|  26.70|  -55.6|   92.1|
-|Height in millimeters|40|1677.12| 262.87|    179|   1903|
-|Valid N (listwise)   |40|       |       |       |       |
-|Missing N (listwise) | 0|       |       |       |       |
-+---------------------+--+-------+-------+-------+-------+" ]
+ [image src="pspp-figures/tutorial2a.png" ]
 
 
    The most interesting column in the output is the minimum value.  The
@@ -985,26 +968,7 @@ and is a seemingly bizarre height for an adult person.
 
 This command produces the following additional output (in part):
 
- [image src="pspp-figures/tutorial2b.png" text="                   Extreme Values
-+-------------------------------+-----------+-----+
-|                               |Case Number|Value|
-+-------------------------------+-----------+-----+
-|Height in millimeters Highest 1|         14| 1903|
-|                              2|         15| 1884|
-|                              3|         12| 1802|
-|                     ----------+-----------+-----+
-|                      Lowest  1|         30|  179|
-|                              2|         31| 1598|
-|                              3|         28| 1601|
-+-------------------------------+-----------+-----+
-|Weight in kilograms   Highest 1|         13| 92.1|
-|                              2|          5| 92.1|
-|                              3|         17| 91.7|
-|                     ----------+-----------+-----+
-|                      Lowest  1|         38|-55.6|
-|                              2|         39| 54.5|
-|                              3|         33| 55.4|
-+-------------------------------+-----------+-----+" ]
+ [image src="pspp-figures/tutorial2b.png" ]
 
 
 From this new output, you can see that the lowest value of height is 179
@@ -1059,66 +1023,7 @@ commands load the file and display its variables and associated data:
 
 It yields the following output:
 
- [image src="pspp-figures/tutorial3.png" text="                                   Variables
-+----+--------+-------------+------------+-----+-----+---------+------+-------+
-|    |        |             | Measurement|     |     |         | Print| Write |
-|Name|Position|    Label    |    Level   | Role|Width|Alignment|Format| Format|
-+----+--------+-------------+------------+-----+-----+---------+------+-------+
-|v1  |       1|I am         |Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
-|    |        |satisfied    |            |     |     |         |      |       |
-|    |        |with the     |            |     |     |         |      |       |
-|    |        |level of     |            |     |     |         |      |       |
-|    |        |service      |            |     |     |         |      |       |
-|v2  |       2|The value for|Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
-|    |        |money was    |            |     |     |         |      |       |
-|    |        |good         |            |     |     |         |      |       |
-|v3  |       3|The staff    |Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
-|    |        |were slow in |            |     |     |         |      |       |
-|    |        |responding   |            |     |     |         |      |       |
-|v4  |       4|My concerns  |Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
-|    |        |were dealt   |            |     |     |         |      |       |
-|    |        |with in an   |            |     |     |         |      |       |
-|    |        |efficient    |            |     |     |         |      |       |
-|    |        |manner       |            |     |     |         |      |       |
-|v5  |       5|There was too|Ordinal     |Input|    8|Right    |F8.0  |F8.0   |
-|    |        |much noise in|            |     |     |         |      |       |
-|    |        |the rooms    |            |     |     |         |      |       |
-+----+--------+-------------+------------+-----+-----+---------+------+-------+
-
-                              Value Labels
-+----------------------------------------------------+-----------------+
-|Variable Value                                      |      Label      |
-+----------------------------------------------------+-----------------+
-|I am satisfied with the level of service           1|Strongly Disagree|
-|                                                   2|Disagree         |
-|                                                   3|No Opinion       |
-|                                                   4|Agree            |
-|                                                   5|Strongly Agree   |
-+----------------------------------------------------+-----------------+
-|The value for money was good                       1|Strongly Disagree|
-|                                                   2|Disagree         |
-|                                                   3|No Opinion       |
-|                                                   4|Agree            |
-|                                                   5|Strongly Agree   |
-+----------------------------------------------------+-----------------+
-|The staff were slow in responding                  1|Strongly Disagree|
-|                                                   2|Disagree         |
-|                                                   3|No Opinion       |
-|                                                   4|Agree            |
-|                                                   5|Strongly Agree   |
-+----------------------------------------------------+-----------------+
-|My concerns were dealt with in an efficient manner 1|Strongly Disagree|
-|                                                   2|Disagree         |
-|                                                   3|No Opinion       |
-|                                                   4|Agree            |
-|                                                   5|Strongly Agree   |
-+----------------------------------------------------+-----------------+
-|There was too much noise in the rooms              1|Strongly Disagree|
-|                                                   2|Disagree         |
-|                                                   3|No Opinion       |
-|                                                   4|Agree            |
-|                                                   5|Strongly Agree   |
-+----------------------------------------------------+-----------------+" ]
+ [image src="pspp-figures/tutorial3.png" ]
 
 
    The output shows that all of the variables v1 through v5 are measured
@@ -1161,23 +1066,7 @@ and v4.
 
 This yields the following output:
 
- [image src="pspp-figures/tutorial4.png" text="Scale: ANY
-
-Case Processing Summary
-+--------+--+-------+
-|Cases   | N|Percent|
-+--------+--+-------+
-|Valid   |17| 100.0%|
-|Excluded| 0|    .0%|
-|Total   |17| 100.0%|
-+--------+--+-------+
-
-    Reliability Statistics
-+----------------+----------+
-|Cronbach's Alpha|N of Items|
-+----------------+----------+
-|             .81|         3|
-+----------------+----------+" ]
+ [image src="pspp-figures/tutorial4.png" ]
 
 
    As a rule of thumb, many statisticians consider a value of Cronbach's
@@ -1212,38 +1101,7 @@ is normally distributed.
 
 This produces the following output:
 
- [image src="pspp-figures/tutorial5a.png" text="                                  Descriptives
-+----------------------------------------------------------+---------+--------+
-|                                                          |         |  Std.  |
-|                                                          |Statistic|  Error |
-+----------------------------------------------------------+---------+--------+
-|Mean time between        Mean                             |     8.78|    1.10|
-|failures (months)       ----------------------------------+---------+--------+
-|                         95% Confidence Interval Lower    |     6.53|        |
-|                         for Mean                Bound    |         |        |
-|                                                 Upper    |    11.04|        |
-|                                                 Bound    |         |        |
-|                        ----------------------------------+---------+--------+
-|                         5% Trimmed Mean                  |     8.20|        |
-|                        ----------------------------------+---------+--------+
-|                         Median                           |     8.29|        |
-|                        ----------------------------------+---------+--------+
-|                         Variance                         |    36.34|        |
-|                        ----------------------------------+---------+--------+
-|                         Std. Deviation                   |     6.03|        |
-|                        ----------------------------------+---------+--------+
-|                         Minimum                          |     1.63|        |
-|                        ----------------------------------+---------+--------+
-|                         Maximum                          |    26.47|        |
-|                        ----------------------------------+---------+--------+
-|                         Range                            |    24.84|        |
-|                        ----------------------------------+---------+--------+
-|                         Interquartile Range              |     6.03|        |
-|                        ----------------------------------+---------+--------+
-|                         Skewness                         |     1.65|     .43|
-|                        ----------------------------------+---------+--------+
-|                         Kurtosis                         |     3.41|     .83|
-+----------------------------------------------------------+---------+--------+" ]
+ [image src="pspp-figures/tutorial5a.png" ]
 
 
    A normal distribution has a skewness and kurtosis of zero.  The
@@ -1259,35 +1117,7 @@ continuation of the example:
 
 which produces the following additional output:
 
- [image src="pspp-figures/tutorial5b.png" text="                                Descriptives
-+----------------------------------------------------+---------+----------+
-|                                                    |Statistic|Std. Error|
-+----------------------------------------------------+---------+----------+
-|mtbf_ln Mean                                        |     1.95|       .13|
-|       ---------------------------------------------+---------+----------+
-|        95% Confidence Interval for Mean Lower Bound|     1.69|          |
-|                                         Upper Bound|     2.22|          |
-|       ---------------------------------------------+---------+----------+
-|        5% Trimmed Mean                             |     1.96|          |
-|       ---------------------------------------------+---------+----------+
-|        Median                                      |     2.11|          |
-|       ---------------------------------------------+---------+----------+
-|        Variance                                    |      .49|          |
-|       ---------------------------------------------+---------+----------+
-|        Std. Deviation                              |      .70|          |
-|       ---------------------------------------------+---------+----------+
-|        Minimum                                     |      .49|          |
-|       ---------------------------------------------+---------+----------+
-|        Maximum                                     |     3.28|          |
-|       ---------------------------------------------+---------+----------+
-|        Range                                       |     2.79|          |
-|       ---------------------------------------------+---------+----------+
-|        Interquartile Range                         |      .88|          |
-|       ---------------------------------------------+---------+----------+
-|        Skewness                                    |     -.37|       .43|
-|       ---------------------------------------------+---------+----------+
-|        Kurtosis                                    |      .01|       .83|
-+----------------------------------------------------+---------+----------+" ]
+ [image src="pspp-figures/tutorial5b.png" ]
 
 
    The ‘COMPUTE’ command in the first line above performs the
@@ -1388,82 +1218,7 @@ that the body temperature of male and female persons are different.
 
    PSPP produces the following output for this syntax:
 
- [image src="pspp-figures/tutorial6.png" text="                                Group Statistics
-+-------------------------------------------+--+-------+-------------+--------+
-|                                           |  |       |     Std.    |  S.E.  |
-|                                     Group | N|  Mean |  Deviation  |  Mean  |
-+-------------------------------------------+--+-------+-------------+--------+
-|Height in millimeters                Male  |22|1796.49|        49.71|   10.60|
-|                                     Female|17|1610.77|        25.43|    6.17|
-+-------------------------------------------+--+-------+-------------+--------+
-|Internal body temperature in degrees Male  |22|  36.68|         1.95|     .42|
-|Celcius                              Female|18|  37.43|         1.61|     .38|
-+-------------------------------------------+--+-------+-------------+--------+
-
-                          Independent Samples Test
-+---------------------+----------+------------------------------------------
-|                     | Levene's |
-|                     | Test for |
-|                     | Equality |
-|                     |    of    |
-|                     | Variances|              T-Test for Equality of Means
-|                     +----+-----+-----+-----+-------+----------+----------+
-|                     |    |     |     |     |       |          |          |
-|                     |    |     |     |     |       |          |          |
-|                     |    |     |     |     |       |          |          |
-|                     |    |     |     |     |       |          |          |
-|                     |    |     |     |     |  Sig. |          |          |
-|                     |    |     |     |     |  (2-  |   Mean   |Std. Error|
-|                     |  F | Sig.|  t  |  df |tailed)|Difference|Difference|
-+---------------------+----+-----+-----+-----+-------+----------+----------+
-|Height in   Equal    | .97| .331|14.02|37.00|   .000|    185.72|     13.24|
-|millimeters variances|    |     |     |     |       |          |          |
-|            assumed  |    |     |     |     |       |          |          |
-|            Equal    |    |     |15.15|32.71|   .000|    185.72|     12.26|
-|            variances|    |     |     |     |       |          |          |
-|            not      |    |     |     |     |       |          |          |
-|            assumed  |    |     |     |     |       |          |          |
-+---------------------+----+-----+-----+-----+-------+----------+----------+
-|Internal    Equal    | .31| .581|-1.31|38.00|   .198|      -.75|       .57|
-|body        variances|    |     |     |     |       |          |          |
-|temperature assumed  |    |     |     |     |       |          |          |
-|in degrees  Equal    |    |     |-1.33|37.99|   .190|      -.75|       .56|
-|Celcius     variances|    |     |     |     |       |          |          |
-|            not      |    |     |     |     |       |          |          |
-|            assumed  |    |     |     |     |       |          |          |
-+---------------------+----+-----+-----+-----+-------+----------+----------+
-
-+---------------------+-------------+
-|                     |             |
-|                     |             |
-|                     |             |
-|                     |             |
-|                     |             |
-|                     +-------------+
-|                     |     95%     |
-|                     |  Confidence |
-|                     | Interval of |
-|                     |     the     |
-|                     |  Difference |
-|                     +------+------+
-|                     | Lower| Upper|
-+---------------------+------+------+
-|Height in   Equal    |158.88|212.55|
-|millimeters variances|      |      |
-|            assumed  |      |      |
-|            Equal    |160.76|210.67|
-|            variances|      |      |
-|            not      |      |      |
-|            assumed  |      |      |
-+---------------------+------+------+
-|Internal    Equal    | -1.91|   .41|
-|body        variances|      |      |
-|temperature assumed  |      |      |
-|in degrees  Equal    | -1.89|   .39|
-|Celcius     variances|      |      |
-|            not      |      |      |
-|            assumed  |      |      |
-+---------------------+------+------+" ]
+ [image src="pspp-figures/tutorial6.png" ]
 
 
    The ‘T-TEST’ command tests for differences of means.  Here, the
@@ -1502,19 +1257,7 @@ relationship.  *Note REGRESSION::.
 
 This attempt yields the following output (in part):
 
- [image src="pspp-figures/tutorial7a.png" text="                  Coefficients (Mean time to repair (hours) )
-+------------------------+---------------------+-------------------+-----+----+
-|                        |    Unstandardized   |    Standardized   |     |    |
-|                        |     Coefficients    |    Coefficients   |     |    |
-|                        +---------+-----------+-------------------+     |    |
-|                        |    B    | Std. Error|        Beta       |  t  |Sig.|
-+------------------------+---------+-----------+-------------------+-----+----+
-|(Constant)              |    10.59|       3.11|                .00| 3.40|.002|
-|Mean time between       |     3.02|        .20|                .95|14.88|.000|
-|failures (months)       |         |           |                   |     |    |
-|Ratio of working to non-|    -1.12|       3.69|               -.02| -.30|.763|
-|working time            |         |           |                   |     |    |
-+------------------------+---------+-----------+-------------------+-----+----+" ]
+ [image src="pspp-figures/tutorial7a.png" ]
 
 
    The coefficients in the above table suggest that the formula MTTR =
@@ -1528,17 +1271,7 @@ variable:
 
 This second try produces the following output (in part):
 
- [image src="pspp-figures/tutorial7b.png" text="                  Coefficients (Mean time to repair (hours) )
-+-----------------------+----------------------+-------------------+-----+----+
-|                       |    Unstandardized    |    Standardized   |     |    |
-|                       |     Coefficients     |    Coefficients   |     |    |
-|                       +---------+------------+-------------------+     |    |
-|                       |    B    | Std. Error |        Beta       |  t  |Sig.|
-+-----------------------+---------+------------+-------------------+-----+----+
-|(Constant)             |     9.90|        2.10|                .00| 4.71|.000|
-|Mean time between      |     3.01|         .20|                .94|15.21|.000|
-|failures (months)      |         |            |                   |     |    |
-+-----------------------+---------+------------+-------------------+-----+----+" ]
+ [image src="pspp-figures/tutorial7b.png" ]
 
 
    This time, the significance of all coefficients is no higher than
@@ -7130,4 +6863,413 @@ response sets.  Its syntax is the same as the ‘DELETE’ subcommand.
    Multiple response sets are saved to and read from system files by,
 e.g., the ‘SAVE’ and ‘GET’ command.  Otherwise, multiple response sets
 are currently used only by third party software.
+
+
+File: pspp.info,  Node: LEAVE,  Prev: MRSETS,  Up: Manipulating Variables
+
+11.21 LEAVE
+===========
+
+‘LEAVE’ prevents the specified variables from being reinitialized
+whenever a new case is processed.
+
+     LEAVE VAR_LIST.
+
+   Normally, when a data file is processed, every variable in the active
+dataset is initialized to the system-missing value or spaces at the
+beginning of processing for each case.  When a variable has been
+specified on ‘LEAVE’, this is not the case.  Instead, that variable is
+initialized to 0 (not system-missing) or spaces for the first case.
+After that, it retains its value between cases.
+
+   This becomes useful for counters.  For instance, in the example below
+the variable ‘SUM’ maintains a running total of the values in the ‘ITEM’
+variable.
+
+     DATA LIST /ITEM 1-3.
+     COMPUTE SUM=SUM+ITEM.
+     PRINT /ITEM SUM.
+     LEAVE SUM
+     BEGIN DATA.
+     123
+     404
+     555
+     999
+     END DATA.
+
+Partial output from this example:
+
+     123   123.00
+     404   527.00
+     555  1082.00
+     999  2081.00
+
+   It is best to use ‘LEAVE’ command immediately before invoking a
+procedure command, because the left status of variables is reset by
+certain transformations--for instance, ‘COMPUTE’ and ‘IF’.  Left status
+is also reset by all procedure invocations.
+
+
+File: pspp.info,  Node: Data Manipulation,  Next: Data Selection,  Prev: Manipulating Variables,  Up: Top
+
+12 Data transformations
+***********************
+
+The PSPP procedures examined in this chapter manipulate data and prepare
+the active dataset for later analyses.  They do not produce output, as a
+rule.
+
+* Menu:
+
+* AGGREGATE::                   Summarize multiple cases into a single case.
+* AUTORECODE::                  Automatic recoding of variables.
+* COMPUTE::                     Assigning a variable a calculated value.
+* COUNT::                       Counting variables with particular values.
+* FLIP::                        Exchange variables with cases.
+* IF::                          Conditionally assigning a calculated value.
+* RECODE::                      Mapping values from one set to another.
+* SORT CASES::                  Sort the active dataset.
+
+
+File: pspp.info,  Node: AGGREGATE,  Next: AUTORECODE,  Up: Data Manipulation
+
+12.1 AGGREGATE
+==============
+
+     AGGREGATE
+             [OUTFILE={*,'FILE_NAME',FILE_HANDLE} [MODE={REPLACE,ADDVARIABLES}]]
+             [/MISSING=COLUMNWISE]
+             [/PRESORTED]
+             [/DOCUMENT]
+             [/BREAK=VAR_LIST]
+             /DEST_VAR['LABEL']...=AGR_FUNC(SRC_VARS[, ARGS]...)...
+
+   ‘AGGREGATE’ summarizes groups of cases into single cases.  It divides
+cases into groups that have the same values for one or more variables
+called “break variables”.  Several functions are available for
+summarizing case contents.
+
+   The ‘AGGREGATE’ syntax consists of subcommands to control its
+behavior, all of which are optional, followed by one or more destination
+variable assigments, each of which uses an aggregation function to
+define how it is calculated.
+
+   The ‘OUTFILE’ subcommand, which must be first, names the destination
+for ‘AGGREGATE’ output.  It may name a system file by file name or file
+handle (*note File Handles::), a dataset by its name (*note Datasets::),
+or ‘*’ to replace the active dataset.  ‘AGGREGATE’ writes its output to
+this file.
+
+   With ‘OUTFILE=*’ only, ‘MODE’ may be specified immediately afterward
+with the value ‘ADDVARIABLES’ or ‘REPLACE’:
+
+   • With ‘REPLACE’, the default, the active dataset is replaced by a
+     new dataset which contains just the break variables and the
+     destination varibles.  The new file contains as many cases as there
+     are unique combinations of the break variables.
+
+   • With ‘ADDVARIABLES’, the destination variables are added to those
+     in the existing active dataset.  Cases that have the same
+     combination of values in their break variables receive identical
+     values for the destination variables.  The number of cases in the
+     active dataset remains unchanged.  The data must be sorted on the
+     break variables, that is, ‘ADDVARIABLES’ implies ‘PRESORTED’
+
+   If ‘OUTFILE’ is omitted, ‘AGGREGATE’ acts as if ‘OUTFILE=*
+MODE=ADDVARIABLES’ were specified.
+
+   By default, ‘AGGREGATE’ first sorts the data on the break variables.
+If the active dataset is already sorted or grouped by the break
+variables, specify ‘PRESORTED’ to save time.  With ‘MODE=ADDVARIABLES’,
+the data must be pre-sorted.
+
+   Specify ‘DOCUMENT’ to copy the documents from the active dataset into
+the aggregate file (*note DOCUMENT::).  Otherwise, the aggregate file
+does not contain any documents, even if the aggregate file replaces the
+active dataset.
+
+   Normally, ‘AGGREGATE’ produces a non-missing value whenever there is
+enough non-missing data for the aggregation function in use, that is,
+just one non-missing value or, for the ‘SD’ and ‘SD.’ aggregation
+functions, two non-missing values.  Specify ‘/MISSING=COLUMNWISE’ to
+make ‘AGGREGATE’ output a missing value when one or more of the input
+values are missing.
+
+   The ‘BREAK’ subcommand is optionally but usually present.  On
+‘BREAK’, list the variables used to divide the active dataset into
+groups to be summarized.
+
+   ‘AGGREGATE’ is particular about the order of subcommands.  ‘OUTFILE’
+must be first, followed by ‘MISSING’.  ‘PRESORTED’ and ‘DOCUMENT’ follow
+‘MISSING’, in either order, followed by ‘BREAK’, then followed by
+aggregation variable specifications.
+
+   At least one set of aggregation variables is required.  Each set
+comprises a list of aggregation variables, an equals sign (‘=’), the
+name of an aggregation function (see the list below), and a list of
+source variables in parentheses.  A few aggregation functions do not
+accept source variables, and some aggregation functions expect
+additional arguments after the source variable names.
+
+   ‘AGGREGATE’ typically creates aggregation variables with no variable
+label, value labels, or missing values.  Their default print and write
+formats depend on the aggregation function used, with details given in
+the table below.  A variable label for an aggregation variable may be
+specified just after the variable's name in the aggregation variable
+list.
+
+   Each set must have exactly as many source variables as aggregation
+variables.  Each aggregation variable receives the results of applying
+the specified aggregation function to the corresponding source variable.
+
+   The following aggregation functions may be applied only to numeric
+variables:
+
+‘MEAN(VAR_NAME...)’
+     Arithmetic mean.  Limited to numeric values.  The default format is
+     F8.2.
+
+‘MEDIAN(VAR_NAME...)’
+     The median value.  Limited to numeric values.  The default format
+     is F8.2.
+
+‘SD(VAR_NAME...)’
+     Standard deviation of the mean.  Limited to numeric values.  The
+     default format is F8.2.
+
+‘SUM(VAR_NAME...)’
+     Sum.  Limited to numeric values.  The default format is F8.2.
+
+   These aggregation functions may be applied to numeric and string
+variables:
+
+‘CGT(VAR_NAME..., VALUE)’
+‘CLT(VAR_NAME..., VALUE)’
+‘CIN(VAR_NAME..., LOW, HIGH)’
+‘COUT(VAR_NAME..., LOW, HIGH)’
+     Total weight of cases greater than or less than VALUE or inside or
+     outside the closed range [LOW,HIGH], respectively.  The default
+     format is F5.3.
+
+‘FGT(VAR_NAME..., VALUE)’
+‘FLT(VAR_NAME..., VALUE)’
+‘FIN(VAR_NAME..., LOW, HIGH)’
+‘FOUT(VAR_NAME..., LOW, HIGH)’
+     Fraction of values greater than or less than VALUE or inside or
+     outside the closed range [LOW,HIGH], respectively.  The default
+     format is F5.3.
+
+‘FIRST(VAR_NAME...)’
+‘LAST(VAR_NAME...)’
+     First or last non-missing value, respectively, in break group.  The
+     aggregation variable receives the complete dictionary information
+     from the source variable.  The sort performed by ‘AGGREGATE’ (and
+     by ‘SORT CASES’) is stable.  This means that the first (or last)
+     case with particular values for the break variables before sorting
+     is also the first (or last) case in that break group after sorting.
+
+‘MIN(VAR_NAME...)’
+‘MAX(VAR_NAME...)’
+     Minimum or maximum value, respectively.  The aggregation variable
+     receives the complete dictionary information from the source
+     variable.
+
+‘N(VAR_NAME...)’
+‘NMISS(VAR_NAME...)’
+     Total weight of non-missing or missing values, respectively.  The
+     default format is F7.0 if weighting is not enabled, F8.2 if it is
+     (*note WEIGHT::).
+
+‘NU(VAR_NAME...)’
+‘NUMISS(VAR_NAME...)’
+     Count of non-missing or missing values, respectively, ignoring case
+     weights.  The default format is F7.0.
+
+‘PGT(VAR_NAME..., VALUE)’
+‘PLT(VAR_NAME..., VALUE)’
+‘PIN(VAR_NAME..., LOW, HIGH)’
+‘POUT(VAR_NAME..., LOW, HIGH)’
+     Percentage between 0 and 100 of values greater than or less than
+     VALUE or inside or outside the closed range [LOW,HIGH],
+     respectively.  The default format is F5.1.
+
+   These aggregation functions do not accept source variables:
+
+‘N’
+     Total weight of cases aggregated to form this group.  The default
+     format is F7.0 if weighting is not enabled, F8.2 if it is (*note
+     WEIGHT::).
+
+‘NU’
+     Count of cases aggregated to form this group, ignoring case
+     weights.  The default format is F7.0.
+
+   Aggregation functions compare string values in terms of internal
+character codes.  On most modern computers, this is ASCII or a superset
+thereof.
+
+   The aggregation functions listed above exclude all user-missing
+values from calculations.  To include user-missing values, insert a
+period (‘.’) at the end of the function name.  (e.g. ‘SUM.’).  (Be aware
+that specifying such a function as the last token on a line causes the
+period to be interpreted as the end of the command.)
+
+   ‘AGGREGATE’ both ignores and cancels the current ‘SPLIT FILE’
+settings (*note SPLIT FILE::).
+
+12.1.1 Aggregate Example
+------------------------
+
+The ‘personnel.sav’ dataset provides the occupations and salaries of
+many individuals.  For many purposes however such detailed information
+is not interesting, but often the aggregated statistics of each
+occupation are of interest.  In *note Example 12.1: aggregate:ex. the
+‘AGGREGATE’ command is used to calculate the mean, the median and the
+standard deviation of each occupation.
+
+     GET FILE="personnel.sav".
+     AGGREGATE OUTFILE=* MODE=REPLACE
+             /BREAK=occupation
+             /occ_mean_salary=MEAN(salary)
+             /occ_median_salary=MEDIAN(salary)
+             /occ_std_dev_salary=SD(salary).
+     LIST.
+
+Example 12.1: Calculating aggregated statistics from the ‘personnel.sav’
+file.
+
+   Since we chose the ‘MODE=REPLACE’ option, in *note Results 12.1:
+aggregate:res. cases for the individual persons are no longer present.
+They have each been replaced by a single case per aggregated value.
+
+ [image src="pspp-figures/aggregate.png" ]
+
+
+Results 12.1: Aggregated mean, median and standard deviation per
+occupation.
+
+   Note that some values for the standard deviation are blank.  This is
+because there is only one case with the respective occupation.
+
+
+File: pspp.info,  Node: AUTORECODE,  Next: COMPUTE,  Prev: AGGREGATE,  Up: Data Manipulation
+
+12.2 AUTORECODE
+===============
+
+     AUTORECODE VARIABLES=SRC_VARS INTO DEST_VARS
+             [ /DESCENDING ]
+             [ /PRINT ]
+             [ /GROUP ]
+             [ /BLANK = {VALID, MISSING} ]
+
+   The ‘AUTORECODE’ procedure considers the N values that a variable
+takes on and maps them onto values 1...N on a new numeric variable.
+
+   Subcommand ‘VARIABLES’ is the only required subcommand and must come
+first.  Specify ‘VARIABLES’, an equals sign (‘=’), a list of source
+variables, ‘INTO’, and a list of target variables.  There must the same
+number of source and target variables.  The target variables must not
+already exist.
+
+   ‘AUTORECODE’ ordinarily assigns each increasing non-missing value of
+a source variable (for a string, this is based on character code
+comparisons) to consecutive values of its target variable.  For example,
+the smallest non-missing value of the source variable is recoded to
+value 1, the next smallest to 2, and so on.  If the source variable has
+user-missing values, they are recoded to consecutive values just above
+the non-missing values.  For example, if a source variables has seven
+distinct non-missing values, then the smallest missing value would be
+recoded to 8, the next smallest to 9, and so on.
+
+   Use ‘DESCENDING’ to reverse the sort order for non-missing values, so
+that the largest non-missing value is recoded to 1, the second-largest
+to 2, and so on.  Even with ‘DESCENDING’, user-missing values are still
+recoded in ascending order just above the non-missing values.
+
+   The system-missing value is always recoded into the system-missing
+variable in target variables.
+
+   If a source value has a value label, then that value label is
+retained for the new value in the target variable.  Otherwise, the
+source value itself becomes each new value's label.
+
+   Variable labels are copied from the source to target variables.
+
+   ‘PRINT’ is currently ignored.
+
+   The ‘GROUP’ subcommand is relevant only if more than one variable is
+to be recoded.  It causes a single mapping between source and target
+values to be used, instead of one map per variable.  With ‘GROUP’,
+user-missing values are taken from the first source variable that has
+any user-missing values.
+
+   If ‘/BLANK=MISSING’ is given, then string variables which contain
+only whitespace are recoded as SYSMIS. If ‘/BLANK=VALID’ is specified
+then they are allocated a value like any other.  ‘/BLANK’ is not
+relevant to numeric values.  ‘/BLANK=VALID’ is the default.
+
+   ‘AUTORECODE’ is a procedure.  It causes the data to be read.  It
+ignores ‘TEMPORARY’ (*note TEMPORARY::), so that "temporary"
+transformations become permanent.
+
+12.2.1 Autorecode Example
+-------------------------
+
+In the file ‘personnel.sav’, the variable occupation is a string
+variable.  Except for data of a purely commentary nature, string
+variables are generally a bad idea.  One reason is that data entry
+errors are easily overlooked.  This has happened in ‘personnel.sav’; one
+entry which should read "Scientist" has been mistyped as "Scrientist".
+In *note Example 12.2: autorecode:ex. first, this error is corrected by
+the ‘DO IF’ clause, (1) then we use ‘AUTORECODE’ to create a new numeric
+variable which takes recoded values of occupation.  Finally, we remove
+the old variable and rename the new variable to the name of the old
+variable.
+
+     get file='personnel.sav'.
+     
+     * Correct a typing error in the original file.
+     do if occupation = "Scrientist".
+      compute occupation = "Scientist".
+     end if.
+     
+     autorecode
+     	variables = occupation into occ
+     	/blank = missing.
+     
+     * Delete the old variable.
+     delete variables occupation.
+     
+     * Rename the new variable to the old variable's name.
+     rename variables (occ = occupation).
+     
+     * Inspect the new variable.
+     display dictionary /variables=occupation.
+     
+
+Example 12.2: Changing a string variable to a numeric variable using
+‘AUTORECODE’ after correcting a data entry error
+
+ [image src="screenshots/autorecode-ad.png" ]
+
+Screenshot 12.1: Autorecode dialog box set to recode occupation to occ
+
+   Notice in *note Result 12.1: autorecode:res, how the new variable has
+been automatically allocated value labels which correspond to the
+strings of the old variable.  This means that in future analyses the
+descriptive strings are reported instead of the numeric values.
+
+ [image src="pspp-figures/autorecode.png" ]
+
+
+Result 12.1: The properties of the occupation variable following
+‘AUTORECODE’
+
+   ---------- Footnotes ----------
+
+   (1) One must use care when correcting such data input errors rather
+than msimply marking them as missing.  For example, if an occupation has
+been entered "Barister", did the person mean "Barrister" or did she mean
+"Barista"?
 

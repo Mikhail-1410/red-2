@@ -787,7 +787,7 @@ _GL_WARN_ON_USE (tzset, "tzset has portability problems - "
 
 /* Return the 'time_t' representation of TP and normalize TP.  */
 # if 1
-#  if 1
+#  if 0
 #   if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #    define mktime rpl_mktime
 #   endif
@@ -1043,7 +1043,7 @@ _GL_CXXALIAS_SYS (mktime_z, time_t,
 
 /* Convert TM to a time_t value, assuming UTC.  */
 # if 1
-#  if 1
+#  if 0
 #   if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #    undef timegm
 #    define timegm rpl_timegm

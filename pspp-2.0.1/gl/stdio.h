@@ -853,7 +853,7 @@ _GL_WARN_ON_USE (fclose, "fclose is not always POSIX compliant - "
 #  endif
 _GL_CXXALIAS_MDA (fcloseall, int, (void));
 # else
-#  if 0
+#  if 1
 #   if defined __FreeBSD__ || defined __DragonFly__
 _GL_CXXALIAS_SYS (fcloseall, void, (void));
 #   else
@@ -861,7 +861,7 @@ _GL_CXXALIAS_SYS (fcloseall, int, (void));
 #   endif
 #  endif
 # endif
-# if (defined _WIN32 && !defined __CYGWIN__) || 0
+# if (defined _WIN32 && !defined __CYGWIN__) || 1
 _GL_CXXALIASWARN (fcloseall);
 # endif
 #endif
@@ -1476,7 +1476,7 @@ _GL_CXXALIASWARN (getchar);
    bytes of space.  It is realloc'd as necessary.
    Return the number of bytes read and stored at *LINEPTR (not including the
    NUL terminator), or -1 on error or EOF.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef getdelim
 #   define getdelim rpl_getdelim
@@ -1724,14 +1724,14 @@ _GL_WARN_ON_USE (popen, "popen is buggy on some platforms - "
 #   if 1 || 1
 _GL_FUNCDECL_RPL_1 (__printf__, int,
                     (const char *restrict format, ...)
-                    __asm__ ("_"
+                    __asm__ (""
                              _GL_STDIO_MACROEXPAND_AND_STRINGIZE(rpl_printf))
                     _GL_ATTRIBUTE_FORMAT_PRINTF_STANDARD (1, 2)
                     _GL_ARG_NONNULL ((1)));
 #   else
 _GL_FUNCDECL_RPL_1 (__printf__, int,
                     (const char *restrict format, ...)
-                    __asm__ ("_"
+                    __asm__ (""
                              _GL_STDIO_MACROEXPAND_AND_STRINGIZE(rpl_printf))
                     _GL_ATTRIBUTE_FORMAT_PRINTF_SYSTEM (1, 2)
                     _GL_ARG_NONNULL ((1)));
@@ -1859,7 +1859,7 @@ _GL_WARN_ON_USE (remove, "remove cannot handle directories on some platforms - "
 #endif
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef rename
 #   define rename rpl_rename
@@ -1922,7 +1922,7 @@ _GL_WARN_ON_USE (renameat, "renameat is not portable - "
 #   endif
 _GL_FUNCDECL_RPL_1 (__scanf__, int,
                     (const char *restrict format, ...)
-                    __asm__ ("_"
+                    __asm__ (""
                              _GL_STDIO_MACROEXPAND_AND_STRINGIZE(rpl_scanf))
                     _GL_ATTRIBUTE_FORMAT_SCANF_SYSTEM (1, 2)
                     _GL_ARG_NONNULL ((1)));
